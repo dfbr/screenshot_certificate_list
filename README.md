@@ -57,7 +57,13 @@ results/
 
 ## Results
 
-> Last updated: 2026-03-23 14:13 UTC
+> Last updated: 2026-03-23 14:19 UTC
 
-*No results yet.*
+### [uib.no](results/uib.no/2026-03-23_14-17-35/README.md)
+
+Latest run: `2026-03-23_14-17-35`
+
+### [uio.no](results/uio.no/2026-03-23_14-17-50/README.md)
+
+Latest run: `2026-03-23_14-17-50`
 

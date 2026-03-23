@@ -13,6 +13,10 @@ on:
         description: 'Maximum domains to screenshot per run, 0 = unlimited (default: 50)'
         required: false
         default: '50'
+      concurrency:
+        description: 'Number of screenshots to take in parallel (default: 12)'
+        required: false
+        default: '12'
 
 permissions:
   contents: write
@@ -70,7 +74,8 @@ jobs:
             "${{ matrix.domain }}" \
             results \
             "${{ github.event.inputs.max_runs || '5' }}" \
-            "${{ github.event.inputs.max_domains || '50' }}"
+            "${{ github.event.inputs.max_domains || '50' }}" \
+            "${{ github.event.inputs.concurrency || '12' }}"
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v4

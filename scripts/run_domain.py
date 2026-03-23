@@ -4,7 +4,7 @@
 import json
 import shutil
 import sys
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -100,9 +100,10 @@ def generate_run_readme(
 def main() -> None:
     if len(sys.argv) < 2:
         print(
-            "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains]\n"
+            "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains] [concurrency]\n"
             "  max_runs    – keep this many most-recent runs (default 5, 0 = unlimited)\n"
-            "  max_domains – screenshot at most this many domains (default 0 = unlimited)"
+            "  max_domains – screenshot at most this many domains (default 0 = unlimited)\n"
+            "  concurrency – number of screenshots to take in parallel (default 12)"
         )
         sys.exit(1)
 
@@ -110,6 +111,7 @@ def main() -> None:
     base_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("results")
     max_runs = int(sys.argv[3]) if len(sys.argv) > 3 else 5
     max_domains = int(sys.argv[4]) if len(sys.argv) > 4 else 0  # 0 = unlimited
+    concurrency = int(sys.argv[5]) if len(sys.argv) > 5 else 12
 
     print(f"=== Processing: {domain} ===")
 
@@ -138,15 +140,21 @@ def main() -> None:
         json.dumps(names, indent=2), encoding="utf-8"
     )
 
-    # Take screenshots
+    # Take screenshots concurrently
     screenshot_results: dict[str, bool] = {}
-    for name in names:
+    print(f"Taking screenshots with concurrency={concurrency}…")
+
+    def _screenshot_task(name: str) -> tuple[str, bool]:
         out = screenshots_dir / f"{name}.png"
-        print(f"  Screenshot: {name}…", end=" ", flush=True)
         ok = take_screenshot(name, out)
-        screenshot_results[name] = ok
-        print("✓" if ok else "✗")
-        time.sleep(0.3)
+        print(f"  {'✓' if ok else '✗'} {name}", flush=True)
+        return name, ok
+
+    with ThreadPoolExecutor(max_workers=concurrency) as executor:
+        futures = {executor.submit(_screenshot_task, name): name for name in names}
+        for future in as_completed(futures):
+            name, ok = future.result()
+            screenshot_results[name] = ok
 
     # Generate per-run README
     generate_run_readme(run_dir, domain, names, screenshot_results)

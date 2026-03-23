@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+"""Regenerate the top-level README.md from the results directory."""
+
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+HEADER = """\
 # Screenshot Certificate List
 
 Automated screenshots of domains found in certificate transparency logs via
@@ -52,12 +60,56 @@ results/
       screenshots/
         <name>.png
 ```
+"""
 
----
 
-## Results
+def main() -> None:
+    results_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("results")
+    readme_path = Path("README.md")
 
-> Last updated: 2026-03-23 12:15 UTC
+    now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-*No results yet.*
+    lines = [
+        HEADER,
+        "---",
+        "",
+        "## Results",
+        "",
+        f"> Last updated: {now}",
+        "",
+    ]
+
+    domain_dirs = sorted(d for d in results_dir.iterdir() if d.is_dir()) if results_dir.exists() else []
+
+    if domain_dirs:
+        for domain_dir in domain_dirs:
+            runs = sorted(
+                (d for d in domain_dir.iterdir() if d.is_dir()),
+                key=lambda d: d.name,
+                reverse=True,
+            )
+            if not runs:
+                continue
+            latest = runs[0]
+            lines.append(f"### [{domain_dir.name}]({latest / 'README.md'})")
+            lines.append("")
+            lines.append(f"Latest run: `{latest.name}`")
+            lines.append("")
+            if len(runs) > 1:
+                lines.append("<details><summary>Previous runs</summary>")
+                lines.append("")
+                for run in runs[1:]:
+                    lines.append(f"- [{run.name}]({run / 'README.md'})")
+                lines.append("")
+                lines.append("</details>")
+                lines.append("")
+    else:
+        lines += ["*No results yet.*", ""]
+
+    readme_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"README.md updated ({len(domain_dirs)} domain(s))")
+
+
+if __name__ == "__main__":
+    main()
 

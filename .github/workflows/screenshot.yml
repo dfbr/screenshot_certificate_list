@@ -33,7 +33,7 @@ jobs:
     outputs:
       domains: ${{ steps.read.outputs.domains }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - id: read
         name: Parse domains.txt
@@ -58,9 +58,9 @@ jobs:
         domain: ${{ fromJSON(needs.setup.outputs.domains) }}
       fail-fast: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -83,7 +83,7 @@ jobs:
             "${{ github.event.inputs.crtsh_max_retries || '10' }}"
 
       - name: Upload results artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: domain-${{ matrix.domain }}
           path: results/${{ matrix.domain }}/
@@ -96,10 +96,10 @@ jobs:
     if: always() && needs.setup.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Download domain artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           path: /tmp/artifacts
           pattern: 'domain-*'
@@ -120,7 +120,7 @@ jobs:
             cp -r "$artifact_dir/." "results/$domain/"
           done
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 

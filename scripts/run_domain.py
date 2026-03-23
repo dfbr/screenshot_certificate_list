@@ -2,6 +2,7 @@
 """Process a single domain: query crt.sh, take screenshots, generate README, prune old runs."""
 
 import json
+import random
 import shutil
 import sys
 import time
@@ -22,9 +23,21 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
     data = None
     for attempt in range(1, max_retries + 1):
         try:
-            resp = requests.get(url, timeout=timeout)
+            headers = {"User-Agent": "screenshot_certificate_list/1.0 (+https://github.com/your/repo)"}
+            resp = requests.get(url, timeout=timeout, headers=headers)
             resp.raise_for_status()
-            data = resp.json()
+            try:
+                data = resp.json()
+            except ValueError:
+                # crt.sh sometimes returns HTML/error pages despite a 200/503; treat as retryable
+                print(
+                    f"WARNING: crt.sh returned non-JSON response on attempt {attempt}/{max_retries} for {domain}",
+                    file=sys.stderr,
+                )
+                if attempt < max_retries:
+                    sleep_time = (2 ** min(attempt - 1, 4)) + random.random()
+                    time.sleep(sleep_time)
+                continue
             break
         except Exception as exc:  # noqa: BLE001
             print(
@@ -33,7 +46,8 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
                 file=sys.stderr,
             )
             if attempt < max_retries:
-                time.sleep(2 ** min(attempt - 1, 4))  # back-off: 1, 2, 4, 8, 16 s
+                sleep_time = (2 ** min(attempt - 1, 4)) + random.random()
+                time.sleep(sleep_time)  # back-off with small jitter
     if data is None:
         print(f"ERROR: crt.sh query failed for {domain} after {max_retries} attempt(s)", file=sys.stderr)
         return []

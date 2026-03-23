@@ -4,6 +4,7 @@
 import json
 import shutil
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -118,14 +119,11 @@ def generate_run_readme(
 def main() -> None:
     if len(sys.argv) < 2:
         print(
-            "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains] [concurrency]\n"
-            "  max_runs    – keep this many most-recent runs (default 5, 0 = unlimited)\n"
-            "  max_domains – screenshot at most this many domains (default 0 = unlimited)\n"
-            "  concurrency – number of screenshots to take in parallel (default 12)"
             "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains]"
-            " [crtsh_timeout] [crtsh_max_retries]\n"
+            " [concurrency] [crtsh_timeout] [crtsh_max_retries]\n"
             "  max_runs         – keep this many most-recent runs (default 5, 0 = unlimited)\n"
             "  max_domains      – screenshot at most this many domains (default 0 = unlimited)\n"
+            "  concurrency      – number of screenshots to take in parallel (default 12)\n"
             "  crtsh_timeout    – request timeout in seconds for crt.sh queries (default 10)\n"
             "  crtsh_max_retries – maximum retry attempts for crt.sh queries (default 10)"
         )
@@ -136,8 +134,8 @@ def main() -> None:
     max_runs = int(sys.argv[3]) if len(sys.argv) > 3 else 5
     max_domains = int(sys.argv[4]) if len(sys.argv) > 4 else 0  # 0 = unlimited
     concurrency = int(sys.argv[5]) if len(sys.argv) > 5 else 12
-    crtsh_timeout = int(sys.argv[5]) if len(sys.argv) > 5 else 10
-    crtsh_max_retries = int(sys.argv[6]) if len(sys.argv) > 6 else 10
+    crtsh_timeout = int(sys.argv[6]) if len(sys.argv) > 6 else 10
+    crtsh_max_retries = int(sys.argv[7]) if len(sys.argv) > 7 else 10
 
     print(f"=== Processing: {domain} ===")
 

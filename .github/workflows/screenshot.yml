@@ -13,6 +13,10 @@ on:
         description: 'Maximum domains to screenshot per run, 0 = unlimited (default: 50)'
         required: false
         default: '50'
+      concurrency:
+        description: 'Number of screenshots to take in parallel (default: 12)'
+        required: false
+        default: '12'
       crtsh_timeout:
         description: 'Request timeout in seconds for crt.sh queries (default: 10)'
         required: false
@@ -79,6 +83,7 @@ jobs:
             results \
             "${{ github.event.inputs.max_runs || '5' }}" \
             "${{ github.event.inputs.max_domains || '50' }}" \
+            "${{ github.event.inputs.concurrency || '12' }}"
             "${{ github.event.inputs.crtsh_timeout || '10' }}" \
             "${{ github.event.inputs.crtsh_max_retries || '10' }}"
 

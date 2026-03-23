@@ -1,3 +1,4 @@
 # List of domains to monitor — one per line.
 # Lines starting with # and blank lines are ignored.
 uib.no
+uio.no

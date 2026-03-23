@@ -11,15 +11,30 @@ from pathlib import Path
 import requests
 
 
-def query_crtsh(domain: str) -> list[str]:
-    """Return sorted list of unique, non-wildcard names from crt.sh for *domain*."""
+def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:
+    """Return sorted list of unique, non-wildcard names from crt.sh for *domain*.
+
+    Retries up to *max_retries* times with a short back-off to handle the
+    intermittent availability of crt.sh.
+    """
     url = f"https://crt.sh/?q=%.{domain}&output=json"
-    try:
-        resp = requests.get(url, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as exc:  # noqa: BLE001
-        print(f"ERROR: crt.sh query failed for {domain}: {exc}", file=sys.stderr)
+    data = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = requests.get(url, timeout=timeout)
+            resp.raise_for_status()
+            data = resp.json()
+            break
+        except Exception as exc:  # noqa: BLE001
+            print(
+                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for"
+                f" {domain}: {exc}",
+                file=sys.stderr,
+            )
+            if attempt < max_retries:
+                time.sleep(2 ** min(attempt - 1, 4))  # back-off: 1, 2, 4, 8, 16 s
+    if data is None:
+        print(f"ERROR: crt.sh query failed for {domain} after {max_retries} attempt(s)", file=sys.stderr)
         return []
 
     names: set[str] = set()
@@ -104,6 +119,12 @@ def main() -> None:
             "  max_runs    – keep this many most-recent runs (default 5, 0 = unlimited)\n"
             "  max_domains – screenshot at most this many domains (default 0 = unlimited)\n"
             "  concurrency – number of screenshots to take in parallel (default 12)"
+            "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains]"
+            " [crtsh_timeout] [crtsh_max_retries]\n"
+            "  max_runs         – keep this many most-recent runs (default 5, 0 = unlimited)\n"
+            "  max_domains      – screenshot at most this many domains (default 0 = unlimited)\n"
+            "  crtsh_timeout    – request timeout in seconds for crt.sh queries (default 10)\n"
+            "  crtsh_max_retries – maximum retry attempts for crt.sh queries (default 10)"
         )
         sys.exit(1)
 
@@ -112,6 +133,8 @@ def main() -> None:
     max_runs = int(sys.argv[3]) if len(sys.argv) > 3 else 5
     max_domains = int(sys.argv[4]) if len(sys.argv) > 4 else 0  # 0 = unlimited
     concurrency = int(sys.argv[5]) if len(sys.argv) > 5 else 12
+    crtsh_timeout = int(sys.argv[5]) if len(sys.argv) > 5 else 10
+    crtsh_max_retries = int(sys.argv[6]) if len(sys.argv) > 6 else 10
 
     print(f"=== Processing: {domain} ===")
 
@@ -124,7 +147,7 @@ def main() -> None:
 
     # Query crt.sh
     print("Querying crt.sh…")
-    names = query_crtsh(domain)
+    names = query_crtsh(domain, timeout=crtsh_timeout, max_retries=crtsh_max_retries)
     print(f"Found {len(names)} unique name(s)")
 
     if max_domains and len(names) > max_domains:

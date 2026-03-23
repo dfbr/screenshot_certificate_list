@@ -17,6 +17,14 @@ on:
         description: 'Number of screenshots to take in parallel (default: 12)'
         required: false
         default: '12'
+      crtsh_timeout:
+        description: 'Request timeout in seconds for crt.sh queries (default: 10)'
+        required: false
+        default: '10'
+      crtsh_max_retries:
+        description: 'Maximum retry attempts for crt.sh queries (default: 10)'
+        required: false
+        default: '10'
 
 permissions:
   contents: write
@@ -29,7 +37,7 @@ jobs:
     outputs:
       domains: ${{ steps.read.outputs.domains }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - id: read
         name: Parse domains.txt
@@ -54,9 +62,9 @@ jobs:
         domain: ${{ fromJSON(needs.setup.outputs.domains) }}
       fail-fast: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -76,9 +84,11 @@ jobs:
             "${{ github.event.inputs.max_runs || '5' }}" \
             "${{ github.event.inputs.max_domains || '50' }}" \
             "${{ github.event.inputs.concurrency || '12' }}"
+            "${{ github.event.inputs.crtsh_timeout || '10' }}" \
+            "${{ github.event.inputs.crtsh_max_retries || '10' }}"
 
       - name: Upload results artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: domain-${{ matrix.domain }}
           path: results/${{ matrix.domain }}/
@@ -91,10 +101,10 @@ jobs:
     if: always() && needs.setup.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Download domain artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           path: /tmp/artifacts
           pattern: 'domain-*'
@@ -115,7 +125,7 @@ jobs:
             cp -r "$artifact_dir/." "results/$domain/"
           done
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 

@@ -64,33 +64,40 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
     return sorted(names)
 
 
-def take_screenshot(hostname: str, output_path: Path) -> bool:
-    """Try HTTPS then HTTP. Save screenshot to *output_path*. Return True on success."""
+def take_screenshot(hostname: str, output_path: Path) -> tuple[bool, str]:
+    """Try HTTPS then HTTP. Save screenshot to *output_path*.
+
+    Return (True, "ok") on success or (False, <error string>) on failure.
+    """
     from playwright.sync_api import TimeoutError as PWTimeout  # noqa: PLC0415
     from playwright.sync_api import sync_playwright  # noqa: PLC0415
 
+    last_err = "unreachable"
     with sync_playwright() as pw:
         browser = pw.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
         ctx = browser.new_context(viewport={"width": 1280, "height": 800})
         page = ctx.new_page()
-        success = False
         for scheme in ("https", "http"):
             url = f"{scheme}://{hostname}"
             try:
                 response = page.goto(url, timeout=15_000, wait_until="domcontentloaded")
                 if response is not None and response.status >= 400:  # HTTP error (4xx/5xx)
-                    print(f"    HTTP {response.status}: {url}")
+                    last_err = f"HTTP {response.status}"
+                    print(f"    {last_err}: {url}")
                     continue
                 page.screenshot(path=str(output_path), full_page=False)
-                success = True
-                break
+                ctx.close()
+                browser.close()
+                return True, "ok"
             except PWTimeout:
+                last_err = "timeout"
                 print(f"    timeout: {url}")
             except Exception as exc:  # noqa: BLE001
+                last_err = str(exc)
                 print(f"    error {url}: {exc}")
         ctx.close()
         browser.close()
-    return success
+    return False, last_err
 
 
 def cleanup_old_runs(domain_dir: Path, keep: int) -> None:
@@ -107,10 +114,18 @@ def generate_run_readme(
     run_dir: Path,
     domain: str,
     names: list[str],
-    results: dict[str, bool],
+    results: dict[str, str],
 ) -> None:
     """Write README.md for a single run inside *run_dir*."""
     timestamp = run_dir.name
+    # Summary counts
+    success_count = sum(1 for v in results.values() if v == "ok")
+    error_counts: dict[str, int] = {}
+    for v in results.values():
+        if v == "ok":
+            continue
+        error_counts[v] = error_counts.get(v, 0) + 1
+
     lines = [
         f"# {domain} — {timestamp}",
         "",
@@ -118,15 +133,24 @@ def generate_run_readme(
         "",
         f"**{len(names)} unique domain(s) found.**",
         "",
+        f"**Summary:** {success_count} success(es)"
+        + (
+            (", " + ", ".join([f"{c} {("`" + e + "`")}" for e, c in error_counts.items()]))
+            if error_counts
+            else ""
+        ),
+        "",
         "| Domain | Screenshot |",
         "|--------|-----------|",
     ]
     for name in names:
-        if results.get(name):
+        result = results.get(name)
+        if result == "ok":
             img = f"screenshots/{name}.png"
             lines.append(f"| `{name}` | ![{name}]({img}) |")
         else:
-            lines.append(f"| `{name}` | *(screenshot unavailable)* |")
+            err = result or "(screenshot unavailable)"
+            lines.append(f"| `{name}` | `{err}` |")
     (run_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -183,26 +207,26 @@ def main() -> None:
     )
 
     # Take screenshots concurrently
-    screenshot_results: dict[str, bool] = {}
+    screenshot_results: dict[str, str] = {}
     print(f"Taking screenshots with concurrency={concurrency}…")
 
-    def _screenshot_task(name: str) -> tuple[str, bool]:
+    def _screenshot_task(name: str) -> tuple[str, str]:
         out = screenshots_dir / f"{name}.png"
-        ok = take_screenshot(name, out)
-        print(f"  {'✓' if ok else '✗'} {name}", flush=True)
-        return name, ok
+        ok, reason = take_screenshot(name, out)
+        status = "ok" if ok else reason
+        print(f"  {'✓' if ok else '✗'} {name}" + ("" if ok else f" ({reason})"), flush=True)
+        return name, status
 
     with ThreadPoolExecutor(max_workers=concurrency) as executor:
         futures = {executor.submit(_screenshot_task, name): name for name in names}
         for future in as_completed(futures):
             try:
-                name, ok = future.result()
+                name, status = future.result()
             except Exception as exc:  # noqa: BLE001
-                # Catch worker exceptions so one failure doesn't crash the whole run
                 name = futures.get(future, "<unknown>")
-                ok = False
+                status = str(exc)
                 print(f"ERROR: screenshot task for {name} raised: {exc}", file=sys.stderr)
-            screenshot_results[name] = ok
+            screenshot_results[name] = status
 
     # Generate per-run README
     generate_run_readme(run_dir, domain, names, screenshot_results)

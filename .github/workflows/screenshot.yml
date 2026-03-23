@@ -10,21 +10,21 @@ on:
         required: false
         default: '5'
       max_domains:
-        description: 'Maximum domains to screenshot per run, 0 = unlimited (default: 50)'
+        description: 'Maximum domains to screenshot per run, 0 = unlimited (default: 0)'
         required: false
-        default: '50'
+        default: '0'
       concurrency:
         description: 'Number of screenshots to take in parallel (default: 12)'
         required: false
         default: '12'
       crtsh_timeout:
-        description: 'Request timeout in seconds for crt.sh queries (default: 10)'
+        description: 'Request timeout in seconds for crt.sh queries (default: 30)'
         required: false
-        default: '10'
+        default: '30'
       crtsh_max_retries:
-        description: 'Maximum retry attempts for crt.sh queries (default: 10)'
+        description: 'Maximum retry attempts for crt.sh queries (default: 20)'
         required: false
-        default: '10'
+        default: '20'
 
 permissions:
   contents: write
@@ -78,7 +78,7 @@ jobs:
 
       - name: Run domain processing
         run: |
-          python3 scripts/run_domain.py "${{ matrix.domain }}" results "${{ github.event.inputs.max_runs || '5' }}" "${{ github.event.inputs.max_domains || '50' }}" "${{ github.event.inputs.concurrency || '12' }}" "${{ github.event.inputs.crtsh_timeout || '10' }}" "${{ github.event.inputs.crtsh_max_retries || '10' }}"
+          python3 scripts/run_domain.py "${{ matrix.domain }}" results "${{ github.event.inputs.max_runs || '5' }}" "${{ github.event.inputs.max_domains || '0' }}" "${{ github.event.inputs.concurrency || '12' }}" "${{ github.event.inputs.crtsh_timeout || '30' }}" "${{ github.event.inputs.crtsh_max_retries || '20' }}"
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v7

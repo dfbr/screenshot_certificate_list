@@ -47,7 +47,10 @@ def take_screenshot(hostname: str, output_path: Path) -> bool:
         for scheme in ("https", "http"):
             url = f"{scheme}://{hostname}"
             try:
-                page.goto(url, timeout=15_000, wait_until="domcontentloaded")
+                response = page.goto(url, timeout=15_000, wait_until="domcontentloaded")
+                if response is not None and response.status >= 400:  # HTTP error (4xx/5xx)
+                    print(f"    HTTP {response.status}: {url}")
+                    continue
                 page.screenshot(path=str(output_path), full_page=False)
                 success = True
                 break

@@ -157,6 +157,7 @@ def main() -> None:
     timestamp = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
     domain_dir = base_dir / domain
     run_dir = domain_dir / timestamp
+    run_dir.mkdir(parents=True, exist_ok=True)
     screenshots_dir = run_dir / "screenshots"
     screenshots_dir.mkdir(parents=True, exist_ok=True)
 
@@ -164,6 +165,9 @@ def main() -> None:
     print("Querying crt.sh…")
     names = query_crtsh(domain, timeout=crtsh_timeout, max_retries=crtsh_max_retries)
     print(f"Found {len(names)} unique name(s)")
+
+    # create run_dir early to ensure errors get written into a place under results/
+    (run_dir / "domains.json").parent.mkdir(parents=True, exist_ok=True)
 
     if max_domains and len(names) > max_domains:
         print(f"Limiting to first {max_domains} of {len(names)} names")
@@ -191,7 +195,13 @@ def main() -> None:
     with ThreadPoolExecutor(max_workers=concurrency) as executor:
         futures = {executor.submit(_screenshot_task, name): name for name in names}
         for future in as_completed(futures):
-            name, ok = future.result()
+            try:
+                name, ok = future.result()
+            except Exception as exc:  # noqa: BLE001
+                # Catch worker exceptions so one failure doesn't crash the whole run
+                name = futures.get(future, "<unknown>")
+                ok = False
+                print(f"ERROR: screenshot task for {name} raised: {exc}", file=sys.stderr)
             screenshot_results[name] = ok
 
     # Generate per-run README

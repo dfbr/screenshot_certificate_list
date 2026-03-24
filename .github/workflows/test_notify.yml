@@ -40,7 +40,7 @@ jobs:
               print('No recipient addresses provided. Aborting.')
               sys.exit(1)
 
-          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow. Server: {}, User: {}, From address: {}'.format(host,user,from_addr))
+          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow. \nServer: {}\nUser: {}\nFrom address: {}'.format(host,user,from_addr))
           msg['Subject'] = '[Test] screenshot_certificate_list email'
           msg['From'] = 'automation@dfbr.co.uk'
           msg['To'] = ', '.join(to_list)

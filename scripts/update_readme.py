@@ -4,6 +4,7 @@
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+import json
 
 HEADER = """\
 # Screenshot Certificate List
@@ -91,18 +92,46 @@ def main() -> None:
             if not runs:
                 continue
             latest = runs[0]
+            # Domain header linking to latest run README
             lines.append(f"### [{domain_dir.name}]({latest / 'README.md'})")
             lines.append("")
             lines.append(f"Latest run: `{latest.name}`")
             lines.append("")
-            if len(runs) > 1:
-                lines.append("<details><summary>Previous runs</summary>")
-                lines.append("")
-                for run in runs[1:]:
-                    lines.append(f"- [{run.name}]({run / 'README.md'})")
-                lines.append("")
-                lines.append("</details>")
-                lines.append("")
+            
+            # Load latest statuses.json if present to display the per-domain summary
+            statuses_path = latest / "statuses.json"
+            if statuses_path.exists():
+                try:
+                    status_map = json.loads(statuses_path.read_text(encoding="utf-8"))
+                except Exception:
+                    status_map = {}
+            else:
+                status_map = {}
+            
+            # Summary table for this domain (mirrors per-run README)
+            counts: dict[str, int] = {}
+            for v in status_map.values():
+                counts[v] = counts.get(v, 0) + 1
+            total = sum(counts.values())
+            success = counts.pop("ok", 0)
+
+            lines.append("| Metric | Count |")
+            lines.append("|-------:|------:|")
+            lines.append(f"| Total domains found | {total} |")
+            lines.append(f"| Successes | {success} |")
+            for err in sorted(counts.keys()):
+                lines.append(f"| {err} | {counts[err]} |")
+            lines.append("")
+
+            # Historical runs table
+            lines.append("Previous runs:")
+            lines.append("")
+            lines.append("| Run | Link |")
+            lines.append("|-----|------|")
+            for run in runs:
+                lines.append(f"| `{run.name}` | [{run.name}]({run / 'README.md'}) |")
+            lines.append("")
+            lines.append("")
     else:
         lines += ["*No results yet.*", ""]
 

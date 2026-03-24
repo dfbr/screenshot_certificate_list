@@ -116,33 +116,49 @@ def generate_run_readme(
     names: list[str],
     results: dict[str, str],
 ) -> None:
-    """Write README.md for a single run inside *run_dir*."""
-    timestamp = run_dir.name
-    # Summary counts
-    success_count = sum(1 for v in results.values() if v == "ok")
-    error_counts: dict[str, int] = {}
-    for v in results.values():
-        if v == "ok":
-            continue
-        error_counts[v] = error_counts.get(v, 0) + 1
+    """Write README.md for a single run inside *run_dir*.
 
-    lines = [
+    Produce a small summary table (counts per result type) followed by a table
+    listing each domain with either an embedded screenshot or the error string.
+    """
+    timestamp = run_dir.name
+
+    # Tally results
+    total = len(names)
+    counts: dict[str, int] = {}
+    for v in results.values():
+        counts[v] = counts.get(v, 0) + 1
+
+    # Build summary table
+    lines: list[str] = [
         f"# {domain} — {timestamp}",
         "",
         f"Certificates queried from [crt.sh](https://crt.sh/?q=%.{domain}).",
         "",
-        f"**{len(names)} unique domain(s) found.**",
+        "## Summary",
         "",
-        f"**Summary:** {success_count} success(es)"
-        + (
-            (", " + ", ".join([f"{c} {("`" + e + "`")}" for e, c in error_counts.items()]))
-            if error_counts
-            else ""
-        ),
-        "",
-        "| Domain | Screenshot |",
-        "|--------|-----------|",
+        "| Metric | Count |",
+        "|-------:|------:|",
+        f"| Total domains found | {total} |",
     ]
+
+    # Ensure 'ok' appears as Successes
+    success = counts.pop("ok", 0)
+    lines.append(f"| Successes | {success} |")
+
+    # Add other error types sorted by name
+    for err_type in sorted(counts.keys()):
+        lines.append(f"| {err_type} | {counts[err_type]} |")
+
+    # Per-domain table
+    lines.extend([
+        "",
+        "## Details",
+        "",
+        "| Domain | Result |",
+        "|--------|--------|",
+    ])
+
     for name in names:
         result = results.get(name)
         if result == "ok":
@@ -151,6 +167,7 @@ def generate_run_readme(
         else:
             err = result or "(screenshot unavailable)"
             lines.append(f"| `{name}` | `{err}` |")
+
     (run_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -227,6 +244,14 @@ def main() -> None:
                 status = str(exc)
                 print(f"ERROR: screenshot task for {name} raised: {exc}", file=sys.stderr)
             screenshot_results[name] = status
+
+    # Persist per-domain statuses for this run so the top-level README can summarise results
+    try:
+        (run_dir / "statuses.json").write_text(
+            json.dumps(screenshot_results, indent=2, sort_keys=True), encoding="utf-8"
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"WARNING: could not write statuses.json: {exc}", file=sys.stderr)
 
     # Generate per-run README
     generate_run_readme(run_dir, domain, names, screenshot_results)

@@ -320,6 +320,12 @@ def main() -> None:
         print(f"No names found; defaulting to [{domain}]")
         names = [domain]
 
+    # Randomize checking order so screenshots are taken in a non-deterministic order
+    # (helps distribute transient failures across runs and avoids always starting
+    # with the same host). Persist the shuffled order.
+    random.shuffle(names)
+    print(f"Shuffled {len(names)} name(s) for checking")
+
     # Persist domain list
     (run_dir / "domains.json").write_text(
         json.dumps(names, indent=2), encoding="utf-8"

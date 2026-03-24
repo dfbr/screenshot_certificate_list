@@ -88,32 +88,64 @@ def take_screenshot(hostname: str, output_path: Path) -> tuple[bool, str]:
     last_err = "unreachable"
     with sync_playwright() as pw:
         browser = pw.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
-        ctx = browser.new_context(viewport={"width": 1280, "height": 800})
-        page = ctx.new_page()
+        # Allow pages with invalid/expired certificates to be loaded in CI
+        ctx = browser.new_context(viewport={"width": 1280, "height": 800}, ignore_https_errors=True)
+        # Try each scheme, with a small number of retries per URL to handle
+        # transient navigation interruptions. Use a longer timeout per attempt.
+        attempts_per_scheme = 2
+        goto_timeout_ms = 30_000
         for scheme in ("https", "http"):
             url = f"{scheme}://{hostname}"
-            try:
-                response = page.goto(url, timeout=15_000, wait_until="domcontentloaded")
-                if response is not None and response.status >= 400:  # HTTP error (4xx/5xx)
-                    last_err = f"HTTP {response.status}"
-                    print(f"    {last_err}: {url}")
-                    continue
-                page.screenshot(path=str(output_path), full_page=False)
-                ctx.close()
-                browser.close()
-                return True, "ok"
-            except PWTimeout:
-                last_err = "timeout"
-                print(f"    timeout: {url}")
-            except Exception as exc:  # noqa: BLE001
-                # Clean exception message: keep only first line and truncate to avoid call logs
-                raw = str(exc)
-                first = raw.splitlines()[0].strip()
-                # truncate to reasonable length
-                last_err = (first[:200] + "...") if len(first) > 200 else first
-                print(f"    error {url}: {first}")
-        ctx.close()
-        browser.close()
+            for attempt in range(1, attempts_per_scheme + 1):
+                page = ctx.new_page()
+                try:
+                    response = page.goto(url, timeout=goto_timeout_ms, wait_until="domcontentloaded")
+                    if response is not None and response.status >= 400:  # HTTP error (4xx/5xx)
+                        last_err = f"HTTP {response.status}"
+                        print(f"    {last_err}: {url}")
+                        # don't retry on HTTP error from server for this scheme
+                        break
+                    page.screenshot(path=str(output_path), full_page=False)
+                    try:
+                        page.close()
+                    except Exception:
+                        pass
+                    try:
+                        ctx.close()
+                    except Exception:
+                        pass
+                    try:
+                        browser.close()
+                    except Exception:
+                        pass
+                    return True, "ok"
+                except PWTimeout:
+                    last_err = "timeout"
+                    print(f"    timeout ({attempt}/{attempts_per_scheme}): {url}")
+                except Exception as exc:  # noqa: BLE001
+                    # Clean exception message: keep only first line and truncate to avoid call logs
+                    raw = str(exc)
+                    first = raw.splitlines()[0].strip()
+                    # truncate to reasonable length
+                    last_err = (first[:200] + "...") if len(first) > 200 else first
+                    print(f"    error ({attempt}/{attempts_per_scheme}) {url}: {first}")
+                finally:
+                    try:
+                        if not page.is_closed():
+                            page.close()
+                    except Exception:
+                        pass
+                if attempt < attempts_per_scheme:
+                    time.sleep(1 + random.random())
+            # next scheme
+        try:
+            ctx.close()
+        except Exception:
+            pass
+        try:
+            browser.close()
+        except Exception:
+            pass
     return False, last_err
 
 

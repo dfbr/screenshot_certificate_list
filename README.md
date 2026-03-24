@@ -57,18 +57,25 @@ results/
 
 ## Results
 
-> Last updated: 2026-03-23 14:44 UTC
+> Last updated: 2026-03-24 04:37 UTC
 
-### [experian.co.uk](results/experian.co.uk/2026-03-23_14-35-34/README.md)
+### [experian.co.uk](results/experian.co.uk/2026-03-24_04-21-03/README.md)
 
-Latest run: `2026-03-23_14-35-34`
-
-### [uib.no](results/uib.no/2026-03-23_14-35-34/README.md)
-
-Latest run: `2026-03-23_14-35-34`
+Latest run: `2026-03-24_04-21-03`
 
 <details><summary>Previous runs</summary>
 
+- [2026-03-23_14-35-34](results/experian.co.uk/2026-03-23_14-35-34/README.md)
+
+</details>
+
+### [uib.no](results/uib.no/2026-03-24_04-20-56/README.md)
+
+Latest run: `2026-03-24_04-20-56`
+
+<details><summary>Previous runs</summary>
+
+- [2026-03-23_14-35-34](results/uib.no/2026-03-23_14-35-34/README.md)
 - [2026-03-23_14-17-35](results/uib.no/2026-03-23_14-17-35/README.md)
 
 </details>

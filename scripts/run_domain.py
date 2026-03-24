@@ -55,10 +55,23 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
     names: set[str] = set()
     for cert in data:
         for field in ("common_name", "name_value"):
-            for raw in (cert.get(field) or "").split("\n"):
-                name = raw.strip().lower()
+            raw_val = cert.get(field)
+            if raw_val is None:
+                continue
+            # Normalize to list of lines regardless of whether crt.sh returned
+            # a single string with newlines or a list of strings.
+            raws: list[str] = []
+            if isinstance(raw_val, list):
+                for item in raw_val:
+                    raws.extend(str(item).splitlines())
+            else:
+                raws = str(raw_val).splitlines()
+
+            for raw in raws:
+                name = _normalize_name(raw)
                 if not name or name.startswith("*"):
                     continue
+                # Keep any name that equals or is a subdomain of the requested domain
                 if name == domain or name.endswith(f".{domain}"):
                     names.add(name)
     return sorted(names)
@@ -93,8 +106,12 @@ def take_screenshot(hostname: str, output_path: Path) -> tuple[bool, str]:
                 last_err = "timeout"
                 print(f"    timeout: {url}")
             except Exception as exc:  # noqa: BLE001
-                last_err = str(exc)
-                print(f"    error {url}: {exc}")
+                # Clean exception message: keep only first line and truncate to avoid call logs
+                raw = str(exc)
+                first = raw.splitlines()[0].strip()
+                # truncate to reasonable length
+                last_err = (first[:200] + "...") if len(first) > 200 else first
+                print(f"    error {url}: {first}")
         ctx.close()
         browser.close()
     return False, last_err
@@ -169,6 +186,19 @@ def generate_run_readme(
             lines.append(f"| `{name}` | `{err}` |")
 
     (run_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _normalize_name(name: str) -> str:
+    """Normalize a domain/name value for deduplication.
+
+    - strip whitespace
+    - lowercase
+    - remove a trailing dot (fully-qualified form)
+    """
+    n = (name or "").strip().lower()
+    if n.endswith('.'):
+        n = n[:-1]
+    return n
 
 
 def main() -> None:

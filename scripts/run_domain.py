@@ -3,6 +3,7 @@
 
 import json
 import random
+import re
 import shutil
 import sys
 import time
@@ -174,11 +175,49 @@ def generate_run_readme(
     """
     timestamp = run_dir.name
 
-    # Tally results
+    # Tally results (group domain-specific errors into normalized types)
+    def _normalize_error(err: str) -> str:
+        if not err:
+            return "(screenshot unavailable)"
+        e = err.strip()
+        # HTTP status
+        m = re.search(r"HTTP\s*(\d{3})", e, re.I)
+        if m:
+            return f"HTTP {m.group(1)}"
+        # Playwright/net errors like net::ERR_NAME_NOT_RESOLVED
+        m = re.search(r"net::([A-Z0-9_]+)", e, re.I)
+        if m:
+            return m.group(1)
+        if "timeout" in e.lower():
+            return "timeout"
+        if "navigation" in e.lower() and "interrupt" in e.lower():
+            return "navigation interrupted"
+        m = re.search(r"Page\.goto:\s*(.+?)\s+at\s+", e)
+        if m:
+            token = m.group(1)
+            m2 = re.search(r"net::([A-Z0-9_]+)", token, re.I)
+            if m2:
+                return m2.group(1)
+            return token
+        # strip urls and chrome-error tokens
+        e2 = re.sub(r"https?://\S+", "", e)
+        e2 = re.sub(r"chrome-error://\S+", "", e2)
+        e2 = e2.strip()
+        if not e2:
+            return "(screenshot unavailable)"
+        return e2 if len(e2) <= 200 else e2[:197] + "..."
+
     total = len(names)
     counts: dict[str, int] = {}
-    for v in results.values():
-        counts[v] = counts.get(v, 0) + 1
+    normalized_map: dict[str, str] = {}
+    for k, v in results.items():
+        if v == "ok":
+            normalized_map[k] = "ok"
+            counts["ok"] = counts.get("ok", 0) + 1
+        else:
+            norm = _normalize_error(v)
+            normalized_map[k] = norm
+            counts[norm] = counts.get(norm, 0) + 1
 
     # Build summary table
     lines: list[str] = [
@@ -216,7 +255,8 @@ def generate_run_readme(
             img = f"screenshots/{name}.png"
             lines.append(f"| `{name}` | ![{name}]({img}) |")
         else:
-            err = result or "(screenshot unavailable)"
+            # show normalized error for clarity
+            err = normalized_map.get(name, None) or "(screenshot unavailable)"
             lines.append(f"| `{name}` | `{err}` |")
 
     (run_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -131,6 +131,18 @@ jobs:
       - name: Update top-level README
         run: python3 scripts/update_readme.py results
 
+      - name: Notify new responsive domains
+        if: always()
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          python3 scripts/notify_new_domains.py results
+
       - name: Commit and push
         run: |
           git config user.name  'github-actions[bot]'

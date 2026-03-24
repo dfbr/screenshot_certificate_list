@@ -1,38 +1,14 @@
-name: Run screenshot_certificate_list
+# This workflow has been disabled to avoid running on push. See `.github/workflows/screenshot.yml` for the scheduled/manual workflow.
+name: "disabled-run-screenshot_certificate_list"
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch: {}
 
 jobs:
-  screenshots:
+  noop:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install Python deps and Playwright browsers
+      - name: No-op
         run: |
-          python -m pip install --upgrade pip
-          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
-          python -m playwright install --with-deps
-
-      - name: Run screenshots for domains in domains.txt
-        run: |
-          set -euo pipefail
-          if [ ! -f domains.txt ]; then echo "domains.txt not found"; exit 1; fi
-          while IFS= read -r domain; do
-            domain=$(echo "$domain" | tr -d '\r' | xargs)
-            if [ -z "$domain" ] || [[ "$domain" == \#* ]]; then
-              continue
-            fi
-            echo "=== Processing: $domain ==="
-            python3 scripts/run_domain.py "$domain" results 5 5 2 10 10 || true
-          done < domains.txt
+          echo "This workflow is intentionally disabled."
+          echo "Use .github/workflows/screenshot.yml instead."

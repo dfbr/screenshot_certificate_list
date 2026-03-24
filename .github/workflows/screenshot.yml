@@ -78,7 +78,13 @@ jobs:
 
       - name: Run domain processing
         run: |
-          python3 scripts/run_domain.py "${{ matrix.domain }}" results "${{ github.event.inputs.max_runs || '5' }}" "${{ github.event.inputs.max_domains || '0' }}" "${{ github.event.inputs.concurrency || '12' }}" "${{ github.event.inputs.crtsh_timeout || '30' }}" "${{ github.event.inputs.crtsh_max_retries || '20' }}"
+          python3 scripts/run_domain.py "${{ matrix.domain }}" \
+            --results-dir results \
+            --max-runs "${{ github.event.inputs.max_runs || '5' }}" \
+            --max-domains "${{ github.event.inputs.max_domains || '0' }}" \
+            --concurrency "${{ github.event.inputs.concurrency || '12' }}" \
+            --crtsh-timeout "${{ github.event.inputs.crtsh_timeout || '30' }}" \
+            --crtsh-max-retries "${{ github.event.inputs.crtsh_max_retries || '20' }}"
 
       - name: Upload results artifact
         uses: actions/upload-artifact@v7

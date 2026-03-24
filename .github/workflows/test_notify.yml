@@ -1,0 +1,61 @@
+name: Test SMTP Notification
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: 'Optional override for EMAIL_TO secret (comma-separated)'
+        required: false
+
+jobs:
+  send-test-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test email sender
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ github.event.inputs.to || secrets.EMAIL_TO }}
+        run: |
+          python3 - <<'PY'
+          import os, sys, smtplib
+          from email.mime.text import MIMEText
+
+          host = os.environ.get('SMTP_HOST')
+          port = int(os.environ.get('SMTP_PORT') or 587)
+          user = os.environ.get('SMTP_USER')
+          pwd = os.environ.get('SMTP_PASSWORD')
+          from_addr = os.environ.get('EMAIL_FROM')
+          to_addrs = os.environ.get('EMAIL_TO')
+
+          if not host or not from_addr or not to_addrs:
+              print('Missing required secrets (SMTP_HOST, EMAIL_FROM, EMAIL_TO). Aborting.')
+              sys.exit(1)
+
+          to_list = [a.strip() for a in to_addrs.split(',') if a.strip()]
+          if not to_list:
+              print('No recipient addresses provided. Aborting.')
+              sys.exit(1)
+
+          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow.')
+          msg['Subject'] = '[Test] screenshot_certificate_list email'
+          msg['From'] = from_addr
+          msg['To'] = ', '.join(to_list)
+
+          try:
+              with smtplib.SMTP(host, port, timeout=30) as smtp:
+                  smtp.ehlo()
+                  if smtp.has_extn('STARTTLS'):
+                      smtp.starttls()
+                      smtp.ehlo()
+                  if user and pwd:
+                      smtp.login(user, pwd)
+                  smtp.sendmail(from_addr, to_list, msg.as_string())
+              print('Test email sent to:', ', '.join(to_list))
+          except Exception as e:
+              print('Failed to send test email:', e)
+              sys.exit(1)
+          PY

@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
+import argparse
+from typing import Optional
 
 
 def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:
@@ -234,25 +236,23 @@ def _normalize_name(name: str) -> str:
 
 
 def main() -> None:
-    if len(sys.argv) < 2:
-        print(
-            "Usage: run_domain.py <domain> [results_dir] [max_runs] [max_domains]"
-            " [concurrency] [crtsh_timeout] [crtsh_max_retries]\n"
-            "  max_runs         – keep this many most-recent runs (default 5, 0 = unlimited)\n"
-            "  max_domains      – screenshot at most this many domains (default 0 = unlimited)\n"
-            "  concurrency      – number of screenshots to take in parallel (default 12)\n"
-            "  crtsh_timeout    – request timeout in seconds for crt.sh queries (default 10)\n"
-            "  crtsh_max_retries – maximum retry attempts for crt.sh queries (default 10)"
-        )
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Query crt.sh and take screenshots for a domain")
+    parser.add_argument("domain", help="Top-level domain to process (e.g. uib.no)")
+    parser.add_argument("--results-dir", default="results", dest="results_dir", help="Directory to store results")
+    parser.add_argument("--max-runs", type=int, default=5, help="Keep this many most-recent runs (default: 5, 0 = unlimited)")
+    parser.add_argument("--max-domains", type=int, default=0, help="Screenshot at most this many domains (0 = unlimited)")
+    parser.add_argument("--concurrency", type=int, default=12, help="Number of screenshots to take in parallel (default: 12)")
+    parser.add_argument("--crtsh-timeout", type=int, default=30, help="Request timeout in seconds for crt.sh queries (default: 30)")
+    parser.add_argument("--crtsh-max-retries", type=int, default=20, help="Maximum retry attempts for crt.sh queries (default: 20)")
+    args = parser.parse_args()
 
-    domain = sys.argv[1].strip().lower()
-    base_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("results")
-    max_runs = int(sys.argv[3]) if len(sys.argv) > 3 else 5
-    max_domains = int(sys.argv[4]) if len(sys.argv) > 4 else 0  # 0 = unlimited
-    concurrency = int(sys.argv[5]) if len(sys.argv) > 5 else 12
-    crtsh_timeout = int(sys.argv[6]) if len(sys.argv) > 6 else 10
-    crtsh_max_retries = int(sys.argv[7]) if len(sys.argv) > 7 else 10
+    domain = args.domain.strip().lower()
+    base_dir = Path(args.results_dir)
+    max_runs = args.max_runs
+    max_domains = args.max_domains
+    concurrency = args.concurrency
+    crtsh_timeout = args.crtsh_timeout
+    crtsh_max_retries = args.crtsh_max_retries
 
     print(f"=== Processing: {domain} ===")
 

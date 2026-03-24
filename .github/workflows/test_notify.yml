@@ -42,7 +42,7 @@ jobs:
 
           msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow.')
           msg['Subject'] = '[Test] screenshot_certificate_list email'
-          msg['From'] = automation@dfbr.co.uk
+          msg['From'] = 'automation@dfbr.co.uk'
           msg['To'] = ', '.join(to_list)
 
           try:

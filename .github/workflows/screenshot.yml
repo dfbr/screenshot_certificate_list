@@ -2,21 +2,21 @@ name: Screenshot Certificate List
 
 on:
   schedule:
-    - cron: '0 2 * * *'    # Daily at 02:00 UTC
+    - cron: '0 5 * * *'    # Daily at 05:00 UTC
   workflow_dispatch:
     inputs:
       max_runs:
-        description: 'Maximum runs to keep per domain (default: 5)'
+        description: 'Maximum runs to keep per domain (default: 10)'
         required: false
-        default: '5'
+        default: '10'
       max_domains:
         description: 'Maximum domains to screenshot per run, 0 = unlimited (default: 0)'
         required: false
         default: '0'
       concurrency:
-        description: 'Number of screenshots to take in parallel (default: 12)'
+        description: 'Number of screenshots to take in parallel (default: 24)'
         required: false
-        default: '12'
+        default: '24'
       crtsh_timeout:
         description: 'Request timeout in seconds for crt.sh queries (default: 30)'
         required: false
@@ -25,6 +25,10 @@ on:
         description: 'Maximum retry attempts for crt.sh queries (default: 20)'
         required: false
         default: '20'
+      lookback:
+        description: 'Lookback runs for notifications (0 = all previous runs, default: 0)'
+        required: false
+        default: '0'
 
 permissions:
   contents: write
@@ -180,7 +184,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
-          python3 scripts/notify_new_domains.py results
+          python3 scripts/notify_new_domains.py results --lookback "${{ github.event.inputs.lookback || '0' }}"
 
       - name: Commit and push
         run: |

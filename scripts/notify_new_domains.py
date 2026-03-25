@@ -51,6 +51,13 @@ def send_email(smtp_host: str, smtp_port: int, smtp_user: str | None, smtp_pass:
     msg_root["From"] = from_addr
     msg_root["To"] = ", ".join(to_addrs)
 
+    # Use the authenticated SMTP user as the envelope sender when available.
+    # Some providers (e.g. Fastmail) require the MAIL FROM to match the
+    # authenticated identity or a verified sender and will rewrite otherwise.
+    envelope_from = smtp_user or from_addr
+    # Also set the Sender header so recipients and servers see the envelope sender.
+    msg_root["Sender"] = envelope_from
+
     msg_alt = MIMEMultipart("alternative")
     msg_root.attach(msg_alt)
 
@@ -71,7 +78,9 @@ def send_email(smtp_host: str, smtp_port: int, smtp_user: str | None, smtp_pass:
             smtp.ehlo()
         if smtp_user and smtp_pass:
             smtp.login(smtp_user, smtp_pass)
-        smtp.sendmail(from_addr, to_addrs, msg_root.as_string())
+        # Use envelope_from as the MAIL FROM (envelope sender) to satisfy providers
+        # that enforce authenticated/verified senders.
+        smtp.sendmail(envelope_from, to_addrs, msg_root.as_string())
 
 
 def main() -> None:

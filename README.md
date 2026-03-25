@@ -57,7 +57,7 @@ results/
 
 ## Results
 
-> Last updated: 2026-03-25 05:15 UTC
+> Last updated: 2026-03-25 11:08 UTC
 
 ### [boots.co.uk](results/boots.co.uk/2026-03-24_12-35-27/README.md)
 
@@ -891,9 +891,9 @@ Previous runs:
 | `2026-03-24_12-35-32` | [2026-03-24_12-35-32](results/boots.com/2026-03-24_12-35-32/README.md) |
 
 
-### [dfbp.co.uk](results/dfbp.co.uk/2026-03-25_04-21-54/README.md)
+### [dfbp.co.uk](results/dfbp.co.uk/2026-03-25_10-40-33/README.md)
 
-Latest run: `2026-03-25_04-21-54`
+Latest run: `2026-03-25_10-40-33`
 
 | Metric | Count |
 |-------:|------:|
@@ -905,15 +905,16 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_10-40-33` | [2026-03-25_10-40-33](results/dfbp.co.uk/2026-03-25_10-40-33/README.md) |
 | `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/dfbp.co.uk/2026-03-25_04-21-54/README.md) |
 | `2026-03-24_14-02-25` | [2026-03-24_14-02-25](results/dfbp.co.uk/2026-03-24_14-02-25/README.md) |
 | `2026-03-24_12-35-29` | [2026-03-24_12-35-29](results/dfbp.co.uk/2026-03-24_12-35-29/README.md) |
 | `2026-03-24_09-33-12` | [2026-03-24_09-33-12](results/dfbp.co.uk/2026-03-24_09-33-12/README.md) |
 
 
-### [dfbr.co.uk](results/dfbr.co.uk/2026-03-25_04-21-54/README.md)
+### [dfbr.co.uk](results/dfbr.co.uk/2026-03-25_10-40-25/README.md)
 
-Latest run: `2026-03-25_04-21-54`
+Latest run: `2026-03-25_10-40-25`
 
 | Metric | Count |
 |-------:|------:|
@@ -925,6 +926,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_10-40-25` | [2026-03-25_10-40-25](results/dfbr.co.uk/2026-03-25_10-40-25/README.md) |
 | `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/dfbr.co.uk/2026-03-25_04-21-54/README.md) |
 | `2026-03-24_14-02-26` | [2026-03-24_14-02-26](results/dfbr.co.uk/2026-03-24_14-02-26/README.md) |
 | `2026-03-24_12-35-31` | [2026-03-24_12-35-31](results/dfbr.co.uk/2026-03-24_12-35-31/README.md) |
@@ -1176,9 +1178,41 @@ Previous runs:
 | `2026-03-23_14-35-34` | [2026-03-23_14-35-34](results/experian.co.uk/2026-03-23_14-35-34/README.md) |
 
 
-### [rowanpage.co.uk](results/rowanpage.co.uk/2026-03-25_04-21-59/README.md)
+### [fitforhospital.co.uk](results/fitforhospital.co.uk/2026-03-25_10-40-29/README.md)
 
-Latest run: `2026-03-25_04-21-59`
+Latest run: `2026-03-25_10-40-29`
+
+| Metric | Count |
+|-------:|------:|
+| Total domains found | 1 |
+| Successes | 1 |
+
+Previous runs:
+
+| Run | Link |
+|-----|------|
+| `2026-03-25_10-40-29` | [2026-03-25_10-40-29](results/fitforhospital.co.uk/2026-03-25_10-40-29/README.md) |
+
+
+### [onlythestoriesyouwant.link](results/onlythestoriesyouwant.link/2026-03-25_10-40-41/README.md)
+
+Latest run: `2026-03-25_10-40-41`
+
+| Metric | Count |
+|-------:|------:|
+| Total domains found | 2 |
+| Successes | 2 |
+
+Previous runs:
+
+| Run | Link |
+|-----|------|
+| `2026-03-25_10-40-41` | [2026-03-25_10-40-41](results/onlythestoriesyouwant.link/2026-03-25_10-40-41/README.md) |
+
+
+### [rowanpage.co.uk](results/rowanpage.co.uk/2026-03-25_10-40-31/README.md)
+
+Latest run: `2026-03-25_10-40-31`
 
 | Metric | Count |
 |-------:|------:|
@@ -1190,20 +1224,21 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_10-40-31` | [2026-03-25_10-40-31](results/rowanpage.co.uk/2026-03-25_10-40-31/README.md) |
 | `2026-03-25_04-21-59` | [2026-03-25_04-21-59](results/rowanpage.co.uk/2026-03-25_04-21-59/README.md) |
 | `2026-03-24_14-02-19` | [2026-03-24_14-02-19](results/rowanpage.co.uk/2026-03-24_14-02-19/README.md) |
 | `2026-03-24_12-35-27` | [2026-03-24_12-35-27](results/rowanpage.co.uk/2026-03-24_12-35-27/README.md) |
 | `2026-03-24_09-33-16` | [2026-03-24_09-33-16](results/rowanpage.co.uk/2026-03-24_09-33-16/README.md) |
 
 
-### [uib.no](results/uib.no/2026-03-25_04-21-54/README.md)
+### [uib.no](results/uib.no/2026-03-25_10-40-30/README.md)
 
-Latest run: `2026-03-25_04-21-54`
+Latest run: `2026-03-25_10-40-30`
 
 | Metric | Count |
 |-------:|------:|
 | Total domains found | 1086 |
-| Successes | 211 |
+| Successes | 212 |
 | HTTP 400 | 1 |
 | HTTP 401 | 1 |
 | HTTP 403 | 23 |
@@ -1535,7 +1570,6 @@ Latest run: `2026-03-25_04-21-54`
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pkg.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://plikt.gfi.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pollen.uib.no/ | 1 |
-| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.asf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.rf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.student.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.uib.no/ | 1 |
@@ -1633,7 +1667,9 @@ Latest run: `2026-03-25_04-21-54`
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://skolevalg1.nsd.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://skolevalg2.nsd.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://skrotogskriv.app.uib.no/ | 1 |
+| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://smtp.asf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://smtp.rf.uib.no/ | 1 |
+| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://smtp.samfunnet.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://snipeit-test.dig.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://software.ii.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://sokogskriv.uib.no/ | 1 |
@@ -1777,12 +1813,13 @@ Latest run: `2026-03-25_04-21-54`
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.test.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.voices.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://zen.ii.uib.no/ | 1 |
-| timeout | 263 |
+| timeout | 261 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_10-40-30` | [2026-03-25_10-40-30](results/uib.no/2026-03-25_10-40-30/README.md) |
 | `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/uib.no/2026-03-25_04-21-54/README.md) |
 | `2026-03-24_14-02-35` | [2026-03-24_14-02-35](results/uib.no/2026-03-24_14-02-35/README.md) |
 | `2026-03-24_12-35-32` | [2026-03-24_12-35-32](results/uib.no/2026-03-24_12-35-32/README.md) |

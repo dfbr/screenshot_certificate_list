@@ -19,6 +19,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ github.event.inputs.to || secrets.EMAIL_TO }}
+          DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           python3 - <<'PY'
           import os, sys, smtplib
@@ -43,7 +44,7 @@ jobs:
           # Use authenticated SMTP user as envelope sender when available
           envelope_from = user or from_addr
 
-          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow.\nServer: {}\nUser: {}\nFrom address: {}'.format(host, user, from_addr))
+          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow. \nServer: {}\nUser: {}\nFrom address: {}'.format(host,user,from_addr))
           msg['Subject'] = '[Test] screenshot_certificate_list email'
           msg['From'] = from_addr
           msg['Sender'] = envelope_from

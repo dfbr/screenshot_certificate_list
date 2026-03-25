@@ -40,12 +40,50 @@ jobs:
       - uses: actions/checkout@v5
 
       - id: read
-        name: Parse domains.txt
+        name: Parse domains.yml / DOMAINS_YML / domains.txt
+        env:
+          DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           DOMAINS=$(python3 - <<'EOF'
-          import json
-          with open("domains.txt") as fh:
-              lines = [l.strip() for l in fh if l.strip() and not l.startswith("#")]
+          import os, json, re, base64
+          lines = []
+
+          # 1) Prefer a checked-in domains.yml mapping (keys are domain names)
+          if os.path.exists('domains.yml'):
+              try:
+                  with open('domains.yml', 'r', encoding='utf-8') as fh:
+                      for l in fh:
+                          m = re.match(r'^\s*([^:\s][^:]*)\s*:', l)
+                          if m:
+                              key = m.group(1).strip()
+                              if key and key != 'default':
+                                  lines.append(key)
+              except Exception:
+                  lines = []
+
+          # 2) Fallback to DOMAINS_YML secret (base64-encoded or raw YAML)
+          if not lines and os.environ.get('DOMAINS_YML'):
+              raw_env = os.environ.get('DOMAINS_YML') or ''
+              try:
+                  raw = base64.b64decode(raw_env).decode('utf-8')
+              except Exception:
+                  raw = raw_env
+              for l in raw.splitlines():
+                  m = re.match(r'^\s*([^:\s][^:]*)\s*:', l)
+                  if m:
+                      key = m.group(1).strip()
+                      if key and key != 'default':
+                          lines.append(key)
+
+          # 3) Finally fallback to domains.txt
+          if not lines and os.path.exists('domains.txt'):
+              with open('domains.txt', 'r', encoding='utf-8') as fh:
+                  for l in fh:
+                      l = l.strip()
+                      if not l or l.startswith('#'):
+                          continue
+                      lines.append(l)
+
           print(json.dumps(lines))
           EOF
           )
@@ -140,6 +178,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           python3 scripts/notify_new_domains.py results
 

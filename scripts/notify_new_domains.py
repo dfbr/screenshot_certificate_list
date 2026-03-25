@@ -31,6 +31,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from pathlib import Path
 import json
+from typing import Any
+import base64
 
 
 def load_statuses(run_dir: Path) -> dict[str, str]:
@@ -71,27 +73,78 @@ def send_email(smtp_host: str, smtp_port: int, smtp_user: str | None, smtp_pass:
         msg_root.attach(img)
 
     # Send
-    with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
-        smtp.ehlo()
-        if smtp.has_extn("STARTTLS"):
-            smtp.starttls()
+    if smtp_port == 465:
+        # Implicit SSL (Fastmail recommends port 465 for SSL/TLS)
+        with smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=30) as smtp:
             smtp.ehlo()
-        if smtp_user and smtp_pass:
-            smtp.login(smtp_user, smtp_pass)
-        # Use envelope_from as the MAIL FROM (envelope sender) to satisfy providers
-        # that enforce authenticated/verified senders.
-        smtp.sendmail(envelope_from, to_addrs, msg_root.as_string())
+            if smtp_user and smtp_pass:
+                smtp.login(smtp_user, smtp_pass)
+            smtp.sendmail(envelope_from, to_addrs, msg_root.as_string())
+    else:
+        with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
+            smtp.ehlo()
+            if smtp.has_extn("STARTTLS"):
+                smtp.starttls()
+                smtp.ehlo()
+            if smtp_user and smtp_pass:
+                smtp.login(smtp_user, smtp_pass)
+            smtp.sendmail(envelope_from, to_addrs, msg_root.as_string())
+
+
+def load_domains_mapping() -> dict[str, Any]:
+    """Load domain -> recipients mapping from domains.yml or DOMAINS_YML env.
+
+    Expected YAML structure:
+      default:
+        - ops@example.com
+      example.com:
+        - alice@example.com
+        - sec@example.com
+
+    Returns a dict mapping domain -> list of recipient emails. If no file or env
+    is present, returns an empty dict.
+    """
+    # Prefer local file
+    ypath = Path("domains.yml")
+    if ypath.exists():
+        try:
+            import yaml  # type: ignore
+            data = yaml.safe_load(ypath.read_text(encoding="utf-8")) or {}
+            return {k: (v if isinstance(v, list) else [v]) for k, v in data.items()}
+        except Exception:
+            return {}
+
+    # Fallback to environment variable DOMAINS_YML (base64-encoded or raw YAML)
+    env = os.environ.get("DOMAINS_YML")
+    if not env:
+        return {}
+    try:
+        import yaml  # type: ignore
+        # Try base64 decode first; if it fails, treat as raw YAML
+        try:
+            raw = base64.b64decode(env).decode("utf-8")
+        except Exception:
+            raw = env
+        data = yaml.safe_load(raw) or {}
+        return {k: (v if isinstance(v, list) else [v]) for k, v in data.items()}
+    except Exception:
+        return {}
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Email notifications for newly-responding domains")
     parser.add_argument("results_dir", nargs="?", default="results", help="Path to results/ directory")
+    parser.add_argument("--lookback", type=int, default=0, help="Number of previous runs to check for prior appearance (0 = all previous runs)")
     args = parser.parse_args()
 
     results_dir = Path(args.results_dir)
     if not results_dir.exists():
         print("No results directory found; nothing to notify.")
         return
+
+    lookback = args.lookback
+    if lookback < 0:
+        lookback = 0
 
     # SMTP / email config from environment
     smtp_host = os.environ.get("SMTP_HOST")
@@ -108,17 +161,23 @@ def main() -> None:
         return
     to_addrs = [a.strip() for a in email_to.split(",") if a.strip()]
 
-    # Read domains.txt from repository root (if present)
-    repo_domains = []
-    if Path("domains.txt").exists():
-        with open("domains.txt") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line or line.startswith("#"):
-                    continue
-                repo_domains.append(line)
+    # Load domains and per-domain recipients from domains.yml (preferred).
+    domains_map = load_domains_mapping()
+    if domains_map:
+        # keys excluding 'default' are domain names
+        repo_domains = [k for k in domains_map.keys() if k != "default"]
+    else:
+        # Fallback to old domains.txt format
+        repo_domains = []
+        if Path("domains.txt").exists():
+            with open("domains.txt") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    repo_domains.append(line)
 
-    # If domains.txt is missing, fallback to scanning results/ subdirs
+    # If still empty, fallback to scanning results/ subdirs
     domain_dirs = repo_domains or [d.name for d in results_dir.iterdir() if d.is_dir()]
 
     sent_count = 0
@@ -133,11 +192,38 @@ def main() -> None:
             continue
         latest, previous = runs[0], runs[1]
         latest_status = load_statuses(latest)
-        prev_status = load_statuses(previous)
-
+        # prev_status = load_statuses(previous)
+        #
         # Find names that are ok in latest but absent or not ok in previous
-        newly_ok = [n for n, s in latest_status.items() if s == "ok" and prev_status.get(n) != "ok"]
+        # newly_ok = [n for n, s in latest_status.items() if s == "ok" and prev_status.get(n) != "ok"]
+        # Determine which prior runs to inspect based on lookback (0 = all previous)
+        if lookback == 0:
+            prior_runs = runs[1:]
+        else:
+            prior_runs = runs[1:1 + lookback]
+
+        # Collect all names that appeared in the selected prior runs (regardless of status)
+        prior_names: set[str] = set()
+        for r in prior_runs:
+            s = load_statuses(r)
+            prior_names.update(s.keys())
+
+        # Find names that are ok in latest but did not appear in any of the prior runs
+        newly_ok = [n for n, s in latest_status.items() if s == "ok" and n not in prior_names]
         if not newly_ok:
+            continue
+
+        # Determine recipients for this domain: domains_map(domain) or default or EMAIL_TO
+        recipients: list[str] = []
+        if domains_map:
+            recipients = domains_map.get(domain) or domains_map.get("default") or []
+        else:
+            recipients = to_addrs
+
+        # Normalize recipients
+        recipients = [r.strip() for r in (recipients or []) if r and r.strip()]
+        if not recipients:
+            print(f"No recipients configured for {domain}; skipping notification.")
             continue
 
         # Build HTML body and inline images
@@ -164,8 +250,8 @@ def main() -> None:
         subject = f"New responsive domains for {domain} — {now_ts}"
 
         try:
-            send_email(smtp_host, smtp_port, smtp_user, smtp_pass, email_from, to_addrs, subject, html_body, inline_images)
-            print(f"Notification sent for {domain}: {len(newly_ok)} new(s)")
+            send_email(smtp_host, smtp_port, smtp_user, smtp_pass, email_from, recipients, subject, html_body, inline_images)
+            print(f"Notification sent for {domain}: {len(newly_ok)} new(s) to {', '.join(recipients)}")
             sent_count += 1
         except Exception as exc:
             print(f"Failed to send notification for {domain}: {exc}")

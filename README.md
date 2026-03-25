@@ -57,7 +57,7 @@ results/
 
 ## Results
 
-> Last updated: 2026-03-24 13:27 UTC
+> Last updated: 2026-03-25 05:15 UTC
 
 ### [boots.co.uk](results/boots.co.uk/2026-03-24_12-35-27/README.md)
 
@@ -891,9 +891,9 @@ Previous runs:
 | `2026-03-24_12-35-32` | [2026-03-24_12-35-32](results/boots.com/2026-03-24_12-35-32/README.md) |
 
 
-### [dfbp.co.uk](results/dfbp.co.uk/2026-03-24_12-35-29/README.md)
+### [dfbp.co.uk](results/dfbp.co.uk/2026-03-25_04-21-54/README.md)
 
-Latest run: `2026-03-24_12-35-29`
+Latest run: `2026-03-25_04-21-54`
 
 | Metric | Count |
 |-------:|------:|
@@ -905,13 +905,15 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/dfbp.co.uk/2026-03-25_04-21-54/README.md) |
+| `2026-03-24_14-02-25` | [2026-03-24_14-02-25](results/dfbp.co.uk/2026-03-24_14-02-25/README.md) |
 | `2026-03-24_12-35-29` | [2026-03-24_12-35-29](results/dfbp.co.uk/2026-03-24_12-35-29/README.md) |
 | `2026-03-24_09-33-12` | [2026-03-24_09-33-12](results/dfbp.co.uk/2026-03-24_09-33-12/README.md) |
 
 
-### [dfbr.co.uk](results/dfbr.co.uk/2026-03-24_12-35-31/README.md)
+### [dfbr.co.uk](results/dfbr.co.uk/2026-03-25_04-21-54/README.md)
 
-Latest run: `2026-03-24_12-35-31`
+Latest run: `2026-03-25_04-21-54`
 
 | Metric | Count |
 |-------:|------:|
@@ -923,6 +925,8 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/dfbr.co.uk/2026-03-25_04-21-54/README.md) |
+| `2026-03-24_14-02-26` | [2026-03-24_14-02-26](results/dfbr.co.uk/2026-03-24_14-02-26/README.md) |
 | `2026-03-24_12-35-31` | [2026-03-24_12-35-31](results/dfbr.co.uk/2026-03-24_12-35-31/README.md) |
 | `2026-03-24_09-33-31` | [2026-03-24_09-33-31](results/dfbr.co.uk/2026-03-24_09-33-31/README.md) |
 
@@ -1172,9 +1176,9 @@ Previous runs:
 | `2026-03-23_14-35-34` | [2026-03-23_14-35-34](results/experian.co.uk/2026-03-23_14-35-34/README.md) |
 
 
-### [rowanpage.co.uk](results/rowanpage.co.uk/2026-03-24_12-35-27/README.md)
+### [rowanpage.co.uk](results/rowanpage.co.uk/2026-03-25_04-21-59/README.md)
 
-Latest run: `2026-03-24_12-35-27`
+Latest run: `2026-03-25_04-21-59`
 
 | Metric | Count |
 |-------:|------:|
@@ -1186,18 +1190,20 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_04-21-59` | [2026-03-25_04-21-59](results/rowanpage.co.uk/2026-03-25_04-21-59/README.md) |
+| `2026-03-24_14-02-19` | [2026-03-24_14-02-19](results/rowanpage.co.uk/2026-03-24_14-02-19/README.md) |
 | `2026-03-24_12-35-27` | [2026-03-24_12-35-27](results/rowanpage.co.uk/2026-03-24_12-35-27/README.md) |
 | `2026-03-24_09-33-16` | [2026-03-24_09-33-16](results/rowanpage.co.uk/2026-03-24_09-33-16/README.md) |
 
 
-### [uib.no](results/uib.no/2026-03-24_12-35-32/README.md)
+### [uib.no](results/uib.no/2026-03-25_04-21-54/README.md)
 
-Latest run: `2026-03-24_12-35-32`
+Latest run: `2026-03-25_04-21-54`
 
 | Metric | Count |
 |-------:|------:|
 | Total domains found | 1086 |
-| Successes | 212 |
+| Successes | 211 |
 | HTTP 400 | 1 |
 | HTTP 401 | 1 |
 | HTTP 403 | 23 |
@@ -1369,6 +1375,7 @@ Latest run: `2026-03-24_12-35-32`
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://hvitgran.ii.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://hyperion.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://ii.uib.no/ | 1 |
+| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://imap.asf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://imap.rf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://imap.student.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://imap.uib.no/ | 1 |
@@ -1528,8 +1535,8 @@ Latest run: `2026-03-24_12-35-32`
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pkg.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://plikt.gfi.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pollen.uib.no/ | 1 |
+| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.asf.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.rf.uib.no/ | 1 |
-| Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.samfunnet.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.student.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://pop.uib.no/ | 1 |
 | Page.goto: net::ERR_NAME_NOT_RESOLVED at http://portal.ii.uib.no/ | 1 |
@@ -1776,11 +1783,11 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-03-25_04-21-54` | [2026-03-25_04-21-54](results/uib.no/2026-03-25_04-21-54/README.md) |
+| `2026-03-24_14-02-35` | [2026-03-24_14-02-35](results/uib.no/2026-03-24_14-02-35/README.md) |
 | `2026-03-24_12-35-32` | [2026-03-24_12-35-32](results/uib.no/2026-03-24_12-35-32/README.md) |
 | `2026-03-24_09-33-14` | [2026-03-24_09-33-14](results/uib.no/2026-03-24_09-33-14/README.md) |
 | `2026-03-24_09-06-13` | [2026-03-24_09-06-13](results/uib.no/2026-03-24_09-06-13/README.md) |
-| `2026-03-24_04-20-56` | [2026-03-24_04-20-56](results/uib.no/2026-03-24_04-20-56/README.md) |
-| `2026-03-23_14-35-34` | [2026-03-23_14-35-34](results/uib.no/2026-03-23_14-35-34/README.md) |
 
 
 ### [uio.no](results/uio.no/2026-03-23_14-17-50/README.md)

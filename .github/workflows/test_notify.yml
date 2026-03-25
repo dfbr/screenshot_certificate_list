@@ -40,20 +40,26 @@ jobs:
               print('No recipient addresses provided. Aborting.')
               sys.exit(1)
 
-          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow. \nServer: {}\nUser: {}\nFrom address: {}'.format(host,user,from_addr))
+          # Use authenticated SMTP user as envelope sender when available
+          envelope_from = user or from_addr
+
+          msg = MIMEText('This is a test email sent from the screenshot_certificate_list test workflow.\nServer: {}\nUser: {}\nFrom address: {}'.format(host, user, from_addr))
           msg['Subject'] = '[Test] screenshot_certificate_list email'
           msg['From'] = from_addr
+          msg['Sender'] = envelope_from
           msg['To'] = ', '.join(to_list)
 
           try:
               with smtplib.SMTP(host, port, timeout=30) as smtp:
+                  smtp.set_debuglevel(1)
                   smtp.ehlo()
                   if smtp.has_extn('STARTTLS'):
                       smtp.starttls()
                       smtp.ehlo()
                   if user and pwd:
                       smtp.login(user, pwd)
-                  smtp.sendmail(from_addr, to_list, msg.as_string())
+                  # use envelope_from as MAIL FROM to satisfy providers enforcing authenticated sender
+                  smtp.sendmail(envelope_from, to_list, msg.as_string())
               print('Test email sent to:', ', '.join(to_list))
           except Exception as e:
               print('Failed to send test email:', e)

@@ -5,6 +5,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 import json
+import re
 
 HEADER = """\
 # Screenshot Certificate List
@@ -109,12 +110,46 @@ def main() -> None:
                 status_map = {}
             
             # Summary table for this domain (mirrors per-run README)
-            counts: dict[str, int] = {}
-            for v in status_map.values():
-                counts[v] = counts.get(v, 0) + 1
-            total = sum(counts.values())
-            success = counts.pop("ok", 0)
+            # Normalize error messages to grouped types (HTTP <code>, ERR_*, timeout, etc.)
+            def _normalize_error(err: str) -> str:
+                if not err:
+                    return "(screenshot unavailable)"
+                e = str(err).strip()
+                # HTTP status like 'HTTP 403' or 'HTTP 403 ...'
+                m = re.search(r"HTTP\s*(\d{3})", e, re.I)
+                if m:
+                    return f"HTTP {m.group(1)}"
+                # Playwright/net errors containing net::TOKEN
+                m = re.search(r"net::([A-Z0-9_]+)", e, re.I)
+                if m:
+                    return m.group(1)
+                # Generic ERR_* tokens
+                m2 = re.search(r"ERR_[A-Z0-9_]+", e, re.I)
+                if m2:
+                    return m2.group(0)
+                if "timeout" in e.lower():
+                    return "timeout"
+                if "navigation" in e.lower() and "interrupt" in e.lower():
+                    return "navigation interrupted"
+                # Strip URLs and chrome-error tokens to avoid spurious unique messages
+                e2 = re.sub(r"https?://\S+", "", e)
+                e2 = re.sub(r"chrome-error://\S+", "", e2)
+                e2 = e2.strip()
+                if not e2:
+                    return "(screenshot unavailable)"
+                return e2 if len(e2) <= 200 else e2[:197] + "..."
 
+            counts: dict[str, int] = {}
+            total = 0
+            success = 0
+            for v in status_map.values():
+                total += 1
+                if v == "ok":
+                    success += 1
+                else:
+                    norm = _normalize_error(v)
+                    counts[norm] = counts.get(norm, 0) + 1
+             
             lines.append("| Metric | Count |")
             lines.append("|-------:|------:|")
             lines.append(f"| Total domains found | {total} |")

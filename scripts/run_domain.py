@@ -102,12 +102,19 @@ def take_screenshot(hostname: str, output_path: Path) -> tuple[bool, str]:
             for attempt in range(1, attempts_per_scheme + 1):
                 page = ctx.new_page()
                 try:
-                    response = page.goto(url, timeout=goto_timeout_ms, wait_until="domcontentloaded")
+                    response = page.goto(url, timeout=goto_timeout_ms, wait_until="load")
                     if response is not None and response.status >= 400:  # HTTP error (4xx/5xx)
                         last_err = f"HTTP {response.status}"
                         print(f"    {last_err}: {url}")
                         # don't retry on HTTP error from server for this scheme
                         break
+                    # Wait for any post-load network activity (e.g. JSON/JS) to settle.
+                    # A 5-second timeout is used so that sites with continuous background
+                    # requests (analytics, websockets) don't block the screenshot.
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=5_000)
+                    except PWTimeout:
+                        pass  # networkidle didn't settle; proceed with screenshot anyway
                     page.screenshot(path=str(output_path), full_page=False)
                     try:
                         page.close()

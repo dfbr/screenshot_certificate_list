@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Regenerate the top-level README.md from the results directory."""
+"""Regenerate the top-level README.md from the results directory.
+
+This script now produces a concise README that only shows the Results summary for
+each monitored domain. Full setup, workflow and configuration documentation is
+written to `SETUP.md` (linked from the bottom of README.md).
+"""
 
 import sys
 from datetime import datetime, timezone
@@ -7,61 +12,17 @@ from pathlib import Path
 import json
 import re
 
-HEADER = """\
-# Screenshot Certificate List
+HEADER = """# Screenshot Certificate List
 
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
+"""
 
-The workflow runs daily (and can be triggered manually). For every domain in
-[`domains.txt`](domains.txt) it:
-
-1. Queries **crt.sh** for all current certificates whose common name ends with
-   that domain (e.g. `%.uib.no`).
-2. Filters out wildcard entries and deduplicates the list.
-3. Takes a **screenshot** of each reachable site (HTTPS first, then HTTP).
-4. Saves everything to a date-stamped directory under `results/<domain>/`.
-5. Generates a **README.md** inside that directory with an image gallery.
-6. Keeps only the most recent **5 runs** per domain (configurable).
-
-Multiple domains are processed **concurrently** as separate GitHub Actions
-matrix jobs.
+FOOTER = """
 
 ---
 
-## Adding / Removing Domains
-
-Edit [`domains.txt`](domains.txt) — one domain per line; lines starting with
-`#` are ignored.
-
-## Manual Triggering
-
-Go to **Actions → Screenshot Certificate List → Run workflow** and optionally
-override:
-
-| Input | Default | Description |
-|-------|---------|-------------|
-| `max_runs` | `5` | Runs to keep per domain |
-| `max_domains` | `50` | Max domains to screenshot per run (`0` = unlimited) |
-
-## Repository Layout
-
-```
-domains.txt            # Domains to monitor
-scripts/
-  run_domain.py        # Per-domain processing (crt.sh query + screenshots)
-  update_readme.py     # Regenerates this README from results/
-  requirements.txt     # Python dependencies
-.github/workflows/
-  screenshot.yml       # GitHub Actions workflow
-results/
-  <domain>/
-    <YYYY-MM-DD_HH-MM-SS>/
-      README.md        # Screenshot gallery for this run
-      domains.json     # Raw list of names from crt.sh
-      screenshots/
-        <name>.png
-```
+Full documentation, setup and operational details are available in `SETUP.md`.
 """
 
 
@@ -73,11 +34,10 @@ def main() -> None:
 
     lines = [
         HEADER,
-        "---",
-        "",
-        "## Results",
         "",
         f"> Last updated: {now}",
+        "",
+        "## Results",
         "",
     ]
 
@@ -98,7 +58,7 @@ def main() -> None:
             lines.append("")
             lines.append(f"Latest run: `{latest.name}`")
             lines.append("")
-            
+
             # Load latest statuses.json if present to display the per-domain summary
             statuses_path = latest / "statuses.json"
             if statuses_path.exists():
@@ -108,7 +68,7 @@ def main() -> None:
                     status_map = {}
             else:
                 status_map = {}
-            
+
             # Summary table for this domain (mirrors per-run README)
             # Normalize error messages to grouped types (HTTP <code>, ERR_*, timeout, etc.)
             def _normalize_error(err: str) -> str:
@@ -149,7 +109,7 @@ def main() -> None:
                 else:
                     norm = _normalize_error(v)
                     counts[norm] = counts.get(norm, 0) + 1
-             
+
             lines.append("| Metric | Count |")
             lines.append("|-------:|------:|")
             lines.append(f"| Total domains found | {total} |")
@@ -169,6 +129,9 @@ def main() -> None:
             lines.append("")
     else:
         lines += ["*No results yet.*", ""]
+
+    # Footer pointing to full documentation
+    lines.append(FOOTER)
 
     readme_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"README.md updated ({len(domain_dirs)} domain(s))")

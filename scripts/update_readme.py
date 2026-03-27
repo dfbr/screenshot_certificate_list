@@ -22,13 +22,13 @@ FOOTER = """
 
 ---
 
-Full documentation, setup and operational details are available in `SETUP.md`.
+Full documentation, setup and operational details are available in [SETUP.md](../SETUP.md).
 """
 
 
 def main() -> None:
     results_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("results")
-    readme_path = Path("README.md")
+    readme_path = results_dir / "README.md"
 
     now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -53,8 +53,8 @@ def main() -> None:
             if not runs:
                 continue
             latest = runs[0]
-            # Domain header linking to latest run README
-            lines.append(f"### [{domain_dir.name}]({latest / 'README.md'})")
+            # Domain header linking to latest run README (path relative to results/)
+            lines.append(f"### [{domain_dir.name}]({latest.relative_to(results_dir) / 'README.md'})")
             lines.append("")
             lines.append(f"Latest run: `{latest.name}`")
             lines.append("")
@@ -124,7 +124,7 @@ def main() -> None:
             lines.append("| Run | Link |")
             lines.append("|-----|------|")
             for run in runs:
-                lines.append(f"| `{run.name}` | [{run.name}]({run / 'README.md'}) |")
+                lines.append(f"| `{run.name}` | [{run.name}]({run.relative_to(results_dir) / 'README.md'}) |")
             lines.append("")
             lines.append("")
     else:

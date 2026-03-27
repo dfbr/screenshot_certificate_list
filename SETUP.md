@@ -127,9 +127,10 @@ To run locally:
    - `python3 scripts/run_domain.py <domain> --results-dir results` will
      produce a timestamped run under `results/<domain>/`.
 
-4. Regenerate the top-level README locally:
+4. Regenerate the results README locally:
 
    - `python3 scripts/update_readme.py results`
+   - This writes `results/README.md` (the GitHub Pages index).
 
 5. Test notifications locally by setting SMTP-related environment variables
    and running:

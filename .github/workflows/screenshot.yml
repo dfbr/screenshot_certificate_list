@@ -32,6 +32,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   # ── 1. Read domains.txt and produce the matrix ─────────────────────────────
@@ -190,10 +192,33 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add results/ README.md
+          git add results/
           if git diff --staged --quiet; then
             echo "Nothing to commit"
           else
             git commit -m "chore: update screenshots $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
           fi
+
+  # ── 4. Deploy results/ to GitHub Pages ────────────────────────────────────
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: commit
+    if: always() && needs.commit.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: results/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -170,8 +170,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Update top-level README
-        run: python3 scripts/update_readme.py results --docs-dir docs
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
 
       - name: Notify new responsive domains
         if: always()
@@ -185,6 +185,9 @@ jobs:
           DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           python3 scripts/notify_new_domains.py results --lookback "${{ github.event.inputs.lookback || '0' }}"
+
+      - name: Build Pages site (update README + generate docs/)
+        run: python3 scripts/update_readme.py results --docs-dir docs
 
       - name: Commit and push
         run: |

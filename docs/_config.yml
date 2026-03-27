@@ -1,0 +1,20 @@
+title: Screenshot Certificate List
+description: >
+  Automated screenshots of domains discovered via certificate transparency logs
+  (crt.sh). Monitors subdomains of configured domains and tracks which ones are
+  online over time.
+theme: minima
+
+minima:
+  skin: classic
+
+# Minima social / footer links (set to empty to hide)
+author:
+  name: ""
+
+# Show all pages in the header navigation? Keep it simple – just home.
+header_pages: []
+
+# Exclude generated per-run and per-domain subdirectories from Jekyll collection
+# so that only the top-level index pages are built as "pages".
+# (Screenshot PNGs are already binary and are served as static files.)

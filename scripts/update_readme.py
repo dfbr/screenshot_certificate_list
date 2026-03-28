@@ -359,40 +359,6 @@ def _write_index(
             else:
                 lines.append(f"| [{domain}]({domain}/) | \u2014 | \u2014 | \u2014 |")
         lines.append("")
-
-        # Per-domain detail sections
-        lines += ["## Domain Details", ""]
-        for domain, runs in domains_data:
-            if not runs:
-                continue
-            latest_name, latest_status = runs[0]
-            total, success, error_counts = _tally(latest_status)
-
-            lines.append(f"### [{domain}]({domain}/)")
-            lines.append("")
-            lines.append(f"Latest run: [`{latest_name}`]({domain}/{latest_name}/)")
-            lines.append("")
-            lines += [
-                "| Metric | Count |",
-                "|-------:|------:|",
-                f"| Total subdomains found | {total} |",
-                f"| Online | {success} |",
-            ]
-            for err in sorted(error_counts.keys()):
-                lines.append(f"| {err} | {error_counts[err]} |")
-            lines.append("")
-
-            lines += [
-                "Previous runs:",
-                "",
-                "| Run | Subdomains | Online |",
-                "|-----|-----------|--------|",
-            ]
-            for run_name, status_map in runs:
-                t, s, _ = _tally(status_map)
-                lines.append(f"| [`{run_name}`]({domain}/{run_name}/) | {t} | {s} |")
-            lines.append("")
-            lines.append("")
     else:
         lines += ["*No results yet.*", ""]
 

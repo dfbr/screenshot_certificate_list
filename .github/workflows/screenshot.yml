@@ -122,7 +122,7 @@ jobs:
         run: |
           python3 scripts/run_domain.py "${{ matrix.domain }}" \
             --results-dir results \
-            --max-runs "${{ github.event.inputs.max_runs || '5' }}" \
+            --max-runs "${{ github.event.inputs.max_runs || '10' }}" \
             --max-domains "${{ github.event.inputs.max_domains || '0' }}" \
             --concurrency "${{ github.event.inputs.concurrency || '12' }}" \
             --crtsh-timeout "${{ github.event.inputs.crtsh_timeout || '30' }}" \

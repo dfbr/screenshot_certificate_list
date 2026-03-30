@@ -3,7 +3,7 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 2026-03-29 07:03 UTC
+> Last updated: 2026-03-30 05:41 UTC
 
 ## Results
 

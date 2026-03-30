@@ -360,38 +360,31 @@ def _write_index(
                 lines.append(f"| [{domain}]({domain}/) | \u2014 | \u2014 | \u2014 |")
         lines.append("")
 
-        # Per-domain detail sections
+        # Per-domain collapsible sections
         lines += ["## Domain Details", ""]
         for domain, runs in domains_data:
             if not runs:
                 continue
             latest_name, latest_status = runs[0]
-            total, success, error_counts = _tally(latest_status)
+            total, success, _ = _tally(latest_status)
 
-            lines.append(f"### [{domain}]({domain}/)")
+            lines.append("<details>")
+            lines.append(
+                f"<summary><strong><a href=\"{domain}/\">{domain}</a></strong>"
+                f" &mdash; Latest: <code>{latest_name}</code>"
+                f" ({total} subdomains, {success} online)</summary>"
+            )
             lines.append("")
-            lines.append(f"Latest run: [`{latest_name}`]({domain}/{latest_name}/)")
-            lines.append("")
-            lines += [
-                "| Metric | Count |",
-                "|-------:|------:|",
-                f"| Total subdomains found | {total} |",
-                f"| Online | {success} |",
-            ]
-            for err in sorted(error_counts.keys()):
-                lines.append(f"| {err} | {error_counts[err]} |")
-            lines.append("")
-
-            lines += [
-                "Previous runs:",
-                "",
-                "| Run | Subdomains | Online |",
-                "|-----|-----------|--------|",
-            ]
+            lines.append("<ul>")
             for run_name, status_map in runs:
                 t, s, _ = _tally(status_map)
-                lines.append(f"| [`{run_name}`]({domain}/{run_name}/) | {t} | {s} |")
+                lines.append(
+                    f'<li><a href="{domain}/{run_name}/"><code>{run_name}</code></a>'
+                    f" &mdash; {t} subdomains, {s} online</li>"
+                )
+            lines.append("</ul>")
             lines.append("")
+            lines.append("</details>")
             lines.append("")
     else:
         lines += ["*No results yet.*", ""]

@@ -8,10 +8,6 @@ theme: minima
 minima:
   skin: classic
 
-# Minima social / footer links (set to empty to hide)
-author:
-  name: ""
-
 # Show all pages in the header navigation? Keep it simple – just home.
 header_pages: []
 

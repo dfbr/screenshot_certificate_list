@@ -9,27 +9,28 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.uib.no).
 
-## Latest Run: 2026-03-30_06-29-16
+## Latest Run: 2026-03-31_06-15-51
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 1086 |
-| Online | 211 |
+| Online | 214 |
 | ERR_CONNECTION_REFUSED | 9 |
-| ERR_NAME_NOT_RESOLVED | 558 |
+| ERR_NAME_NOT_RESOLVED | 555 |
 | HTTP 400 | 1 |
 | HTTP 401 | 1 |
 | HTTP 403 | 23 |
 | HTTP 404 | 4 |
 | HTTP 409 | 2 |
-| HTTP 502 | 11 |
+| HTTP 502 | 10 |
 | HTTP 503 | 5 |
-| timeout | 261 |
+| timeout | 262 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `2026-03-31_06-15-51` | 1086 | 214 | [View](2026-03-31_06-15-51/) |
 | `2026-03-30_06-29-16` | 1086 | 211 | [View](2026-03-30_06-29-16/) |
 | `2026-03-29_06-11-06` | 1086 | 213 | [View](2026-03-29_06-11-06/) |
 | `2026-03-28_05-55-44` | 1086 | 210 | [View](2026-03-28_05-55-44/) |

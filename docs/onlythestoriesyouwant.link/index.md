@@ -9,7 +9,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
-## Latest Run: 2026-03-30_06-29-19
+## Latest Run: 2026-03-31_06-15-45
 
 | Metric | Count |
 |-------:|------:|
@@ -20,6 +20,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `2026-03-31_06-15-45` | 2 | 2 | [View](2026-03-31_06-15-45/) |
 | `2026-03-30_06-29-19` | 2 | 2 | [View](2026-03-30_06-29-19/) |
 | `2026-03-29_06-11-09` | 2 | 2 | [View](2026-03-29_06-11-09/) |
 | `2026-03-28_05-55-51` | 2 | 2 | [View](2026-03-28_05-55-51/) |

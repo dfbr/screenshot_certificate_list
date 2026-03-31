@@ -9,7 +9,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 
-## Latest Run: 2026-03-30_06-29-21
+## Latest Run: 2026-03-31_06-15-44
 
 | Metric | Count |
 |-------:|------:|
@@ -20,6 +20,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `2026-03-31_06-15-44` | 1 | 1 | [View](2026-03-31_06-15-44/) |
 | `2026-03-30_06-29-21` | 1 | 1 | [View](2026-03-30_06-29-21/) |
 | `2026-03-29_06-11-10` | 1 | 1 | [View](2026-03-29_06-11-10/) |
 | `2026-03-28_05-55-44` | 1 | 1 | [View](2026-03-28_05-55-44/) |

@@ -9,7 +9,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 
-## Latest Run: 2026-04-01_06-26-10
+## Latest Run: 2026-04-02_06-11-53
 
 | Metric | Count |
 |-------:|------:|
@@ -21,6 +21,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `2026-04-02_06-11-53` | 2 | 0 | [View](2026-04-02_06-11-53/) |
 | `2026-04-01_06-26-10` | 2 | 0 | [View](2026-04-01_06-26-10/) |
 | `2026-03-31_06-16-19` | 2 | 0 | [View](2026-03-31_06-16-19/) |
 | `2026-03-30_06-29-31` | 2 | 0 | [View](2026-03-30_06-29-31/) |

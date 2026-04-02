@@ -8,24 +8,24 @@ layout: default
 Automated screenshots of domains discovered via certificate transparency logs
 ([crt.sh](https://crt.sh/)).
 
-> Last updated: 2026-04-01 07:45 UTC
+> Last updated: 2026-04-02 07:05 UTC
 
 ## Monitored Domains
 
 | Domain | Latest Run | Subdomains | Online |
 |--------|------------|-----------|--------|
-| [dfbp.co.uk](dfbp.co.uk/) | `2026-04-01_06-26-08` | 1 | 0 |
-| [dfbr.co.uk](dfbr.co.uk/) | `2026-04-01_06-28-43` | 2 | 1 |
-| [fitforhospital.co.uk](fitforhospital.co.uk/) | `2026-04-01_06-26-10` | 1 | 1 |
-| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `2026-04-01_06-26-10` | 2 | 2 |
-| [rowanpage.co.uk](rowanpage.co.uk/) | `2026-04-01_06-26-10` | 2 | 0 |
-| [uib.no](uib.no/) | `2026-04-01_06-26-17` | 1086 | 211 |
+| [dfbp.co.uk](dfbp.co.uk/) | `2026-04-02_06-11-59` | 1 | 0 |
+| [dfbr.co.uk](dfbr.co.uk/) | `2026-04-02_06-11-58` | 2 | 1 |
+| [fitforhospital.co.uk](fitforhospital.co.uk/) | `2026-04-02_06-12-07` | 1 | 1 |
+| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `2026-04-02_06-11-58` | 2 | 2 |
+| [rowanpage.co.uk](rowanpage.co.uk/) | `2026-04-02_06-11-53` | 2 | 0 |
+| [uib.no](uib.no/) | `2026-04-02_06-11-56` | 1086 | 210 |
 
 ## Domain Details
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`2026-04-01_06-26-08`](dfbp.co.uk/2026-04-01_06-26-08/)
+Latest run: [`2026-04-02_06-11-59`](dfbp.co.uk/2026-04-02_06-11-59/)
 
 | Metric | Count |
 |-------:|------:|
@@ -37,6 +37,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-11-59`](dfbp.co.uk/2026-04-02_06-11-59/) | 1 | 0 |
 | [`2026-04-01_06-26-08`](dfbp.co.uk/2026-04-01_06-26-08/) | 1 | 0 |
 | [`2026-03-31_06-15-47`](dfbp.co.uk/2026-03-31_06-15-47/) | 1 | 0 |
 | [`2026-03-30_06-29-39`](dfbp.co.uk/2026-03-30_06-29-39/) | 1 | 0 |
@@ -49,7 +50,7 @@ Previous runs:
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`2026-04-01_06-28-43`](dfbr.co.uk/2026-04-01_06-28-43/)
+Latest run: [`2026-04-02_06-11-58`](dfbr.co.uk/2026-04-02_06-11-58/)
 
 | Metric | Count |
 |-------:|------:|
@@ -61,6 +62,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-11-58`](dfbr.co.uk/2026-04-02_06-11-58/) | 2 | 1 |
 | [`2026-04-01_06-28-43`](dfbr.co.uk/2026-04-01_06-28-43/) | 2 | 1 |
 | [`2026-03-31_06-15-47`](dfbr.co.uk/2026-03-31_06-15-47/) | 2 | 1 |
 | [`2026-03-30_06-29-27`](dfbr.co.uk/2026-03-30_06-29-27/) | 2 | 1 |
@@ -73,7 +75,7 @@ Previous runs:
 
 ### [fitforhospital.co.uk](fitforhospital.co.uk/)
 
-Latest run: [`2026-04-01_06-26-10`](fitforhospital.co.uk/2026-04-01_06-26-10/)
+Latest run: [`2026-04-02_06-12-07`](fitforhospital.co.uk/2026-04-02_06-12-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -84,6 +86,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-12-07`](fitforhospital.co.uk/2026-04-02_06-12-07/) | 1 | 1 |
 | [`2026-04-01_06-26-10`](fitforhospital.co.uk/2026-04-01_06-26-10/) | 1 | 1 |
 | [`2026-03-31_06-15-44`](fitforhospital.co.uk/2026-03-31_06-15-44/) | 1 | 1 |
 | [`2026-03-30_06-29-21`](fitforhospital.co.uk/2026-03-30_06-29-21/) | 1 | 1 |
@@ -96,7 +99,7 @@ Previous runs:
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`2026-04-01_06-26-10`](onlythestoriesyouwant.link/2026-04-01_06-26-10/)
+Latest run: [`2026-04-02_06-11-58`](onlythestoriesyouwant.link/2026-04-02_06-11-58/)
 
 | Metric | Count |
 |-------:|------:|
@@ -107,6 +110,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-11-58`](onlythestoriesyouwant.link/2026-04-02_06-11-58/) | 2 | 2 |
 | [`2026-04-01_06-26-10`](onlythestoriesyouwant.link/2026-04-01_06-26-10/) | 2 | 2 |
 | [`2026-03-31_06-15-45`](onlythestoriesyouwant.link/2026-03-31_06-15-45/) | 2 | 2 |
 | [`2026-03-30_06-29-19`](onlythestoriesyouwant.link/2026-03-30_06-29-19/) | 2 | 2 |
@@ -119,7 +123,7 @@ Previous runs:
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`2026-04-01_06-26-10`](rowanpage.co.uk/2026-04-01_06-26-10/)
+Latest run: [`2026-04-02_06-11-53`](rowanpage.co.uk/2026-04-02_06-11-53/)
 
 | Metric | Count |
 |-------:|------:|
@@ -131,6 +135,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-11-53`](rowanpage.co.uk/2026-04-02_06-11-53/) | 2 | 0 |
 | [`2026-04-01_06-26-10`](rowanpage.co.uk/2026-04-01_06-26-10/) | 2 | 0 |
 | [`2026-03-31_06-16-19`](rowanpage.co.uk/2026-03-31_06-16-19/) | 2 | 0 |
 | [`2026-03-30_06-29-31`](rowanpage.co.uk/2026-03-30_06-29-31/) | 2 | 0 |
@@ -143,27 +148,28 @@ Previous runs:
 
 ### [uib.no](uib.no/)
 
-Latest run: [`2026-04-01_06-26-17`](uib.no/2026-04-01_06-26-17/)
+Latest run: [`2026-04-02_06-11-56`](uib.no/2026-04-02_06-11-56/)
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 1086 |
-| Online | 211 |
+| Online | 210 |
 | ERR_CONNECTION_REFUSED | 9 |
-| ERR_NAME_NOT_RESOLVED | 555 |
+| ERR_NAME_NOT_RESOLVED | 558 |
 | HTTP 400 | 1 |
 | HTTP 401 | 1 |
 | HTTP 403 | 23 |
 | HTTP 404 | 4 |
 | HTTP 409 | 2 |
-| HTTP 502 | 11 |
+| HTTP 502 | 10 |
 | HTTP 503 | 5 |
-| timeout | 264 |
+| timeout | 263 |
 
 Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`2026-04-02_06-11-56`](uib.no/2026-04-02_06-11-56/) | 1086 | 210 |
 | [`2026-04-01_06-26-17`](uib.no/2026-04-01_06-26-17/) | 1086 | 211 |
 | [`2026-03-31_06-15-51`](uib.no/2026-03-31_06-15-51/) | 1086 | 214 |
 | [`2026-03-30_06-29-16`](uib.no/2026-03-30_06-29-16/) | 1086 | 211 |

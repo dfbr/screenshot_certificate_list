@@ -3,13 +3,13 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 2026-04-02 07:05 UTC
+> Last updated: 2026-04-03 07:04 UTC
 
 ## Results
 
-### [dfbp.co.uk](dfbp.co.uk/2026-04-02_06-11-59/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-04-03_06-12-14/README.md)
 
-Latest run: `2026-04-02_06-11-59`
+Latest run: `2026-04-03_06-12-14`
 
 | Metric | Count |
 |-------:|------:|
@@ -21,6 +21,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-14` | [2026-04-03_06-12-14](dfbp.co.uk/2026-04-03_06-12-14/README.md) |
 | `2026-04-02_06-11-59` | [2026-04-02_06-11-59](dfbp.co.uk/2026-04-02_06-11-59/README.md) |
 | `2026-04-01_06-26-08` | [2026-04-01_06-26-08](dfbp.co.uk/2026-04-01_06-26-08/README.md) |
 | `2026-03-31_06-15-47` | [2026-03-31_06-15-47](dfbp.co.uk/2026-03-31_06-15-47/README.md) |
@@ -32,9 +33,9 @@ Previous runs:
 | `2026-03-27_09-51-50` | [2026-03-27_09-51-50](dfbp.co.uk/2026-03-27_09-51-50/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-04-02_06-11-58/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-04-03_06-12-14/README.md)
 
-Latest run: `2026-04-02_06-11-58`
+Latest run: `2026-04-03_06-12-14`
 
 | Metric | Count |
 |-------:|------:|
@@ -46,6 +47,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-14` | [2026-04-03_06-12-14](dfbr.co.uk/2026-04-03_06-12-14/README.md) |
 | `2026-04-02_06-11-58` | [2026-04-02_06-11-58](dfbr.co.uk/2026-04-02_06-11-58/README.md) |
 | `2026-04-01_06-28-43` | [2026-04-01_06-28-43](dfbr.co.uk/2026-04-01_06-28-43/README.md) |
 | `2026-03-31_06-15-47` | [2026-03-31_06-15-47](dfbr.co.uk/2026-03-31_06-15-47/README.md) |
@@ -57,9 +59,9 @@ Previous runs:
 | `2026-03-27_09-51-40` | [2026-03-27_09-51-40](dfbr.co.uk/2026-03-27_09-51-40/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-02_06-12-07/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-03_06-12-09/README.md)
 
-Latest run: `2026-04-02_06-12-07`
+Latest run: `2026-04-03_06-12-09`
 
 | Metric | Count |
 |-------:|------:|
@@ -70,6 +72,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-09` | [2026-04-03_06-12-09](fitforhospital.co.uk/2026-04-03_06-12-09/README.md) |
 | `2026-04-02_06-12-07` | [2026-04-02_06-12-07](fitforhospital.co.uk/2026-04-02_06-12-07/README.md) |
 | `2026-04-01_06-26-10` | [2026-04-01_06-26-10](fitforhospital.co.uk/2026-04-01_06-26-10/README.md) |
 | `2026-03-31_06-15-44` | [2026-03-31_06-15-44](fitforhospital.co.uk/2026-03-31_06-15-44/README.md) |
@@ -81,19 +84,20 @@ Previous runs:
 | `2026-03-27_09-51-38` | [2026-03-27_09-51-38](fitforhospital.co.uk/2026-03-27_09-51-38/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-02_06-11-58/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-03_06-12-13/README.md)
 
-Latest run: `2026-04-02_06-11-58`
+Latest run: `2026-04-03_06-12-13`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 2 |
-| Successes | 2 |
+| Total domains found | 1 |
+| Successes | 1 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-13` | [2026-04-03_06-12-13](onlythestoriesyouwant.link/2026-04-03_06-12-13/README.md) |
 | `2026-04-02_06-11-58` | [2026-04-02_06-11-58](onlythestoriesyouwant.link/2026-04-02_06-11-58/README.md) |
 | `2026-04-01_06-26-10` | [2026-04-01_06-26-10](onlythestoriesyouwant.link/2026-04-01_06-26-10/README.md) |
 | `2026-03-31_06-15-45` | [2026-03-31_06-15-45](onlythestoriesyouwant.link/2026-03-31_06-15-45/README.md) |
@@ -105,9 +109,9 @@ Previous runs:
 | `2026-03-27_09-51-45` | [2026-03-27_09-51-45](onlythestoriesyouwant.link/2026-03-27_09-51-45/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-04-02_06-11-53/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-04-03_06-12-08/README.md)
 
-Latest run: `2026-04-02_06-11-53`
+Latest run: `2026-04-03_06-12-08`
 
 | Metric | Count |
 |-------:|------:|
@@ -119,6 +123,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-08` | [2026-04-03_06-12-08](rowanpage.co.uk/2026-04-03_06-12-08/README.md) |
 | `2026-04-02_06-11-53` | [2026-04-02_06-11-53](rowanpage.co.uk/2026-04-02_06-11-53/README.md) |
 | `2026-04-01_06-26-10` | [2026-04-01_06-26-10](rowanpage.co.uk/2026-04-01_06-26-10/README.md) |
 | `2026-03-31_06-16-19` | [2026-03-31_06-16-19](rowanpage.co.uk/2026-03-31_06-16-19/README.md) |
@@ -130,14 +135,14 @@ Previous runs:
 | `2026-03-27_09-51-46` | [2026-03-27_09-51-46](rowanpage.co.uk/2026-03-27_09-51-46/README.md) |
 
 
-### [uib.no](uib.no/2026-04-02_06-11-56/README.md)
+### [uib.no](uib.no/2026-04-03_06-12-10/README.md)
 
-Latest run: `2026-04-02_06-11-56`
+Latest run: `2026-04-03_06-12-10`
 
 | Metric | Count |
 |-------:|------:|
 | Total domains found | 1086 |
-| Successes | 210 |
+| Successes | 213 |
 | ERR_CONNECTION_REFUSED | 9 |
 | ERR_NAME_NOT_RESOLVED | 558 |
 | HTTP 400 | 1 |
@@ -147,12 +152,13 @@ Latest run: `2026-04-02_06-11-56`
 | HTTP 409 | 2 |
 | HTTP 502 | 10 |
 | HTTP 503 | 5 |
-| timeout | 263 |
+| timeout | 260 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `2026-04-03_06-12-10` | [2026-04-03_06-12-10](uib.no/2026-04-03_06-12-10/README.md) |
 | `2026-04-02_06-11-56` | [2026-04-02_06-11-56](uib.no/2026-04-02_06-11-56/README.md) |
 | `2026-04-01_06-26-17` | [2026-04-01_06-26-17](uib.no/2026-04-01_06-26-17/README.md) |
 | `2026-03-31_06-15-51` | [2026-03-31_06-15-51](uib.no/2026-03-31_06-15-51/README.md) |

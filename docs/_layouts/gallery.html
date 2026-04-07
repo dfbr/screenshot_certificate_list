@@ -5,13 +5,18 @@
     {%- include header.html -%}
 
     <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
       .gallery-layout {
         min-height: 100dvh;
       }
 
       .gallery-main {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -21,33 +26,37 @@
         position: relative;
         width: 100%;
         overflow: hidden;
-        border: 1px solid #d8dee4;
-        border-radius: 8px;
         background: #ffffff;
       }
 
       #gallery-scale-root {
-        transform-origin: top left;
-        will-change: transform;
+        width: 100%;
+        height: 100%;
       }
 
       #gallery-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-        gap: 10px;
-        padding: 10px;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+        padding: 0;
       }
 
       .gallery-item {
         margin: 0;
-        border: 1px solid #e6ebf1;
-        border-radius: 6px;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        background: #f6f8fa;
+        background: #ffffff;
       }
 
       .gallery-item a {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
         text-decoration: none;
         color: inherit;
       }
@@ -55,27 +64,25 @@
       .gallery-item img {
         display: block;
         width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 10;
+        height: 100%;
+        min-height: 0;
+        flex: 1 1 auto;
         object-fit: cover;
         background: #ffffff;
       }
 
       .gallery-item figcaption {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         line-height: 1.2;
-        padding: 0.32rem 0.45rem;
+        padding: 0.2rem 0.3rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        border-top: 1px solid #e6ebf1;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.92);
       }
 
-      @media (max-width: 900px) {
-        #gallery-grid {
-          grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        }
+      #gallery-grid.compact .gallery-item figcaption {
+        display: none;
       }
     </style>
 
@@ -88,35 +95,61 @@
         const viewport = document.getElementById('gallery-viewport');
         const root = document.getElementById('gallery-scale-root');
         const grid = document.getElementById('gallery-grid');
+        const items = grid ? Array.from(grid.querySelectorAll('.gallery-item')) : [];
+
+        function chooseGrid(itemCount, width, height) {
+          const targetAspect = 1.5;
+          let bestCols = 1;
+          let bestRows = Math.max(1, itemCount);
+          let bestScore = Number.POSITIVE_INFINITY;
+
+          for (let cols = 1; cols <= itemCount; cols += 1) {
+            const rows = Math.ceil(itemCount / cols);
+            const cellW = width / cols;
+            const cellH = height / rows;
+            const aspect = cellW / Math.max(cellH, 1);
+            const slotWaste = (cols * rows - itemCount) / itemCount;
+            const score = Math.abs(Math.log(aspect / targetAspect)) + slotWaste * 0.08;
+
+            if (score < bestScore) {
+              bestScore = score;
+              bestCols = cols;
+              bestRows = rows;
+            }
+          }
+
+          return { cols: bestCols, rows: bestRows };
+        }
 
         function fitGallery() {
           if (!viewport || !root || !grid) return;
 
           const nav = document.querySelector('.site-header');
           const navHeight = nav ? nav.getBoundingClientRect().height : 0;
-          const availableHeight = Math.max(220, window.innerHeight - navHeight - 12);
+          const availableHeight = Math.max(220, window.innerHeight - navHeight);
           viewport.style.height = `${availableHeight}px`;
 
-          root.style.transform = 'scale(1)';
-          root.style.width = 'auto';
-          root.style.height = 'auto';
+          const itemCount = items.length;
+          if (!itemCount) {
+            grid.style.gridTemplateColumns = '1fr';
+            grid.style.gridTemplateRows = '1fr';
+            return;
+          }
 
           const vw = viewport.clientWidth;
           const vh = viewport.clientHeight;
-          const gw = grid.scrollWidth;
-          const gh = grid.scrollHeight;
+          if (!vw || !vh) return;
 
-          if (!vw || !vh || !gw || !gh) return;
+          const packed = chooseGrid(itemCount, vw, vh);
+          grid.style.gridTemplateColumns = `repeat(${packed.cols}, minmax(0, 1fr))`;
+          grid.style.gridTemplateRows = `repeat(${packed.rows}, minmax(0, 1fr))`;
 
-          const scale = Math.min(vw / gw, vh / gh, 1);
-          const scaledW = gw * scale;
-          const scaledH = gh * scale;
-
-          root.style.transform = `scale(${scale})`;
-          root.style.width = `${gw}px`;
-          root.style.height = `${gh}px`;
-          root.style.marginLeft = `${Math.max(0, (vw - scaledW) / 2)}px`;
-          root.style.marginTop = `${Math.max(0, (vh - scaledH) / 2)}px`;
+          const cellHeight = vh / packed.rows;
+          if (cellHeight < 54) {
+            grid.classList.add('compact');
+          } else {
+            grid.classList.remove('compact');
+          }
         }
 
         window.addEventListener('load', fitGallery);

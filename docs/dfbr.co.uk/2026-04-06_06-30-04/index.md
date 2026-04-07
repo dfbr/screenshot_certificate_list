@@ -1,9 +1,9 @@
 ---
-title: "dfbr.co.uk — 2026-04-06_06-30-04"
+title: "dfbr.co.uk — 06.04.2026"
 layout: default
 ---
 
-# dfbr.co.uk — 2026-04-06_06-30-04
+# dfbr.co.uk — 06.04.2026
 
 [← dfbr.co.uk](../) &middot; [← All domains](../../)
 

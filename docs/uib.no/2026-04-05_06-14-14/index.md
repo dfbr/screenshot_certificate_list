@@ -1,9 +1,9 @@
 ---
-title: "uib.no — 2026-04-05_06-14-14"
+title: "uib.no — 05.04.2026"
 layout: default
 ---
 
-# uib.no — 2026-04-05_06-14-14
+# uib.no — 05.04.2026
 
 [← uib.no](../) &middot; [← All domains](../../)
 

@@ -73,6 +73,16 @@ def _tally(status_map: dict[str, str]) -> tuple[int, int, dict[str, int]]:
     return total, success, counts
 
 
+def _display_date(run_name: str) -> str:
+    """Convert run folder timestamp (YYYY-MM-DD_HH-MM-SS) to dd.MM.yyyy for display."""
+    date_part = run_name.split("_", 1)[0]
+    try:
+        dt = datetime.strptime(date_part, "%Y-%m-%d")
+    except ValueError:
+        return date_part
+    return dt.strftime("%d.%m.%Y")
+
+
 # ---------------------------------------------------------------------------
 # results/README.md  (plain Markdown, relative links)
 # ---------------------------------------------------------------------------
@@ -93,7 +103,7 @@ Full documentation, setup and operational details are available in [SETUP.md](..
 
 
 def _write_results_readme(results_dir: Path, domain_dirs: list[Path]) -> None:
-    now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(tz=timezone.utc).strftime("%d.%m.%Y")
     lines: list[str] = [
         _RESULTS_HEADER,
         f"> Last updated: {now}",
@@ -115,7 +125,7 @@ def _write_results_readme(results_dir: Path, domain_dirs: list[Path]) -> None:
             rel_readme = str(latest.relative_to(results_dir) / "README.md")
             lines.append(f"### [{domain_dir.name}]({rel_readme})")
             lines.append("")
-            lines.append(f"Latest run: `{latest.name}`")
+            lines.append(f"Latest run: `{_display_date(latest.name)}`")
             lines.append("")
 
             status_map = _load_statuses(latest)
@@ -136,7 +146,7 @@ def _write_results_readme(results_dir: Path, domain_dirs: list[Path]) -> None:
             lines.append("|-----|------|")
             for run in runs:
                 rel = str(run.relative_to(results_dir) / "README.md")
-                lines.append(f"| `{run.name}` | [{run.name}]({rel}) |")
+                lines.append(f"| `{_display_date(run.name)}` | [{_display_date(run.name)}]({rel}) |")
             lines.append("")
             lines.append("")
     else:
@@ -214,13 +224,15 @@ def _write_run_page(
 
     total, success, error_counts = _tally(status_map)
 
+    display_date = _display_date(run_name)
+
     lines: list[str] = [
         "---",
-        f'title: "{domain} \u2014 {run_name}"',
+        f'title: "{domain} \u2014 {display_date}"',
         "layout: default",
         "---",
         "",
-        f"# {domain} \u2014 {run_name}",
+        f"# {domain} \u2014 {display_date}",
         "",
         f"[\u2190 {domain}](../) &middot; [\u2190 All domains](../../)",
         "",
@@ -293,7 +305,7 @@ def _write_domain_page(
         total, success, error_counts = _tally(latest_status)
 
         lines += [
-            f"## Latest Run: {latest_name}",
+            f"## Latest Run: {_display_date(latest_name)}",
             "",
             "| Metric | Count |",
             "|-------:|------:|",
@@ -312,7 +324,7 @@ def _write_domain_page(
         ]
         for run_name, status_map in runs_data:
             t, s, _ = _tally(status_map)
-            lines.append(f"| `{run_name}` | {t} | {s} | [View]({run_name}/) |")
+            lines.append(f"| `{_display_date(run_name)}` | {t} | {s} | [View]({run_name}/) |")
     else:
         lines += ["*No runs yet.*", ""]
 
@@ -325,7 +337,7 @@ def _write_index(
     repo_url: str,
 ) -> None:
     """Write the main docs/index.md homepage."""
-    now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(tz=timezone.utc).strftime("%d.%m.%Y")
 
     lines: list[str] = [
         "---",
@@ -354,7 +366,7 @@ def _write_index(
                 latest_name, latest_status = runs[0]
                 total, success, _ = _tally(latest_status)
                 lines.append(
-                    f"| [{domain}]({domain}/) | `{latest_name}` | {total} | {success} |"
+                    f"| [{domain}]({domain}/) | `{_display_date(latest_name)}` | {total} | {success} |"
                 )
             else:
                 lines.append(f"| [{domain}]({domain}/) | \u2014 | \u2014 | \u2014 |")
@@ -370,7 +382,7 @@ def _write_index(
 
             lines.append(f"### [{domain}]({domain}/)")
             lines.append("")
-            lines.append(f"Latest run: [`{latest_name}`]({domain}/{latest_name}/)")
+            lines.append(f"Latest run: [`{_display_date(latest_name)}`]({domain}/{latest_name}/)")
             lines.append("")
             lines += [
                 "| Metric | Count |",
@@ -390,7 +402,7 @@ def _write_index(
             ]
             for run_name, status_map in runs:
                 t, s, _ = _tally(status_map)
-                lines.append(f"| [`{run_name}`]({domain}/{run_name}/) | {t} | {s} |")
+                lines.append(f"| [`{_display_date(run_name)}`]({domain}/{run_name}/) | {t} | {s} |")
             lines.append("")
             lines.append("")
     else:

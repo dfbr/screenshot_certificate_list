@@ -1,0 +1,34 @@
+---
+title: "hmrc.gov.uk"
+layout: default
+---
+
+# hmrc.gov.uk
+
+[← All domains](../)
+
+[Open latest screenshots gallery](gallery/)
+
+Subdomains from [crt.sh](https://crt.sh/?q=%.hmrc.gov.uk).
+
+## Latest Run: 07.04.2026
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 449 |
+| Online | 57 |
+| ERR_CONNECTION_REFUSED | 1 |
+| ERR_NAME_NOT_RESOLVED | 254 |
+| HTTP 400 | 4 |
+| HTTP 403 | 52 |
+| HTTP 404 | 14 |
+| HTTP 405 | 1 |
+| HTTP 503 | 10 |
+| Page.goto: Download is starting | 2 |
+| timeout | 54 |
+
+## Run History
+
+| Run | Subdomains | Online | Details |
+|-----|-----------|--------|---------|
+| `07.04.2026` | 449 | 57 | [View](2026-04-07_09-18-43/) |

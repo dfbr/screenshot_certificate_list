@@ -207,4 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 # ignore the domains.yml file as we want to use github secrets for this to hide email addresses and domains
-domains.yml
+#domains.yml

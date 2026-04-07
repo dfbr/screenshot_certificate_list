@@ -1,0 +1,36 @@
+# Domains to monitor and recipients.
+# overwrites the secrets held in the github repo.
+
+# `default` recipients are notified for domains that don't have per-domain entries
+default:
+  - dave@dfbr.co.uk
+
+# Per-domain recipient lists (optional)
+uib.no:
+  - david.rowan@uib.no
+  - dave@dfbr.co.uk
+
+rowanpage.co.uk:
+
+dfbr.co.uk:
+
+dfbp.co.uk:
+
+onlythestoriesyouwant.co.uk:
+
+fitforhospital.co.uk:
+
+sociumrecruitment.com:
+  # potential job opportunity for me, so want to keep an eye on this one
+
+socium.team:
+  # potential job opportunity for me, so want to keep an eye on this one (same company as above, different domain)
+
+www.summize.com:
+  # potential job opportunity
+
+manutd.com:
+  # potential job opportunity
+
+hmrc.gov.uk:
+  # potential job and interest

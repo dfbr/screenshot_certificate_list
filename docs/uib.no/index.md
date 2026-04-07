@@ -7,6 +7,8 @@ layout: default
 
 [← All domains](../)
 
+[Open latest screenshots gallery](gallery/)
+
 Subdomains from [crt.sh](https://crt.sh/?q=%.uib.no).
 
 ## Latest Run: 07.04.2026

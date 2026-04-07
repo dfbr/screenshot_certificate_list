@@ -153,10 +153,11 @@
               <summary>{{ domain_name }}</summary>
               <div class="domain-content">
                 <a class="domain-overview" href="{{ domain_page.url | relative_url }}">Domain summary</a>
+                <a class="domain-overview" href="{{ domain_page.url | relative_url }}gallery/">Latest gallery</a>
                 <ul class="run-list">
                   {% for run_page in sorted_pages reversed %}
                     {% assign run_parts = run_page.path | split: "/" %}
-                    {% if run_parts.size == 3 and run_parts[0] == domain_name and run_parts[2] == "index.md" %}
+                    {% if run_parts.size == 3 and run_parts[0] == domain_name and run_parts[2] == "index.md" and run_parts[1] contains "_" %}
                       {% assign run_date = run_parts[1] | split: "_" | first %}
                       {% assign run_date_parts = run_date | split: "-" %}
                       <li><a href="{{ run_page.url | relative_url }}">{{ run_date_parts[2] }}.{{ run_date_parts[1] }}.{{ run_date_parts[0] }}</a></li>

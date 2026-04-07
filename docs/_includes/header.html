@@ -1,0 +1,171 @@
+<header class="site-header" role="banner">
+  <style>
+    .site-header .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      position: relative;
+    }
+
+    .site-header .site-title {
+      margin-right: 0;
+      font-size: 1.15rem;
+      line-height: 1.2;
+      max-width: 72%;
+    }
+
+    .site-header .site-nav {
+      border: 0;
+      position: relative;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .site-header .site-nav summary {
+      list-style: none;
+    }
+
+    .site-header .site-nav summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .site-header .nav-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      border: 1px solid #d8dee4;
+      border-radius: 6px;
+      background: #ffffff;
+      color: #24292f;
+      cursor: pointer;
+      padding: 0.38rem 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .site-header .hamburger {
+      width: 16px;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .site-header .hamburger span {
+      height: 2px;
+      border-radius: 2px;
+      background: #24292f;
+      display: block;
+    }
+
+    .site-header .nav-dropdown {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 0.4rem);
+      z-index: 20;
+      width: min(92vw, 420px);
+      max-height: 72vh;
+      overflow: auto;
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 10px 26px rgba(31, 35, 40, 0.14);
+      padding: 0.65rem;
+    }
+
+    .site-header .nav-home {
+      display: block;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    .site-header .domain-group {
+      border: 1px solid #e6ebf1;
+      border-radius: 6px;
+      margin-bottom: 0.45rem;
+      background: #fbfdff;
+    }
+
+    .site-header .domain-group > summary {
+      cursor: pointer;
+      padding: 0.5rem 0.65rem;
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
+
+    .site-header .domain-content {
+      border-top: 1px solid #e6ebf1;
+      padding: 0.5rem 0.65rem 0.55rem;
+    }
+
+    .site-header .domain-overview {
+      display: inline-block;
+      margin-bottom: 0.4rem;
+      font-size: 0.88rem;
+    }
+
+    .site-header .run-list {
+      margin: 0;
+      padding-left: 1.15rem;
+      font-size: 0.87rem;
+    }
+
+    .site-header .run-list li {
+      margin-bottom: 0.15rem;
+    }
+
+    @media (max-width: 600px) {
+      .site-header .wrapper {
+        align-items: flex-start;
+      }
+
+      .site-header .site-title {
+        max-width: 64%;
+      }
+
+      .site-header .nav-label {
+        display: none;
+      }
+    }
+  </style>
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <details class="site-nav">
+      <summary class="nav-trigger" aria-label="Toggle domain navigation">
+        <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-label">Domains</span>
+      </summary>
+
+      <div class="nav-dropdown">
+        <a class="nav-home" href="{{ "/" | relative_url }}">All domains overview</a>
+
+        {% assign sorted_pages = site.pages | sort: "path" %}
+        {% for domain_page in sorted_pages %}
+          {% assign domain_parts = domain_page.path | split: "/" %}
+          {% if domain_page.path != "index.md" and domain_parts.size == 2 and domain_parts[1] == "index.md" %}
+            {% assign domain_name = domain_parts[0] %}
+            <details class="domain-group">
+              <summary>{{ domain_name }}</summary>
+              <div class="domain-content">
+                <a class="domain-overview" href="{{ domain_page.url | relative_url }}">Domain summary</a>
+                <ul class="run-list">
+                  {% for run_page in sorted_pages reversed %}
+                    {% assign run_parts = run_page.path | split: "/" %}
+                    {% if run_parts.size == 3 and run_parts[0] == domain_name and run_parts[2] == "index.md" %}
+                      <li><a href="{{ run_page.url | relative_url }}">{{ run_parts[1] }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </details>
+  </div>
+</header>

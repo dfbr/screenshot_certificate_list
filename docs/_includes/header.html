@@ -82,39 +82,31 @@
       font-weight: 600;
     }
 
-    .site-header .domain-group {
+    .site-header .domain-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.7rem;
       border: 1px solid #e6ebf1;
       border-radius: 6px;
       margin-bottom: 0.45rem;
+      padding: 0.45rem 0.6rem;
       background: #fbfdff;
     }
 
-    .site-header .domain-group > summary {
-      cursor: pointer;
-      padding: 0.5rem 0.65rem;
+    .site-header .domain-link {
+      font-size: 0.9rem;
       font-weight: 600;
-      font-size: 0.94rem;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
-    .site-header .domain-content {
-      border-top: 1px solid #e6ebf1;
-      padding: 0.5rem 0.65rem 0.55rem;
-    }
-
-    .site-header .domain-overview {
-      display: inline-block;
-      margin-bottom: 0.4rem;
-      font-size: 0.88rem;
-    }
-
-    .site-header .run-list {
-      margin: 0;
-      padding-left: 1.15rem;
-      font-size: 0.87rem;
-    }
-
-    .site-header .run-list li {
-      margin-bottom: 0.15rem;
+    .site-header .gallery-link {
+      margin-left: auto;
+      font-size: 0.84rem;
+      white-space: nowrap;
     }
 
     @media (max-width: 600px) {
@@ -149,23 +141,10 @@
           {% assign domain_parts = domain_page.path | split: "/" %}
           {% if domain_page.path != "index.md" and domain_parts.size == 2 and domain_parts[1] == "index.md" %}
             {% assign domain_name = domain_parts[0] %}
-            <details class="domain-group">
-              <summary>{{ domain_name }}</summary>
-              <div class="domain-content">
-                <a class="domain-overview" href="{{ domain_page.url | relative_url }}">Domain summary</a>
-                <a class="domain-overview" href="{{ domain_page.url | relative_url }}gallery/">Latest gallery</a>
-                <ul class="run-list">
-                  {% for run_page in sorted_pages reversed %}
-                    {% assign run_parts = run_page.path | split: "/" %}
-                    {% if run_parts.size == 3 and run_parts[0] == domain_name and run_parts[2] == "index.md" and run_parts[1] contains "_" %}
-                      {% assign run_date = run_parts[1] | split: "_" | first %}
-                      {% assign run_date_parts = run_date | split: "-" %}
-                      <li><a href="{{ run_page.url | relative_url }}">{{ run_date_parts[2] }}.{{ run_date_parts[1] }}.{{ run_date_parts[0] }}</a></li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              </div>
-            </details>
+            <div class="domain-row">
+              <a class="domain-link" href="{{ domain_page.url | relative_url }}">{{ domain_name }}</a>
+              <a class="gallery-link" href="{{ domain_page.url | relative_url }}gallery/">Gallery</a>
+            </div>
           {% endif %}
         {% endfor %}
       </div>

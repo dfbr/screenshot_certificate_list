@@ -16,20 +16,21 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.hmrc.gov.uk).
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 449 |
-| Online | 57 |
+| Online | 56 |
 | ERR_CONNECTION_REFUSED | 1 |
 | ERR_NAME_NOT_RESOLVED | 254 |
 | HTTP 400 | 4 |
 | HTTP 403 | 52 |
 | HTTP 404 | 14 |
 | HTTP 405 | 1 |
-| HTTP 503 | 6 |
+| HTTP 503 | 10 |
 | Page.goto: Download is starting | 2 |
-| timeout | 58 |
+| timeout | 55 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `08.04.2026` | 449 | 56 | [View](2026-04-08_08-39-29/) |
 | `08.04.2026` | 449 | 57 | [View](2026-04-08_06-20-37/) |
 | `07.04.2026` | 449 | 57 | [View](2026-04-07_09-18-43/) |

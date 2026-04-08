@@ -16,9 +16,9 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.uib.no).
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 1086 |
-| Online | 211 |
+| Online | 214 |
 | ERR_CONNECTION_REFUSED | 9 |
-| ERR_NAME_NOT_RESOLVED | 559 |
+| ERR_NAME_NOT_RESOLVED | 556 |
 | HTTP 400 | 1 |
 | HTTP 401 | 1 |
 | HTTP 403 | 23 |
@@ -32,6 +32,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.uib.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `08.04.2026` | 1086 | 214 | [View](2026-04-08_08-39-35/) |
 | `08.04.2026` | 1086 | 211 | [View](2026-04-08_06-20-38/) |
 | `07.04.2026` | 1086 | 209 | [View](2026-04-07_09-18-33/) |
 | `07.04.2026` | 1086 | 210 | [View](2026-04-07_06-19-00/) |
@@ -41,4 +42,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.uib.no).
 | `03.04.2026` | 1086 | 213 | [View](2026-04-03_06-12-10/) |
 | `02.04.2026` | 1086 | 210 | [View](2026-04-02_06-11-56/) |
 | `01.04.2026` | 1086 | 211 | [View](2026-04-01_06-26-17/) |
-| `31.03.2026` | 1086 | 214 | [View](2026-03-31_06-15-51/) |

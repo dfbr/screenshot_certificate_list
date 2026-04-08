@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.manutd.com).
 
-## Latest Run: 07.04.2026
+## Latest Run: 08.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -24,13 +24,15 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.manutd.com).
 | HTTP 401 | 22 |
 | HTTP 403 | 8 |
 | HTTP 404 | 7 |
-| HTTP 500 | 6 |
+| HTTP 500 | 7 |
 | HTTP 503 | 10 |
+| HTTP 504 | 1 |
 | Page.goto: Download is starting | 4 |
-| timeout | 7 |
+| timeout | 5 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `08.04.2026` | 164 | 32 | [View](2026-04-08_06-20-37/) |
 | `07.04.2026` | 164 | 32 | [View](2026-04-07_09-18-47/) |

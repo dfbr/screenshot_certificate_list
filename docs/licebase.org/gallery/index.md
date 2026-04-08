@@ -8,8 +8,14 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://licebase.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-29/screenshots/licebase.org.png" alt="licebase.org" loading="lazy" />
+          <img src="../2026-04-08_09-05-18/screenshots/licebase.org.png" alt="licebase.org" loading="lazy" />
           <figcaption>licebase.org</figcaption>
+        </a>
+      </figure>
+      <figure class="gallery-item">
+        <a href="https://www.licebase.org" target="_blank" rel="noopener noreferrer">
+          <img src="../2026-04-08_09-05-18/screenshots/www.licebase.org.png" alt="www.licebase.org" loading="lazy" />
+          <figcaption>www.licebase.org</figcaption>
         </a>
       </figure>
     </div>

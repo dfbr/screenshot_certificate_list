@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://skolelab.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-32/screenshots/skolelab.no.png" alt="skolelab.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-14/screenshots/skolelab.no.png" alt="skolelab.no" loading="lazy" />
           <figcaption>skolelab.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.skolelab.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-32/screenshots/www.skolelab.no.png" alt="www.skolelab.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-14/screenshots/www.skolelab.no.png" alt="www.skolelab.no" loading="lazy" />
           <figcaption>www.skolelab.no</figcaption>
         </a>
       </figure>

@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://perimeter.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-28/screenshots/perimeter.dfbr.co.uk.png" alt="perimeter.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-04-08_09-05-16/screenshots/perimeter.dfbr.co.uk.png" alt="perimeter.dfbr.co.uk" loading="lazy" />
           <figcaption>perimeter.dfbr.co.uk</figcaption>
         </a>
       </figure>

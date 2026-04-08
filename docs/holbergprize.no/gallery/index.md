@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://holbergprize.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-36/screenshots/holbergprize.no.png" alt="holbergprize.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/holbergprize.no.png" alt="holbergprize.no" loading="lazy" />
           <figcaption>holbergprize.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.holbergprize.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-36/screenshots/www.holbergprize.no.png" alt="www.holbergprize.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/www.holbergprize.no.png" alt="www.holbergprize.no" loading="lazy" />
           <figcaption>www.holbergprize.no</figcaption>
         </a>
       </figure>

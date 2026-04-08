@@ -23,4 +23,5 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.skolelab.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `08.04.2026` | 3 | 2 | [View](2026-04-08_09-05-14/) |
 | `08.04.2026` | 3 | 2 | [View](2026-04-08_08-39-32/) |

@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://bioxsd.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-24/screenshots/bioxsd.org.png" alt="bioxsd.org" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/bioxsd.org.png" alt="bioxsd.org" loading="lazy" />
           <figcaption>bioxsd.org</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.bioxsd.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-24/screenshots/www.bioxsd.org.png" alt="www.bioxsd.org" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/www.bioxsd.org.png" alt="www.bioxsd.org" loading="lazy" />
           <figcaption>www.bioxsd.org</figcaption>
         </a>
       </figure>

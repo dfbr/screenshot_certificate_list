@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://alrekhelseklynge.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-31/screenshots/alrekhelseklynge.no.png" alt="alrekhelseklynge.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/alrekhelseklynge.no.png" alt="alrekhelseklynge.no" loading="lazy" />
           <figcaption>alrekhelseklynge.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.alrekhelseklynge.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_08-39-31/screenshots/www.alrekhelseklynge.no.png" alt="www.alrekhelseklynge.no" loading="lazy" />
+          <img src="../2026-04-08_09-05-15/screenshots/www.alrekhelseklynge.no.png" alt="www.alrekhelseklynge.no" loading="lazy" />
           <figcaption>www.alrekhelseklynge.no</figcaption>
         </a>
       </figure>

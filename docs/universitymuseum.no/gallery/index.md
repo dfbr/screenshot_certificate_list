@@ -1,5 +1,5 @@
 ---
-title: "universitymuseum.no Gallery (08.04.2026)"
+title: "universitymuseum.no Gallery (09.04.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://pay.universitymuseum.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_09-14-43/screenshots/pay.universitymuseum.no.png" alt="pay.universitymuseum.no" loading="lazy" />
+          <img src="../2026-04-09_06-20-39/screenshots/pay.universitymuseum.no.png" alt="pay.universitymuseum.no" loading="lazy" />
           <figcaption>pay.universitymuseum.no</figcaption>
         </a>
       </figure>

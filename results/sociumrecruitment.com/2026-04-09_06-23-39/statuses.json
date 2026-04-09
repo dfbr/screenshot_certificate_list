@@ -1,0 +1,12 @@
+{
+  "sociumrecruitment.com": "ok",
+  "staging1.sociumrecruitment.com": "HTTP 500",
+  "staging3.sociumrecruitment.com": "ok",
+  "staging4.sociumrecruitment.com": "HTTP 500",
+  "staging5.sociumrecruitment.com": "HTTP 500",
+  "www.sociumrecruitment.com": "ok",
+  "www.staging1.sociumrecruitment.com": "HTTP 500",
+  "www.staging3.sociumrecruitment.com": "ok",
+  "www.staging4.sociumrecruitment.com": "HTTP 500",
+  "www.staging5.sociumrecruitment.com": "HTTP 500"
+}

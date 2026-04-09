@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.co.uk).
 
-## Latest Run: 08.04.2026
+## Latest Run: 09.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `09.04.2026` | 1 | 0 | [View](2026-04-09_06-23-39/) |
 | `08.04.2026` | 1 | 0 | [View](2026-04-08_09-14-28/) |
 | `08.04.2026` | 1 | 0 | [View](2026-04-08_08-39-29/) |
 | `08.04.2026` | 1 | 0 | [View](2026-04-08_06-20-38/) |

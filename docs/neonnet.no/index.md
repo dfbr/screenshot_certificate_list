@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.neonnet.no).
 
-## Latest Run: 08.04.2026
+## Latest Run: 09.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -22,5 +22,6 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.neonnet.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `09.04.2026` | 2 | 2 | [View](2026-04-09_06-20-43/) |
 | `08.04.2026` | 2 | 2 | [View](2026-04-08_09-05-07/) |
 | `08.04.2026` | 2 | 2 | [View](2026-04-08_08-39-24/) |

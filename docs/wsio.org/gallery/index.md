@@ -1,5 +1,5 @@
 ---
-title: "wsio.org Gallery (08.04.2026)"
+title: "wsio.org Gallery (09.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://wsio.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_09-05-24/screenshots/wsio.org.png" alt="wsio.org" loading="lazy" />
+          <img src="../2026-04-09_06-20-39/screenshots/wsio.org.png" alt="wsio.org" loading="lazy" />
           <figcaption>wsio.org</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.wsio.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-08_09-05-24/screenshots/www.wsio.org.png" alt="www.wsio.org" loading="lazy" />
+          <img src="../2026-04-09_06-20-39/screenshots/www.wsio.org.png" alt="www.wsio.org" loading="lazy" />
           <figcaption>www.wsio.org</figcaption>
         </a>
       </figure>

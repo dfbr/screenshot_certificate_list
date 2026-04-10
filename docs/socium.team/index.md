@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.socium.team).
 
-## Latest Run: 09.04.2026
+## Latest Run: 10.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -24,6 +24,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.socium.team).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `10.04.2026` | 9 | 7 | [View](2026-04-10_06-52-52/) |
 | `09.04.2026` | 9 | 7 | [View](2026-04-09_06-20-35/) |
 | `08.04.2026` | 9 | 7 | [View](2026-04-08_09-05-17/) |
 | `08.04.2026` | 9 | 7 | [View](2026-04-08_08-39-29/) |

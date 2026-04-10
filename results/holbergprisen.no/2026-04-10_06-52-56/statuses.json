@@ -1,0 +1,9 @@
+{
+  "autodiscover.holbergprisen.no": "ok",
+  "holbergprisen.no": "ok",
+  "lyncdiscover.holbergprisen.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://lyncdiscover.holbergprisen.no/",
+  "lyncdiscoverinternal.holbergprisen.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://lyncdiscoverinternal.holbergprisen.no/",
+  "metode.holbergprisen.no": "ok",
+  "sip.holbergprisen.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://sip.holbergprisen.no/",
+  "www.holbergprisen.no": "ok"
+}

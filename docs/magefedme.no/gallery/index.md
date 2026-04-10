@@ -1,5 +1,5 @@
 ---
-title: "magefedme.no Gallery (09.04.2026)"
+title: "magefedme.no Gallery (10.04.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://magefedme.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-09_06-20-32/screenshots/magefedme.no.png" alt="magefedme.no" loading="lazy" />
+          <img src="../2026-04-10_06-52-52/screenshots/magefedme.no.png" alt="magefedme.no" loading="lazy" />
           <figcaption>magefedme.no</figcaption>
         </a>
       </figure>

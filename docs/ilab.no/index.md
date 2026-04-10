@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.ilab.no).
 
-## Latest Run: 09.04.2026
+## Latest Run: 10.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -22,6 +22,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.ilab.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `10.04.2026` | 2 | 2 | [View](2026-04-10_06-53-36/) |
 | `09.04.2026` | 2 | 2 | [View](2026-04-09_06-20-36/) |
 | `08.04.2026` | 2 | 2 | [View](2026-04-08_09-05-12/) |
 | `08.04.2026` | 2 | 2 | [View](2026-04-08_08-39-21/) |

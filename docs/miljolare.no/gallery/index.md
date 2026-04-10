@@ -1,5 +1,5 @@
 ---
-title: "miljolare.no Gallery (09.04.2026)"
+title: "miljolare.no Gallery (10.04.2026)"
 layout: gallery
 ---
 
@@ -8,25 +8,25 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://beagle.miljolare.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-09_06-20-40/screenshots/beagle.miljolare.no.png" alt="beagle.miljolare.no" loading="lazy" />
+          <img src="../2026-04-10_06-52-53/screenshots/beagle.miljolare.no.png" alt="beagle.miljolare.no" loading="lazy" />
           <figcaption>beagle.miljolare.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://co2.miljolare.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-09_06-20-40/screenshots/co2.miljolare.no.png" alt="co2.miljolare.no" loading="lazy" />
+          <img src="../2026-04-10_06-52-53/screenshots/co2.miljolare.no.png" alt="co2.miljolare.no" loading="lazy" />
           <figcaption>co2.miljolare.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://miljolare.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-09_06-20-40/screenshots/miljolare.no.png" alt="miljolare.no" loading="lazy" />
+          <img src="../2026-04-10_06-52-53/screenshots/miljolare.no.png" alt="miljolare.no" loading="lazy" />
           <figcaption>miljolare.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.miljolare.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-09_06-20-40/screenshots/www.miljolare.no.png" alt="www.miljolare.no" loading="lazy" />
+          <img src="../2026-04-10_06-52-53/screenshots/www.miljolare.no.png" alt="www.miljolare.no" loading="lazy" />
           <figcaption>www.miljolare.no</figcaption>
         </a>
       </figure>

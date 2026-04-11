@@ -1,5 +1,5 @@
 ---
-title: "bioinfo.no Gallery (10.04.2026)"
+title: "bioinfo.no Gallery (11.04.2026)"
 layout: gallery
 ---
 
@@ -8,19 +8,19 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://bioinfo.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-49/screenshots/bioinfo.no.png" alt="bioinfo.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-41/screenshots/bioinfo.no.png" alt="bioinfo.no" loading="lazy" />
           <figcaption>bioinfo.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://nels.bioinfo.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-49/screenshots/nels.bioinfo.no.png" alt="nels.bioinfo.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-41/screenshots/nels.bioinfo.no.png" alt="nels.bioinfo.no" loading="lazy" />
           <figcaption>nels.bioinfo.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.bioinfo.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-49/screenshots/www.bioinfo.no.png" alt="www.bioinfo.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-41/screenshots/www.bioinfo.no.png" alt="www.bioinfo.no" loading="lazy" />
           <figcaption>www.bioinfo.no</figcaption>
         </a>
       </figure>

@@ -1,5 +1,5 @@
 ---
-title: "alrekhelseklynge.no Gallery (10.04.2026)"
+title: "alrekhelseklynge.no Gallery (11.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://alrekhelseklynge.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-48/screenshots/alrekhelseklynge.no.png" alt="alrekhelseklynge.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-36/screenshots/alrekhelseklynge.no.png" alt="alrekhelseklynge.no" loading="lazy" />
           <figcaption>alrekhelseklynge.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.alrekhelseklynge.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-48/screenshots/www.alrekhelseklynge.no.png" alt="www.alrekhelseklynge.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-36/screenshots/www.alrekhelseklynge.no.png" alt="www.alrekhelseklynge.no" loading="lazy" />
           <figcaption>www.alrekhelseklynge.no</figcaption>
         </a>
       </figure>

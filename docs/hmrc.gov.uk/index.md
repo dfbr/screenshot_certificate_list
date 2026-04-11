@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.hmrc.gov.uk).
 
-## Latest Run: 10.04.2026
+## Latest Run: 11.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -21,9 +21,9 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.hmrc.gov.uk).
 | ERR_NAME_NOT_RESOLVED | 254 |
 | HTTP 400 | 4 |
 | HTTP 403 | 52 |
-| HTTP 404 | 13 |
+| HTTP 404 | 14 |
 | HTTP 405 | 1 |
-| HTTP 503 | 10 |
+| HTTP 503 | 9 |
 | Page.goto: Download is starting | 2 |
 | timeout | 55 |
 
@@ -31,6 +31,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.hmrc.gov.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `11.04.2026` | 449 | 57 | [View](2026-04-11_05-59-43/) |
 | `10.04.2026` | 449 | 57 | [View](2026-04-10_06-52-57/) |
 | `09.04.2026` | 449 | 57 | [View](2026-04-09_06-20-33/) |
 | `08.04.2026` | 395 | 56 | [View](2026-04-08_09-05-08/) |

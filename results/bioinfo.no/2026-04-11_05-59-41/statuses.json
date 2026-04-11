@@ -1,0 +1,13 @@
+{
+  "bioinfo.no": "ok",
+  "docker.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://docker.bioinfo.no/",
+  "galaxy-nmbu.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://galaxy-nmbu.bioinfo.no/",
+  "galaxy-ntnu.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://galaxy-ntnu.bioinfo.no/",
+  "galaxy-uib.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://galaxy-uib.bioinfo.no/",
+  "galaxy-uio.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://galaxy-uio.bioinfo.no/",
+  "galaxy-uit.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://galaxy-uit.bioinfo.no/",
+  "jexpress.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://jexpress.bioinfo.no/",
+  "maas-test.bioinfo.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://maas-test.bioinfo.no/",
+  "nels.bioinfo.no": "ok",
+  "www.bioinfo.no": "ok"
+}

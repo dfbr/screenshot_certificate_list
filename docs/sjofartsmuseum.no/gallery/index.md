@@ -1,5 +1,5 @@
 ---
-title: "sjofartsmuseum.no Gallery (10.04.2026)"
+title: "sjofartsmuseum.no Gallery (11.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://sjofartsmuseum.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-51/screenshots/sjofartsmuseum.no.png" alt="sjofartsmuseum.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-43/screenshots/sjofartsmuseum.no.png" alt="sjofartsmuseum.no" loading="lazy" />
           <figcaption>sjofartsmuseum.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.sjofartsmuseum.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-10_06-52-51/screenshots/www.sjofartsmuseum.no.png" alt="www.sjofartsmuseum.no" loading="lazy" />
+          <img src="../2026-04-11_05-59-43/screenshots/www.sjofartsmuseum.no.png" alt="www.sjofartsmuseum.no" loading="lazy" />
           <figcaption>www.sjofartsmuseum.no</figcaption>
         </a>
       </figure>

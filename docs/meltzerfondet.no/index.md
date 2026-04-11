@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.meltzerfondet.no).
 
-## Latest Run: 10.04.2026
+## Latest Run: 11.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.meltzerfondet.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `11.04.2026` | 1 | 0 | [View](2026-04-11_05-59-44/) |
 | `10.04.2026` | 1 | 0 | [View](2026-04-10_06-52-55/) |
 | `09.04.2026` | 1 | 0 | [View](2026-04-09_06-20-30/) |
 | `08.04.2026` | 1 | 0 | [View](2026-04-08_09-05-20/) |

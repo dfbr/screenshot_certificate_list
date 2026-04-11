@@ -1,0 +1,19 @@
+# skolelab.no — 2026-04-11_05-59-46
+
+Certificates queried from [crt.sh](https://crt.sh/?q=%.skolelab.no).
+
+## Summary
+
+| Metric | Count |
+|-------:|------:|
+| Total domains found | 3 |
+| Successes | 2 |
+| HTTP 403 | 1 |
+
+## Details
+
+| Domain | Result |
+|--------|--------|
+| `beta.skolelab.no` | `HTTP 403` |
+| `www.skolelab.no` | ![www.skolelab.no](screenshots/www.skolelab.no.png) |
+| `skolelab.no` | ![skolelab.no](screenshots/skolelab.no.png) |

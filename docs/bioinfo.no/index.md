@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.bioinfo.no).
 
-## Latest Run: 10.04.2026
+## Latest Run: 11.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.bioinfo.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `11.04.2026` | 11 | 3 | [View](2026-04-11_05-59-41/) |
 | `10.04.2026` | 11 | 3 | [View](2026-04-10_06-52-49/) |
 | `09.04.2026` | 11 | 3 | [View](2026-04-09_06-20-34/) |
 | `08.04.2026` | 11 | 3 | [View](2026-04-08_09-05-11/) |

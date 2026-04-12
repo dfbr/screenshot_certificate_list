@@ -1,0 +1,7 @@
+{
+  "katalog.skeivtarkiv.no": "ok",
+  "skeivtarkiv.no": "ok",
+  "test.skeivtarkiv.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://test.skeivtarkiv.no/",
+  "www.katalog.skeivtarkiv.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.katalog.skeivtarkiv.no/",
+  "www.skeivtarkiv.no": "ok"
+}

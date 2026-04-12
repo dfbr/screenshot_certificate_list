@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.universitetsmuseet.no).
 
-## Latest Run: 11.04.2026
+## Latest Run: 12.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -24,6 +24,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.universitetsmuseet.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `12.04.2026` | 6 | 4 | [View](2026-04-12_06-23-35/) |
 | `11.04.2026` | 6 | 4 | [View](2026-04-11_05-59-38/) |
 | `10.04.2026` | 6 | 4 | [View](2026-04-10_06-52-57/) |
 | `09.04.2026` | 6 | 4 | [View](2026-04-09_06-20-38/) |

@@ -1,5 +1,5 @@
 ---
-title: "socium.team Gallery (11.04.2026)"
+title: "socium.team Gallery (12.04.2026)"
 layout: gallery
 ---
 

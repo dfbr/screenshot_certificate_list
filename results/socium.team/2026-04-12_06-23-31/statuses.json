@@ -1,0 +1,11 @@
+{
+  "assets.email.socium.team": "timeout",
+  "email.socium.team": "timeout",
+  "landing.socium.team": "timeout",
+  "notrack.email.socium.team": "timeout",
+  "socium.team": "HTTP 401",
+  "staging.socium.team": "timeout",
+  "sw.socium.team": "HTTP 403",
+  "track.email.socium.team": "timeout",
+  "www.socium.team": "HTTP 401"
+}

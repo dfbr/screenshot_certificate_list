@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.www.summize.com).
 
-## Latest Run: 12.04.2026
+## Latest Run: 13.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -22,6 +22,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.www.summize.com).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `13.04.2026` | 1 | 1 | [View](2026-04-13_07-13-13/) |
 | `12.04.2026` | 1 | 1 | [View](2026-04-12_06-23-32/) |
 | `11.04.2026` | 1 | 1 | [View](2026-04-11_05-59-43/) |
 | `10.04.2026` | 1 | 1 | [View](2026-04-10_06-52-53/) |

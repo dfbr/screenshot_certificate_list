@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.skeivtarkiv.no).
 
-## Latest Run: 12.04.2026
+## Latest Run: 13.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.skeivtarkiv.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `13.04.2026` | 5 | 3 | [View](2026-04-13_07-13-11/) |
 | `12.04.2026` | 5 | 3 | [View](2026-04-12_06-23-32/) |
 | `11.04.2026` | 5 | 3 | [View](2026-04-11_05-59-44/) |
 | `10.04.2026` | 5 | 3 | [View](2026-04-10_06-56-15/) |

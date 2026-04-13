@@ -1,5 +1,5 @@
 ---
-title: "neonnet.no Gallery (12.04.2026)"
+title: "neonnet.no Gallery (13.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://neonnet.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-12_06-23-29/screenshots/neonnet.no.png" alt="neonnet.no" loading="lazy" />
+          <img src="../2026-04-13_07-13-09/screenshots/neonnet.no.png" alt="neonnet.no" loading="lazy" />
           <figcaption>neonnet.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.neonnet.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-12_06-23-29/screenshots/www.neonnet.no.png" alt="www.neonnet.no" loading="lazy" />
+          <img src="../2026-04-13_07-13-09/screenshots/www.neonnet.no.png" alt="www.neonnet.no" loading="lazy" />
           <figcaption>www.neonnet.no</figcaption>
         </a>
       </figure>

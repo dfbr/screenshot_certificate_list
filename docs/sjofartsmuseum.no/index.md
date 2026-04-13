@@ -11,17 +11,18 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.sjofartsmuseum.no).
 
-## Latest Run: 12.04.2026
+## Latest Run: 13.04.2026
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 2 |
-| Online | 2 |
+| Total subdomains found | 1 |
+| Online | 1 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `13.04.2026` | 1 | 1 | [View](2026-04-13_07-13-11/) |
 | `12.04.2026` | 2 | 2 | [View](2026-04-12_06-23-31/) |
 | `11.04.2026` | 2 | 2 | [View](2026-04-11_05-59-43/) |
 | `10.04.2026` | 2 | 2 | [View](2026-04-10_06-52-51/) |

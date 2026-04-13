@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.holbergprisen.no).
 
-## Latest Run: 12.04.2026
+## Latest Run: 13.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.holbergprisen.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `13.04.2026` | 7 | 4 | [View](2026-04-13_07-13-08/) |
 | `12.04.2026` | 7 | 4 | [View](2026-04-12_06-23-25/) |
 | `11.04.2026` | 7 | 4 | [View](2026-04-11_05-59-42/) |
 | `10.04.2026` | 7 | 4 | [View](2026-04-10_06-52-56/) |

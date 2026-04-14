@@ -11,7 +11,7 @@ layout: default
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
-## Latest Run: 13.04.2026
+## Latest Run: 14.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -22,6 +22,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `14.04.2026` | 2 | 2 | [View](2026-04-14_06-52-31/) |
 | `13.04.2026` | 2 | 2 | [View](2026-04-13_07-13-17/) |
 | `07.04.2026` | 2 | 2 | [View](2026-04-07_06-18-52/) |
 | `06.04.2026` | 2 | 2 | [View](2026-04-06_06-29-57/) |
@@ -31,4 +32,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 | `02.04.2026` | 2 | 2 | [View](2026-04-02_06-11-58/) |
 | `01.04.2026` | 2 | 2 | [View](2026-04-01_06-26-10/) |
 | `31.03.2026` | 2 | 2 | [View](2026-03-31_06-15-45/) |
-| `30.03.2026` | 2 | 2 | [View](2026-03-30_06-29-19/) |

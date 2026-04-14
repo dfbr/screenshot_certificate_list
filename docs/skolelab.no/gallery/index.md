@@ -1,5 +1,5 @@
 ---
-title: "skolelab.no Gallery (13.04.2026)"
+title: "skolelab.no Gallery (14.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://skolelab.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-12/screenshots/skolelab.no.png" alt="skolelab.no" loading="lazy" />
+          <img src="../2026-04-14_06-52-32/screenshots/skolelab.no.png" alt="skolelab.no" loading="lazy" />
           <figcaption>skolelab.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.skolelab.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-12/screenshots/www.skolelab.no.png" alt="www.skolelab.no" loading="lazy" />
+          <img src="../2026-04-14_06-52-32/screenshots/www.skolelab.no.png" alt="www.skolelab.no" loading="lazy" />
           <figcaption>www.skolelab.no</figcaption>
         </a>
       </figure>

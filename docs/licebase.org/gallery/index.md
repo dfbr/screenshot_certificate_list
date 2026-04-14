@@ -1,5 +1,5 @@
 ---
-title: "licebase.org Gallery (13.04.2026)"
+title: "licebase.org Gallery (14.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://licebase.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-07/screenshots/licebase.org.png" alt="licebase.org" loading="lazy" />
+          <img src="../2026-04-14_06-57-00/screenshots/licebase.org.png" alt="licebase.org" loading="lazy" />
           <figcaption>licebase.org</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.licebase.org" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-07/screenshots/www.licebase.org.png" alt="www.licebase.org" loading="lazy" />
+          <img src="../2026-04-14_06-57-00/screenshots/www.licebase.org.png" alt="www.licebase.org" loading="lazy" />
           <figcaption>www.licebase.org</figcaption>
         </a>
       </figure>

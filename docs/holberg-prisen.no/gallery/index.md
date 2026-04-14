@@ -1,5 +1,5 @@
 ---
-title: "holberg-prisen.no Gallery (13.04.2026)"
+title: "holberg-prisen.no Gallery (14.04.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://holberg-prisen.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-11/screenshots/holberg-prisen.no.png" alt="holberg-prisen.no" loading="lazy" />
+          <img src="../2026-04-14_06-52-32/screenshots/holberg-prisen.no.png" alt="holberg-prisen.no" loading="lazy" />
           <figcaption>holberg-prisen.no</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.holberg-prisen.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-13_07-13-11/screenshots/www.holberg-prisen.no.png" alt="www.holberg-prisen.no" loading="lazy" />
+          <img src="../2026-04-14_06-52-32/screenshots/www.holberg-prisen.no.png" alt="www.holberg-prisen.no" loading="lazy" />
           <figcaption>www.holberg-prisen.no</figcaption>
         </a>
       </figure>

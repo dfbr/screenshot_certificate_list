@@ -976,6 +976,8 @@ Previous runs:
 | [`07.04.2026`](www.summize.com/2026-04-07_09-18-35/) | 1 | 1 |
 
 
+Looking for inactive domains? [Legacy sites](legacy/)
+
 ---
 
 Full documentation available in [SETUP.md](https://github.com/dfbr/screenshot_certificate_list/blob/main/SETUP.md).

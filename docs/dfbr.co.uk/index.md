@@ -1,6 +1,7 @@
 ---
 title: "dfbr.co.uk"
 layout: default
+legacy: false
 ---
 
 # dfbr.co.uk

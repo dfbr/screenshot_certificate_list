@@ -1,6 +1,7 @@
 ---
 title: "skeivtarkiv.no"
 layout: default
+legacy: false
 ---
 
 # skeivtarkiv.no

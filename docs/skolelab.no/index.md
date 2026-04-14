@@ -1,6 +1,7 @@
 ---
 title: "skolelab.no"
 layout: default
+legacy: false
 ---
 
 # skolelab.no

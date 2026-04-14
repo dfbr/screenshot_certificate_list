@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_REPO_URL = "https://github.com/dfbr/screenshot_certificate_list"
+LEGACY_DAYS = 30
 
 # ---------------------------------------------------------------------------
 # Shared helpers
@@ -81,6 +82,29 @@ def _display_date(run_name: str) -> str:
     except ValueError:
         return date_part
     return dt.strftime("%d.%m.%Y")
+
+
+def _run_date(run_name: str):
+    """Return the date parsed from a run folder name, or None if invalid."""
+    date_part = run_name.split("_", 1)[0]
+    try:
+        return datetime.strptime(date_part, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def _run_age_days(run_name: str, now: datetime) -> int | None:
+    """Return run age in days, or None when run_name is malformed."""
+    run_date = _run_date(run_name)
+    if run_date is None:
+        return None
+    return (now.date() - run_date).days
+
+
+def _is_legacy_run(run_name: str, now: datetime, legacy_days: int = LEGACY_DAYS) -> bool:
+    """A domain is legacy when latest run age is >= legacy_days."""
+    age_days = _run_age_days(run_name, now)
+    return age_days is not None and age_days >= legacy_days
 
 
 # ---------------------------------------------------------------------------
@@ -333,6 +357,7 @@ def _write_domain_page(
     docs_domain_dir: Path,
     domain: str,
     runs_data: list[tuple[str, dict[str, str]]],
+    is_legacy: bool = False,
 ) -> None:
     """Write docs/<domain>/index.md with full run history."""
     docs_domain_dir.mkdir(parents=True, exist_ok=True)
@@ -341,6 +366,7 @@ def _write_domain_page(
         "---",
         f'title: "{domain}"',
         "layout: default",
+        f"legacy: {'true' if is_legacy else 'false'}",
         "---",
         "",
         f"# {domain}",
@@ -382,6 +408,97 @@ def _write_domain_page(
         lines += ["*No runs yet.*", ""]
 
     (docs_domain_dir / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _write_legacy_page(
+    docs_dir: Path,
+    legacy_domains: list[tuple[str, list[tuple[str, dict[str, str]]]]],
+    repo_url: str,
+    now: datetime,
+) -> None:
+    """Write docs/legacy/index.md listing domains not checked in >= LEGACY_DAYS."""
+    legacy_dir = docs_dir / "legacy"
+    legacy_dir.mkdir(parents=True, exist_ok=True)
+    now_display = now.strftime("%d.%m.%Y")
+
+    lines: list[str] = [
+        "---",
+        'title: "Legacy Sites"',
+        "layout: default",
+        "---",
+        "",
+        "# Legacy Sites",
+        "",
+        "[\u2190 Active domains](../)",
+        "",
+        f"Domains with no checks in the last {LEGACY_DAYS} days.",
+        "",
+        f"> Last updated: {now_display}",
+        "",
+        "## Legacy Domains",
+        "",
+    ]
+
+    if legacy_domains:
+        lines += [
+            "| Domain | Latest Run | Days Since Check | Subdomains | Online |",
+            "|--------|------------|------------------|-----------|--------|",
+        ]
+        for domain, runs in legacy_domains:
+            if not runs:
+                lines.append(f"| [{domain}](../{domain}/) | \u2014 | \u2014 | \u2014 | \u2014 |")
+                continue
+            latest_name, latest_status = runs[0]
+            total, success, _ = _tally(latest_status)
+            age_days = _run_age_days(latest_name, now)
+            age_text = str(age_days) if age_days is not None else "unknown"
+            lines.append(
+                f"| [{domain}](../{domain}/) | `{_display_date(latest_name)}` | {age_text} | {total} | {success} |"
+            )
+        lines.append("")
+
+        lines += ["## Domain Details", ""]
+        for domain, runs in legacy_domains:
+            if not runs:
+                continue
+            latest_name, latest_status = runs[0]
+            total, success, error_counts = _tally(latest_status)
+            lines.append(f"### [{domain}](../{domain}/)")
+            lines.append("")
+            lines.append(f"Latest run: [`{_display_date(latest_name)}`](../{domain}/{latest_name}/)")
+            lines.append("")
+            lines += [
+                "| Metric | Count |",
+                "|-------:|------:|",
+                f"| Total subdomains found | {total} |",
+                f"| Online | {success} |",
+            ]
+            for err in sorted(error_counts.keys()):
+                lines.append(f"| {err} | {error_counts[err]} |")
+            lines.append("")
+
+            lines += [
+                "Previous runs:",
+                "",
+                "| Run | Subdomains | Online |",
+                "|-----|-----------|--------|",
+            ]
+            for run_name, status_map in runs:
+                t, s, _ = _tally(status_map)
+                lines.append(f"| [`{_display_date(run_name)}`](../{domain}/{run_name}/) | {t} | {s} |")
+            lines.append("")
+            lines.append("")
+    else:
+        lines += ["*No legacy domains.*", ""]
+
+    lines += [
+        "---",
+        "",
+        f"Full documentation available in [SETUP.md]({repo_url}/blob/main/SETUP.md).",
+        "",
+    ]
+
+    (legacy_dir / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def _write_index(
@@ -462,6 +579,8 @@ def _write_index(
         lines += ["*No results yet.*", ""]
 
     lines += [
+        "Looking for inactive domains? [Legacy sites](legacy/)",
+        "",
         "---",
         "",
         f"Full documentation available in [SETUP.md]({repo_url}/blob/main/SETUP.md).",
@@ -494,6 +613,7 @@ def main() -> None:
     results_dir = Path(parsed.results_dir)
     docs_dir = Path(parsed.docs_dir) if parsed.docs_dir else None
     repo_url = parsed.repo_url
+    now = datetime.now(tz=timezone.utc)
 
     domain_dirs = (
         sorted(d for d in results_dir.iterdir() if d.is_dir())
@@ -516,7 +636,8 @@ def main() -> None:
     _sync_docs_cleanup(results_dir, docs_dir)
 
     # Build data and generate per-run + per-domain pages
-    domains_data: list[tuple[str, list[tuple[str, dict[str, str]]]]] = []
+    active_domains: list[tuple[str, list[tuple[str, dict[str, str]]]]] = []
+    legacy_domains: list[tuple[str, list[tuple[str, dict[str, str]]]]] = []
     for domain_dir in domain_dirs:
         runs = sorted(
             (d for d in domain_dir.iterdir() if d.is_dir()),
@@ -531,16 +652,31 @@ def main() -> None:
             _write_run_page(docs_run_dir, domain_dir.name, run_name, status_map)
             runs_data.append((run_name, status_map))
 
-        _write_domain_page(docs_dir / domain_dir.name, domain_dir.name, runs_data)
+        is_legacy_domain = bool(runs_data) and _is_legacy_run(runs_data[0][0], now)
+
+        _write_domain_page(
+            docs_dir / domain_dir.name,
+            domain_dir.name,
+            runs_data,
+            is_legacy=is_legacy_domain,
+        )
         if runs_data:
             latest_name, latest_status = runs_data[0]
             _write_gallery_page(docs_dir / domain_dir.name, domain_dir.name, latest_name, latest_status)
-        domains_data.append((domain_dir.name, runs_data))
 
-    # Generate the homepage
-    _write_index(docs_dir, domains_data, repo_url)
+        if is_legacy_domain:
+            legacy_domains.append((domain_dir.name, runs_data))
+        else:
+            active_domains.append((domain_dir.name, runs_data))
 
-    print(f"docs/ site updated ({len(domain_dirs)} domain(s))")
+    # Generate active and legacy index pages
+    _write_index(docs_dir, active_domains, repo_url)
+    _write_legacy_page(docs_dir, legacy_domains, repo_url, now)
+
+    print(
+        "docs/ site updated "
+        f"({len(domain_dirs)} total domain(s), {len(active_domains)} active, {len(legacy_domains)} legacy)"
+    )
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 ---
 title: "manutd.com"
 layout: default
+legacy: false
 ---
 
 # manutd.com

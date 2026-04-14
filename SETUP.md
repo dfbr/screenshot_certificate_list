@@ -14,6 +14,26 @@ how to test notifications.
 - Notification recipients can be configured per-domain via `domains.yml` or
   provided as a repository secret (`DOMAINS_YML`).
 
+## Active vs legacy domains on the website
+
+The published site at https://screenshots.dfbr.co.uk separates domains into:
+
+- Active domains: latest check is less than 30 days old.
+- Legacy domains: latest check is 30 days old or older.
+
+Behavior details:
+
+- Active domains are shown on the main homepage (`docs/index.md`) and in the
+  hamburger domain list.
+- Legacy domains are hidden from the active homepage/menu and listed on a
+  dedicated `Legacy sites` page (`docs/legacy/index.md`).
+- A `Legacy sites` link is always shown at the bottom of the hamburger menu.
+- Per-domain and per-run pages are still generated for all domains, so
+  historical results remain accessible.
+
+The cutoff uses UTC date comparison against the latest run folder timestamp
+(`YYYY-MM-DD_HH-MM-SS`).
+
 ## `domains.yml` format
 
 Create a YAML mapping where keys are domain names and values are lists of

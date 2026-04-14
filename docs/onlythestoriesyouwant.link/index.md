@@ -1,6 +1,7 @@
 ---
 title: "onlythestoriesyouwant.link"
 layout: default
+legacy: false
 ---
 
 # onlythestoriesyouwant.link

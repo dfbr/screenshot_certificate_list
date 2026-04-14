@@ -1,6 +1,7 @@
 ---
 title: "socium.team"
 layout: default
+legacy: false
 ---
 
 # socium.team

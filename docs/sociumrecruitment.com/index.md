@@ -1,6 +1,7 @@
 ---
 title: "sociumrecruitment.com"
 layout: default
+legacy: false
 ---
 
 # sociumrecruitment.com

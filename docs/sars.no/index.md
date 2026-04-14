@@ -1,6 +1,7 @@
 ---
 title: "sars.no"
 layout: default
+legacy: false
 ---
 
 # sars.no

@@ -1,6 +1,7 @@
 ---
 title: "bioxsd.org"
 layout: default
+legacy: false
 ---
 
 # bioxsd.org

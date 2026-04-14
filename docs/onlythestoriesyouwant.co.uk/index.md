@@ -1,6 +1,7 @@
 ---
 title: "onlythestoriesyouwant.co.uk"
 layout: default
+legacy: false
 ---
 
 # onlythestoriesyouwant.co.uk

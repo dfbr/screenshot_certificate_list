@@ -121,6 +121,24 @@
       white-space: nowrap;
     }
 
+    .site-header .nav-footer {
+      border-top: 1px solid #e6ebf1;
+      margin-top: 0.55rem;
+      padding-top: 0.55rem;
+    }
+
+    .site-header .legacy-link {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .site-header .legacy-note {
+      margin: 0.18rem 0 0;
+      font-size: 0.75rem;
+      color: #57606a;
+    }
+
     @media (max-width: 600px) {
       .site-header .wrapper {
         align-items: flex-start;
@@ -153,12 +171,19 @@
           {% assign domain_parts = domain_page.path | split: "/" %}
           {% if domain_page.path != "index.md" and domain_parts.size == 2 and domain_parts[1] == "index.md" %}
             {% assign domain_name = domain_parts[0] %}
-            <div class="domain-row">
-              <a class="domain-link" href="{{ domain_page.url | relative_url }}">{{ domain_name }}</a>
-              <a class="gallery-link" href="{{ domain_page.url | relative_url }}gallery/">Gallery</a>
-            </div>
+            {% if domain_name != "legacy" and domain_page.legacy != true %}
+              <div class="domain-row">
+                <a class="domain-link" href="{{ domain_page.url | relative_url }}">{{ domain_name }}</a>
+                <a class="gallery-link" href="{{ domain_page.url | relative_url }}gallery/">Gallery</a>
+              </div>
+            {% endif %}
           {% endif %}
         {% endfor %}
+
+        <div class="nav-footer">
+          <a class="legacy-link" href="{{ '/legacy/' | relative_url }}">Legacy sites</a>
+          <p class="legacy-note">Not checked in 30+ days</p>
+        </div>
       </div>
     </details>
   </div>

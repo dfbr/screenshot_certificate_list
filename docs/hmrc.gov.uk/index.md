@@ -1,6 +1,7 @@
 ---
 title: "hmrc.gov.uk"
 layout: default
+legacy: false
 ---
 
 # hmrc.gov.uk

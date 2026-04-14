@@ -1,6 +1,7 @@
 ---
 title: "fitforhospital.co.uk"
 layout: default
+legacy: false
 ---
 
 # fitforhospital.co.uk

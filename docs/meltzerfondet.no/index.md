@@ -1,6 +1,7 @@
 ---
 title: "meltzerfondet.no"
 layout: default
+legacy: false
 ---
 
 # meltzerfondet.no

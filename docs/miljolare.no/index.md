@@ -1,6 +1,7 @@
 ---
 title: "miljolare.no"
 layout: default
+legacy: false
 ---
 
 # miljolare.no

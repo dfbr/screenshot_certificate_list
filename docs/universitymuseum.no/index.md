@@ -1,6 +1,7 @@
 ---
 title: "universitymuseum.no"
 layout: default
+legacy: false
 ---
 
 # universitymuseum.no

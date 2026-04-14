@@ -1,6 +1,7 @@
 ---
 title: "netlib.no"
 layout: default
+legacy: false
 ---
 
 # netlib.no

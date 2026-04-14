@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_REPO_URL = "https://github.com/dfbr/screenshot_certificate_list"
-LEGACY_DAYS = 30
+LEGACY_DAYS = 10
 
 # ---------------------------------------------------------------------------
 # Shared helpers

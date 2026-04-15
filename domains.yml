@@ -6,9 +6,9 @@ default:
   - dave@dfbr.co.uk
 
 # Per-domain recipient lists (optional)
-uib.no:
-  - david.rowan@uib.no
-  - dave@dfbr.co.uk
+# uib.no:
+#   - david.rowan@uib.no
+#   - dave@dfbr.co.uk
 
 rowanpage.co.uk:
 
@@ -38,102 +38,102 @@ dfbr.github.io:
 # hmrc.gov.uk:
   # potential job and interest
 
-alrekhelseklynge.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# alrekhelseklynge.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-baerekraftsforskning.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# baerekraftsforskning.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-bioinfo.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# bioinfo.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-bioxsd.org:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# bioxsd.org:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-ddm.org:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# ddm.org:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-holberg-prisen.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# holberg-prisen.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-holbergprisen.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# holbergprisen.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-holbergprize.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# holbergprize.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-ilab.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# ilab.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-licebase.org:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# licebase.org:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-ludvigholberg.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# ludvigholberg.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-magefedme.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# magefedme.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-meltzerfondet.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# meltzerfondet.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-miljolare.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# miljolare.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-neonnet.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# neonnet.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-netlib.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# netlib.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-sars.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# sars.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-skeivtarkiv.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# skeivtarkiv.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-skolelab.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# skolelab.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-sokogskriv.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# sokogskriv.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-universitetsmuseet.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# universitetsmuseet.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-universitymuseum.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# universitymuseum.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-wsio.org:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# wsio.org:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-nsd.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# nsd.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no
 
-sjofartsmuseum.no:
-  # Alternative non-uib.no domain that we administer
-  - david.rowan@uib.no
+# sjofartsmuseum.no:
+#   # Alternative non-uib.no domain that we administer
+#   - david.rowan@uib.no

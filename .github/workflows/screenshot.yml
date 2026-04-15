@@ -43,25 +43,43 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Install YAML parser
+        run: python3 -m pip install --quiet pyyaml
+
       - id: read
         name: Parse domains.yml / DOMAINS_YML / domains.txt
         env:
           DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           DOMAINS=$(python3 - <<'EOF'
-          import os, json, re, base64
+          import os, json, base64
+          import yaml
+
+
+          def domains_from_yaml_text(raw):
+              """Extract domains from a YAML mapping, excluding the 'default' key."""
+              try:
+                  data = yaml.safe_load(raw) or {}
+              except Exception:
+                  return []
+              if not isinstance(data, dict):
+                  return []
+              out = []
+              for key in data.keys():
+                  if isinstance(key, str):
+                      key = key.strip()
+                      if key and key != 'default':
+                          out.append(key)
+              return out
+
+
           lines = []
 
           # 1) Prefer a checked-in domains.yml mapping (keys are domain names)
           if os.path.exists('domains.yml'):
               try:
                   with open('domains.yml', 'r', encoding='utf-8') as fh:
-                      for l in fh:
-                          m = re.match(r'^\s*([^:\s][^:]*)\s*:', l)
-                          if m:
-                              key = m.group(1).strip()
-                              if key and key != 'default':
-                                  lines.append(key)
+                      lines = domains_from_yaml_text(fh.read())
               except Exception:
                   lines = []
 
@@ -72,12 +90,7 @@ jobs:
                   raw = base64.b64decode(raw_env).decode('utf-8')
               except Exception:
                   raw = raw_env
-              for l in raw.splitlines():
-                  m = re.match(r'^\s*([^:\s][^:]*)\s*:', l)
-                  if m:
-                      key = m.group(1).strip()
-                      if key and key != 'default':
-                          lines.append(key)
+              lines = domains_from_yaml_text(raw)
 
           # 3) Finally fallback to domains.txt
           if not lines and os.path.exists('domains.txt'):

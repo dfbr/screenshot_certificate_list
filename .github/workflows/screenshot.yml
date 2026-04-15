@@ -17,6 +17,10 @@ on:
         description: 'Number of screenshots to take in parallel (default: 24)'
         required: false
         default: '24'
+      domain_concurrency:
+        description: 'Number of domains to process in parallel on a single runner (default: 4)'
+        required: false
+        default: '4'
       crtsh_timeout:
         description: 'Request timeout in seconds for crt.sh queries (default: 30)'
         required: false
@@ -106,16 +110,12 @@ jobs:
           )
           echo "domains=$DOMAINS" >> "$GITHUB_OUTPUT"
 
-  # ── 2. Per-domain: query crt.sh + take screenshots ─────────────────────────
-  process:
-    name: Process ${{ matrix.domain }}
+  # ── 2. Process all domains and commit on a single runner ───────────────────
+  process_and_commit:
+    name: Process and commit results
     needs: setup
     if: needs.setup.outputs.domains != '[]'
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        domain: ${{ fromJSON(needs.setup.outputs.domains) }}
-      fail-fast: false
     steps:
       - uses: actions/checkout@v5
 
@@ -131,60 +131,74 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install --with-deps chromium
 
-      - name: Run domain processing
+      - name: Run domain processing (parallel)
+        env:
+          DOMAINS_JSON: ${{ needs.setup.outputs.domains }}
+          DOMAIN_CONCURRENCY: ${{ github.event.inputs.domain_concurrency || '4' }}
+          MAX_RUNS: ${{ github.event.inputs.max_runs || '10' }}
+          MAX_DOMAINS: ${{ github.event.inputs.max_domains || '0' }}
+          SCREENSHOT_CONCURRENCY: ${{ github.event.inputs.concurrency || '12' }}
+          CRTSH_TIMEOUT: ${{ github.event.inputs.crtsh_timeout || '30' }}
+          CRTSH_MAX_RETRIES: ${{ github.event.inputs.crtsh_max_retries || '20' }}
         run: |
-          python3 scripts/run_domain.py "${{ matrix.domain }}" \
-            --results-dir results \
-            --max-runs "${{ github.event.inputs.max_runs || '10' }}" \
-            --max-domains "${{ github.event.inputs.max_domains || '0' }}" \
-            --concurrency "${{ github.event.inputs.concurrency || '12' }}" \
-            --crtsh-timeout "${{ github.event.inputs.crtsh_timeout || '30' }}" \
-            --crtsh-max-retries "${{ github.event.inputs.crtsh_max_retries || '20' }}"
+          python3 - <<'EOF'
+          import json
+          import os
+          import subprocess
+          import sys
+          from concurrent.futures import ThreadPoolExecutor, as_completed
 
-      - name: Upload results artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: domain-${{ matrix.domain }}
-          path: results/${{ matrix.domain }}/
-          if-no-files-found: warn
+          domains = json.loads(os.environ.get("DOMAINS_JSON", "[]"))
+          if not domains:
+              print("No domains to process")
+              raise SystemExit(0)
 
-  # ── 3. Collect artifacts, update README, commit ────────────────────────────
-  commit:
-    name: Commit results
-    needs: [setup, process]
-    if: always() && needs.setup.result == 'success'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
+          workers = max(1, int(os.environ.get("DOMAIN_CONCURRENCY", "4")))
+          workers = min(workers, len(domains))
+          print(f"Processing {len(domains)} domain(s) with domain_concurrency={workers}")
 
-      - name: Download domain artifacts
-        uses: actions/download-artifact@v7
-        with:
-          path: /tmp/artifacts
-          pattern: 'domain-*'
-        continue-on-error: true
+          failures = []
 
-      - name: Merge artifacts into results/
-        run: |
-          if [ ! -d /tmp/artifacts ]; then
-            echo "No artifacts found – nothing to merge"
-            exit 0
-          fi
-          for artifact_dir in /tmp/artifacts/domain-*/; do
-            [ -d "$artifact_dir" ] || continue
-            domain=$(basename "$artifact_dir" | sed 's/^domain-//')
-            echo "Merging: $domain"
-            rm -rf "results/$domain"
-            mkdir -p "results/$domain"
-            cp -r "$artifact_dir/." "results/$domain/"
-          done
+          def run_one(domain: str):
+              cmd = [
+                  sys.executable,
+                  "scripts/run_domain.py",
+                  domain,
+                  "--results-dir",
+                  "results",
+                  "--max-runs",
+                  os.environ["MAX_RUNS"],
+                  "--max-domains",
+                  os.environ["MAX_DOMAINS"],
+                  "--concurrency",
+                  os.environ["SCREENSHOT_CONCURRENCY"],
+                  "--crtsh-timeout",
+                  os.environ["CRTSH_TIMEOUT"],
+                  "--crtsh-max-retries",
+                  os.environ["CRTSH_MAX_RETRIES"],
+              ]
+              proc = subprocess.run(cmd, text=True, capture_output=True)
+              return domain, proc.returncode, proc.stdout, proc.stderr
 
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
+          with ThreadPoolExecutor(max_workers=workers) as executor:
+              futures = [executor.submit(run_one, domain) for domain in domains]
+              for future in as_completed(futures):
+                  domain, rc, out, err = future.result()
+                  print(f"\n=== Domain: {domain} (exit={rc}) ===")
+                  if out:
+                      print(out.rstrip())
+                  if err:
+                      print(err.rstrip(), file=sys.stderr)
+                  if rc != 0:
+                      failures.append(domain)
 
-      - name: Install Python dependencies
-        run: pip install -r scripts/requirements.txt
+          if failures:
+              print(
+                  "WARNING: one or more domains failed (continuing so partial results can be committed): "
+                  + ", ".join(sorted(failures)),
+                  file=sys.stderr,
+              )
+          EOF
 
       - name: Notify new responsive domains
         if: always()

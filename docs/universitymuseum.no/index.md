@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.universitymuseum.no).
 
-## Latest Run: 14.04.2026
+## Latest Run: 15.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.universitymuseum.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `15.04.2026` | 1 | 1 | [View](2026-04-15_06-54-07/) |
 | `14.04.2026` | 1 | 1 | [View](2026-04-14_06-52-30/) |
 | `13.04.2026` | 1 | 1 | [View](2026-04-13_07-13-05/) |
 | `12.04.2026` | 1 | 1 | [View](2026-04-12_06-23-25/) |

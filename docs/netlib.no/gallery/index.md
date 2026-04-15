@@ -1,5 +1,5 @@
 ---
-title: "netlib.no Gallery (14.04.2026)"
+title: "netlib.no Gallery (15.04.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://netlib.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-14_06-52-29/screenshots/netlib.no.png" alt="netlib.no" loading="lazy" />
+          <img src="../2026-04-15_06-54-11/screenshots/netlib.no.png" alt="netlib.no" loading="lazy" />
           <figcaption>netlib.no</figcaption>
         </a>
       </figure>

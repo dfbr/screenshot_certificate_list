@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.nsd.no).
 
-## Latest Run: 14.04.2026
+## Latest Run: 15.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -27,6 +27,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.nsd.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `15.04.2026` | 84 | 26 | [View](2026-04-15_06-57-16/) |
 | `14.04.2026` | 84 | 26 | [View](2026-04-14_06-52-29/) |
 | `13.04.2026` | 84 | 26 | [View](2026-04-13_07-13-12/) |
 | `12.04.2026` | 84 | 26 | [View](2026-04-12_06-23-26/) |

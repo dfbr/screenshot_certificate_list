@@ -1,0 +1,8 @@
+{
+  "betal.universitetsmuseet.no": "ok",
+  "prod.universitetsmuseet.no": "ok",
+  "test.universitetsmuseet.no": "timeout",
+  "universitetsmuseet.no": "ok",
+  "www.betal.universitetsmuseet.no": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.betal.universitetsmuseet.no/",
+  "www.universitetsmuseet.no": "ok"
+}

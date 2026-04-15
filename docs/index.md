@@ -8,55 +8,146 @@ layout: default
 Automated screenshots of domains discovered via certificate transparency logs
 ([crt.sh](https://crt.sh/)).
 
-> Last updated: 14.04.2026
+> Last updated: 15.04.2026
 
 ## Monitored Domains
 
 | Domain | Latest Run | Subdomains | Online |
 |--------|------------|-----------|--------|
-| [alrekhelseklynge.no](alrekhelseklynge.no/) | `14.04.2026` | 2 | 2 |
-| [baerekraftsforskning.no](baerekraftsforskning.no/) | `14.04.2026` | 2 | 2 |
-| [bioinfo.no](bioinfo.no/) | `14.04.2026` | 11 | 3 |
-| [bioxsd.org](bioxsd.org/) | `14.04.2026` | 2 | 2 |
-| [ddm.org](ddm.org/) | `14.04.2026` | 2 | 2 |
-| [dfbp.co.uk](dfbp.co.uk/) | `14.04.2026` | 1 | 0 |
-| [dfbr.co.uk](dfbr.co.uk/) | `14.04.2026` | 2 | 1 |
-| [fitforhospital.co.uk](fitforhospital.co.uk/) | `14.04.2026` | 1 | 1 |
+| [# hmrc.gov.uk](# hmrc.gov.uk/) | `15.04.2026` | 1 | 0 |
+| [# manutd.com](# manutd.com/) | `15.04.2026` | 1 | 0 |
+| [# socium.team](# socium.team/) | `15.04.2026` | 1 | 0 |
+| [# sociumrecruitment.com](# sociumrecruitment.com/) | `15.04.2026` | 1 | 0 |
+| [# www.summize.com](# www.summize.com/) | `15.04.2026` | 1 | 0 |
+| [alrekhelseklynge.no](alrekhelseklynge.no/) | `15.04.2026` | 2 | 2 |
+| [baerekraftsforskning.no](baerekraftsforskning.no/) | `15.04.2026` | 2 | 2 |
+| [bioinfo.no](bioinfo.no/) | `15.04.2026` | 11 | 3 |
+| [bioxsd.org](bioxsd.org/) | `15.04.2026` | 2 | 2 |
+| [ddm.org](ddm.org/) | `15.04.2026` | 2 | 2 |
+| [dfbp.co.uk](dfbp.co.uk/) | `15.04.2026` | 1 | 0 |
+| [dfbr.co.uk](dfbr.co.uk/) | `15.04.2026` | 2 | 1 |
+| [dfbr.github.io](dfbr.github.io/) | `15.04.2026` | 1 | 1 |
+| [fitforhospital.co.uk](fitforhospital.co.uk/) | `15.04.2026` | 1 | 1 |
 | [hmrc.gov.uk](hmrc.gov.uk/) | `14.04.2026` | 451 | 57 |
-| [holberg-prisen.no](holberg-prisen.no/) | `14.04.2026` | 2 | 2 |
-| [holbergprisen.no](holbergprisen.no/) | `14.04.2026` | 7 | 4 |
-| [holbergprize.no](holbergprize.no/) | `14.04.2026` | 2 | 2 |
-| [ilab.no](ilab.no/) | `14.04.2026` | 2 | 2 |
-| [licebase.org](licebase.org/) | `14.04.2026` | 2 | 2 |
-| [ludvigholberg.no](ludvigholberg.no/) | `14.04.2026` | 1 | 1 |
-| [magefedme.no](magefedme.no/) | `14.04.2026` | 1 | 1 |
+| [holberg-prisen.no](holberg-prisen.no/) | `15.04.2026` | 2 | 2 |
+| [holbergprisen.no](holbergprisen.no/) | `15.04.2026` | 7 | 4 |
+| [holbergprize.no](holbergprize.no/) | `15.04.2026` | 2 | 2 |
+| [ilab.no](ilab.no/) | `15.04.2026` | 2 | 2 |
+| [licebase.org](licebase.org/) | `15.04.2026` | 2 | 2 |
+| [ludvigholberg.no](ludvigholberg.no/) | `15.04.2026` | 1 | 1 |
+| [magefedme.no](magefedme.no/) | `15.04.2026` | 1 | 1 |
 | [manutd.com](manutd.com/) | `14.04.2026` | 164 | 32 |
-| [meltzerfondet.no](meltzerfondet.no/) | `14.04.2026` | 1 | 0 |
-| [miljolare.no](miljolare.no/) | `14.04.2026` | 6 | 4 |
-| [neonnet.no](neonnet.no/) | `14.04.2026` | 2 | 2 |
-| [netlib.no](netlib.no/) | `14.04.2026` | 1 | 1 |
-| [nsd.no](nsd.no/) | `14.04.2026` | 84 | 26 |
+| [meltzerfondet.no](meltzerfondet.no/) | `15.04.2026` | 1 | 0 |
+| [miljolare.no](miljolare.no/) | `15.04.2026` | 6 | 4 |
+| [neonnet.no](neonnet.no/) | `15.04.2026` | 2 | 2 |
+| [netlib.no](netlib.no/) | `15.04.2026` | 1 | 1 |
+| [nsd.no](nsd.no/) | `15.04.2026` | 84 | 26 |
 | [onlythestoriesyouwant.co.uk](onlythestoriesyouwant.co.uk/) | `12.04.2026` | 1 | 0 |
-| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `14.04.2026` | 2 | 2 |
-| [rowanpage.co.uk](rowanpage.co.uk/) | `14.04.2026` | 2 | 0 |
-| [sars.no](sars.no/) | `14.04.2026` | 2 | 2 |
-| [sjofartsmuseum.no](sjofartsmuseum.no/) | `14.04.2026` | 2 | 2 |
-| [skeivtarkiv.no](skeivtarkiv.no/) | `14.04.2026` | 5 | 3 |
-| [skolelab.no](skolelab.no/) | `14.04.2026` | 3 | 2 |
+| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `15.04.2026` | 2 | 2 |
+| [rowanpage.co.uk](rowanpage.co.uk/) | `15.04.2026` | 2 | 0 |
+| [sars.no](sars.no/) | `15.04.2026` | 2 | 2 |
+| [sjofartsmuseum.no](sjofartsmuseum.no/) | `15.04.2026` | 2 | 2 |
+| [skeivtarkiv.no](skeivtarkiv.no/) | `15.04.2026` | 5 | 3 |
+| [skolelab.no](skolelab.no/) | `15.04.2026` | 3 | 2 |
 | [socium.team](socium.team/) | `14.04.2026` | 9 | 7 |
 | [sociumrecruitment.com](sociumrecruitment.com/) | `14.04.2026` | 10 | 4 |
-| [sokogskriv.no](sokogskriv.no/) | `14.04.2026` | 2 | 2 |
-| [uib.no](uib.no/) | `14.04.2026` | 1086 | 213 |
-| [universitetsmuseet.no](universitetsmuseet.no/) | `14.04.2026` | 6 | 4 |
-| [universitymuseum.no](universitymuseum.no/) | `14.04.2026` | 1 | 1 |
-| [wsio.org](wsio.org/) | `14.04.2026` | 2 | 2 |
+| [sokogskriv.no](sokogskriv.no/) | `15.04.2026` | 2 | 2 |
+| [uib.no](uib.no/) | `15.04.2026` | 1086 | 213 |
+| [universitetsmuseet.no](universitetsmuseet.no/) | `15.04.2026` | 6 | 4 |
+| [universitymuseum.no](universitymuseum.no/) | `15.04.2026` | 1 | 1 |
+| [wsio.org](wsio.org/) | `15.04.2026` | 1 | 1 |
 | [www.summize.com](www.summize.com/) | `14.04.2026` | 1 | 1 |
 
 ## Domain Details
 
+### [# hmrc.gov.uk](# hmrc.gov.uk/)
+
+Latest run: [`15.04.2026`](# hmrc.gov.uk/2026-04-15_06-54-46/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](# hmrc.gov.uk/2026-04-15_06-54-46/) | 1 | 0 |
+
+
+### [# manutd.com](# manutd.com/)
+
+Latest run: [`15.04.2026`](# manutd.com/2026-04-15_06-54-09/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](# manutd.com/2026-04-15_06-54-09/) | 1 | 0 |
+
+
+### [# socium.team](# socium.team/)
+
+Latest run: [`15.04.2026`](# socium.team/2026-04-15_06-54-11/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](# socium.team/2026-04-15_06-54-11/) | 1 | 0 |
+
+
+### [# sociumrecruitment.com](# sociumrecruitment.com/)
+
+Latest run: [`15.04.2026`](# sociumrecruitment.com/2026-04-15_06-54-09/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](# sociumrecruitment.com/2026-04-15_06-54-09/) | 1 | 0 |
+
+
+### [# www.summize.com](# www.summize.com/)
+
+Latest run: [`15.04.2026`](# www.summize.com/2026-04-15_06-54-08/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](# www.summize.com/2026-04-15_06-54-08/) | 1 | 0 |
+
+
 ### [alrekhelseklynge.no](alrekhelseklynge.no/)
 
-Latest run: [`14.04.2026`](alrekhelseklynge.no/2026-04-14_06-52-26/)
+Latest run: [`15.04.2026`](alrekhelseklynge.no/2026-04-15_06-54-09/)
 
 | Metric | Count |
 |-------:|------:|
@@ -67,6 +158,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](alrekhelseklynge.no/2026-04-15_06-54-09/) | 2 | 2 |
 | [`14.04.2026`](alrekhelseklynge.no/2026-04-14_06-52-26/) | 2 | 2 |
 | [`13.04.2026`](alrekhelseklynge.no/2026-04-13_07-13-19/) | 2 | 2 |
 | [`12.04.2026`](alrekhelseklynge.no/2026-04-12_06-23-32/) | 2 | 2 |
@@ -79,7 +171,7 @@ Previous runs:
 
 ### [baerekraftsforskning.no](baerekraftsforskning.no/)
 
-Latest run: [`14.04.2026`](baerekraftsforskning.no/2026-04-14_06-52-33/)
+Latest run: [`15.04.2026`](baerekraftsforskning.no/2026-04-15_06-54-10/)
 
 | Metric | Count |
 |-------:|------:|
@@ -90,6 +182,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](baerekraftsforskning.no/2026-04-15_06-54-10/) | 2 | 2 |
 | [`14.04.2026`](baerekraftsforskning.no/2026-04-14_06-52-33/) | 2 | 2 |
 | [`13.04.2026`](baerekraftsforskning.no/2026-04-13_07-13-10/) | 2 | 2 |
 | [`12.04.2026`](baerekraftsforskning.no/2026-04-12_06-23-33/) | 2 | 2 |
@@ -102,7 +195,7 @@ Previous runs:
 
 ### [bioinfo.no](bioinfo.no/)
 
-Latest run: [`14.04.2026`](bioinfo.no/2026-04-14_06-52-50/)
+Latest run: [`15.04.2026`](bioinfo.no/2026-04-15_06-54-10/)
 
 | Metric | Count |
 |-------:|------:|
@@ -114,6 +207,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](bioinfo.no/2026-04-15_06-54-10/) | 11 | 3 |
 | [`14.04.2026`](bioinfo.no/2026-04-14_06-52-50/) | 11 | 3 |
 | [`13.04.2026`](bioinfo.no/2026-04-13_07-13-10/) | 11 | 3 |
 | [`12.04.2026`](bioinfo.no/2026-04-12_06-23-27/) | 11 | 3 |
@@ -126,7 +220,7 @@ Previous runs:
 
 ### [bioxsd.org](bioxsd.org/)
 
-Latest run: [`14.04.2026`](bioxsd.org/2026-04-14_06-56-44/)
+Latest run: [`15.04.2026`](bioxsd.org/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -137,6 +231,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](bioxsd.org/2026-04-15_06-54-07/) | 2 | 2 |
 | [`14.04.2026`](bioxsd.org/2026-04-14_06-56-44/) | 2 | 2 |
 | [`13.04.2026`](bioxsd.org/2026-04-13_07-23-02/) | 2 | 2 |
 | [`12.04.2026`](bioxsd.org/2026-04-12_06-23-29/) | 2 | 2 |
@@ -149,7 +244,7 @@ Previous runs:
 
 ### [ddm.org](ddm.org/)
 
-Latest run: [`14.04.2026`](ddm.org/2026-04-14_06-56-49/)
+Latest run: [`15.04.2026`](ddm.org/2026-04-15_06-54-10/)
 
 | Metric | Count |
 |-------:|------:|
@@ -160,6 +255,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](ddm.org/2026-04-15_06-54-10/) | 2 | 2 |
 | [`14.04.2026`](ddm.org/2026-04-14_06-56-49/) | 2 | 2 |
 | [`13.04.2026`](ddm.org/2026-04-13_07-13-09/) | 2 | 2 |
 | [`12.04.2026`](ddm.org/2026-04-12_06-23-29/) | 2 | 2 |
@@ -172,7 +268,7 @@ Previous runs:
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`14.04.2026`](dfbp.co.uk/2026-04-14_06-52-31/)
+Latest run: [`15.04.2026`](dfbp.co.uk/2026-04-15_06-54-06/)
 
 | Metric | Count |
 |-------:|------:|
@@ -184,6 +280,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](dfbp.co.uk/2026-04-15_06-54-06/) | 1 | 0 |
 | [`14.04.2026`](dfbp.co.uk/2026-04-14_06-52-31/) | 1 | 0 |
 | [`13.04.2026`](dfbp.co.uk/2026-04-13_07-13-14/) | 1 | 0 |
 | [`12.04.2026`](dfbp.co.uk/2026-04-12_06-23-31/) | 1 | 0 |
@@ -193,12 +290,11 @@ Previous runs:
 | [`08.04.2026`](dfbp.co.uk/2026-04-08_09-05-08/) | 1 | 0 |
 | [`08.04.2026`](dfbp.co.uk/2026-04-08_08-39-34/) | 1 | 0 |
 | [`08.04.2026`](dfbp.co.uk/2026-04-08_06-23-02/) | 1 | 0 |
-| [`07.04.2026`](dfbp.co.uk/2026-04-07_09-18-36/) | 1 | 0 |
 
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`14.04.2026`](dfbr.co.uk/2026-04-14_06-52-32/)
+Latest run: [`15.04.2026`](dfbr.co.uk/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -210,6 +306,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](dfbr.co.uk/2026-04-15_06-54-07/) | 2 | 1 |
 | [`14.04.2026`](dfbr.co.uk/2026-04-14_06-52-32/) | 2 | 1 |
 | [`13.04.2026`](dfbr.co.uk/2026-04-13_07-13-21/) | 2 | 1 |
 | [`12.04.2026`](dfbr.co.uk/2026-04-12_06-23-27/) | 2 | 1 |
@@ -219,12 +316,11 @@ Previous runs:
 | [`08.04.2026`](dfbr.co.uk/2026-04-08_09-05-16/) | 2 | 1 |
 | [`08.04.2026`](dfbr.co.uk/2026-04-08_08-39-28/) | 2 | 1 |
 | [`08.04.2026`](dfbr.co.uk/2026-04-08_06-20-38/) | 2 | 1 |
-| [`07.04.2026`](dfbr.co.uk/2026-04-07_09-18-40/) | 2 | 1 |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/)
+### [dfbr.github.io](dfbr.github.io/)
 
-Latest run: [`14.04.2026`](fitforhospital.co.uk/2026-04-14_06-52-30/)
+Latest run: [`15.04.2026`](dfbr.github.io/2026-04-15_06-54-14/)
 
 | Metric | Count |
 |-------:|------:|
@@ -235,6 +331,23 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](dfbr.github.io/2026-04-15_06-54-14/) | 1 | 1 |
+
+
+### [fitforhospital.co.uk](fitforhospital.co.uk/)
+
+Latest run: [`15.04.2026`](fitforhospital.co.uk/2026-04-15_06-57-17/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`15.04.2026`](fitforhospital.co.uk/2026-04-15_06-57-17/) | 1 | 1 |
 | [`14.04.2026`](fitforhospital.co.uk/2026-04-14_06-52-30/) | 1 | 1 |
 | [`13.04.2026`](fitforhospital.co.uk/2026-04-13_07-13-09/) | 1 | 1 |
 | [`12.04.2026`](fitforhospital.co.uk/2026-04-12_06-23-25/) | 1 | 1 |
@@ -244,7 +357,6 @@ Previous runs:
 | [`08.04.2026`](fitforhospital.co.uk/2026-04-08_09-05-09/) | 1 | 1 |
 | [`08.04.2026`](fitforhospital.co.uk/2026-04-08_08-39-29/) | 1 | 1 |
 | [`08.04.2026`](fitforhospital.co.uk/2026-04-08_06-20-39/) | 1 | 1 |
-| [`07.04.2026`](fitforhospital.co.uk/2026-04-07_09-18-38/) | 1 | 1 |
 
 
 ### [hmrc.gov.uk](hmrc.gov.uk/)
@@ -283,7 +395,7 @@ Previous runs:
 
 ### [holberg-prisen.no](holberg-prisen.no/)
 
-Latest run: [`14.04.2026`](holberg-prisen.no/2026-04-14_06-52-32/)
+Latest run: [`15.04.2026`](holberg-prisen.no/2026-04-15_06-54-05/)
 
 | Metric | Count |
 |-------:|------:|
@@ -294,6 +406,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](holberg-prisen.no/2026-04-15_06-54-05/) | 2 | 2 |
 | [`14.04.2026`](holberg-prisen.no/2026-04-14_06-52-32/) | 2 | 2 |
 | [`13.04.2026`](holberg-prisen.no/2026-04-13_07-13-11/) | 2 | 2 |
 | [`11.04.2026`](holberg-prisen.no/2026-04-11_05-59-45/) | 2 | 2 |
@@ -305,7 +418,7 @@ Previous runs:
 
 ### [holbergprisen.no](holbergprisen.no/)
 
-Latest run: [`14.04.2026`](holbergprisen.no/2026-04-14_06-52-36/)
+Latest run: [`15.04.2026`](holbergprisen.no/2026-04-15_06-54-08/)
 
 | Metric | Count |
 |-------:|------:|
@@ -317,6 +430,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](holbergprisen.no/2026-04-15_06-54-08/) | 7 | 4 |
 | [`14.04.2026`](holbergprisen.no/2026-04-14_06-52-36/) | 7 | 4 |
 | [`13.04.2026`](holbergprisen.no/2026-04-13_07-13-08/) | 7 | 4 |
 | [`12.04.2026`](holbergprisen.no/2026-04-12_06-23-25/) | 7 | 4 |
@@ -329,7 +443,7 @@ Previous runs:
 
 ### [holbergprize.no](holbergprize.no/)
 
-Latest run: [`14.04.2026`](holbergprize.no/2026-04-14_06-52-28/)
+Latest run: [`15.04.2026`](holbergprize.no/2026-04-15_06-54-18/)
 
 | Metric | Count |
 |-------:|------:|
@@ -340,6 +454,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](holbergprize.no/2026-04-15_06-54-18/) | 2 | 2 |
 | [`14.04.2026`](holbergprize.no/2026-04-14_06-52-28/) | 2 | 2 |
 | [`13.04.2026`](holbergprize.no/2026-04-13_07-13-10/) | 2 | 2 |
 | [`12.04.2026`](holbergprize.no/2026-04-12_06-23-32/) | 2 | 2 |
@@ -352,7 +467,7 @@ Previous runs:
 
 ### [ilab.no](ilab.no/)
 
-Latest run: [`14.04.2026`](ilab.no/2026-04-14_06-52-26/)
+Latest run: [`15.04.2026`](ilab.no/2026-04-15_06-54-09/)
 
 | Metric | Count |
 |-------:|------:|
@@ -363,6 +478,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](ilab.no/2026-04-15_06-54-09/) | 2 | 2 |
 | [`14.04.2026`](ilab.no/2026-04-14_06-52-26/) | 2 | 2 |
 | [`13.04.2026`](ilab.no/2026-04-13_07-13-11/) | 2 | 2 |
 | [`12.04.2026`](ilab.no/2026-04-12_06-23-32/) | 2 | 2 |
@@ -375,7 +491,7 @@ Previous runs:
 
 ### [licebase.org](licebase.org/)
 
-Latest run: [`14.04.2026`](licebase.org/2026-04-14_06-57-00/)
+Latest run: [`15.04.2026`](licebase.org/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -386,6 +502,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](licebase.org/2026-04-15_06-54-07/) | 2 | 2 |
 | [`14.04.2026`](licebase.org/2026-04-14_06-57-00/) | 2 | 2 |
 | [`13.04.2026`](licebase.org/2026-04-13_07-13-07/) | 2 | 2 |
 | [`12.04.2026`](licebase.org/2026-04-12_06-23-28/) | 2 | 2 |
@@ -398,7 +515,7 @@ Previous runs:
 
 ### [ludvigholberg.no](ludvigholberg.no/)
 
-Latest run: [`14.04.2026`](ludvigholberg.no/2026-04-14_06-52-29/)
+Latest run: [`15.04.2026`](ludvigholberg.no/2026-04-15_06-54-08/)
 
 | Metric | Count |
 |-------:|------:|
@@ -409,6 +526,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](ludvigholberg.no/2026-04-15_06-54-08/) | 1 | 1 |
 | [`14.04.2026`](ludvigholberg.no/2026-04-14_06-52-29/) | 1 | 1 |
 | [`13.04.2026`](ludvigholberg.no/2026-04-13_07-13-11/) | 1 | 1 |
 | [`12.04.2026`](ludvigholberg.no/2026-04-12_06-23-30/) | 1 | 1 |
@@ -421,7 +539,7 @@ Previous runs:
 
 ### [magefedme.no](magefedme.no/)
 
-Latest run: [`14.04.2026`](magefedme.no/2026-04-14_06-52-27/)
+Latest run: [`15.04.2026`](magefedme.no/2026-04-15_06-54-13/)
 
 | Metric | Count |
 |-------:|------:|
@@ -432,6 +550,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](magefedme.no/2026-04-15_06-54-13/) | 1 | 1 |
 | [`14.04.2026`](magefedme.no/2026-04-14_06-52-27/) | 1 | 1 |
 | [`13.04.2026`](magefedme.no/2026-04-13_07-13-13/) | 1 | 1 |
 | [`12.04.2026`](magefedme.no/2026-04-12_06-23-32/) | 1 | 1 |
@@ -481,7 +600,7 @@ Previous runs:
 
 ### [meltzerfondet.no](meltzerfondet.no/)
 
-Latest run: [`14.04.2026`](meltzerfondet.no/2026-04-14_06-52-33/)
+Latest run: [`15.04.2026`](meltzerfondet.no/2026-04-15_06-54-05/)
 
 | Metric | Count |
 |-------:|------:|
@@ -493,6 +612,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](meltzerfondet.no/2026-04-15_06-54-05/) | 1 | 0 |
 | [`14.04.2026`](meltzerfondet.no/2026-04-14_06-52-33/) | 1 | 0 |
 | [`13.04.2026`](meltzerfondet.no/2026-04-13_07-13-13/) | 1 | 0 |
 | [`12.04.2026`](meltzerfondet.no/2026-04-12_06-23-30/) | 1 | 0 |
@@ -505,7 +625,7 @@ Previous runs:
 
 ### [miljolare.no](miljolare.no/)
 
-Latest run: [`14.04.2026`](miljolare.no/2026-04-14_06-52-28/)
+Latest run: [`15.04.2026`](miljolare.no/2026-04-15_06-54-13/)
 
 | Metric | Count |
 |-------:|------:|
@@ -517,6 +637,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](miljolare.no/2026-04-15_06-54-13/) | 6 | 4 |
 | [`14.04.2026`](miljolare.no/2026-04-14_06-52-28/) | 6 | 4 |
 | [`13.04.2026`](miljolare.no/2026-04-13_07-13-14/) | 6 | 4 |
 | [`12.04.2026`](miljolare.no/2026-04-12_06-23-28/) | 6 | 4 |
@@ -529,7 +650,7 @@ Previous runs:
 
 ### [neonnet.no](neonnet.no/)
 
-Latest run: [`14.04.2026`](neonnet.no/2026-04-14_06-52-32/)
+Latest run: [`15.04.2026`](neonnet.no/2026-04-15_06-54-06/)
 
 | Metric | Count |
 |-------:|------:|
@@ -540,6 +661,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](neonnet.no/2026-04-15_06-54-06/) | 2 | 2 |
 | [`14.04.2026`](neonnet.no/2026-04-14_06-52-32/) | 2 | 2 |
 | [`13.04.2026`](neonnet.no/2026-04-13_07-13-09/) | 2 | 2 |
 | [`12.04.2026`](neonnet.no/2026-04-12_06-23-29/) | 2 | 2 |
@@ -552,7 +674,7 @@ Previous runs:
 
 ### [netlib.no](netlib.no/)
 
-Latest run: [`14.04.2026`](netlib.no/2026-04-14_06-52-29/)
+Latest run: [`15.04.2026`](netlib.no/2026-04-15_06-54-11/)
 
 | Metric | Count |
 |-------:|------:|
@@ -563,6 +685,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](netlib.no/2026-04-15_06-54-11/) | 1 | 1 |
 | [`14.04.2026`](netlib.no/2026-04-14_06-52-29/) | 1 | 1 |
 | [`13.04.2026`](netlib.no/2026-04-13_07-13-06/) | 1 | 1 |
 | [`12.04.2026`](netlib.no/2026-04-12_06-23-28/) | 1 | 1 |
@@ -575,7 +698,7 @@ Previous runs:
 
 ### [nsd.no](nsd.no/)
 
-Latest run: [`14.04.2026`](nsd.no/2026-04-14_06-52-29/)
+Latest run: [`15.04.2026`](nsd.no/2026-04-15_06-57-16/)
 
 | Metric | Count |
 |-------:|------:|
@@ -590,6 +713,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](nsd.no/2026-04-15_06-57-16/) | 84 | 26 |
 | [`14.04.2026`](nsd.no/2026-04-14_06-52-29/) | 84 | 26 |
 | [`13.04.2026`](nsd.no/2026-04-13_07-13-12/) | 84 | 26 |
 | [`12.04.2026`](nsd.no/2026-04-12_06-23-26/) | 84 | 26 |
@@ -626,7 +750,7 @@ Previous runs:
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`14.04.2026`](onlythestoriesyouwant.link/2026-04-14_06-52-31/)
+Latest run: [`15.04.2026`](onlythestoriesyouwant.link/2026-04-15_06-54-13/)
 
 | Metric | Count |
 |-------:|------:|
@@ -637,6 +761,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](onlythestoriesyouwant.link/2026-04-15_06-54-13/) | 2 | 2 |
 | [`14.04.2026`](onlythestoriesyouwant.link/2026-04-14_06-52-31/) | 2 | 2 |
 | [`13.04.2026`](onlythestoriesyouwant.link/2026-04-13_07-13-17/) | 2 | 2 |
 | [`07.04.2026`](onlythestoriesyouwant.link/2026-04-07_06-18-52/) | 2 | 2 |
@@ -646,12 +771,11 @@ Previous runs:
 | [`03.04.2026`](onlythestoriesyouwant.link/2026-04-03_06-12-13/) | 1 | 1 |
 | [`02.04.2026`](onlythestoriesyouwant.link/2026-04-02_06-11-58/) | 2 | 2 |
 | [`01.04.2026`](onlythestoriesyouwant.link/2026-04-01_06-26-10/) | 2 | 2 |
-| [`31.03.2026`](onlythestoriesyouwant.link/2026-03-31_06-15-45/) | 2 | 2 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`14.04.2026`](rowanpage.co.uk/2026-04-14_06-58-06/)
+Latest run: [`15.04.2026`](rowanpage.co.uk/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -663,6 +787,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](rowanpage.co.uk/2026-04-15_06-54-07/) | 2 | 0 |
 | [`14.04.2026`](rowanpage.co.uk/2026-04-14_06-58-06/) | 2 | 0 |
 | [`13.04.2026`](rowanpage.co.uk/2026-04-13_07-13-13/) | 2 | 0 |
 | [`12.04.2026`](rowanpage.co.uk/2026-04-12_06-23-34/) | 2 | 0 |
@@ -672,12 +797,11 @@ Previous runs:
 | [`08.04.2026`](rowanpage.co.uk/2026-04-08_09-05-24/) | 2 | 0 |
 | [`08.04.2026`](rowanpage.co.uk/2026-04-08_08-39-28/) | 2 | 0 |
 | [`08.04.2026`](rowanpage.co.uk/2026-04-08_06-20-35/) | 2 | 0 |
-| [`07.04.2026`](rowanpage.co.uk/2026-04-07_09-18-41/) | 2 | 0 |
 
 
 ### [sars.no](sars.no/)
 
-Latest run: [`14.04.2026`](sars.no/2026-04-14_06-52-28/)
+Latest run: [`15.04.2026`](sars.no/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -688,6 +812,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](sars.no/2026-04-15_06-54-07/) | 2 | 2 |
 | [`14.04.2026`](sars.no/2026-04-14_06-52-28/) | 2 | 2 |
 | [`13.04.2026`](sars.no/2026-04-13_07-13-09/) | 2 | 2 |
 | [`12.04.2026`](sars.no/2026-04-12_06-23-33/) | 2 | 2 |
@@ -700,7 +825,7 @@ Previous runs:
 
 ### [sjofartsmuseum.no](sjofartsmuseum.no/)
 
-Latest run: [`14.04.2026`](sjofartsmuseum.no/2026-04-14_06-52-32/)
+Latest run: [`15.04.2026`](sjofartsmuseum.no/2026-04-15_06-54-45/)
 
 | Metric | Count |
 |-------:|------:|
@@ -711,6 +836,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](sjofartsmuseum.no/2026-04-15_06-54-45/) | 2 | 2 |
 | [`14.04.2026`](sjofartsmuseum.no/2026-04-14_06-52-32/) | 2 | 2 |
 | [`13.04.2026`](sjofartsmuseum.no/2026-04-13_07-13-11/) | 1 | 1 |
 | [`12.04.2026`](sjofartsmuseum.no/2026-04-12_06-23-31/) | 2 | 2 |
@@ -723,7 +849,7 @@ Previous runs:
 
 ### [skeivtarkiv.no](skeivtarkiv.no/)
 
-Latest run: [`14.04.2026`](skeivtarkiv.no/2026-04-14_06-52-59/)
+Latest run: [`15.04.2026`](skeivtarkiv.no/2026-04-15_06-54-06/)
 
 | Metric | Count |
 |-------:|------:|
@@ -735,6 +861,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](skeivtarkiv.no/2026-04-15_06-54-06/) | 5 | 3 |
 | [`14.04.2026`](skeivtarkiv.no/2026-04-14_06-52-59/) | 5 | 3 |
 | [`13.04.2026`](skeivtarkiv.no/2026-04-13_07-13-11/) | 5 | 3 |
 | [`12.04.2026`](skeivtarkiv.no/2026-04-12_06-23-32/) | 5 | 3 |
@@ -747,7 +874,7 @@ Previous runs:
 
 ### [skolelab.no](skolelab.no/)
 
-Latest run: [`14.04.2026`](skolelab.no/2026-04-14_06-52-32/)
+Latest run: [`15.04.2026`](skolelab.no/2026-04-15_06-54-10/)
 
 | Metric | Count |
 |-------:|------:|
@@ -759,6 +886,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](skolelab.no/2026-04-15_06-54-10/) | 3 | 2 |
 | [`14.04.2026`](skolelab.no/2026-04-14_06-52-32/) | 3 | 2 |
 | [`13.04.2026`](skolelab.no/2026-04-13_07-13-12/) | 3 | 2 |
 | [`12.04.2026`](skolelab.no/2026-04-12_06-23-33/) | 3 | 2 |
@@ -824,7 +952,7 @@ Previous runs:
 
 ### [sokogskriv.no](sokogskriv.no/)
 
-Latest run: [`14.04.2026`](sokogskriv.no/2026-04-14_06-52-31/)
+Latest run: [`15.04.2026`](sokogskriv.no/2026-04-15_06-54-12/)
 
 | Metric | Count |
 |-------:|------:|
@@ -835,6 +963,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](sokogskriv.no/2026-04-15_06-54-12/) | 2 | 2 |
 | [`14.04.2026`](sokogskriv.no/2026-04-14_06-52-31/) | 2 | 2 |
 | [`13.04.2026`](sokogskriv.no/2026-04-13_07-13-07/) | 2 | 2 |
 | [`12.04.2026`](sokogskriv.no/2026-04-12_06-23-24/) | 2 | 2 |
@@ -847,7 +976,7 @@ Previous runs:
 
 ### [uib.no](uib.no/)
 
-Latest run: [`14.04.2026`](uib.no/2026-04-14_06-52-28/)
+Latest run: [`15.04.2026`](uib.no/2026-04-15_06-54-11/)
 
 | Metric | Count |
 |-------:|------:|
@@ -868,6 +997,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](uib.no/2026-04-15_06-54-11/) | 1086 | 213 |
 | [`14.04.2026`](uib.no/2026-04-14_06-52-28/) | 1086 | 213 |
 | [`13.04.2026`](uib.no/2026-04-13_07-13-09/) | 1086 | 212 |
 | [`12.04.2026`](uib.no/2026-04-12_06-23-30/) | 1086 | 212 |
@@ -877,12 +1007,11 @@ Previous runs:
 | [`08.04.2026`](uib.no/2026-04-08_09-05-14/) | 1086 | 214 |
 | [`08.04.2026`](uib.no/2026-04-08_08-39-35/) | 1086 | 214 |
 | [`08.04.2026`](uib.no/2026-04-08_06-20-38/) | 1086 | 211 |
-| [`07.04.2026`](uib.no/2026-04-07_09-18-33/) | 1086 | 209 |
 
 
 ### [universitetsmuseet.no](universitetsmuseet.no/)
 
-Latest run: [`14.04.2026`](universitetsmuseet.no/2026-04-14_06-52-28/)
+Latest run: [`15.04.2026`](universitetsmuseet.no/2026-04-15_06-54-05/)
 
 | Metric | Count |
 |-------:|------:|
@@ -895,6 +1024,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](universitetsmuseet.no/2026-04-15_06-54-05/) | 6 | 4 |
 | [`14.04.2026`](universitetsmuseet.no/2026-04-14_06-52-28/) | 6 | 4 |
 | [`13.04.2026`](universitetsmuseet.no/2026-04-13_07-13-11/) | 6 | 4 |
 | [`12.04.2026`](universitetsmuseet.no/2026-04-12_06-23-35/) | 6 | 4 |
@@ -907,7 +1037,7 @@ Previous runs:
 
 ### [universitymuseum.no](universitymuseum.no/)
 
-Latest run: [`14.04.2026`](universitymuseum.no/2026-04-14_06-52-30/)
+Latest run: [`15.04.2026`](universitymuseum.no/2026-04-15_06-54-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -918,6 +1048,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](universitymuseum.no/2026-04-15_06-54-07/) | 1 | 1 |
 | [`14.04.2026`](universitymuseum.no/2026-04-14_06-52-30/) | 1 | 1 |
 | [`13.04.2026`](universitymuseum.no/2026-04-13_07-13-05/) | 1 | 1 |
 | [`12.04.2026`](universitymuseum.no/2026-04-12_06-23-25/) | 1 | 1 |
@@ -930,17 +1061,18 @@ Previous runs:
 
 ### [wsio.org](wsio.org/)
 
-Latest run: [`14.04.2026`](wsio.org/2026-04-14_06-52-37/)
+Latest run: [`15.04.2026`](wsio.org/2026-04-15_06-54-09/)
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 2 |
-| Online | 2 |
+| Total subdomains found | 1 |
+| Online | 1 |
 
 Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`15.04.2026`](wsio.org/2026-04-15_06-54-09/) | 1 | 1 |
 | [`14.04.2026`](wsio.org/2026-04-14_06-52-37/) | 2 | 2 |
 | [`13.04.2026`](wsio.org/2026-04-13_07-13-12/) | 2 | 2 |
 | [`12.04.2026`](wsio.org/2026-04-12_06-23-34/) | 2 | 2 |

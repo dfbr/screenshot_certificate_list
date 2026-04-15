@@ -1,5 +1,5 @@
 ---
-title: "ludvigholberg.no Gallery (14.04.2026)"
+title: "ludvigholberg.no Gallery (15.04.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://ludvigholberg.no" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-14_06-52-29/screenshots/ludvigholberg.no.png" alt="ludvigholberg.no" loading="lazy" />
+          <img src="../2026-04-15_06-54-08/screenshots/ludvigholberg.no.png" alt="ludvigholberg.no" loading="lazy" />
           <figcaption>ludvigholberg.no</figcaption>
         </a>
       </figure>

@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.holberg-prisen.no).
 
-## Latest Run: 14.04.2026
+## Latest Run: 15.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.holberg-prisen.no).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `15.04.2026` | 2 | 2 | [View](2026-04-15_06-54-05/) |
 | `14.04.2026` | 2 | 2 | [View](2026-04-14_06-52-32/) |
 | `13.04.2026` | 2 | 2 | [View](2026-04-13_07-13-11/) |
 | `11.04.2026` | 2 | 2 | [View](2026-04-11_05-59-45/) |

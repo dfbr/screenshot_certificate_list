@@ -7,9 +7,9 @@ layout: default
 
 [← Active domains](../)
 
-Domains with no checks in the last 30 days.
+Domains with no checks in the last 10 days.
 
-> Last updated: 14.04.2026
+> Last updated: 15.04.2026
 
 ## Legacy Domains
 

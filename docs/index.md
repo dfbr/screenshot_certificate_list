@@ -8,7 +8,7 @@ layout: default
 Automated screenshots of domains discovered via certificate transparency logs
 ([crt.sh](https://crt.sh/)).
 
-> Last updated: 16.04.2026
+> Last updated: 17.04.2026
 
 ## Monitored Domains
 
@@ -24,10 +24,10 @@ Automated screenshots of domains discovered via certificate transparency logs
 | [bioinfo.no](bioinfo.no/) | `15.04.2026` | 11 | 3 |
 | [bioxsd.org](bioxsd.org/) | `15.04.2026` | 2 | 2 |
 | [ddm.org](ddm.org/) | `15.04.2026` | 2 | 2 |
-| [dfbp.co.uk](dfbp.co.uk/) | `16.04.2026` | 1 | 0 |
-| [dfbr.co.uk](dfbr.co.uk/) | `16.04.2026` | 3 | 2 |
-| [dfbr.github.io](dfbr.github.io/) | `16.04.2026` | 1 | 1 |
-| [fitforhospital.co.uk](fitforhospital.co.uk/) | `16.04.2026` | 1 | 1 |
+| [dfbp.co.uk](dfbp.co.uk/) | `17.04.2026` | 1 | 0 |
+| [dfbr.co.uk](dfbr.co.uk/) | `17.04.2026` | 3 | 2 |
+| [dfbr.github.io](dfbr.github.io/) | `17.04.2026` | 1 | 1 |
+| [fitforhospital.co.uk](fitforhospital.co.uk/) | `17.04.2026` | 1 | 1 |
 | [hmrc.gov.uk](hmrc.gov.uk/) | `14.04.2026` | 451 | 57 |
 | [holberg-prisen.no](holberg-prisen.no/) | `15.04.2026` | 2 | 2 |
 | [holbergprisen.no](holbergprisen.no/) | `15.04.2026` | 7 | 4 |
@@ -43,8 +43,8 @@ Automated screenshots of domains discovered via certificate transparency logs
 | [netlib.no](netlib.no/) | `15.04.2026` | 1 | 1 |
 | [nsd.no](nsd.no/) | `15.04.2026` | 84 | 26 |
 | [onlythestoriesyouwant.co.uk](onlythestoriesyouwant.co.uk/) | `12.04.2026` | 1 | 0 |
-| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `16.04.2026` | 2 | 2 |
-| [rowanpage.co.uk](rowanpage.co.uk/) | `16.04.2026` | 2 | 0 |
+| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `17.04.2026` | 2 | 2 |
+| [rowanpage.co.uk](rowanpage.co.uk/) | `17.04.2026` | 2 | 0 |
 | [sars.no](sars.no/) | `15.04.2026` | 2 | 2 |
 | [sjofartsmuseum.no](sjofartsmuseum.no/) | `15.04.2026` | 2 | 2 |
 | [skeivtarkiv.no](skeivtarkiv.no/) | `15.04.2026` | 5 | 3 |
@@ -268,7 +268,7 @@ Previous runs:
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`16.04.2026`](dfbp.co.uk/2026-04-16_06-56-52/)
+Latest run: [`17.04.2026`](dfbp.co.uk/2026-04-17_06-57-24/)
 
 | Metric | Count |
 |-------:|------:|
@@ -280,6 +280,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](dfbp.co.uk/2026-04-17_06-57-24/) | 1 | 0 |
 | [`16.04.2026`](dfbp.co.uk/2026-04-16_06-56-52/) | 1 | 0 |
 | [`15.04.2026`](dfbp.co.uk/2026-04-15_06-54-06/) | 1 | 0 |
 | [`14.04.2026`](dfbp.co.uk/2026-04-14_06-52-31/) | 1 | 0 |
@@ -289,12 +290,11 @@ Previous runs:
 | [`10.04.2026`](dfbp.co.uk/2026-04-10_06-52-49/) | 1 | 0 |
 | [`09.04.2026`](dfbp.co.uk/2026-04-09_06-20-38/) | 1 | 0 |
 | [`08.04.2026`](dfbp.co.uk/2026-04-08_09-05-08/) | 1 | 0 |
-| [`08.04.2026`](dfbp.co.uk/2026-04-08_08-39-34/) | 1 | 0 |
 
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`16.04.2026`](dfbr.co.uk/2026-04-16_06-56-52/)
+Latest run: [`17.04.2026`](dfbr.co.uk/2026-04-17_06-57-24/)
 
 | Metric | Count |
 |-------:|------:|
@@ -306,6 +306,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](dfbr.co.uk/2026-04-17_06-57-24/) | 3 | 2 |
 | [`16.04.2026`](dfbr.co.uk/2026-04-16_06-56-52/) | 3 | 2 |
 | [`15.04.2026`](dfbr.co.uk/2026-04-15_06-54-07/) | 2 | 1 |
 | [`14.04.2026`](dfbr.co.uk/2026-04-14_06-52-32/) | 2 | 1 |
@@ -315,12 +316,11 @@ Previous runs:
 | [`10.04.2026`](dfbr.co.uk/2026-04-10_07-03-58/) | 2 | 1 |
 | [`09.04.2026`](dfbr.co.uk/2026-04-09_06-20-30/) | 2 | 1 |
 | [`08.04.2026`](dfbr.co.uk/2026-04-08_09-05-16/) | 2 | 1 |
-| [`08.04.2026`](dfbr.co.uk/2026-04-08_08-39-28/) | 2 | 1 |
 
 
 ### [dfbr.github.io](dfbr.github.io/)
 
-Latest run: [`16.04.2026`](dfbr.github.io/2026-04-16_06-57-00/)
+Latest run: [`17.04.2026`](dfbr.github.io/2026-04-17_06-57-36/)
 
 | Metric | Count |
 |-------:|------:|
@@ -331,13 +331,14 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](dfbr.github.io/2026-04-17_06-57-36/) | 1 | 1 |
 | [`16.04.2026`](dfbr.github.io/2026-04-16_06-57-00/) | 1 | 1 |
 | [`15.04.2026`](dfbr.github.io/2026-04-15_06-54-14/) | 1 | 1 |
 
 
 ### [fitforhospital.co.uk](fitforhospital.co.uk/)
 
-Latest run: [`16.04.2026`](fitforhospital.co.uk/2026-04-16_06-56-57/)
+Latest run: [`17.04.2026`](fitforhospital.co.uk/2026-04-17_06-57-35/)
 
 | Metric | Count |
 |-------:|------:|
@@ -348,6 +349,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](fitforhospital.co.uk/2026-04-17_06-57-35/) | 1 | 1 |
 | [`16.04.2026`](fitforhospital.co.uk/2026-04-16_06-56-57/) | 1 | 1 |
 | [`15.04.2026`](fitforhospital.co.uk/2026-04-15_06-57-17/) | 1 | 1 |
 | [`14.04.2026`](fitforhospital.co.uk/2026-04-14_06-52-30/) | 1 | 1 |
@@ -357,7 +359,6 @@ Previous runs:
 | [`10.04.2026`](fitforhospital.co.uk/2026-04-10_06-53-01/) | 1 | 1 |
 | [`09.04.2026`](fitforhospital.co.uk/2026-04-09_06-20-41/) | 1 | 1 |
 | [`08.04.2026`](fitforhospital.co.uk/2026-04-08_09-05-09/) | 1 | 1 |
-| [`08.04.2026`](fitforhospital.co.uk/2026-04-08_08-39-29/) | 1 | 1 |
 
 
 ### [hmrc.gov.uk](hmrc.gov.uk/)
@@ -751,7 +752,7 @@ Previous runs:
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`16.04.2026`](onlythestoriesyouwant.link/2026-04-16_06-56-52/)
+Latest run: [`17.04.2026`](onlythestoriesyouwant.link/2026-04-17_06-57-24/)
 
 | Metric | Count |
 |-------:|------:|
@@ -762,6 +763,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](onlythestoriesyouwant.link/2026-04-17_06-57-24/) | 2 | 2 |
 | [`16.04.2026`](onlythestoriesyouwant.link/2026-04-16_06-56-52/) | 2 | 2 |
 | [`15.04.2026`](onlythestoriesyouwant.link/2026-04-15_06-54-13/) | 2 | 2 |
 | [`14.04.2026`](onlythestoriesyouwant.link/2026-04-14_06-52-31/) | 2 | 2 |
@@ -771,12 +773,11 @@ Previous runs:
 | [`05.04.2026`](onlythestoriesyouwant.link/2026-04-05_06-14-09/) | 2 | 2 |
 | [`04.04.2026`](onlythestoriesyouwant.link/2026-04-04_05-55-40/) | 2 | 2 |
 | [`03.04.2026`](onlythestoriesyouwant.link/2026-04-03_06-12-13/) | 1 | 1 |
-| [`02.04.2026`](onlythestoriesyouwant.link/2026-04-02_06-11-58/) | 2 | 2 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`16.04.2026`](rowanpage.co.uk/2026-04-16_06-56-52/)
+Latest run: [`17.04.2026`](rowanpage.co.uk/2026-04-17_06-57-24/)
 
 | Metric | Count |
 |-------:|------:|
@@ -788,6 +789,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`17.04.2026`](rowanpage.co.uk/2026-04-17_06-57-24/) | 2 | 0 |
 | [`16.04.2026`](rowanpage.co.uk/2026-04-16_06-56-52/) | 2 | 0 |
 | [`15.04.2026`](rowanpage.co.uk/2026-04-15_06-54-07/) | 2 | 0 |
 | [`14.04.2026`](rowanpage.co.uk/2026-04-14_06-58-06/) | 2 | 0 |
@@ -797,7 +799,6 @@ Previous runs:
 | [`10.04.2026`](rowanpage.co.uk/2026-04-10_06-52-51/) | 2 | 0 |
 | [`09.04.2026`](rowanpage.co.uk/2026-04-09_06-20-33/) | 2 | 0 |
 | [`08.04.2026`](rowanpage.co.uk/2026-04-08_09-05-24/) | 2 | 0 |
-| [`08.04.2026`](rowanpage.co.uk/2026-04-08_08-39-28/) | 2 | 0 |
 
 
 ### [sars.no](sars.no/)

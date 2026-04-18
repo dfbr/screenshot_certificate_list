@@ -1,9 +1,9 @@
 ---
-title: "onlythestoriesyouwant.link — 03.04.2026"
+title: "onlythestoriesyouwant.link — 18.04.2026"
 layout: default
 ---
 
-# onlythestoriesyouwant.link — 03.04.2026
+# onlythestoriesyouwant.link — 18.04.2026
 
 [← onlythestoriesyouwant.link](../) &middot; [← All domains](../../)
 
@@ -13,11 +13,12 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link)
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 1 |
-| Online | 1 |
+| Total subdomains found | 2 |
+| Online | 2 |
 
 ## Online Subdomains
 
 | Subdomain | Screenshot |
 |-----------|-----------|
 | `onlythestoriesyouwant.link` | [![onlythestoriesyouwant.link](screenshots/onlythestoriesyouwant.link.png)](screenshots/onlythestoriesyouwant.link.png) |
+| `www.onlythestoriesyouwant.link` | [![www.onlythestoriesyouwant.link](screenshots/www.onlythestoriesyouwant.link.png)](screenshots/www.onlythestoriesyouwant.link.png) |

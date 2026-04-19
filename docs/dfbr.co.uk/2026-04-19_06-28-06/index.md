@@ -1,9 +1,9 @@
 ---
-title: "dfbr.co.uk — 09.04.2026"
+title: "dfbr.co.uk — 19.04.2026"
 layout: default
 ---
 
-# dfbr.co.uk — 09.04.2026
+# dfbr.co.uk — 19.04.2026
 
 [← dfbr.co.uk](../) &middot; [← All domains](../../)
 
@@ -13,8 +13,8 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 2 |
-| Online | 1 |
+| Total subdomains found | 3 |
+| Online | 2 |
 | HTTP 404 | 1 |
 
 ## Online Subdomains
@@ -22,6 +22,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
 | Subdomain | Screenshot |
 |-----------|-----------|
 | `perimeter.dfbr.co.uk` | [![perimeter.dfbr.co.uk](screenshots/perimeter.dfbr.co.uk.png)](screenshots/perimeter.dfbr.co.uk.png) |
+| `screenshots.dfbr.co.uk` | [![screenshots.dfbr.co.uk](screenshots/screenshots.dfbr.co.uk.png)](screenshots/screenshots.dfbr.co.uk.png) |
 
 ## Other Results
 

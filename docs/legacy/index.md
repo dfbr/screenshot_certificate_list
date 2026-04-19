@@ -9,7 +9,7 @@ layout: default
 
 Domains with no checks in the last 10 days.
 
-> Last updated: 18.04.2026
+> Last updated: 19.04.2026
 
 ## Legacy Domains
 

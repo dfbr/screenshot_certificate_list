@@ -56,7 +56,7 @@ jobs:
           DOMAINS_YML: ${{ secrets.DOMAINS_YML }}
         run: |
           DOMAINS=$(python3 - <<'EOF'
-          import os, json, base64
+          import os, json, base64, re
           import yaml
 
 
@@ -68,13 +68,21 @@ jobs:
                   return []
               if not isinstance(data, dict):
                   return []
+
+              domain_re = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$")
               out = []
               for key in data.keys():
                   if isinstance(key, str):
                       key = key.strip()
-                      if key and key != 'default':
+                  if (
+                    key
+                    and key != 'default'
+                    and not key.startswith('#')
+                    and ' ' not in key
+                    and domain_re.match(key)
+                  ):
                           out.append(key)
-              return out
+              return sorted(set(out))
 
 
           lines = []

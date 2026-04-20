@@ -294,6 +294,18 @@ def main() -> None:
     args = parser.parse_args()
 
     domain = args.domain.strip().lower()
+    if domain.startswith("#"):
+        print(
+            f"ERROR: invalid domain '{domain}'. Remove comment markers and pass only the hostname.",
+            file=sys.stderr,
+        )
+        raise SystemExit(2)
+
+    domain_re = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$")
+    if not domain_re.match(domain):
+        print(f"ERROR: invalid domain '{domain}'.", file=sys.stderr)
+        raise SystemExit(2)
+
     base_dir = Path(args.results_dir)
     max_runs = args.max_runs
     max_domains = args.max_domains

@@ -91,7 +91,20 @@ def send_email(smtp_host: str, smtp_port: int, smtp_user: str | None, smtp_pass:
             smtp.sendmail(envelope_from, to_addrs, msg_root.as_string())
 
 
-def load_domains_mapping() -> dict[str, Any]:
+def _normalize_recipients(value: Any) -> list[str]:
+    """Normalize recipient values from YAML into a clean list of emails."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v).strip() for v in value if v is not None and str(v).strip()]
+    if isinstance(value, str):
+        item = value.strip()
+        return [item] if item else []
+    item = str(value).strip()
+    return [item] if item else []
+
+
+def load_domains_mapping() -> dict[str, list[str]]:
     """Load domain -> recipients mapping from domains.yml or DOMAINS_YML env.
 
     Expected YAML structure:
@@ -110,7 +123,13 @@ def load_domains_mapping() -> dict[str, Any]:
         try:
             import yaml  # type: ignore
             data = yaml.safe_load(ypath.read_text(encoding="utf-8")) or {}
-            return {k: (v if isinstance(v, list) else [v]) for k, v in data.items()}
+            if not isinstance(data, dict):
+                return {}
+            out: dict[str, list[str]] = {}
+            for k, v in data.items():
+                if isinstance(k, str):
+                    out[k] = _normalize_recipients(v)
+            return out
         except Exception:
             return {}
 
@@ -126,7 +145,13 @@ def load_domains_mapping() -> dict[str, Any]:
         except Exception:
             raw = env
         data = yaml.safe_load(raw) or {}
-        return {k: (v if isinstance(v, list) else [v]) for k, v in data.items()}
+        if not isinstance(data, dict):
+            return {}
+        out: dict[str, list[str]] = {}
+        for k, v in data.items():
+            if isinstance(k, str):
+                out[k] = _normalize_recipients(v)
+        return out
     except Exception:
         return {}
 
@@ -166,6 +191,7 @@ def main() -> None:
     if domains_map:
         # keys excluding 'default' are domain names
         repo_domains = [k for k in domains_map.keys() if k != "default"]
+        print(f"Loaded domains mapping for {len(repo_domains)} domain(s); default recipients: {len(domains_map.get('default', []))}")
     else:
         # Fallback to old domains.txt format
         repo_domains = []

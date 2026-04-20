@@ -7,7 +7,7 @@ layout: default
 
 [← Active domains](../)
 
-Domains with no checks in the last 10 days.
+Domains present in results but not listed as active in `domains.yml`.
 
 > Last updated: 20.04.2026
 

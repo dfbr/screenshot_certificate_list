@@ -13,14 +13,18 @@ Optional flags:
 """
 
 import argparse
+import base64
 import json
+import os
 import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_REPO_URL = "https://github.com/dfbr/screenshot_certificate_list"
-LEGACY_DAYS = 10
+DOMAIN_RE = re.compile(
+    r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$"
+)
 
 # ---------------------------------------------------------------------------
 # Shared helpers
@@ -84,27 +88,65 @@ def _display_date(run_name: str) -> str:
     return dt.strftime("%d.%m.%Y")
 
 
-def _run_date(run_name: str):
-    """Return the date parsed from a run folder name, or None if invalid."""
-    date_part = run_name.split("_", 1)[0]
+def _domains_from_yaml_text(raw: str) -> set[str]:
+    """Extract active domains from domains.yml / DOMAINS_YML content."""
     try:
-        return datetime.strptime(date_part, "%Y-%m-%d").date()
-    except ValueError:
-        return None
+        import yaml  # type: ignore
+
+        data = yaml.safe_load(raw) or {}
+    except Exception:
+        return set()
+    if not isinstance(data, dict):
+        return set()
+
+    out: set[str] = set()
+    for key in data.keys():
+        if not isinstance(key, str):
+            continue
+        domain = key.strip().lower()
+        if not domain or domain == "default":
+            continue
+        if domain.startswith("#") or " " in domain:
+            continue
+        if DOMAIN_RE.match(domain):
+            out.add(domain)
+    return out
 
 
-def _run_age_days(run_name: str, now: datetime) -> int | None:
-    """Return run age in days, or None when run_name is malformed."""
-    run_date = _run_date(run_name)
-    if run_date is None:
-        return None
-    return (now.date() - run_date).days
+def _load_active_domains() -> set[str]:
+    """Load active domains from domains.yml, DOMAINS_YML, or domains.txt."""
+    ypath = Path("domains.yml")
+    if ypath.exists():
+        try:
+            domains = _domains_from_yaml_text(ypath.read_text(encoding="utf-8"))
+            if domains:
+                return domains
+        except Exception:
+            pass
 
+    env = os.environ.get("DOMAINS_YML")
+    if env:
+        try:
+            raw = base64.b64decode(env).decode("utf-8")
+        except Exception:
+            raw = env
+        domains = _domains_from_yaml_text(raw)
+        if domains:
+            return domains
 
-def _is_legacy_run(run_name: str, now: datetime, legacy_days: int = LEGACY_DAYS) -> bool:
-    """A domain is legacy when latest run age is >= legacy_days."""
-    age_days = _run_age_days(run_name, now)
-    return age_days is not None and age_days >= legacy_days
+    txt = Path("domains.txt")
+    if txt.exists():
+        out: set[str] = set()
+        with txt.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                domain = line.strip().lower()
+                if not domain or domain.startswith("#") or " " in domain:
+                    continue
+                if DOMAIN_RE.match(domain):
+                    out.add(domain)
+        return out
+
+    return set()
 
 
 # ---------------------------------------------------------------------------
@@ -416,7 +458,7 @@ def _write_legacy_page(
     repo_url: str,
     now: datetime,
 ) -> None:
-    """Write docs/legacy/index.md listing domains not checked in >= LEGACY_DAYS."""
+    """Write docs/legacy/index.md listing domains not in active domains.yml."""
     legacy_dir = docs_dir / "legacy"
     legacy_dir.mkdir(parents=True, exist_ok=True)
     now_display = now.strftime("%d.%m.%Y")
@@ -431,7 +473,7 @@ def _write_legacy_page(
         "",
         "[\u2190 Active domains](../)",
         "",
-        f"Domains with no checks in the last {LEGACY_DAYS} days.",
+        "Domains present in results but not listed as active in `domains.yml`.",
         "",
         f"> Last updated: {now_display}",
         "",
@@ -441,19 +483,17 @@ def _write_legacy_page(
 
     if legacy_domains:
         lines += [
-            "| Domain | Latest Run | Days Since Check | Subdomains | Online |",
-            "|--------|------------|------------------|-----------|--------|",
+            "| Domain | Latest Run | Subdomains | Online |",
+            "|--------|------------|-----------|--------|",
         ]
         for domain, runs in legacy_domains:
             if not runs:
-                lines.append(f"| [{domain}](../{domain}/) | \u2014 | \u2014 | \u2014 | \u2014 |")
+                lines.append(f"| [{domain}](../{domain}/) | \u2014 | \u2014 | \u2014 |")
                 continue
             latest_name, latest_status = runs[0]
             total, success, _ = _tally(latest_status)
-            age_days = _run_age_days(latest_name, now)
-            age_text = str(age_days) if age_days is not None else "unknown"
             lines.append(
-                f"| [{domain}](../{domain}/) | `{_display_date(latest_name)}` | {age_text} | {total} | {success} |"
+                f"| [{domain}](../{domain}/) | `{_display_date(latest_name)}` | {total} | {success} |"
             )
         lines.append("")
 
@@ -614,6 +654,7 @@ def main() -> None:
     docs_dir = Path(parsed.docs_dir) if parsed.docs_dir else None
     repo_url = parsed.repo_url
     now = datetime.now(tz=timezone.utc)
+    active_domain_names = _load_active_domains()
 
     domain_dirs = (
         sorted(d for d in results_dir.iterdir() if d.is_dir())
@@ -652,7 +693,7 @@ def main() -> None:
             _write_run_page(docs_run_dir, domain_dir.name, run_name, status_map)
             runs_data.append((run_name, status_map))
 
-        is_legacy_domain = bool(runs_data) and _is_legacy_run(runs_data[0][0], now)
+        is_legacy_domain = bool(active_domain_names) and (domain_dir.name.lower() not in active_domain_names)
 
         _write_domain_page(
             docs_dir / domain_dir.name,

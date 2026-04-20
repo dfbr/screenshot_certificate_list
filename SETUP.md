@@ -18,8 +18,8 @@ how to test notifications.
 
 The published site at https://screenshots.dfbr.co.uk separates domains into:
 
-- Active domains: latest check is less than 30 days old.
-- Legacy domains: latest check is 30 days old or older.
+- Active domains: present as keys in `domains.yml` (excluding `default`).
+- Legacy domains: present in `results/` but no longer listed in `domains.yml`.
 
 Behavior details:
 
@@ -30,9 +30,6 @@ Behavior details:
 - A `Legacy sites` link is always shown at the bottom of the hamburger menu.
 - Per-domain and per-run pages are still generated for all domains, so
   historical results remain accessible.
-
-The cutoff uses UTC date comparison against the latest run folder timestamp
-(`YYYY-MM-DD_HH-MM-SS`).
 
 ## `domains.yml` format
 

@@ -14,11 +14,6 @@ Automated screenshots of domains discovered via certificate transparency logs
 
 | Domain | Latest Run | Subdomains | Online |
 |--------|------------|-----------|--------|
-| [# hmrc.gov.uk](# hmrc.gov.uk/) | `15.04.2026` | 1 | 0 |
-| [# manutd.com](# manutd.com/) | `15.04.2026` | 1 | 0 |
-| [# socium.team](# socium.team/) | `15.04.2026` | 1 | 0 |
-| [# sociumrecruitment.com](# sociumrecruitment.com/) | `15.04.2026` | 1 | 0 |
-| [# www.summize.com](# www.summize.com/) | `15.04.2026` | 1 | 0 |
 | [alrekhelseklynge.no](alrekhelseklynge.no/) | `15.04.2026` | 2 | 2 |
 | [baerekraftsforskning.no](baerekraftsforskning.no/) | `15.04.2026` | 2 | 2 |
 | [bioinfo.no](bioinfo.no/) | `15.04.2026` | 11 | 3 |
@@ -59,91 +54,6 @@ Automated screenshots of domains discovered via certificate transparency logs
 | [www.summize.com](www.summize.com/) | `14.04.2026` | 1 | 1 |
 
 ## Domain Details
-
-### [# hmrc.gov.uk](# hmrc.gov.uk/)
-
-Latest run: [`15.04.2026`](# hmrc.gov.uk/2026-04-15_06-54-46/)
-
-| Metric | Count |
-|-------:|------:|
-| Total subdomains found | 1 |
-| Online | 0 |
-| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
-
-Previous runs:
-
-| Run | Subdomains | Online |
-|-----|-----------|--------|
-| [`15.04.2026`](# hmrc.gov.uk/2026-04-15_06-54-46/) | 1 | 0 |
-
-
-### [# manutd.com](# manutd.com/)
-
-Latest run: [`15.04.2026`](# manutd.com/2026-04-15_06-54-09/)
-
-| Metric | Count |
-|-------:|------:|
-| Total subdomains found | 1 |
-| Online | 0 |
-| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
-
-Previous runs:
-
-| Run | Subdomains | Online |
-|-----|-----------|--------|
-| [`15.04.2026`](# manutd.com/2026-04-15_06-54-09/) | 1 | 0 |
-
-
-### [# socium.team](# socium.team/)
-
-Latest run: [`15.04.2026`](# socium.team/2026-04-15_06-54-11/)
-
-| Metric | Count |
-|-------:|------:|
-| Total subdomains found | 1 |
-| Online | 0 |
-| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
-
-Previous runs:
-
-| Run | Subdomains | Online |
-|-----|-----------|--------|
-| [`15.04.2026`](# socium.team/2026-04-15_06-54-11/) | 1 | 0 |
-
-
-### [# sociumrecruitment.com](# sociumrecruitment.com/)
-
-Latest run: [`15.04.2026`](# sociumrecruitment.com/2026-04-15_06-54-09/)
-
-| Metric | Count |
-|-------:|------:|
-| Total subdomains found | 1 |
-| Online | 0 |
-| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
-
-Previous runs:
-
-| Run | Subdomains | Online |
-|-----|-----------|--------|
-| [`15.04.2026`](# sociumrecruitment.com/2026-04-15_06-54-09/) | 1 | 0 |
-
-
-### [# www.summize.com](# www.summize.com/)
-
-Latest run: [`15.04.2026`](# www.summize.com/2026-04-15_06-54-08/)
-
-| Metric | Count |
-|-------:|------:|
-| Total subdomains found | 1 |
-| Online | 0 |
-| Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL | 1 |
-
-Previous runs:
-
-| Run | Subdomains | Online |
-|-----|-----------|--------|
-| [`15.04.2026`](# www.summize.com/2026-04-15_06-54-08/) | 1 | 0 |
-
 
 ### [alrekhelseklynge.no](alrekhelseklynge.no/)
 

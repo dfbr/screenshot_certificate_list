@@ -1,7 +1,7 @@
 ---
 title: "ludvigholberg.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # ludvigholberg.no

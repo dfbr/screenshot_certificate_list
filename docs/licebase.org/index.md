@@ -1,7 +1,7 @@
 ---
 title: "licebase.org"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # licebase.org

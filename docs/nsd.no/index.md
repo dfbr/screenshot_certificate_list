@@ -1,7 +1,7 @@
 ---
 title: "nsd.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # nsd.no

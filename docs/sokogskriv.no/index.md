@@ -1,7 +1,7 @@
 ---
 title: "sokogskriv.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # sokogskriv.no

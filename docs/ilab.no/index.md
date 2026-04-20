@@ -1,7 +1,7 @@
 ---
 title: "ilab.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # ilab.no

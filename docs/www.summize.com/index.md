@@ -1,7 +1,7 @@
 ---
 title: "www.summize.com"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # www.summize.com

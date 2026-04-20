@@ -1,7 +1,7 @@
 ---
 title: "baerekraftsforskning.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # baerekraftsforskning.no

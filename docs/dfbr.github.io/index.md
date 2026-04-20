@@ -17,12 +17,14 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.dfbr.github.io).
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 1 |
-| Online | 1 |
+| Online | 0 |
+| HTTP 404 | 1 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `20.04.2026` | 1 | 0 | [View](2026-04-20_12-26-38/) |
 | `20.04.2026` | 1 | 1 | [View](2026-04-20_07-15-35/) |
 | `19.04.2026` | 1 | 1 | [View](2026-04-19_06-28-12/) |
 | `18.04.2026` | 1 | 1 | [View](2026-04-18_06-13-25/) |

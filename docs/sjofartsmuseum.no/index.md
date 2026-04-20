@@ -1,7 +1,7 @@
 ---
 title: "sjofartsmuseum.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # sjofartsmuseum.no

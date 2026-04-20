@@ -1,7 +1,7 @@
 ---
 title: "bioinfo.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # bioinfo.no

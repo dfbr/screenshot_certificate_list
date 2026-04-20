@@ -6,12 +6,7 @@ layout: gallery
 <div id="gallery-viewport">
   <div id="gallery-scale-root">
     <div id="gallery-grid">
-      <figure class="gallery-item">
-        <a href="https://dfbr.github.io" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-04-20_07-15-35/screenshots/dfbr.github.io.png" alt="dfbr.github.io" loading="lazy" />
-          <figcaption>dfbr.github.io</figcaption>
-        </a>
-      </figure>
+      <p>No successful screenshots available for the latest run.</p>
     </div>
   </div>
 </div>

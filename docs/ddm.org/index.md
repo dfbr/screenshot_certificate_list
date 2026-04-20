@@ -1,7 +1,7 @@
 ---
 title: "ddm.org"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # ddm.org

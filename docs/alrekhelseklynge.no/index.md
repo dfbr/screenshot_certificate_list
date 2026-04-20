@@ -1,7 +1,7 @@
 ---
 title: "alrekhelseklynge.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # alrekhelseklynge.no

@@ -1,7 +1,7 @@
 ---
 title: "neonnet.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # neonnet.no

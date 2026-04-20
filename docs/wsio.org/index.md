@@ -1,7 +1,7 @@
 ---
 title: "wsio.org"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # wsio.org

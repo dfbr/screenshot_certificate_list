@@ -128,7 +128,7 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](ddm.org/2026-04-08_08-39-28/README.md) |
 
 
-### [dfbp.co.uk](dfbp.co.uk/2026-04-20_07-14-49/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-04-20_12-26-38/README.md)
 
 Latest run: `20.04.2026`
 
@@ -142,6 +142,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](dfbp.co.uk/2026-04-20_12-26-38/README.md) |
 | `20.04.2026` | [20.04.2026](dfbp.co.uk/2026-04-20_07-14-49/README.md) |
 | `19.04.2026` | [19.04.2026](dfbp.co.uk/2026-04-19_06-28-06/README.md) |
 | `18.04.2026` | [18.04.2026](dfbp.co.uk/2026-04-18_06-12-32/README.md) |
@@ -151,22 +152,22 @@ Previous runs:
 | `14.04.2026` | [14.04.2026](dfbp.co.uk/2026-04-14_06-52-31/README.md) |
 | `13.04.2026` | [13.04.2026](dfbp.co.uk/2026-04-13_07-13-14/README.md) |
 | `12.04.2026` | [12.04.2026](dfbp.co.uk/2026-04-12_06-23-31/README.md) |
-| `11.04.2026` | [11.04.2026](dfbp.co.uk/2026-04-11_05-59-41/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-04-20_07-14-49/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-04-20_12-26-38/README.md)
 
 Latest run: `20.04.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 5 |
-| Successes | 5 |
+| Total domains found | 6 |
+| Successes | 6 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](dfbr.co.uk/2026-04-20_12-26-38/README.md) |
 | `20.04.2026` | [20.04.2026](dfbr.co.uk/2026-04-20_07-14-49/README.md) |
 | `19.04.2026` | [19.04.2026](dfbr.co.uk/2026-04-19_06-28-06/README.md) |
 | `18.04.2026` | [18.04.2026](dfbr.co.uk/2026-04-18_06-12-32/README.md) |
@@ -176,22 +177,23 @@ Previous runs:
 | `14.04.2026` | [14.04.2026](dfbr.co.uk/2026-04-14_06-52-32/README.md) |
 | `13.04.2026` | [13.04.2026](dfbr.co.uk/2026-04-13_07-13-21/README.md) |
 | `12.04.2026` | [12.04.2026](dfbr.co.uk/2026-04-12_06-23-27/README.md) |
-| `11.04.2026` | [11.04.2026](dfbr.co.uk/2026-04-11_05-59-42/README.md) |
 
 
-### [dfbr.github.io](dfbr.github.io/2026-04-20_07-15-35/README.md)
+### [dfbr.github.io](dfbr.github.io/2026-04-20_12-26-38/README.md)
 
 Latest run: `20.04.2026`
 
 | Metric | Count |
 |-------:|------:|
 | Total domains found | 1 |
-| Successes | 1 |
+| Successes | 0 |
+| HTTP 404 | 1 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](dfbr.github.io/2026-04-20_12-26-38/README.md) |
 | `20.04.2026` | [20.04.2026](dfbr.github.io/2026-04-20_07-15-35/README.md) |
 | `19.04.2026` | [19.04.2026](dfbr.github.io/2026-04-19_06-28-12/README.md) |
 | `18.04.2026` | [18.04.2026](dfbr.github.io/2026-04-18_06-13-25/README.md) |
@@ -200,7 +202,7 @@ Previous runs:
 | `15.04.2026` | [15.04.2026](dfbr.github.io/2026-04-15_06-54-14/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-20_07-15-26/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-20_12-26-38/README.md)
 
 Latest run: `20.04.2026`
 
@@ -213,6 +215,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](fitforhospital.co.uk/2026-04-20_12-26-38/README.md) |
 | `20.04.2026` | [20.04.2026](fitforhospital.co.uk/2026-04-20_07-15-26/README.md) |
 | `19.04.2026` | [19.04.2026](fitforhospital.co.uk/2026-04-19_06-28-11/README.md) |
 | `18.04.2026` | [18.04.2026](fitforhospital.co.uk/2026-04-18_06-13-05/README.md) |
@@ -222,7 +225,6 @@ Previous runs:
 | `14.04.2026` | [14.04.2026](fitforhospital.co.uk/2026-04-14_06-52-30/README.md) |
 | `13.04.2026` | [13.04.2026](fitforhospital.co.uk/2026-04-13_07-13-09/README.md) |
 | `12.04.2026` | [12.04.2026](fitforhospital.co.uk/2026-04-12_06-23-25/README.md) |
-| `11.04.2026` | [11.04.2026](fitforhospital.co.uk/2026-04-11_05-59-45/README.md) |
 
 
 ### [hmrc.gov.uk](hmrc.gov.uk/2026-04-14_06-52-34/README.md)
@@ -614,7 +616,7 @@ Previous runs:
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.co.uk/2026-04-07_09-18-43/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-20_07-14-49/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-20_12-26-42/README.md)
 
 Latest run: `20.04.2026`
 
@@ -627,6 +629,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](onlythestoriesyouwant.link/2026-04-20_12-26-42/README.md) |
 | `20.04.2026` | [20.04.2026](onlythestoriesyouwant.link/2026-04-20_07-14-49/README.md) |
 | `19.04.2026` | [19.04.2026](onlythestoriesyouwant.link/2026-04-19_06-28-06/README.md) |
 | `18.04.2026` | [18.04.2026](onlythestoriesyouwant.link/2026-04-18_06-12-32/README.md) |
@@ -636,10 +639,9 @@ Previous runs:
 | `14.04.2026` | [14.04.2026](onlythestoriesyouwant.link/2026-04-14_06-52-31/README.md) |
 | `13.04.2026` | [13.04.2026](onlythestoriesyouwant.link/2026-04-13_07-13-17/README.md) |
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.link/2026-04-07_06-18-52/README.md) |
-| `06.04.2026` | [06.04.2026](onlythestoriesyouwant.link/2026-04-06_06-29-57/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-04-20_07-14-49/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-04-20_12-28-08/README.md)
 
 Latest run: `20.04.2026`
 
@@ -653,6 +655,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.04.2026` | [20.04.2026](rowanpage.co.uk/2026-04-20_12-28-08/README.md) |
 | `20.04.2026` | [20.04.2026](rowanpage.co.uk/2026-04-20_07-14-49/README.md) |
 | `19.04.2026` | [19.04.2026](rowanpage.co.uk/2026-04-19_06-28-06/README.md) |
 | `18.04.2026` | [18.04.2026](rowanpage.co.uk/2026-04-18_06-12-32/README.md) |
@@ -662,7 +665,6 @@ Previous runs:
 | `14.04.2026` | [14.04.2026](rowanpage.co.uk/2026-04-14_06-58-06/README.md) |
 | `13.04.2026` | [13.04.2026](rowanpage.co.uk/2026-04-13_07-13-13/README.md) |
 | `12.04.2026` | [12.04.2026](rowanpage.co.uk/2026-04-12_06-23-34/README.md) |
-| `11.04.2026` | [11.04.2026](rowanpage.co.uk/2026-04-11_05-59-42/README.md) |
 
 
 ### [sars.no](sars.no/2026-04-15_06-54-07/README.md)

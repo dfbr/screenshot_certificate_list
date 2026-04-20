@@ -1,7 +1,7 @@
 ---
 title: "magefedme.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # magefedme.no

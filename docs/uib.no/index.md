@@ -1,7 +1,7 @@
 ---
 title: "uib.no"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # uib.no

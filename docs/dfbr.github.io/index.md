@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.dfbr.github.io).
 
-## Latest Run: 20.04.2026
+## Latest Run: 21.04.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -24,6 +24,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.dfbr.github.io).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `21.04.2026` | 1 | 0 | [View](2026-04-21_06-57-33/) |
 | `20.04.2026` | 1 | 0 | [View](2026-04-20_12-26-38/) |
 | `20.04.2026` | 1 | 1 | [View](2026-04-20_07-15-35/) |
 | `19.04.2026` | 1 | 1 | [View](2026-04-19_06-28-12/) |

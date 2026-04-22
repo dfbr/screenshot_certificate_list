@@ -1,4 +1,4 @@
-# rowanpage.co.uk — 2026-04-13_07-13-13
+# rowanpage.co.uk — 2026-04-22_07-09-37
 
 Certificates queried from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 

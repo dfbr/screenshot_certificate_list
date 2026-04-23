@@ -9,11 +9,50 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import requests
 import argparse
 from typing import Optional
+
+
+def _parse_retry_after_seconds(value: Optional[str]) -> Optional[float]:
+    """Parse Retry-After header to seconds.
+
+    Supports either integer seconds or HTTP-date format.
+    """
+    if not value:
+        return None
+    raw = value.strip()
+    if not raw:
+        return None
+    try:
+        return max(0.0, float(raw))
+    except ValueError:
+        pass
+    try:
+        dt = parsedate_to_datetime(raw)
+    except Exception:  # noqa: BLE001
+        return None
+    if dt.tzinfo is None:
+        return None
+    now = datetime.now(tz=timezone.utc)
+    return max(0.0, (dt - now).total_seconds())
+
+
+def _crtsh_sleep_seconds(attempt: int, status_code: Optional[int], retry_after: Optional[float]) -> float:
+    """Compute retry sleep with exponential backoff and jitter.
+
+    429 responses receive a larger floor to avoid hammering crt.sh.
+    """
+    base = float(2 ** min(attempt - 1, 6))
+    if status_code == 429:
+        base = max(base, 10.0)
+    sleep_for = base + random.uniform(0.0, 2.0)
+    if retry_after is not None:
+        sleep_for = max(sleep_for, retry_after)
+    return min(sleep_for, 300.0)
 
 
 def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:
@@ -23,34 +62,77 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
     intermittent availability of crt.sh.
     """
     url = f"https://crt.sh/?q=%.{domain}&output=json"
+    headers = {
+        "User-Agent": "screenshot_certificate_list/1.0 (+https://github.com/dfbr/screenshot_certificate_list)",
+        "Accept": "application/json",
+    }
+    retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
+    non_retryable_statuses = {400, 401, 403, 404, 422}
+
     data = None
+    session = requests.Session()
+
+    # Small initial jitter reduces synchronized bursts when several domains
+    # start querying crt.sh at the same time.
+    time.sleep(random.uniform(0.0, 1.2))
+
     for attempt in range(1, max_retries + 1):
+        response = None
+        status_code: Optional[int] = None
+        retry_after_seconds: Optional[float] = None
         try:
-            headers = {"User-Agent": "screenshot_certificate_list/1.0 (+https://github.com/your/repo)"}
-            resp = requests.get(url, timeout=timeout, headers=headers)
-            resp.raise_for_status()
-            try:
-                data = resp.json()
-            except ValueError:
-                # crt.sh sometimes returns HTML/error pages despite a 200/503; treat as retryable
+            response = session.get(url, timeout=(10, timeout), headers=headers)
+            status_code = response.status_code
+
+            if status_code == 200:
+                try:
+                    data = response.json()
+                    break
+                except ValueError:
+                    # crt.sh sometimes returns HTML/error pages with 200.
+                    print(
+                        f"WARNING: crt.sh returned non-JSON response on attempt {attempt}/{max_retries} for {domain}",
+                        file=sys.stderr,
+                    )
+                    retry_after_seconds = _parse_retry_after_seconds(response.headers.get("Retry-After"))
+            elif status_code in non_retryable_statuses:
                 print(
-                    f"WARNING: crt.sh returned non-JSON response on attempt {attempt}/{max_retries} for {domain}",
+                    f"ERROR: non-retryable crt.sh response for {domain}: HTTP {status_code}",
                     file=sys.stderr,
                 )
-                if attempt < max_retries:
-                    sleep_time = (2 ** min(attempt - 1, 4)) + random.random()
-                    time.sleep(sleep_time)
-                continue
-            break
-        except Exception as exc:  # noqa: BLE001
+                return []
+            elif status_code in retryable_statuses:
+                retry_after_seconds = _parse_retry_after_seconds(response.headers.get("Retry-After"))
+                print(
+                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: HTTP {status_code}",
+                    file=sys.stderr,
+                )
+            else:
+                # Unknown status: treat as retryable, but report clearly.
+                print(
+                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: HTTP {status_code}",
+                    file=sys.stderr,
+                )
+        except requests.exceptions.Timeout as exc:
             print(
-                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for"
-                f" {domain}: {exc}",
+                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: {exc}",
                 file=sys.stderr,
             )
-            if attempt < max_retries:
-                sleep_time = (2 ** min(attempt - 1, 4)) + random.random()
-                time.sleep(sleep_time)  # back-off with small jitter
+        except requests.exceptions.RequestException as exc:
+            print(
+                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: {exc}",
+                file=sys.stderr,
+            )
+
+        if data is None and attempt < max_retries:
+            sleep_time = _crtsh_sleep_seconds(attempt, status_code, retry_after_seconds)
+            print(
+                f"INFO: waiting {sleep_time:.1f}s before retrying crt.sh for {domain}",
+                file=sys.stderr,
+            )
+            time.sleep(sleep_time)
+
+    session.close()
     if data is None:
         print(f"ERROR: crt.sh query failed for {domain} after {max_retries} attempt(s)", file=sys.stderr)
         return []
@@ -289,8 +371,8 @@ def main() -> None:
     parser.add_argument("--max-runs", type=int, default=5, help="Keep this many most-recent runs (default: 5, 0 = unlimited)")
     parser.add_argument("--max-domains", type=int, default=0, help="Screenshot at most this many domains (0 = unlimited)")
     parser.add_argument("--concurrency", type=int, default=12, help="Number of screenshots to take in parallel (default: 12)")
-    parser.add_argument("--crtsh-timeout", type=int, default=30, help="Request timeout in seconds for crt.sh queries (default: 30)")
-    parser.add_argument("--crtsh-max-retries", type=int, default=20, help="Maximum retry attempts for crt.sh queries (default: 20)")
+    parser.add_argument("--crtsh-timeout", type=int, default=45, help="Request timeout in seconds for crt.sh queries (default: 45)")
+    parser.add_argument("--crtsh-max-retries", type=int, default=12, help="Maximum retry attempts for crt.sh queries (default: 12)")
     args = parser.parse_args()
 
     domain = args.domain.strip().lower()

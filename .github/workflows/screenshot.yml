@@ -18,17 +18,17 @@ on:
         required: false
         default: '24'
       domain_concurrency:
-        description: 'Number of domains to process in parallel on a single runner (default: 4)'
+        description: 'Number of domains to process in parallel on a single runner (default: 2)'
         required: false
-        default: '4'
+        default: '2'
       crtsh_timeout:
-        description: 'Request timeout in seconds for crt.sh queries (default: 30)'
+        description: 'Request timeout in seconds for crt.sh queries (default: 45)'
         required: false
-        default: '30'
+        default: '45'
       crtsh_max_retries:
-        description: 'Maximum retry attempts for crt.sh queries (default: 20)'
+        description: 'Maximum retry attempts for crt.sh queries (default: 12)'
         required: false
-        default: '20'
+        default: '12'
       lookback:
         description: 'Lookback runs for notifications (0 = all previous runs, default: 0)'
         required: false
@@ -142,12 +142,12 @@ jobs:
       - name: Run domain processing (parallel)
         env:
           DOMAINS_JSON: ${{ needs.setup.outputs.domains }}
-          DOMAIN_CONCURRENCY: ${{ github.event.inputs.domain_concurrency || '4' }}
+          DOMAIN_CONCURRENCY: ${{ github.event.inputs.domain_concurrency || '2' }}
           MAX_RUNS: ${{ github.event.inputs.max_runs || '10' }}
           MAX_DOMAINS: ${{ github.event.inputs.max_domains || '0' }}
           SCREENSHOT_CONCURRENCY: ${{ github.event.inputs.concurrency || '12' }}
-          CRTSH_TIMEOUT: ${{ github.event.inputs.crtsh_timeout || '30' }}
-          CRTSH_MAX_RETRIES: ${{ github.event.inputs.crtsh_max_retries || '20' }}
+          CRTSH_TIMEOUT: ${{ github.event.inputs.crtsh_timeout || '45' }}
+          CRTSH_MAX_RETRIES: ${{ github.event.inputs.crtsh_max_retries || '12' }}
         run: |
           python3 - <<'EOF'
           import json
@@ -161,7 +161,7 @@ jobs:
               print("No domains to process")
               raise SystemExit(0)
 
-          workers = max(1, int(os.environ.get("DOMAIN_CONCURRENCY", "4")))
+          workers = max(1, int(os.environ.get("DOMAIN_CONCURRENCY", "2")))
           workers = min(workers, len(domains))
           print(f"Processing {len(domains)} domain(s) with domain_concurrency={workers}")
 

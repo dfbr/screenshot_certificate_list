@@ -55,6 +55,15 @@ def _crtsh_sleep_seconds(attempt: int, status_code: Optional[int], retry_after: 
     return min(sleep_for, 300.0)
 
 
+def _domain_for_logs(domain: str) -> str:
+    """Return a log-safe domain representation.
+
+    GitHub Actions may mask raw domain values if they appear in secrets.
+    Replacing dots keeps the value readable while avoiding over-masking.
+    """
+    return (domain or "").replace(".", "[.]")
+
+
 def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:
     """Return sorted list of unique, non-wildcard names from crt.sh for *domain*.
 
@@ -66,10 +75,13 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
         "User-Agent": "screenshot_certificate_list/1.0 (+https://github.com/dfbr/screenshot_certificate_list)",
         "Accept": "application/json",
     }
-    retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
-    non_retryable_statuses = {400, 401, 403, 404, 422}
+    # crt.sh sometimes responds with transient 404s for valid queries;
+    # treat those as retryable instead of terminal failures.
+    retryable_statuses = {404, 408, 425, 429, 500, 502, 503, 504}
+    non_retryable_statuses = {400, 401, 403, 422}
 
     data = None
+    domain_log = _domain_for_logs(domain)
     session = requests.Session()
 
     # Small initial jitter reduces synchronized bursts when several domains
@@ -91,50 +103,50 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
                 except ValueError:
                     # crt.sh sometimes returns HTML/error pages with 200.
                     print(
-                        f"WARNING: crt.sh returned non-JSON response on attempt {attempt}/{max_retries} for {domain}",
+                        f"WARNING: crt.sh returned non-JSON response on attempt {attempt}/{max_retries} for {domain_log}",
                         file=sys.stderr,
                     )
                     retry_after_seconds = _parse_retry_after_seconds(response.headers.get("Retry-After"))
             elif status_code in non_retryable_statuses:
                 print(
-                    f"ERROR: non-retryable crt.sh response for {domain}: HTTP {status_code}",
+                    f"ERROR: non-retryable crt.sh response for {domain_log}: HTTP {status_code}",
                     file=sys.stderr,
                 )
                 return []
             elif status_code in retryable_statuses:
                 retry_after_seconds = _parse_retry_after_seconds(response.headers.get("Retry-After"))
                 print(
-                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: HTTP {status_code}",
+                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain_log}: HTTP {status_code}",
                     file=sys.stderr,
                 )
             else:
                 # Unknown status: treat as retryable, but report clearly.
                 print(
-                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: HTTP {status_code}",
+                    f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain_log}: HTTP {status_code}",
                     file=sys.stderr,
                 )
         except requests.exceptions.Timeout as exc:
             print(
-                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: {exc}",
+                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain_log}: {exc}",
                 file=sys.stderr,
             )
         except requests.exceptions.RequestException as exc:
             print(
-                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain}: {exc}",
+                f"WARNING: crt.sh query attempt {attempt}/{max_retries} failed for {domain_log}: {exc}",
                 file=sys.stderr,
             )
 
         if data is None and attempt < max_retries:
             sleep_time = _crtsh_sleep_seconds(attempt, status_code, retry_after_seconds)
             print(
-                f"INFO: waiting {sleep_time:.1f}s before retrying crt.sh for {domain}",
+                f"INFO: waiting {sleep_time:.1f}s before retrying crt.sh for {domain_log}",
                 file=sys.stderr,
             )
             time.sleep(sleep_time)
 
     session.close()
     if data is None:
-        print(f"ERROR: crt.sh query failed for {domain} after {max_retries} attempt(s)", file=sys.stderr)
+        print(f"ERROR: crt.sh query failed for {domain_log} after {max_retries} attempt(s)", file=sys.stderr)
         return []
 
     names: set[str] = set()

@@ -20,6 +20,7 @@ Domains present in results but not listed as active in `domains.yml`.
 | [bioinfo.no](../bioinfo.no/) | `15.04.2026` | 11 | 3 |
 | [bioxsd.org](../bioxsd.org/) | `15.04.2026` | 2 | 2 |
 | [ddm.org](../ddm.org/) | `15.04.2026` | 2 | 2 |
+| [dfbr.github.io](../dfbr.github.io/) | `24.04.2026` | 1 | 0 |
 | [hmrc.gov.uk](../hmrc.gov.uk/) | `14.04.2026` | 451 | 57 |
 | [holberg-prisen.no](../holberg-prisen.no/) | `15.04.2026` | 2 | 2 |
 | [holbergprisen.no](../holbergprisen.no/) | `15.04.2026` | 7 | 4 |
@@ -169,6 +170,32 @@ Previous runs:
 | [`09.04.2026`](../ddm.org/2026-04-09_06-20-34/) | 2 | 2 |
 | [`08.04.2026`](../ddm.org/2026-04-08_09-05-13/) | 2 | 2 |
 | [`08.04.2026`](../ddm.org/2026-04-08_08-39-28/) | 2 | 2 |
+
+
+### [dfbr.github.io](../dfbr.github.io/)
+
+Latest run: [`24.04.2026`](../dfbr.github.io/2026-04-24_07-05-31/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 0 |
+| HTTP 404 | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`24.04.2026`](../dfbr.github.io/2026-04-24_07-05-31/) | 1 | 0 |
+| [`23.04.2026`](../dfbr.github.io/2026-04-23_13-28-39/) | 1 | 0 |
+| [`23.04.2026`](../dfbr.github.io/2026-04-23_07-00-17/) | 1 | 0 |
+| [`22.04.2026`](../dfbr.github.io/2026-04-22_06-57-20/) | 1 | 0 |
+| [`21.04.2026`](../dfbr.github.io/2026-04-21_06-57-33/) | 1 | 0 |
+| [`20.04.2026`](../dfbr.github.io/2026-04-20_12-26-38/) | 1 | 0 |
+| [`20.04.2026`](../dfbr.github.io/2026-04-20_07-15-35/) | 1 | 1 |
+| [`19.04.2026`](../dfbr.github.io/2026-04-19_06-28-12/) | 1 | 1 |
+| [`18.04.2026`](../dfbr.github.io/2026-04-18_06-13-25/) | 1 | 1 |
+| [`17.04.2026`](../dfbr.github.io/2026-04-17_06-57-36/) | 1 | 1 |
 
 
 ### [hmrc.gov.uk](../hmrc.gov.uk/)

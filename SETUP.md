@@ -135,27 +135,46 @@ wish.
 
 ## Local testing / running
 
-To run locally:
+To run locally end-to-end (including notifications and website build):
 
 1. Install Python dependencies from `scripts/requirements.txt`.
 2. Install Playwright browsers (`playwright install --with-deps chromium`).
-3. Run per-domain processing:
+3. Run the local pipeline runner:
 
-   - `python3 scripts/run_domain.py <domain> --results-dir results` will
-     produce a timestamped run under `results/<domain>/`.
+   - `./.venv/bin/python scripts/run_all.py`
 
-4. Regenerate the results README locally:
+This mirrors the GitHub Action flow:
 
-   - `python3 scripts/update_readme.py results`
-   - This writes `results/README.md` (the GitHub Pages index).
+- reads domains from `domains.yml` (or `DOMAINS_YML`, then `domains.txt`)
+- runs `scripts/run_domain.py` in parallel per top-level domain
+- runs `scripts/notify_new_domains.py`
+- runs `scripts/update_readme.py results --docs-dir docs`
 
-5. Test notifications locally by setting SMTP-related environment variables
-   and running:
+Useful options (same knobs as Actions):
 
-   - `python3 scripts/notify_new_domains.py results --lookback 0`
+- `--domain-concurrency 2`
+- `--concurrency 12`
+- `--crtsh-timeout 45`
+- `--crtsh-max-retries 12`
+- `--max-runs 10`
+- `--max-domains 0`
+- `--lookback 0`
 
-(If you need exact shell commands, tell me and I will provide ready-to-run
-examples for macOS / zsh.)
+Examples:
+
+- Full run with defaults:
+  - `./.venv/bin/python scripts/run_all.py`
+- Full run with lower load on crt.sh:
+  - `./.venv/bin/python scripts/run_all.py --domain-concurrency 1 --crtsh-timeout 60 --crtsh-max-retries 10`
+- Skip notifications (still builds website/docs):
+  - `./.venv/bin/python scripts/run_all.py --skip-notify`
+
+Notes:
+
+- Notifications require `SMTP_HOST`, `EMAIL_FROM`, and `EMAIL_TO` (plus optional SMTP auth vars).
+- Website output is generated under `docs/` and `results/README.md`.
+- For single-domain debugging, you can still run `scripts/run_domain.py` directly.
+
 
 ## Where results are written
 

@@ -1,7 +1,7 @@
 ---
 title: "dfbr.github.io"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # dfbr.github.io

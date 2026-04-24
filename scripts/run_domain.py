@@ -61,7 +61,7 @@ def _domain_for_logs(domain: str) -> str:
     GitHub Actions may mask raw domain values if they appear in secrets.
     Replacing dots keeps the value readable while avoiding over-masking.
     """
-    return (domain or "").replace(".", "[.]")
+    return (domain or "") #.replace(".", "[.]")
 
 
 def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:

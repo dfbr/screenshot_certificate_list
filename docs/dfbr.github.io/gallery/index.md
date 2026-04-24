@@ -1,5 +1,5 @@
 ---
-title: "dfbr.github.io Gallery (23.04.2026)"
+title: "dfbr.github.io Gallery (24.04.2026)"
 layout: gallery
 ---
 

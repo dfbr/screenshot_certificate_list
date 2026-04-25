@@ -12,21 +12,23 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 
-## Latest Run: 24.04.2026
+## Latest Run: 25.04.2026
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 71 |
-| Online | 30 |
-| ERR_NAME_NOT_RESOLVED | 25 |
+| Online | 26 |
+| ERR_NAME_NOT_RESOLVED | 24 |
 | HTTP 401 | 1 |
-| HTTP 403 | 4 |
+| HTTP 403 | 8 |
 | HTTP 404 | 9 |
 | HTTP 500 | 2 |
+| timeout | 1 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `25.04.2026` | 71 | 26 | [View](2026-04-25_06-20-21/) |
 | `24.04.2026` | 71 | 30 | [View](2026-04-24_12-37-57/) |
 | `24.04.2026` | 71 | 0 | [View](2026-04-24_12-33-33/) |

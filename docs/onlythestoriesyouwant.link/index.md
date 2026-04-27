@@ -16,13 +16,14 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 1 |
-| Online | 1 |
+| Total subdomains found | 2 |
+| Online | 2 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `27.04.2026` | 2 | 2 | [View](2026-04-27_11-28-41/) |
 | `27.04.2026` | 1 | 1 | [View](2026-04-27_07-47-22/) |
 | `26.04.2026` | 1 | 1 | [View](2026-04-26_07-12-56/) |
 | `25.04.2026` | 2 | 2 | [View](2026-04-25_06-20-33/) |
@@ -32,4 +33,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 | `23.04.2026` | 1 | 1 | [View](2026-04-23_07-00-58/) |
 | `22.04.2026` | 2 | 2 | [View](2026-04-22_07-08-55/) |
 | `21.04.2026` | 2 | 2 | [View](2026-04-21_06-58-13/) |
-| `20.04.2026` | 1 | 1 | [View](2026-04-20_12-26-42/) |

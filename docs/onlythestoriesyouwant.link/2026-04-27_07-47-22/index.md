@@ -1,9 +1,9 @@
 ---
-title: "onlythestoriesyouwant.link — 20.04.2026"
+title: "onlythestoriesyouwant.link — 27.04.2026"
 layout: default
 ---
 
-# onlythestoriesyouwant.link — 20.04.2026
+# onlythestoriesyouwant.link — 27.04.2026
 
 [← onlythestoriesyouwant.link](../) &middot; [← All domains](../../)
 

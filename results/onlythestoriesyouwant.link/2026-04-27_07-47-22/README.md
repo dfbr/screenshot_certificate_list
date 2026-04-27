@@ -1,4 +1,4 @@
-# onlythestoriesyouwant.link — 2026-04-20_07-14-49
+# onlythestoriesyouwant.link — 2026-04-27_07-47-22
 
 Certificates queried from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 

@@ -3,7 +3,7 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 28.04.2026
+> Last updated: 29.04.2026
 
 ## Results
 
@@ -128,9 +128,9 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](ddm.org/2026-04-08_08-39-28/README.md) |
 
 
-### [dfbp.co.uk](dfbp.co.uk/2026-04-28_13-01-58/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-04-29_07-22-04/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -142,6 +142,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](dfbp.co.uk/2026-04-29_07-22-04/README.md) |
 | `28.04.2026` | [28.04.2026](dfbp.co.uk/2026-04-28_13-01-58/README.md) |
 | `28.04.2026` | [28.04.2026](dfbp.co.uk/2026-04-28_07-30-14/README.md) |
 | `27.04.2026` | [27.04.2026](dfbp.co.uk/2026-04-27_11-24-50/README.md) |
@@ -151,12 +152,11 @@ Previous runs:
 | `24.04.2026` | [24.04.2026](dfbp.co.uk/2026-04-24_12-34-32/README.md) |
 | `24.04.2026` | [24.04.2026](dfbp.co.uk/2026-04-24_12-30-31/README.md) |
 | `24.04.2026` | [24.04.2026](dfbp.co.uk/2026-04-24_07-03-58/README.md) |
-| `23.04.2026` | [23.04.2026](dfbp.co.uk/2026-04-23_13-27-35/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-04-28_13-01-58/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-04-29_07-22-04/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -168,6 +168,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](dfbr.co.uk/2026-04-29_07-22-04/README.md) |
 | `28.04.2026` | [28.04.2026](dfbr.co.uk/2026-04-28_13-01-58/README.md) |
 | `28.04.2026` | [28.04.2026](dfbr.co.uk/2026-04-28_07-30-14/README.md) |
 | `27.04.2026` | [27.04.2026](dfbr.co.uk/2026-04-27_11-24-50/README.md) |
@@ -177,7 +178,6 @@ Previous runs:
 | `24.04.2026` | [24.04.2026](dfbr.co.uk/2026-04-24_12-34-32/README.md) |
 | `24.04.2026` | [24.04.2026](dfbr.co.uk/2026-04-24_12-30-31/README.md) |
 | `24.04.2026` | [24.04.2026](dfbr.co.uk/2026-04-24_07-03-58/README.md) |
-| `23.04.2026` | [23.04.2026](dfbr.co.uk/2026-04-23_13-27-35/README.md) |
 
 
 ### [dfbr.github.io](dfbr.github.io/2026-04-24_07-05-31/README.md)
@@ -206,9 +206,9 @@ Previous runs:
 | `17.04.2026` | [17.04.2026](dfbr.github.io/2026-04-17_06-57-36/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-28_13-02-52/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-04-29_07-23-11/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -219,6 +219,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](fitforhospital.co.uk/2026-04-29_07-23-11/README.md) |
 | `28.04.2026` | [28.04.2026](fitforhospital.co.uk/2026-04-28_13-02-52/README.md) |
 | `28.04.2026` | [28.04.2026](fitforhospital.co.uk/2026-04-28_07-30-58/README.md) |
 | `27.04.2026` | [27.04.2026](fitforhospital.co.uk/2026-04-27_11-26-17/README.md) |
@@ -228,7 +229,6 @@ Previous runs:
 | `24.04.2026` | [24.04.2026](fitforhospital.co.uk/2026-04-24_12-36-43/README.md) |
 | `24.04.2026` | [24.04.2026](fitforhospital.co.uk/2026-04-24_07-07-41/README.md) |
 | `23.04.2026` | [23.04.2026](fitforhospital.co.uk/2026-04-23_13-29-18/README.md) |
-| `23.04.2026` | [23.04.2026](fitforhospital.co.uk/2026-04-23_07-00-17/README.md) |
 
 
 ### [hmrc.gov.uk](hmrc.gov.uk/2026-04-14_06-52-34/README.md)
@@ -520,9 +520,9 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](miljolare.no/2026-04-08_08-39-39/README.md) |
 
 
-### [mortgageadvicebureau.com](mortgageadvicebureau.com/2026-04-28_13-03-40/README.md)
+### [mortgageadvicebureau.com](mortgageadvicebureau.com/2026-04-29_07-27-23/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -539,6 +539,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](mortgageadvicebureau.com/2026-04-29_07-27-23/README.md) |
 | `28.04.2026` | [28.04.2026](mortgageadvicebureau.com/2026-04-28_13-03-40/README.md) |
 | `28.04.2026` | [28.04.2026](mortgageadvicebureau.com/2026-04-28_07-30-58/README.md) |
 | `27.04.2026` | [27.04.2026](mortgageadvicebureau.com/2026-04-27_11-27-18/README.md) |
@@ -649,9 +650,9 @@ Previous runs:
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.co.uk/2026-04-07_09-18-43/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-28_13-04-14/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-04-29_07-28-37/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -662,6 +663,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](onlythestoriesyouwant.link/2026-04-29_07-28-37/README.md) |
 | `28.04.2026` | [28.04.2026](onlythestoriesyouwant.link/2026-04-28_13-04-14/README.md) |
 | `28.04.2026` | [28.04.2026](onlythestoriesyouwant.link/2026-04-28_07-31-23/README.md) |
 | `27.04.2026` | [27.04.2026](onlythestoriesyouwant.link/2026-04-27_11-28-41/README.md) |
@@ -671,12 +673,11 @@ Previous runs:
 | `24.04.2026` | [24.04.2026](onlythestoriesyouwant.link/2026-04-24_12-38-13/README.md) |
 | `24.04.2026` | [24.04.2026](onlythestoriesyouwant.link/2026-04-24_07-08-28/README.md) |
 | `23.04.2026` | [23.04.2026](onlythestoriesyouwant.link/2026-04-23_13-30-03/README.md) |
-| `23.04.2026` | [23.04.2026](onlythestoriesyouwant.link/2026-04-23_07-00-58/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-04-28_13-06-18/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-04-29_07-29-20/README.md)
 
-Latest run: `28.04.2026`
+Latest run: `29.04.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -688,6 +689,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `29.04.2026` | [29.04.2026](rowanpage.co.uk/2026-04-29_07-29-20/README.md) |
 | `28.04.2026` | [28.04.2026](rowanpage.co.uk/2026-04-28_13-06-18/README.md) |
 | `28.04.2026` | [28.04.2026](rowanpage.co.uk/2026-04-28_07-33-53/README.md) |
 | `27.04.2026` | [27.04.2026](rowanpage.co.uk/2026-04-27_11-30-21/README.md) |
@@ -697,7 +699,6 @@ Previous runs:
 | `24.04.2026` | [24.04.2026](rowanpage.co.uk/2026-04-24_12-40-09/README.md) |
 | `24.04.2026` | [24.04.2026](rowanpage.co.uk/2026-04-24_07-08-29/README.md) |
 | `23.04.2026` | [23.04.2026](rowanpage.co.uk/2026-04-23_13-31-14/README.md) |
-| `23.04.2026` | [23.04.2026](rowanpage.co.uk/2026-04-23_07-00-59/README.md) |
 
 
 ### [sars.no](sars.no/2026-04-15_06-54-07/README.md)

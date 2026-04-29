@@ -17,7 +17,7 @@ Automated screenshots of domains discovered via certificate transparency logs
 | [dfbp.co.uk](dfbp.co.uk/) | `29.04.2026` | 1 | 0 |
 | [dfbr.co.uk](dfbr.co.uk/) | `29.04.2026` | 9 | 8 |
 | [fitforhospital.co.uk](fitforhospital.co.uk/) | `29.04.2026` | 1 | 1 |
-| [mortgageadvicebureau.com](mortgageadvicebureau.com/) | `29.04.2026` | 71 | 26 |
+| [mortgageadvicebureau.com](mortgageadvicebureau.com/) | `29.04.2026` | 71 | 22 |
 | [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `29.04.2026` | 2 | 2 |
 | [rowanpage.co.uk](rowanpage.co.uk/) | `29.04.2026` | 2 | 0 |
 
@@ -25,7 +25,7 @@ Automated screenshots of domains discovered via certificate transparency logs
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`29.04.2026`](dfbp.co.uk/2026-04-29_07-22-04/)
+Latest run: [`29.04.2026`](dfbp.co.uk/2026-04-29_10-15-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -37,6 +37,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](dfbp.co.uk/2026-04-29_10-15-07/) | 1 | 0 |
 | [`29.04.2026`](dfbp.co.uk/2026-04-29_07-22-04/) | 1 | 0 |
 | [`28.04.2026`](dfbp.co.uk/2026-04-28_13-01-58/) | 1 | 0 |
 | [`28.04.2026`](dfbp.co.uk/2026-04-28_07-30-14/) | 1 | 0 |
@@ -46,12 +47,11 @@ Previous runs:
 | [`25.04.2026`](dfbp.co.uk/2026-04-25_06-20-01/) | 1 | 0 |
 | [`24.04.2026`](dfbp.co.uk/2026-04-24_12-34-32/) | 1 | 0 |
 | [`24.04.2026`](dfbp.co.uk/2026-04-24_12-30-31/) | 1 | 0 |
-| [`24.04.2026`](dfbp.co.uk/2026-04-24_07-03-58/) | 1 | 0 |
 
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`29.04.2026`](dfbr.co.uk/2026-04-29_07-22-04/)
+Latest run: [`29.04.2026`](dfbr.co.uk/2026-04-29_10-15-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -63,6 +63,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](dfbr.co.uk/2026-04-29_10-15-07/) | 9 | 8 |
 | [`29.04.2026`](dfbr.co.uk/2026-04-29_07-22-04/) | 9 | 8 |
 | [`28.04.2026`](dfbr.co.uk/2026-04-28_13-01-58/) | 9 | 8 |
 | [`28.04.2026`](dfbr.co.uk/2026-04-28_07-30-14/) | 9 | 8 |
@@ -72,12 +73,11 @@ Previous runs:
 | [`25.04.2026`](dfbr.co.uk/2026-04-25_06-20-01/) | 9 | 8 |
 | [`24.04.2026`](dfbr.co.uk/2026-04-24_12-34-32/) | 9 | 8 |
 | [`24.04.2026`](dfbr.co.uk/2026-04-24_12-30-31/) | 8 | 0 |
-| [`24.04.2026`](dfbr.co.uk/2026-04-24_07-03-58/) | 1 | 1 |
 
 
 ### [fitforhospital.co.uk](fitforhospital.co.uk/)
 
-Latest run: [`29.04.2026`](fitforhospital.co.uk/2026-04-29_07-23-11/)
+Latest run: [`29.04.2026`](fitforhospital.co.uk/2026-04-29_10-15-56/)
 
 | Metric | Count |
 |-------:|------:|
@@ -88,6 +88,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](fitforhospital.co.uk/2026-04-29_10-15-56/) | 1 | 1 |
 | [`29.04.2026`](fitforhospital.co.uk/2026-04-29_07-23-11/) | 1 | 1 |
 | [`28.04.2026`](fitforhospital.co.uk/2026-04-28_13-02-52/) | 1 | 1 |
 | [`28.04.2026`](fitforhospital.co.uk/2026-04-28_07-30-58/) | 1 | 1 |
@@ -97,20 +98,19 @@ Previous runs:
 | [`25.04.2026`](fitforhospital.co.uk/2026-04-25_06-20-19/) | 1 | 1 |
 | [`24.04.2026`](fitforhospital.co.uk/2026-04-24_12-36-43/) | 1 | 1 |
 | [`24.04.2026`](fitforhospital.co.uk/2026-04-24_07-07-41/) | 1 | 1 |
-| [`23.04.2026`](fitforhospital.co.uk/2026-04-23_13-29-18/) | 1 | 1 |
 
 
 ### [mortgageadvicebureau.com](mortgageadvicebureau.com/)
 
-Latest run: [`29.04.2026`](mortgageadvicebureau.com/2026-04-29_07-27-23/)
+Latest run: [`29.04.2026`](mortgageadvicebureau.com/2026-04-29_10-16-02/)
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 71 |
-| Online | 26 |
+| Online | 22 |
 | ERR_NAME_NOT_RESOLVED | 24 |
 | HTTP 401 | 1 |
-| HTTP 403 | 8 |
+| HTTP 403 | 12 |
 | HTTP 404 | 9 |
 | HTTP 500 | 2 |
 | timeout | 1 |
@@ -119,6 +119,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](mortgageadvicebureau.com/2026-04-29_10-16-02/) | 71 | 22 |
 | [`29.04.2026`](mortgageadvicebureau.com/2026-04-29_07-27-23/) | 71 | 26 |
 | [`28.04.2026`](mortgageadvicebureau.com/2026-04-28_13-03-40/) | 71 | 26 |
 | [`28.04.2026`](mortgageadvicebureau.com/2026-04-28_07-30-58/) | 71 | 26 |
@@ -132,7 +133,7 @@ Previous runs:
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`29.04.2026`](onlythestoriesyouwant.link/2026-04-29_07-28-37/)
+Latest run: [`29.04.2026`](onlythestoriesyouwant.link/2026-04-29_10-17-45/)
 
 | Metric | Count |
 |-------:|------:|
@@ -143,6 +144,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](onlythestoriesyouwant.link/2026-04-29_10-17-45/) | 2 | 2 |
 | [`29.04.2026`](onlythestoriesyouwant.link/2026-04-29_07-28-37/) | 2 | 2 |
 | [`28.04.2026`](onlythestoriesyouwant.link/2026-04-28_13-04-14/) | 2 | 2 |
 | [`28.04.2026`](onlythestoriesyouwant.link/2026-04-28_07-31-23/) | 2 | 2 |
@@ -152,12 +154,11 @@ Previous runs:
 | [`25.04.2026`](onlythestoriesyouwant.link/2026-04-25_06-20-33/) | 2 | 2 |
 | [`24.04.2026`](onlythestoriesyouwant.link/2026-04-24_12-38-13/) | 2 | 2 |
 | [`24.04.2026`](onlythestoriesyouwant.link/2026-04-24_07-08-28/) | 1 | 1 |
-| [`23.04.2026`](onlythestoriesyouwant.link/2026-04-23_13-30-03/) | 2 | 2 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`29.04.2026`](rowanpage.co.uk/2026-04-29_07-29-20/)
+Latest run: [`29.04.2026`](rowanpage.co.uk/2026-04-29_10-23-31/)
 
 | Metric | Count |
 |-------:|------:|
@@ -169,6 +170,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`29.04.2026`](rowanpage.co.uk/2026-04-29_10-23-31/) | 2 | 0 |
 | [`29.04.2026`](rowanpage.co.uk/2026-04-29_07-29-20/) | 2 | 0 |
 | [`28.04.2026`](rowanpage.co.uk/2026-04-28_13-06-18/) | 2 | 0 |
 | [`28.04.2026`](rowanpage.co.uk/2026-04-28_07-33-53/) | 2 | 0 |
@@ -178,7 +180,6 @@ Previous runs:
 | [`25.04.2026`](rowanpage.co.uk/2026-04-25_06-21-13/) | 2 | 0 |
 | [`24.04.2026`](rowanpage.co.uk/2026-04-24_12-40-09/) | 2 | 0 |
 | [`24.04.2026`](rowanpage.co.uk/2026-04-24_07-08-29/) | 1 | 0 |
-| [`23.04.2026`](rowanpage.co.uk/2026-04-23_13-31-14/) | 2 | 0 |
 
 
 Looking for inactive domains? [Legacy sites](legacy/)

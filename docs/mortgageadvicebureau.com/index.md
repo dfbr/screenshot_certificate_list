@@ -17,10 +17,10 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 71 |
-| Online | 26 |
+| Online | 22 |
 | ERR_NAME_NOT_RESOLVED | 24 |
 | HTTP 401 | 1 |
-| HTTP 403 | 8 |
+| HTTP 403 | 12 |
 | HTTP 404 | 9 |
 | HTTP 500 | 2 |
 | timeout | 1 |
@@ -29,6 +29,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `29.04.2026` | 71 | 22 | [View](2026-04-29_10-16-02/) |
 | `29.04.2026` | 71 | 26 | [View](2026-04-29_07-27-23/) |
 | `28.04.2026` | 71 | 26 | [View](2026-04-28_13-03-40/) |
 | `28.04.2026` | 71 | 26 | [View](2026-04-28_07-30-58/) |

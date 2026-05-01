@@ -187,4 +187,55 @@
       </div>
     </details>
   </div>
+  <script>
+    (function () {
+      function colourCertDates() {
+        var now = new Date();
+        now.setHours(0, 0, 0, 0);
+        var oneWeekMs = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+
+        document.querySelectorAll('table').forEach(function (table) {
+          // Support tables with <thead> (Jekyll default) and tables without
+          var headers = table.querySelectorAll('thead th, tbody tr:first-of-type th');
+          var colIndex = -1;
+          headers.forEach(function (th, i) {
+            if (th.textContent.trim() === 'Certificate Expires') {
+              colIndex = i;
+            }
+          });
+          if (colIndex === -1) return;
+
+          table.querySelectorAll('tbody tr').forEach(function (row) {
+            var cell = row.cells[colIndex];
+            if (!cell) return;
+            var text = cell.textContent.trim();
+            if (!text || text === 'N/A') return;
+            // Dates are stored in ISO 8601 YYYY-MM-DD format
+            var expiry = new Date(text);
+            if (isNaN(expiry.getTime())) return;
+            expiry.setHours(0, 0, 0, 0);
+            var diff = expiry - now;
+            if (diff < 0) {
+              cell.style.backgroundColor = '#ffd6d6';
+              cell.style.color = '#a00';
+              cell.style.fontWeight = 'bold';
+            } else if (diff < oneWeekMs) {
+              cell.style.backgroundColor = '#fff8cc';
+              cell.style.color = '#7a6000';
+              cell.style.fontWeight = 'bold';
+            } else {
+              cell.style.backgroundColor = '#d6f5d6';
+              cell.style.color = '#1a6e1a';
+            }
+          });
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', colourCertDates);
+      } else {
+        colourCertDates();
+      }
+    })();
+  </script>
 </header>

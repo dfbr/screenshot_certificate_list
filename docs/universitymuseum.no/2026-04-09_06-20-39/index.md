@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.universitymuseum.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `pay.universitymuseum.no` | [![pay.universitymuseum.no](screenshots/pay.universitymuseum.no.png)](screenshots/pay.universitymuseum.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `pay.universitymuseum.no` | `-` | [![pay.universitymuseum.no](screenshots/pay.universitymuseum.no.png)](screenshots/pay.universitymuseum.no.png) |

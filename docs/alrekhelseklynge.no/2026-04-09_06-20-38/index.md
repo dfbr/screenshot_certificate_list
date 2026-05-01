@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.alrekhelseklynge.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `alrekhelseklynge.no` | [![alrekhelseklynge.no](screenshots/alrekhelseklynge.no.png)](screenshots/alrekhelseklynge.no.png) |
-| `www.alrekhelseklynge.no` | [![www.alrekhelseklynge.no](screenshots/www.alrekhelseklynge.no.png)](screenshots/www.alrekhelseklynge.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `alrekhelseklynge.no` | `-` | [![alrekhelseklynge.no](screenshots/alrekhelseklynge.no.png)](screenshots/alrekhelseklynge.no.png) |
+| `www.alrekhelseklynge.no` | `-` | [![www.alrekhelseklynge.no](screenshots/www.alrekhelseklynge.no.png)](screenshots/www.alrekhelseklynge.no.png) |

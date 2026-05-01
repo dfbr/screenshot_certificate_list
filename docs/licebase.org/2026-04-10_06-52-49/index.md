@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.licebase.org).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `licebase.org` | [![licebase.org](screenshots/licebase.org.png)](screenshots/licebase.org.png) |
-| `www.licebase.org` | [![www.licebase.org](screenshots/www.licebase.org.png)](screenshots/www.licebase.org.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `licebase.org` | `-` | [![licebase.org](screenshots/licebase.org.png)](screenshots/licebase.org.png) |
+| `www.licebase.org` | `-` | [![www.licebase.org](screenshots/www.licebase.org.png)](screenshots/www.licebase.org.png) |

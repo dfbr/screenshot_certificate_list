@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `fitforhospital.co.uk` | [![fitforhospital.co.uk](screenshots/fitforhospital.co.uk.png)](screenshots/fitforhospital.co.uk.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `fitforhospital.co.uk` | `-` | [![fitforhospital.co.uk](screenshots/fitforhospital.co.uk.png)](screenshots/fitforhospital.co.uk.png) |

@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.sokogskriv.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `sokogskriv.no` | [![sokogskriv.no](screenshots/sokogskriv.no.png)](screenshots/sokogskriv.no.png) |
-| `www.sokogskriv.no` | [![www.sokogskriv.no](screenshots/www.sokogskriv.no.png)](screenshots/www.sokogskriv.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `sokogskriv.no` | `-` | [![sokogskriv.no](screenshots/sokogskriv.no.png)](screenshots/sokogskriv.no.png) |
+| `www.sokogskriv.no` | `-` | [![www.sokogskriv.no](screenshots/www.sokogskriv.no.png)](screenshots/www.sokogskriv.no.png) |

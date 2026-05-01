@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link)
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `onlythestoriesyouwant.link` | [![onlythestoriesyouwant.link](screenshots/onlythestoriesyouwant.link.png)](screenshots/onlythestoriesyouwant.link.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `onlythestoriesyouwant.link` | `-` | [![onlythestoriesyouwant.link](screenshots/onlythestoriesyouwant.link.png)](screenshots/onlythestoriesyouwant.link.png) |

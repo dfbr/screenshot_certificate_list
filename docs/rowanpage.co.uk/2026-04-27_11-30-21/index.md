@@ -19,7 +19,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `rowanpage.co.uk` | `HTTP 404` |
-| `www.rowanpage.co.uk` | `HTTP 404` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `rowanpage.co.uk` | `-` | `HTTP 404` |
+| `www.rowanpage.co.uk` | `-` | `HTTP 404` |

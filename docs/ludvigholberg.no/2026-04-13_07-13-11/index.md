@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.ludvigholberg.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `ludvigholberg.no` | [![ludvigholberg.no](screenshots/ludvigholberg.no.png)](screenshots/ludvigholberg.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `ludvigholberg.no` | `-` | [![ludvigholberg.no](screenshots/ludvigholberg.no.png)](screenshots/ludvigholberg.no.png) |

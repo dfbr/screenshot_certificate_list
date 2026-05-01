@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.ilab.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `ilab.no` | [![ilab.no](screenshots/ilab.no.png)](screenshots/ilab.no.png) |
-| `www.ilab.no` | [![www.ilab.no](screenshots/www.ilab.no.png)](screenshots/www.ilab.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `ilab.no` | `-` | [![ilab.no](screenshots/ilab.no.png)](screenshots/ilab.no.png) |
+| `www.ilab.no` | `-` | [![www.ilab.no](screenshots/www.ilab.no.png)](screenshots/www.ilab.no.png) |

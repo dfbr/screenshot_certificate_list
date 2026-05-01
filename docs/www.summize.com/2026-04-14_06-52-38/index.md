@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.www.summize.com).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `www.summize.com` | [![www.summize.com](screenshots/www.summize.com.png)](screenshots/www.summize.com.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `www.summize.com` | `-` | [![www.summize.com](screenshots/www.summize.com.png)](screenshots/www.summize.com.png) |

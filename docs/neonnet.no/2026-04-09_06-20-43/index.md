@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.neonnet.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `neonnet.no` | [![neonnet.no](screenshots/neonnet.no.png)](screenshots/neonnet.no.png) |
-| `www.neonnet.no` | [![www.neonnet.no](screenshots/www.neonnet.no.png)](screenshots/www.neonnet.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `neonnet.no` | `-` | [![neonnet.no](screenshots/neonnet.no.png)](screenshots/neonnet.no.png) |
+| `www.neonnet.no` | `-` | [![www.neonnet.no](screenshots/www.neonnet.no.png)](screenshots/www.neonnet.no.png) |

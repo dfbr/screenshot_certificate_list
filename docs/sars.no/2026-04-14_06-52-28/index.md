@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.sars.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `sars.no` | [![sars.no](screenshots/sars.no.png)](screenshots/sars.no.png) |
-| `www.sars.no` | [![www.sars.no](screenshots/www.sars.no.png)](screenshots/www.sars.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `sars.no` | `-` | [![sars.no](screenshots/sars.no.png)](screenshots/sars.no.png) |
+| `www.sars.no` | `-` | [![www.sars.no](screenshots/www.sars.no.png)](screenshots/www.sars.no.png) |

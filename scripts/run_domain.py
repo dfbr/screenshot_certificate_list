@@ -64,8 +64,35 @@ def _domain_for_logs(domain: str) -> str:
     return (domain or "") #.replace(".", "[.]")
 
 
-def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[str]:
-    """Return sorted list of unique, non-wildcard names from crt.sh for *domain*.
+def _parse_not_after(value: object) -> Optional[datetime]:
+    """Parse a crt.sh not_after value into an aware UTC datetime."""
+    if value is None:
+        return None
+    raw = str(value).strip()
+    if not raw:
+        return None
+
+    raw_iso = raw.replace("Z", "+00:00") if raw.endswith("Z") else raw
+    try:
+        dt = datetime.fromisoformat(raw_iso)
+    except ValueError:
+        dt = None
+        for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+            try:
+                dt = datetime.strptime(raw, fmt)
+                break
+            except ValueError:
+                continue
+        if dt is None:
+            return None
+
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> tuple[list[str], dict[str, str]]:
+    """Return names and latest certificate expiry dates from crt.sh for *domain*.
 
     Retries up to *max_retries* times with a short back-off to handle the
     intermittent availability of crt.sh.
@@ -112,7 +139,7 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
                     f"ERROR: non-retryable crt.sh response for {domain_log}: HTTP {status_code}",
                     file=sys.stderr,
                 )
-                return []
+                return [], {}
             elif status_code in retryable_statuses:
                 retry_after_seconds = _parse_retry_after_seconds(response.headers.get("Retry-After"))
                 print(
@@ -147,10 +174,12 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
     session.close()
     if data is None:
         print(f"ERROR: crt.sh query failed for {domain_log} after {max_retries} attempt(s)", file=sys.stderr)
-        return []
+        return [], {}
 
     names: set[str] = set()
+    latest_expiry: dict[str, datetime] = {}
     for cert in data:
+        cert_not_after = _parse_not_after(cert.get("not_after"))
         for field in ("common_name", "name_value"):
             raw_val = cert.get(field)
             if raw_val is None:
@@ -171,7 +200,13 @@ def query_crtsh(domain: str, timeout: int = 10, max_retries: int = 10) -> list[s
                 # Keep any name that equals or is a subdomain of the requested domain
                 if name == domain or name.endswith(f".{domain}"):
                     names.add(name)
-    return sorted(names)
+                    if cert_not_after is not None:
+                        current = latest_expiry.get(name)
+                        if current is None or cert_not_after > current:
+                            latest_expiry[name] = cert_not_after
+
+    expiry_map = {name: latest_expiry[name].date().isoformat() for name in latest_expiry.keys()}
+    return sorted(names), expiry_map
 
 
 def take_screenshot(hostname: str, output_path: Path) -> tuple[bool, str]:
@@ -268,6 +303,7 @@ def generate_run_readme(
     domain: str,
     names: list[str],
     results: dict[str, str],
+    cert_expiry: dict[str, str],
 ) -> None:
     """Write README.md for a single run inside *run_dir*.
 
@@ -346,19 +382,20 @@ def generate_run_readme(
         "",
         "## Details",
         "",
-        "| Domain | Result |",
-        "|--------|--------|",
+        "| Domain | Certificate Expires | Result |",
+        "|--------|---------------------|--------|",
     ])
 
     for name in names:
         result = results.get(name)
+        expiry = cert_expiry.get(name) or "-"
         if result == "ok":
             img = f"screenshots/{name}.png"
-            lines.append(f"| `{name}` | ![{name}]({img}) |")
+            lines.append(f"| `{name}` | `{expiry}` | ![{name}]({img}) |")
         else:
             # show normalized error for clarity
             err = normalized_map.get(name, None) or "(screenshot unavailable)"
-            lines.append(f"| `{name}` | `{err}` |")
+            lines.append(f"| `{name}` | `{expiry}` | `{err}` |")
 
     (run_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -419,7 +456,7 @@ def main() -> None:
 
     # Query crt.sh
     print("Querying crt.sh…")
-    names = query_crtsh(domain, timeout=crtsh_timeout, max_retries=crtsh_max_retries)
+    names, cert_expiry = query_crtsh(domain, timeout=crtsh_timeout, max_retries=crtsh_max_retries)
     print(f"Found {len(names)} unique name(s)")
 
     # create run_dir early to ensure errors get written into a place under results/
@@ -428,6 +465,7 @@ def main() -> None:
     if max_domains and len(names) > max_domains:
         print(f"Limiting to first {max_domains} of {len(names)} names")
         names = names[:max_domains]
+        cert_expiry = {name: cert_expiry[name] for name in names if name in cert_expiry}
 
     if not names:
         print(f"No names found; defaulting to [{domain}]")
@@ -442,6 +480,11 @@ def main() -> None:
     # Persist domain list
     (run_dir / "domains.json").write_text(
         json.dumps(names, indent=2), encoding="utf-8"
+    )
+
+    # Persist latest certificate expiry date by subdomain (YYYY-MM-DD)
+    (run_dir / "cert_expiry.json").write_text(
+        json.dumps(cert_expiry, indent=2, sort_keys=True), encoding="utf-8"
     )
 
     # Take screenshots concurrently
@@ -475,7 +518,7 @@ def main() -> None:
         print(f"WARNING: could not write statuses.json: {exc}", file=sys.stderr)
 
     # Generate per-run README
-    generate_run_readme(run_dir, domain, names, screenshot_results)
+    generate_run_readme(run_dir, domain, names, screenshot_results, cert_expiry)
     print(f"README written → {run_dir / 'README.md'}")
 
     # Prune old runs

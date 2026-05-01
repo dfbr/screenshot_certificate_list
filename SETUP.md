@@ -9,8 +9,8 @@ how to test notifications.
 
 - The workflow queries certificate transparency (crt.sh) for each monitored
   top-level domain, takes screenshots and stores results under `results/<domain>/`.
-- Per-run artifacts include `statuses.json`, `domains.json`, `README.md` and
-  a `screenshots/` directory.
+- Per-run artifacts include `statuses.json`, `domains.json`, `cert_expiry.json`,
+  `README.md` and a `screenshots/` directory.
 - Notification recipients can be configured per-domain via `domains.yml` or
   provided as a repository secret (`DOMAINS_YML`).
 

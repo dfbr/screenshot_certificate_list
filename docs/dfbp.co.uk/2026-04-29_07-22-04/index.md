@@ -19,6 +19,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.dfbp.co.uk).
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `dfbp.co.uk` | `HTTP 404` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `dfbp.co.uk` | `-` | `HTTP 404` |

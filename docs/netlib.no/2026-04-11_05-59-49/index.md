@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.netlib.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `netlib.no` | [![netlib.no](screenshots/netlib.no.png)](screenshots/netlib.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `netlib.no` | `-` | [![netlib.no](screenshots/netlib.no.png)](screenshots/netlib.no.png) |

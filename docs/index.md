@@ -118,6 +118,7 @@ Previous runs:
 | [`27.04.2026`](fitforhospital.co.uk/2026-04-27_11-26-17/) | 1 | 1 |
 | [`27.04.2026`](fitforhospital.co.uk/2026-04-27_07-40-18/) | 1 | 1 |
 | [`26.04.2026`](fitforhospital.co.uk/2026-04-26_07-05-40/) | 1 | 1 |
+| [`24.04.2026`](fitforhospital.co.uk/2026-04-24_12-32-02/) | 0 | 0 |
 
 
 ### [mortgageadvicebureau.com](mortgageadvicebureau.com/)
@@ -174,6 +175,7 @@ Previous runs:
 | [`27.04.2026`](onlythestoriesyouwant.link/2026-04-27_11-28-41/) | 2 | 2 |
 | [`27.04.2026`](onlythestoriesyouwant.link/2026-04-27_07-47-22/) | 1 | 1 |
 | [`26.04.2026`](onlythestoriesyouwant.link/2026-04-26_07-12-56/) | 1 | 1 |
+| [`24.04.2026`](onlythestoriesyouwant.link/2026-04-24_12-33-52/) | 0 | 0 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
@@ -200,6 +202,7 @@ Previous runs:
 | [`27.04.2026`](rowanpage.co.uk/2026-04-27_11-30-21/) | 2 | 0 |
 | [`27.04.2026`](rowanpage.co.uk/2026-04-27_07-48-07/) | 1 | 0 |
 | [`26.04.2026`](rowanpage.co.uk/2026-04-26_07-13-31/) | 1 | 0 |
+| [`24.04.2026`](rowanpage.co.uk/2026-04-24_12-33-54/) | 0 | 0 |
 
 
 Looking for inactive domains? [Legacy sites](legacy/)

@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `mortgageadvicebureau.com` | [![mortgageadvicebureau.com](screenshots/mortgageadvicebureau.com.png)](screenshots/mortgageadvicebureau.com.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `mortgageadvicebureau.com` | `-` | [![mortgageadvicebureau.com](screenshots/mortgageadvicebureau.com.png)](screenshots/mortgageadvicebureau.com.png) |

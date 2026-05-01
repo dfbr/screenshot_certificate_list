@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.dfbr.github.io).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `dfbr.github.io` | [![dfbr.github.io](screenshots/dfbr.github.io.png)](screenshots/dfbr.github.io.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `dfbr.github.io` | `-` | [![dfbr.github.io](screenshots/dfbr.github.io.png)](screenshots/dfbr.github.io.png) |

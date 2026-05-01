@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.baerekraftsforskning.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `baerekraftsforskning.no` | [![baerekraftsforskning.no](screenshots/baerekraftsforskning.no.png)](screenshots/baerekraftsforskning.no.png) |
-| `www.baerekraftsforskning.no` | [![www.baerekraftsforskning.no](screenshots/www.baerekraftsforskning.no.png)](screenshots/www.baerekraftsforskning.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `baerekraftsforskning.no` | `-` | [![baerekraftsforskning.no](screenshots/baerekraftsforskning.no.png)](screenshots/baerekraftsforskning.no.png) |
+| `www.baerekraftsforskning.no` | `-` | [![www.baerekraftsforskning.no](screenshots/www.baerekraftsforskning.no.png)](screenshots/www.baerekraftsforskning.no.png) |

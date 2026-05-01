@@ -19,6 +19,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.co.uk
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `onlythestoriesyouwant.co.uk` | `ERR_NAME_NOT_RESOLVED` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `onlythestoriesyouwant.co.uk` | `-` | `ERR_NAME_NOT_RESOLVED` |

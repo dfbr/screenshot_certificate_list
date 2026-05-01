@@ -66,6 +66,23 @@ def _load_statuses(run_dir: Path) -> dict[str, str]:
         return {}
 
 
+def _load_cert_expiry(run_dir: Path) -> dict[str, str]:
+    path = run_dir / "cert_expiry.json"
+    if not path.exists():
+        return {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if not isinstance(raw, dict):
+        return {}
+    out: dict[str, str] = {}
+    for k, v in raw.items():
+        if isinstance(k, str) and isinstance(v, str) and v.strip():
+            out[k] = v.strip()
+    return out
+
+
 def _tally(status_map: dict[str, str]) -> tuple[int, int, dict[str, int]]:
     """Return (total, successes, {normalized_error: count})."""
     total = len(status_map)
@@ -284,6 +301,7 @@ def _write_run_page(
     domain: str,
     run_name: str,
     status_map: dict[str, str],
+    cert_expiry: dict[str, str],
 ) -> None:
     """Write docs/<domain>/<run>/index.md for a single run."""
     docs_run_dir.mkdir(parents=True, exist_ok=True)
@@ -321,12 +339,13 @@ def _write_run_page(
             "",
             "## Online Subdomains",
             "",
-            "| Subdomain | Screenshot |",
-            "|-----------|-----------|",
+            "| Subdomain | Certificate Expires | Screenshot |",
+            "|-----------|---------------------|-----------|",
         ]
         for name in ok_names:
             img = f"screenshots/{name}.png"
-            lines.append(f"| `{name}` | [![{name}]({img})]({img}) |")
+            expiry = cert_expiry.get(name) or "-"
+            lines.append(f"| `{name}` | `{expiry}` | [![{name}]({img})]({img}) |")
 
     # Non-ok results
     error_names = sorted((n, _normalize_error(v)) for n, v in status_map.items() if v != "ok")
@@ -335,11 +354,12 @@ def _write_run_page(
             "",
             "## Other Results",
             "",
-            "| Subdomain | Status |",
-            "|-----------|--------|",
+            "| Subdomain | Certificate Expires | Status |",
+            "|-----------|---------------------|--------|",
         ]
         for name, err in error_names:
-            lines.append(f"| `{name}` | `{err}` |")
+            expiry = cert_expiry.get(name) or "-"
+            lines.append(f"| `{name}` | `{expiry}` | `{err}` |")
 
     (docs_run_dir / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -688,9 +708,10 @@ def main() -> None:
         runs_data: list[tuple[str, dict[str, str]]] = []
         for run_dir in runs:
             status_map = _load_statuses(run_dir)
+            cert_expiry = _load_cert_expiry(run_dir)
             run_name = run_dir.name
             docs_run_dir = docs_dir / domain_dir.name / run_name
-            _write_run_page(docs_run_dir, domain_dir.name, run_name, status_map)
+            _write_run_page(docs_run_dir, domain_dir.name, run_name, status_map, cert_expiry)
             runs_data.append((run_name, status_map))
 
         is_legacy_domain = bool(active_domain_names) and (domain_dir.name.lower() not in active_domain_names)

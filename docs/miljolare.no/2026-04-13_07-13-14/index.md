@@ -19,16 +19,16 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.miljolare.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `beagle.miljolare.no` | [![beagle.miljolare.no](screenshots/beagle.miljolare.no.png)](screenshots/beagle.miljolare.no.png) |
-| `co2.miljolare.no` | [![co2.miljolare.no](screenshots/co2.miljolare.no.png)](screenshots/co2.miljolare.no.png) |
-| `miljolare.no` | [![miljolare.no](screenshots/miljolare.no.png)](screenshots/miljolare.no.png) |
-| `www.miljolare.no` | [![www.miljolare.no](screenshots/www.miljolare.no.png)](screenshots/www.miljolare.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `beagle.miljolare.no` | `-` | [![beagle.miljolare.no](screenshots/beagle.miljolare.no.png)](screenshots/beagle.miljolare.no.png) |
+| `co2.miljolare.no` | `-` | [![co2.miljolare.no](screenshots/co2.miljolare.no.png)](screenshots/co2.miljolare.no.png) |
+| `miljolare.no` | `-` | [![miljolare.no](screenshots/miljolare.no.png)](screenshots/miljolare.no.png) |
+| `www.miljolare.no` | `-` | [![www.miljolare.no](screenshots/www.miljolare.no.png)](screenshots/www.miljolare.no.png) |
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `beta.miljolare.no` | `HTTP 403` |
-| `ipt.miljolare.no` | `HTTP 403` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `beta.miljolare.no` | `-` | `HTTP 403` |
+| `ipt.miljolare.no` | `-` | `HTTP 403` |

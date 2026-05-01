@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.bioxsd.org).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `bioxsd.org` | [![bioxsd.org](screenshots/bioxsd.org.png)](screenshots/bioxsd.org.png) |
-| `www.bioxsd.org` | [![www.bioxsd.org](screenshots/www.bioxsd.org.png)](screenshots/www.bioxsd.org.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `bioxsd.org` | `-` | [![bioxsd.org](screenshots/bioxsd.org.png)](screenshots/bioxsd.org.png) |
+| `www.bioxsd.org` | `-` | [![www.bioxsd.org](screenshots/www.bioxsd.org.png)](screenshots/www.bioxsd.org.png) |

@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.sjofartsmuseum.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `sjofartsmuseum.no` | [![sjofartsmuseum.no](screenshots/sjofartsmuseum.no.png)](screenshots/sjofartsmuseum.no.png) |
-| `www.sjofartsmuseum.no` | [![www.sjofartsmuseum.no](screenshots/www.sjofartsmuseum.no.png)](screenshots/www.sjofartsmuseum.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `sjofartsmuseum.no` | `-` | [![sjofartsmuseum.no](screenshots/sjofartsmuseum.no.png)](screenshots/sjofartsmuseum.no.png) |
+| `www.sjofartsmuseum.no` | `-` | [![www.sjofartsmuseum.no](screenshots/www.sjofartsmuseum.no.png)](screenshots/www.sjofartsmuseum.no.png) |

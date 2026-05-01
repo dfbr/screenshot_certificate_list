@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.holbergprize.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `holbergprize.no` | [![holbergprize.no](screenshots/holbergprize.no.png)](screenshots/holbergprize.no.png) |
-| `www.holbergprize.no` | [![www.holbergprize.no](screenshots/www.holbergprize.no.png)](screenshots/www.holbergprize.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `holbergprize.no` | `-` | [![holbergprize.no](screenshots/holbergprize.no.png)](screenshots/holbergprize.no.png) |
+| `www.holbergprize.no` | `-` | [![www.holbergprize.no](screenshots/www.holbergprize.no.png)](screenshots/www.holbergprize.no.png) |

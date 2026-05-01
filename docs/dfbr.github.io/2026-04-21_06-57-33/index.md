@@ -19,6 +19,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.dfbr.github.io).
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `dfbr.github.io` | `HTTP 404` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `dfbr.github.io` | `-` | `HTTP 404` |

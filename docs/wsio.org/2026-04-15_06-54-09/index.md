@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.wsio.org).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `wsio.org` | [![wsio.org](screenshots/wsio.org.png)](screenshots/wsio.org.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `wsio.org` | `-` | [![wsio.org](screenshots/wsio.org.png)](screenshots/wsio.org.png) |

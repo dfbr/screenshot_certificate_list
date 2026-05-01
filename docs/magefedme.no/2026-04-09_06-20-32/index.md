@@ -18,6 +18,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.magefedme.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `magefedme.no` | [![magefedme.no](screenshots/magefedme.no.png)](screenshots/magefedme.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `magefedme.no` | `-` | [![magefedme.no](screenshots/magefedme.no.png)](screenshots/magefedme.no.png) |

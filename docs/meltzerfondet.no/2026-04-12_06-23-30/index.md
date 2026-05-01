@@ -19,6 +19,6 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.meltzerfondet.no).
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `meltzerfondet.no` | `timeout` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `meltzerfondet.no` | `-` | `timeout` |

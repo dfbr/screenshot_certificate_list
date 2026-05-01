@@ -18,7 +18,7 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.ddm.org).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `ddm.org` | [![ddm.org](screenshots/ddm.org.png)](screenshots/ddm.org.png) |
-| `www.ddm.org` | [![www.ddm.org](screenshots/www.ddm.org.png)](screenshots/www.ddm.org.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `ddm.org` | `-` | [![ddm.org](screenshots/ddm.org.png)](screenshots/ddm.org.png) |
+| `www.ddm.org` | `-` | [![www.ddm.org](screenshots/www.ddm.org.png)](screenshots/www.ddm.org.png) |

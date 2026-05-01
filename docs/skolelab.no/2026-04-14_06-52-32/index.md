@@ -19,13 +19,13 @@ Subdomains queried from [crt.sh](https://crt.sh/?q=%.skolelab.no).
 
 ## Online Subdomains
 
-| Subdomain | Screenshot |
-|-----------|-----------|
-| `skolelab.no` | [![skolelab.no](screenshots/skolelab.no.png)](screenshots/skolelab.no.png) |
-| `www.skolelab.no` | [![www.skolelab.no](screenshots/www.skolelab.no.png)](screenshots/www.skolelab.no.png) |
+| Subdomain | Certificate Expires | Screenshot |
+|-----------|---------------------|-----------|
+| `skolelab.no` | `-` | [![skolelab.no](screenshots/skolelab.no.png)](screenshots/skolelab.no.png) |
+| `www.skolelab.no` | `-` | [![www.skolelab.no](screenshots/www.skolelab.no.png)](screenshots/www.skolelab.no.png) |
 
 ## Other Results
 
-| Subdomain | Status |
-|-----------|--------|
-| `beta.skolelab.no` | `HTTP 403` |
+| Subdomain | Certificate Expires | Status |
+|-----------|---------------------|--------|
+| `beta.skolelab.no` | `-` | `HTTP 403` |

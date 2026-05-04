@@ -12,18 +12,18 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
 
-## Latest Run: 03.05.2026
+## Latest Run: 04.05.2026
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 10 |
-| Online | 9 |
-| HTTP 404 | 1 |
+| Total subdomains found | 1 |
+| Online | 1 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `04.05.2026` | 1 | 1 | [View](2026-05-04_07-49-01/) |
 | `03.05.2026` | 10 | 9 | [View](2026-05-03_07-17-58/) |
 | `02.05.2026` | 9 | 8 | [View](2026-05-02_07-07-01/) |
 | `01.05.2026` | 9 | 8 | [View](2026-05-01_12-16-31/) |
@@ -33,4 +33,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
 | `29.04.2026` | 9 | 8 | [View](2026-04-29_10-15-07/) |
 | `29.04.2026` | 9 | 8 | [View](2026-04-29_07-22-04/) |
 | `28.04.2026` | 9 | 8 | [View](2026-04-28_13-01-58/) |
-| `28.04.2026` | 9 | 8 | [View](2026-04-28_07-30-14/) |

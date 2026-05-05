@@ -1,5 +1,5 @@
 ---
-title: "campingandcaravanningclub.co.uk Gallery (04.05.2026)"
+title: "campingandcaravanningclub.co.uk Gallery (05.05.2026)"
 layout: gallery
 ---
 
@@ -7,69 +7,9 @@ layout: gallery
   <div id="gallery-scale-root">
     <div id="gallery-grid">
       <figure class="gallery-item">
-        <a href="https://autodiscover.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/autodiscover.campingandcaravanningclub.co.uk.png" alt="autodiscover.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>autodiscover.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://book.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/book.campingandcaravanningclub.co.uk.png" alt="book.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>book.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://brandassets.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/brandassets.campingandcaravanningclub.co.uk.png" alt="brandassets.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>brandassets.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
         <a href="https://campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/campingandcaravanningclub.co.uk.png" alt="campingandcaravanningclub.co.uk" loading="lazy" />
+          <img src="../2026-05-05_07-16-56/screenshots/campingandcaravanningclub.co.uk.png" alt="campingandcaravanningclub.co.uk" loading="lazy" />
           <figcaption>campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://careers.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/careers.campingandcaravanningclub.co.uk.png" alt="careers.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>careers.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://etsbook.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/etsbook.campingandcaravanningclub.co.uk.png" alt="etsbook.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>etsbook.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://identity.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/identity.campingandcaravanningclub.co.uk.png" alt="identity.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>identity.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://notification.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/notification.campingandcaravanningclub.co.uk.png" alt="notification.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>notification.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://staticwebcontent.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/staticwebcontent.campingandcaravanningclub.co.uk.png" alt="staticwebcontent.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>staticwebcontent.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://uatstaticwebcontent.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/uatstaticwebcontent.campingandcaravanningclub.co.uk.png" alt="uatstaticwebcontent.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>uatstaticwebcontent.campingandcaravanningclub.co.uk</figcaption>
-        </a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://www.campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-04_07-47-22/screenshots/www.campingandcaravanningclub.co.uk.png" alt="www.campingandcaravanningclub.co.uk" loading="lazy" />
-          <figcaption>www.campingandcaravanningclub.co.uk</figcaption>
         </a>
       </figure>
     </div>

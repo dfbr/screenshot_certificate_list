@@ -12,18 +12,19 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 
-## Latest Run: 05.05.2026
+## Latest Run: 06.05.2026
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 1 |
+| Total subdomains found | 2 |
 | Online | 0 |
-| HTTP 404 | 1 |
+| HTTP 404 | 2 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `06.05.2026` | 2 | 0 | [View](2026-05-06_07-37-31/) |
 | `05.05.2026` | 1 | 0 | [View](2026-05-05_07-38-16/) |
 | `04.05.2026` | 2 | 0 | [View](2026-05-04_07-57-39/) |
 | `03.05.2026` | 2 | 0 | [View](2026-05-03_07-22-25/) |
@@ -33,4 +34,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.rowanpage.co.uk).
 | `01.05.2026` | 2 | 0 | [View](2026-05-01_07-27-20/) |
 | `30.04.2026` | 2 | 0 | [View](2026-04-30_07-36-20/) |
 | `29.04.2026` | 2 | 0 | [View](2026-04-29_10-23-31/) |
-| `29.04.2026` | 2 | 0 | [View](2026-04-29_07-29-20/) |

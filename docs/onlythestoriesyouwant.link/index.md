@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
-## Latest Run: 08.05.2026
+## Latest Run: 09.05.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `09.05.2026` | 2 | 2 | [View](2026-05-09_07-10-28/) |
 | `08.05.2026` | 2 | 2 | [View](2026-05-08_06-59-00/) |
 | `07.05.2026` | 2 | 2 | [View](2026-05-07_07-51-37/) |
 | `06.05.2026` | 2 | 2 | [View](2026-05-06_07-37-10/) |
@@ -32,4 +33,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.onlythestoriesyouwant.link).
 | `02.05.2026` | 2 | 2 | [View](2026-05-02_07-10-02/) |
 | `01.05.2026` | 2 | 2 | [View](2026-05-01_12-19-15/) |
 | `01.05.2026` | 2 | 2 | [View](2026-05-01_11-20-23/) |
-| `01.05.2026` | 2 | 2 | [View](2026-05-01_07-26-42/) |

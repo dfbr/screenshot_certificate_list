@@ -1,5 +1,5 @@
 ---
-title: "dfbr.co.uk Gallery (09.05.2026)"
+title: "dfbr.co.uk Gallery (10.05.2026)"
 layout: gallery
 ---
 
@@ -8,49 +8,55 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://clickbait.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/clickbait.dfbr.co.uk.png" alt="clickbait.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/clickbait.dfbr.co.uk.png" alt="clickbait.dfbr.co.uk" loading="lazy" />
           <figcaption>clickbait.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://craft.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/craft.dfbr.co.uk.png" alt="craft.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/craft.dfbr.co.uk.png" alt="craft.dfbr.co.uk" loading="lazy" />
           <figcaption>craft.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
+        <a href="https://cyoa.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
+          <img src="../2026-05-10_07-24-43/screenshots/cyoa.dfbr.co.uk.png" alt="cyoa.dfbr.co.uk" loading="lazy" />
+          <figcaption>cyoa.dfbr.co.uk</figcaption>
+        </a>
+      </figure>
+      <figure class="gallery-item">
         <a href="https://dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/dfbr.co.uk.png" alt="dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/dfbr.co.uk.png" alt="dfbr.co.uk" loading="lazy" />
           <figcaption>dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://newnews.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/newnews.dfbr.co.uk.png" alt="newnews.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/newnews.dfbr.co.uk.png" alt="newnews.dfbr.co.uk" loading="lazy" />
           <figcaption>newnews.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://norwegianwords.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/norwegianwords.dfbr.co.uk.png" alt="norwegianwords.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/norwegianwords.dfbr.co.uk.png" alt="norwegianwords.dfbr.co.uk" loading="lazy" />
           <figcaption>norwegianwords.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://perimeter.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/perimeter.dfbr.co.uk.png" alt="perimeter.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/perimeter.dfbr.co.uk.png" alt="perimeter.dfbr.co.uk" loading="lazy" />
           <figcaption>perimeter.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://screenshots.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/screenshots.dfbr.co.uk.png" alt="screenshots.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/screenshots.dfbr.co.uk.png" alt="screenshots.dfbr.co.uk" loading="lazy" />
           <figcaption>screenshots.dfbr.co.uk</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://strip.dfbr.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-05-09_07-06-40/screenshots/strip.dfbr.co.uk.png" alt="strip.dfbr.co.uk" loading="lazy" />
+          <img src="../2026-05-10_07-24-43/screenshots/strip.dfbr.co.uk.png" alt="strip.dfbr.co.uk" loading="lazy" />
           <figcaption>strip.dfbr.co.uk</figcaption>
         </a>
       </figure>

@@ -1,0 +1,31 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Mobile improvements: make wide tables scroll horizontally rather than
+// forcing the page to be wider than the viewport.
+.page-content table,
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+// Keep inline screenshot thumbnails from blowing out the table column.
+.page-content table img,
+.post-content table img {
+  max-width: 120px;
+  height: auto;
+}
+
+// Allow long subdomain names to break inside table cells so they don't
+// force columns to be unreasonably wide.
+.page-content table td,
+.page-content table th,
+.post-content table td,
+.post-content table th {
+  overflow-wrap: break-word;
+}

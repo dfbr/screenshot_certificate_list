@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.halfords.co.uk).
 
-## Latest Run: 17.05.2026
+## Latest Run: 18.05.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -26,6 +26,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.halfords.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `18.05.2026` | 25 | 5 | [View](2026-05-18_08-44-47/) |
 | `17.05.2026` | 25 | 5 | [View](2026-05-17_07-33-31/) |
 | `16.05.2026` | 25 | 5 | [View](2026-05-16_07-17-03/) |
 | `15.05.2026` | 25 | 5 | [View](2026-05-15_08-03-19/) |

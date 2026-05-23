@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.campingandcaravanningclub.co.uk).
 
-## Latest Run: 22.05.2026
+## Latest Run: 23.05.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -26,6 +26,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.campingandcaravanningclub.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `23.05.2026` | 85 | 9 | [View](2026-05-23_07-29-36/) |
 | `22.05.2026` | 85 | 9 | [View](2026-05-22_08-20-18/) |
 | `21.05.2026` | 85 | 9 | [View](2026-05-21_08-31-01/) |
 | `20.05.2026` | 85 | 9 | [View](2026-05-20_08-25-34/) |
@@ -35,4 +36,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.campingandcaravanningclub.co.uk).
 | `16.05.2026` | 85 | 9 | [View](2026-05-16_07-12-41/) |
 | `15.05.2026` | 85 | 9 | [View](2026-05-15_07-50-49/) |
 | `14.05.2026` | 85 | 9 | [View](2026-05-14_07-40-18/) |
-| `13.05.2026` | 85 | 11 | [View](2026-05-13_07-49-49/) |

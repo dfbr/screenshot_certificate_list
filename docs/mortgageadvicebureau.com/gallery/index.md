@@ -1,17 +1,12 @@
 ---
-title: "mortgageadvicebureau.com Gallery (07.06.2026)"
+title: "mortgageadvicebureau.com Gallery (08.06.2026)"
 layout: gallery
 ---
 
 <div id="gallery-viewport">
   <div id="gallery-scale-root">
     <div id="gallery-grid">
-      <figure class="gallery-item">
-        <a href="https://mortgageadvicebureau.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-06-07_08-44-56/screenshots/mortgageadvicebureau.com.png" alt="mortgageadvicebureau.com" loading="lazy" />
-          <figcaption>mortgageadvicebureau.com</figcaption>
-        </a>
-      </figure>
+      <p>No successful screenshots available for the latest run.</p>
     </div>
   </div>
 </div>

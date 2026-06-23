@@ -1,0 +1,31 @@
+# dfbr.co.uk — 2026-06-23_08-28-41
+
+Certificates queried from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
+
+## Summary
+
+| Metric | Count |
+|-------:|------:|
+| Total domains found | 14 |
+| Successes | 12 |
+| HTTP 401 | 1 |
+| HTTP 404 | 1 |
+
+## Details
+
+| Domain | Certificate Expires | Result |
+|--------|---------------------|--------|
+| `craft.dfbr.co.uk` | `2026-09-17` | ![craft.dfbr.co.uk](screenshots/craft.dfbr.co.uk.png) |
+| `movemeright.dfbr.co.uk` | `2026-07-21` | `HTTP 404` |
+| `perimeter.dfbr.co.uk` | `2026-07-26` | ![perimeter.dfbr.co.uk](screenshots/perimeter.dfbr.co.uk.png) |
+| `colours.dfbr.co.uk` | `2026-08-23` | ![colours.dfbr.co.uk](screenshots/colours.dfbr.co.uk.png) |
+| `clickbait.dfbr.co.uk` | `2026-09-11` | ![clickbait.dfbr.co.uk](screenshots/clickbait.dfbr.co.uk.png) |
+| `pagephotos.dfbr.co.uk` | `2026-08-02` | `HTTP 401` |
+| `dfbr.co.uk` | `2026-08-02` | ![dfbr.co.uk](screenshots/dfbr.co.uk.png) |
+| `newnews.dfbr.co.uk` | `2026-09-17` | ![newnews.dfbr.co.uk](screenshots/newnews.dfbr.co.uk.png) |
+| `songbook.dfbr.co.uk` | `2026-08-03` | ![songbook.dfbr.co.uk](screenshots/songbook.dfbr.co.uk.png) |
+| `norwegianwords.dfbr.co.uk` | `2026-09-17` | ![norwegianwords.dfbr.co.uk](screenshots/norwegianwords.dfbr.co.uk.png) |
+| `essays.dfbr.co.uk` | `2026-09-06` | ![essays.dfbr.co.uk](screenshots/essays.dfbr.co.uk.png) |
+| `strip.dfbr.co.uk` | `2026-09-11` | ![strip.dfbr.co.uk](screenshots/strip.dfbr.co.uk.png) |
+| `cyoa.dfbr.co.uk` | `2026-07-26` | ![cyoa.dfbr.co.uk](screenshots/cyoa.dfbr.co.uk.png) |
+| `screenshots.dfbr.co.uk` | `2026-09-11` | ![screenshots.dfbr.co.uk](screenshots/screenshots.dfbr.co.uk.png) |

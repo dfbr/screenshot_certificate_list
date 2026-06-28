@@ -1,5 +1,5 @@
 ---
-title: "dfbp.co.uk Gallery (27.06.2026)"
+title: "dfbp.co.uk Gallery (28.06.2026)"
 layout: gallery
 ---
 

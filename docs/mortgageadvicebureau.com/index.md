@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 
-## Latest Run: 05.07.2026
+## Latest Run: 06.07.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -29,6 +29,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `06.07.2026` | 71 | 22 | [View](2026-07-06_09-05-41/) |
 | `05.07.2026` | 71 | 22 | [View](2026-07-05_07-59-57/) |
 | `04.07.2026` | 71 | 22 | [View](2026-07-04_07-50-03/) |
 | `03.07.2026` | 71 | 22 | [View](2026-07-03_08-14-30/) |
@@ -38,4 +39,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.mortgageadvicebureau.com).
 | `29.06.2026` | 71 | 22 | [View](2026-06-29_09-32-50/) |
 | `28.06.2026` | 71 | 22 | [View](2026-06-28_08-24-02/) |
 | `27.06.2026` | 71 | 22 | [View](2026-06-27_07-53-08/) |
-| `26.06.2026` | 71 | 22 | [View](2026-06-26_08-35-54/) |

@@ -12,20 +12,22 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.halfords.com).
 
-## Latest Run: 08.07.2026
+## Latest Run: 09.07.2026
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 95 |
-| Online | 48 |
+| Online | 47 |
 | ERR_NAME_NOT_RESOLVED | 41 |
 | HTTP 401 | 2 |
+| HTTP 403 | 1 |
 | timeout | 4 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `09.07.2026` | 95 | 47 | [View](2026-07-09_08-28-52/) |
 | `08.07.2026` | 95 | 48 | [View](2026-07-08_07-30-54/) |
 | `07.07.2026` | 95 | 48 | [View](2026-07-07_08-24-12/) |
 | `06.07.2026` | 95 | 48 | [View](2026-07-06_09-03-14/) |
@@ -35,4 +37,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.halfords.com).
 | `02.07.2026` | 95 | 48 | [View](2026-07-02_08-14-51/) |
 | `01.07.2026` | 95 | 48 | [View](2026-07-01_08-51-27/) |
 | `30.06.2026` | 95 | 48 | [View](2026-06-30_08-32-00/) |
-| `29.06.2026` | 95 | 48 | [View](2026-06-29_09-28-58/) |

@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://fitforhospital.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-07-12_07-36-09/screenshots/fitforhospital.co.uk.png" alt="fitforhospital.co.uk" loading="lazy" />
+          <img src="../2026-07-12_20-47-09/screenshots/fitforhospital.co.uk.png" alt="fitforhospital.co.uk" loading="lazy" />
           <figcaption>fitforhospital.co.uk</figcaption>
         </a>
       </figure>

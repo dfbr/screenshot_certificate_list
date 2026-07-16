@@ -9,7 +9,7 @@ layout: default
 
 Domains present in results but not listed as active in `domains.yml`.
 
-> Last updated: 15.07.2026
+> Last updated: 16.07.2026
 
 ## Legacy Domains
 

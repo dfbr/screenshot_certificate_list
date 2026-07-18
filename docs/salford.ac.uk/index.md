@@ -12,15 +12,15 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.salford.ac.uk).
 
-## Latest Run: 17.07.2026
+## Latest Run: 18.07.2026
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 1074 |
-| Online | 29 |
+| Total subdomains found | 1068 |
+| Online | 28 |
 | ERR_CONNECTION_REFUSED | 1 |
 | ERR_CONNECTION_RESET | 7 |
-| ERR_NAME_NOT_RESOLVED | 130 |
+| ERR_NAME_NOT_RESOLVED | 125 |
 | HTTP 403 | 716 |
 | HTTP 404 | 1 |
 | HTTP 502 | 1 |
@@ -30,6 +30,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.salford.ac.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `18.07.2026` | 1068 | 28 | [View](2026-07-18_07-05-20/) |
 | `17.07.2026` | 1074 | 29 | [View](2026-07-17_07-23-07/) |
 | `16.07.2026` | 1074 | 29 | [View](2026-07-16_07-29-15/) |
 | `15.07.2026` | 1074 | 29 | [View](2026-07-15_07-21-43/) |

@@ -3,7 +3,7 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 19.07.2026
+> Last updated: 20.07.2026
 
 ## Results
 
@@ -104,24 +104,25 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](bioxsd.org/2026-04-08_08-39-24/README.md) |
 
 
-### [campingandcaravanningclub.co.uk](campingandcaravanningclub.co.uk/2026-07-19_07-25-42/README.md)
+### [campingandcaravanningclub.co.uk](campingandcaravanningclub.co.uk/2026-07-20_07-56-33/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 83 |
-| Successes | 6 |
+| Total domains found | 86 |
+| Successes | 8 |
 | ERR_CONNECTION_REFUSED | 1 |
 | ERR_NAME_NOT_RESOLVED | 60 |
 | HTTP 403 | 1 |
 | HTTP 404 | 4 |
-| timeout | 11 |
+| timeout | 12 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](campingandcaravanningclub.co.uk/2026-07-20_07-56-33/README.md) |
 | `19.07.2026` | [19.07.2026](campingandcaravanningclub.co.uk/2026-07-19_07-25-42/README.md) |
 | `18.07.2026` | [18.07.2026](campingandcaravanningclub.co.uk/2026-07-18_06-59-19/README.md) |
 | `17.07.2026` | [17.07.2026](campingandcaravanningclub.co.uk/2026-07-17_07-14-17/README.md) |
@@ -131,7 +132,6 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](campingandcaravanningclub.co.uk/2026-07-13_08-14-37/README.md) |
 | `12.07.2026` | [12.07.2026](campingandcaravanningclub.co.uk/2026-07-12_20-40-45/README.md) |
 | `12.07.2026` | [12.07.2026](campingandcaravanningclub.co.uk/2026-07-12_07-27-31/README.md) |
-| `11.07.2026` | [11.07.2026](campingandcaravanningclub.co.uk/2026-07-11_07-09-58/README.md) |
 
 
 ### [ddm.org](ddm.org/2026-04-15_06-54-10/README.md)
@@ -158,9 +158,9 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](ddm.org/2026-04-08_08-39-28/README.md) |
 
 
-### [dfbp.co.uk](dfbp.co.uk/2026-07-19_07-25-42/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-07-20_07-56-33/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -172,6 +172,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](dfbp.co.uk/2026-07-20_07-56-33/README.md) |
 | `19.07.2026` | [19.07.2026](dfbp.co.uk/2026-07-19_07-25-42/README.md) |
 | `18.07.2026` | [18.07.2026](dfbp.co.uk/2026-07-18_06-59-19/README.md) |
 | `17.07.2026` | [17.07.2026](dfbp.co.uk/2026-07-17_07-14-17/README.md) |
@@ -181,12 +182,11 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](dfbp.co.uk/2026-07-13_08-14-37/README.md) |
 | `12.07.2026` | [12.07.2026](dfbp.co.uk/2026-07-12_20-40-45/README.md) |
 | `12.07.2026` | [12.07.2026](dfbp.co.uk/2026-07-12_07-27-31/README.md) |
-| `11.07.2026` | [11.07.2026](dfbp.co.uk/2026-07-11_07-09-58/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-07-19_07-26-53/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-07-20_07-56-37/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -199,6 +199,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](dfbr.co.uk/2026-07-20_07-56-37/README.md) |
 | `19.07.2026` | [19.07.2026](dfbr.co.uk/2026-07-19_07-26-53/README.md) |
 | `18.07.2026` | [18.07.2026](dfbr.co.uk/2026-07-18_06-59-22/README.md) |
 | `17.07.2026` | [17.07.2026](dfbr.co.uk/2026-07-17_07-14-51/README.md) |
@@ -208,7 +209,6 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](dfbr.co.uk/2026-07-13_08-14-46/README.md) |
 | `12.07.2026` | [12.07.2026](dfbr.co.uk/2026-07-12_20-43-37/README.md) |
 | `12.07.2026` | [12.07.2026](dfbr.co.uk/2026-07-12_07-36-07/README.md) |
-| `11.07.2026` | [11.07.2026](dfbr.co.uk/2026-07-11_07-13-07/README.md) |
 
 
 ### [dfbr.github.io](dfbr.github.io/2026-04-24_07-05-31/README.md)
@@ -237,9 +237,9 @@ Previous runs:
 | `17.04.2026` | [17.04.2026](dfbr.github.io/2026-04-17_06-57-36/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-07-19_07-27-10/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-07-20_07-57-02/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -250,6 +250,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](fitforhospital.co.uk/2026-07-20_07-57-02/README.md) |
 | `19.07.2026` | [19.07.2026](fitforhospital.co.uk/2026-07-19_07-27-10/README.md) |
 | `18.07.2026` | [18.07.2026](fitforhospital.co.uk/2026-07-18_06-59-32/README.md) |
 | `17.07.2026` | [17.07.2026](fitforhospital.co.uk/2026-07-17_07-15-42/README.md) |
@@ -259,12 +260,11 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](fitforhospital.co.uk/2026-07-13_08-15-22/README.md) |
 | `12.07.2026` | [12.07.2026](fitforhospital.co.uk/2026-07-12_20-47-09/README.md) |
 | `12.07.2026` | [12.07.2026](fitforhospital.co.uk/2026-07-12_07-36-09/README.md) |
-| `11.07.2026` | [11.07.2026](fitforhospital.co.uk/2026-07-11_07-13-41/README.md) |
 
 
-### [halfords.co.uk](halfords.co.uk/2026-07-19_07-27-36/README.md)
+### [halfords.co.uk](halfords.co.uk/2026-07-20_07-57-06/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -278,6 +278,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](halfords.co.uk/2026-07-20_07-57-06/README.md) |
 | `19.07.2026` | [19.07.2026](halfords.co.uk/2026-07-19_07-27-36/README.md) |
 | `18.07.2026` | [18.07.2026](halfords.co.uk/2026-07-18_06-59-37/README.md) |
 | `17.07.2026` | [17.07.2026](halfords.co.uk/2026-07-17_07-16-52/README.md) |
@@ -287,12 +288,11 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](halfords.co.uk/2026-07-13_08-15-26/README.md) |
 | `12.07.2026` | [12.07.2026](halfords.co.uk/2026-07-12_20-49-17/README.md) |
 | `12.07.2026` | [12.07.2026](halfords.co.uk/2026-07-12_07-44-41/README.md) |
-| `11.07.2026` | [11.07.2026](halfords.co.uk/2026-07-11_07-14-05/README.md) |
 
 
-### [halfords.com](halfords.com/2026-07-19_07-29-52/README.md)
+### [halfords.com](halfords.com/2026-07-20_07-59-25/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -307,6 +307,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](halfords.com/2026-07-20_07-59-25/README.md) |
 | `19.07.2026` | [19.07.2026](halfords.com/2026-07-19_07-29-52/README.md) |
 | `18.07.2026` | [18.07.2026](halfords.com/2026-07-18_07-01-55/README.md) |
 | `17.07.2026` | [17.07.2026](halfords.com/2026-07-17_07-19-37/README.md) |
@@ -316,12 +317,11 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](halfords.com/2026-07-13_08-17-56/README.md) |
 | `12.07.2026` | [12.07.2026](halfords.com/2026-07-12_20-51-10/README.md) |
 | `12.07.2026` | [12.07.2026](halfords.com/2026-07-12_07-44-47/README.md) |
-| `11.07.2026` | [11.07.2026](halfords.com/2026-07-11_07-16-31/README.md) |
 
 
-### [halfordscareers.com](halfordscareers.com/2026-07-19_07-29-55/README.md)
+### [halfordscareers.com](halfordscareers.com/2026-07-20_07-59-55/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -332,6 +332,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](halfordscareers.com/2026-07-20_07-59-55/README.md) |
 | `19.07.2026` | [19.07.2026](halfordscareers.com/2026-07-19_07-29-55/README.md) |
 | `18.07.2026` | [18.07.2026](halfordscareers.com/2026-07-18_07-02-39/README.md) |
 | `17.07.2026` | [17.07.2026](halfordscareers.com/2026-07-17_07-19-49/README.md) |
@@ -341,7 +342,6 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](halfordscareers.com/2026-07-13_08-18-21/README.md) |
 | `12.07.2026` | [12.07.2026](halfordscareers.com/2026-07-12_20-54-27/README.md) |
 | `12.07.2026` | [12.07.2026](halfordscareers.com/2026-07-12_07-53-22/README.md) |
-| `11.07.2026` | [11.07.2026](halfordscareers.com/2026-07-11_07-18-18/README.md) |
 
 
 ### [hmrc.gov.uk](hmrc.gov.uk/2026-04-14_06-52-34/README.md)
@@ -633,25 +633,26 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](miljolare.no/2026-04-08_08-39-39/README.md) |
 
 
-### [mortgageadvicebureau.com](mortgageadvicebureau.com/2026-07-19_07-30-13/README.md)
+### [mortgageadvicebureau.com](mortgageadvicebureau.com/2026-07-20_08-00-07/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
 | Total domains found | 71 |
-| Successes | 18 |
+| Successes | 22 |
 | ERR_NAME_NOT_RESOLVED | 30 |
 | HTTP 401 | 1 |
 | HTTP 403 | 8 |
-| HTTP 404 | 6 |
+| HTTP 404 | 7 |
 | HTTP 500 | 2 |
-| timeout | 6 |
+| timeout | 1 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](mortgageadvicebureau.com/2026-07-20_08-00-07/README.md) |
 | `19.07.2026` | [19.07.2026](mortgageadvicebureau.com/2026-07-19_07-30-13/README.md) |
 | `18.07.2026` | [18.07.2026](mortgageadvicebureau.com/2026-07-18_07-04-51/README.md) |
 | `17.07.2026` | [17.07.2026](mortgageadvicebureau.com/2026-07-17_07-20-21/README.md) |
@@ -661,7 +662,6 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](mortgageadvicebureau.com/2026-07-13_08-19-15/README.md) |
 | `12.07.2026` | [12.07.2026](mortgageadvicebureau.com/2026-07-12_20-54-41/README.md) |
 | `12.07.2026` | [12.07.2026](mortgageadvicebureau.com/2026-07-12_07-53-30/README.md) |
-| `11.07.2026` | [11.07.2026](mortgageadvicebureau.com/2026-07-11_07-19-50/README.md) |
 
 
 ### [neonnet.no](neonnet.no/2026-04-15_06-54-06/README.md)
@@ -764,9 +764,9 @@ Previous runs:
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.co.uk/2026-04-07_09-18-43/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-07-19_07-33-15/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-07-20_08-02-44/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -777,6 +777,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](onlythestoriesyouwant.link/2026-07-20_08-02-44/README.md) |
 | `19.07.2026` | [19.07.2026](onlythestoriesyouwant.link/2026-07-19_07-33-15/README.md) |
 | `18.07.2026` | [18.07.2026](onlythestoriesyouwant.link/2026-07-18_07-05-07/README.md) |
 | `17.07.2026` | [17.07.2026](onlythestoriesyouwant.link/2026-07-17_07-22-54/README.md) |
@@ -786,12 +787,11 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](onlythestoriesyouwant.link/2026-07-13_08-21-36/README.md) |
 | `12.07.2026` | [12.07.2026](onlythestoriesyouwant.link/2026-07-12_20-54-51/README.md) |
 | `12.07.2026` | [12.07.2026](onlythestoriesyouwant.link/2026-07-12_08-02-04/README.md) |
-| `11.07.2026` | [11.07.2026](onlythestoriesyouwant.link/2026-07-11_07-19-53/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-07-19_07-33-41/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-07-20_08-04-31/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -803,6 +803,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](rowanpage.co.uk/2026-07-20_08-04-31/README.md) |
 | `19.07.2026` | [19.07.2026](rowanpage.co.uk/2026-07-19_07-33-41/README.md) |
 | `18.07.2026` | [18.07.2026](rowanpage.co.uk/2026-07-18_07-05-12/README.md) |
 | `17.07.2026` | [17.07.2026](rowanpage.co.uk/2026-07-17_07-23-02/README.md) |
@@ -812,29 +813,29 @@ Previous runs:
 | `13.07.2026` | [13.07.2026](rowanpage.co.uk/2026-07-13_08-21-57/README.md) |
 | `12.07.2026` | [12.07.2026](rowanpage.co.uk/2026-07-12_20-55-09/README.md) |
 | `12.07.2026` | [12.07.2026](rowanpage.co.uk/2026-07-12_08-02-15/README.md) |
-| `11.07.2026` | [11.07.2026](rowanpage.co.uk/2026-07-11_07-23-05/README.md) |
 
 
-### [salford.ac.uk](salford.ac.uk/2026-07-19_07-33-44/README.md)
+### [salford.ac.uk](salford.ac.uk/2026-07-20_08-04-40/README.md)
 
-Latest run: `19.07.2026`
+Latest run: `20.07.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 1074 |
-| Successes | 24 |
+| Total domains found | 1068 |
+| Successes | 28 |
 | ERR_CONNECTION_REFUSED | 1 |
 | ERR_CONNECTION_RESET | 7 |
-| ERR_NAME_NOT_RESOLVED | 130 |
+| ERR_NAME_NOT_RESOLVED | 125 |
 | HTTP 403 | 716 |
 | HTTP 404 | 1 |
 | HTTP 502 | 1 |
-| timeout | 194 |
+| timeout | 189 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `20.07.2026` | [20.07.2026](salford.ac.uk/2026-07-20_08-04-40/README.md) |
 | `19.07.2026` | [19.07.2026](salford.ac.uk/2026-07-19_07-33-44/README.md) |
 | `18.07.2026` | [18.07.2026](salford.ac.uk/2026-07-18_07-05-20/README.md) |
 | `17.07.2026` | [17.07.2026](salford.ac.uk/2026-07-17_07-23-07/README.md) |

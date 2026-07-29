@@ -1,5 +1,5 @@
 ---
-title: "onlythestoriesyouwant.link Gallery (28.07.2026)"
+title: "onlythestoriesyouwant.link Gallery (29.07.2026)"
 layout: gallery
 ---
 
@@ -8,13 +8,13 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://onlythestoriesyouwant.link" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-07-28_07-47-11/screenshots/onlythestoriesyouwant.link.png" alt="onlythestoriesyouwant.link" loading="lazy" />
+          <img src="../2026-07-29_07-50-31/screenshots/onlythestoriesyouwant.link.png" alt="onlythestoriesyouwant.link" loading="lazy" />
           <figcaption>onlythestoriesyouwant.link</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.onlythestoriesyouwant.link" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-07-28_07-47-11/screenshots/www.onlythestoriesyouwant.link.png" alt="www.onlythestoriesyouwant.link" loading="lazy" />
+          <img src="../2026-07-29_07-50-31/screenshots/www.onlythestoriesyouwant.link.png" alt="www.onlythestoriesyouwant.link" loading="lazy" />
           <figcaption>www.onlythestoriesyouwant.link</figcaption>
         </a>
       </figure>

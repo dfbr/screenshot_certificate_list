@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.halfordscareers.com).
 
-## Latest Run: 29.07.2026
+## Latest Run: 30.07.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -23,6 +23,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.halfordscareers.com).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `30.07.2026` | 4 | 4 | [View](2026-07-30_07-39-52/) |
 | `29.07.2026` | 4 | 4 | [View](2026-07-29_07-48-20/) |
 | `28.07.2026` | 4 | 4 | [View](2026-07-28_07-44-40/) |
 | `27.07.2026` | 4 | 4 | [View](2026-07-27_08-31-40/) |
@@ -32,4 +33,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.halfordscareers.com).
 | `23.07.2026` | 4 | 4 | [View](2026-07-23_07-49-43/) |
 | `22.07.2026` | 4 | 4 | [View](2026-07-22_07-37-46/) |
 | `21.07.2026` | 4 | 4 | [View](2026-07-21_07-36-16/) |
-| `20.07.2026` | 4 | 4 | [View](2026-07-20_07-59-55/) |

@@ -1,5 +1,5 @@
 ---
-title: "halfords.com Gallery (20.08.2026)"
+title: "halfords.com Gallery (21.08.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://halfords.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-08-20_05-42-05/screenshots/halfords.com.png" alt="halfords.com" loading="lazy" />
+          <img src="../2026-08-21_05-44-19/screenshots/halfords.com.png" alt="halfords.com" loading="lazy" />
           <figcaption>halfords.com</figcaption>
         </a>
       </figure>

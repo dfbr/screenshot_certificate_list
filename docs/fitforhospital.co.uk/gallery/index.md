@@ -1,5 +1,5 @@
 ---
-title: "fitforhospital.co.uk Gallery (20.08.2026)"
+title: "fitforhospital.co.uk Gallery (21.08.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://fitforhospital.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-08-20_05-35-04/screenshots/fitforhospital.co.uk.png" alt="fitforhospital.co.uk" loading="lazy" />
+          <img src="../2026-08-21_05-36-19/screenshots/fitforhospital.co.uk.png" alt="fitforhospital.co.uk" loading="lazy" />
           <figcaption>fitforhospital.co.uk</figcaption>
         </a>
       </figure>

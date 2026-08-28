@@ -1,5 +1,5 @@
 ---
-title: "mortgageadvicebureau.com Gallery (27.08.2026)"
+title: "mortgageadvicebureau.com Gallery (28.08.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://mortgageadvicebureau.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-08-27_16-16-17/screenshots/mortgageadvicebureau.com.png" alt="mortgageadvicebureau.com" loading="lazy" />
+          <img src="../2026-08-28_17-34-43/screenshots/mortgageadvicebureau.com.png" alt="mortgageadvicebureau.com" loading="lazy" />
           <figcaption>mortgageadvicebureau.com</figcaption>
         </a>
       </figure>

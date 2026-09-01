@@ -1,5 +1,5 @@
 ---
-title: "rowanpage.co.uk Gallery (31.08.2026)"
+title: "rowanpage.co.uk Gallery (01.09.2026)"
 layout: gallery
 ---
 

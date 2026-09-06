@@ -8,29 +8,29 @@ layout: default
 Automated screenshots of domains discovered via certificate transparency logs
 ([crt.sh](https://crt.sh/)).
 
-> Last updated: 05.09.2026
+> Last updated: 06.09.2026
 
 ## Monitored Domains
 
 | Domain | Latest Run | Subdomains | Online |
 |--------|------------|-----------|--------|
-| [campingandcaravanningclub.co.uk](campingandcaravanningclub.co.uk/) | `05.09.2026` | 87 | 8 |
-| [dfbp.co.uk](dfbp.co.uk/) | `05.09.2026` | 1 | 0 |
-| [dfbr.co.uk](dfbr.co.uk/) | `05.09.2026` | 15 | 13 |
-| [fitforhospital.co.uk](fitforhospital.co.uk/) | `05.09.2026` | 1 | 0 |
-| [halfords.co.uk](halfords.co.uk/) | `05.09.2026` | 25 | 5 |
-| [halfords.com](halfords.com/) | `05.09.2026` | 95 | 47 |
-| [halfordscareers.com](halfordscareers.com/) | `05.09.2026` | 4 | 4 |
-| [mortgageadvicebureau.com](mortgageadvicebureau.com/) | `05.09.2026` | 71 | 22 |
-| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `05.09.2026` | 2 | 2 |
-| [rowanpage.co.uk](rowanpage.co.uk/) | `05.09.2026` | 2 | 0 |
-| [salford.ac.uk](salford.ac.uk/) | `05.09.2026` | 1074 | 29 |
+| [campingandcaravanningclub.co.uk](campingandcaravanningclub.co.uk/) | `06.09.2026` | 87 | 8 |
+| [dfbp.co.uk](dfbp.co.uk/) | `06.09.2026` | 1 | 0 |
+| [dfbr.co.uk](dfbr.co.uk/) | `06.09.2026` | 15 | 13 |
+| [fitforhospital.co.uk](fitforhospital.co.uk/) | `06.09.2026` | 1 | 0 |
+| [halfords.co.uk](halfords.co.uk/) | `06.09.2026` | 25 | 5 |
+| [halfords.com](halfords.com/) | `06.09.2026` | 95 | 47 |
+| [halfordscareers.com](halfordscareers.com/) | `06.09.2026` | 4 | 4 |
+| [mortgageadvicebureau.com](mortgageadvicebureau.com/) | `06.09.2026` | 71 | 22 |
+| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `06.09.2026` | 2 | 2 |
+| [rowanpage.co.uk](rowanpage.co.uk/) | `06.09.2026` | 2 | 0 |
+| [salford.ac.uk](salford.ac.uk/) | `06.09.2026` | 1074 | 29 |
 
 ## Domain Details
 
 ### [campingandcaravanningclub.co.uk](campingandcaravanningclub.co.uk/)
 
-Latest run: [`05.09.2026`](campingandcaravanningclub.co.uk/2026-09-05_08-47-36/)
+Latest run: [`06.09.2026`](campingandcaravanningclub.co.uk/2026-09-06_09-08-30/)
 
 | Metric | Count |
 |-------:|------:|
@@ -46,6 +46,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](campingandcaravanningclub.co.uk/2026-09-06_09-08-30/) | 87 | 8 |
 | [`05.09.2026`](campingandcaravanningclub.co.uk/2026-09-05_08-47-36/) | 87 | 8 |
 | [`04.09.2026`](campingandcaravanningclub.co.uk/2026-09-04_09-18-50/) | 87 | 8 |
 | [`03.09.2026`](campingandcaravanningclub.co.uk/2026-09-03_09-25-57/) | 87 | 8 |
@@ -55,12 +56,11 @@ Previous runs:
 | [`30.08.2026`](campingandcaravanningclub.co.uk/2026-08-30_10-15-15/) | 1 | 1 |
 | [`29.08.2026`](campingandcaravanningclub.co.uk/2026-08-29_11-28-15/) | 1 | 1 |
 | [`28.08.2026`](campingandcaravanningclub.co.uk/2026-08-28_17-08-46/) | 1 | 1 |
-| [`27.08.2026`](campingandcaravanningclub.co.uk/2026-08-27_16-05-01/) | 87 | 8 |
 
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`05.09.2026`](dfbp.co.uk/2026-09-05_08-47-36/)
+Latest run: [`06.09.2026`](dfbp.co.uk/2026-09-06_09-08-30/)
 
 | Metric | Count |
 |-------:|------:|
@@ -72,6 +72,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](dfbp.co.uk/2026-09-06_09-08-30/) | 1 | 0 |
 | [`05.09.2026`](dfbp.co.uk/2026-09-05_08-47-36/) | 1 | 0 |
 | [`04.09.2026`](dfbp.co.uk/2026-09-04_09-18-50/) | 1 | 0 |
 | [`03.09.2026`](dfbp.co.uk/2026-09-03_09-25-57/) | 1 | 0 |
@@ -81,12 +82,11 @@ Previous runs:
 | [`30.08.2026`](dfbp.co.uk/2026-08-30_10-15-15/) | 1 | 0 |
 | [`29.08.2026`](dfbp.co.uk/2026-08-29_11-28-15/) | 1 | 0 |
 | [`28.08.2026`](dfbp.co.uk/2026-08-28_17-08-46/) | 1 | 0 |
-| [`27.08.2026`](dfbp.co.uk/2026-08-27_16-05-01/) | 1 | 0 |
 
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`05.09.2026`](dfbr.co.uk/2026-09-05_08-47-41/)
+Latest run: [`06.09.2026`](dfbr.co.uk/2026-09-06_09-08-41/)
 
 | Metric | Count |
 |-------:|------:|
@@ -99,6 +99,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](dfbr.co.uk/2026-09-06_09-08-41/) | 15 | 13 |
 | [`05.09.2026`](dfbr.co.uk/2026-09-05_08-47-41/) | 15 | 13 |
 | [`04.09.2026`](dfbr.co.uk/2026-09-04_09-18-59/) | 15 | 13 |
 | [`03.09.2026`](dfbr.co.uk/2026-09-03_09-26-09/) | 15 | 13 |
@@ -108,12 +109,11 @@ Previous runs:
 | [`30.08.2026`](dfbr.co.uk/2026-08-30_10-23-52/) | 1 | 1 |
 | [`29.08.2026`](dfbr.co.uk/2026-08-29_11-36-34/) | 1 | 1 |
 | [`28.08.2026`](dfbr.co.uk/2026-08-28_17-17-22/) | 1 | 1 |
-| [`27.08.2026`](dfbr.co.uk/2026-08-27_16-08-38/) | 14 | 12 |
 
 
 ### [fitforhospital.co.uk](fitforhospital.co.uk/)
 
-Latest run: [`05.09.2026`](fitforhospital.co.uk/2026-09-05_08-47-53/)
+Latest run: [`06.09.2026`](fitforhospital.co.uk/2026-09-06_09-09-02/)
 
 | Metric | Count |
 |-------:|------:|
@@ -125,6 +125,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](fitforhospital.co.uk/2026-09-06_09-09-02/) | 1 | 0 |
 | [`05.09.2026`](fitforhospital.co.uk/2026-09-05_08-47-53/) | 1 | 0 |
 | [`04.09.2026`](fitforhospital.co.uk/2026-09-04_09-19-14/) | 1 | 0 |
 | [`03.09.2026`](fitforhospital.co.uk/2026-09-03_09-26-34/) | 1 | 1 |
@@ -134,12 +135,11 @@ Previous runs:
 | [`30.08.2026`](fitforhospital.co.uk/2026-08-30_10-23-55/) | 1 | 1 |
 | [`29.08.2026`](fitforhospital.co.uk/2026-08-29_11-38-10/) | 1 | 1 |
 | [`28.08.2026`](fitforhospital.co.uk/2026-08-28_17-17-26/) | 1 | 1 |
-| [`27.08.2026`](fitforhospital.co.uk/2026-08-27_16-11-14/) | 1 | 1 |
 
 
 ### [halfords.co.uk](halfords.co.uk/)
 
-Latest run: [`05.09.2026`](halfords.co.uk/2026-09-05_08-48-00/)
+Latest run: [`06.09.2026`](halfords.co.uk/2026-09-06_09-09-45/)
 
 | Metric | Count |
 |-------:|------:|
@@ -153,6 +153,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](halfords.co.uk/2026-09-06_09-09-45/) | 25 | 5 |
 | [`05.09.2026`](halfords.co.uk/2026-09-05_08-48-00/) | 25 | 5 |
 | [`04.09.2026`](halfords.co.uk/2026-09-04_09-19-22/) | 25 | 5 |
 | [`03.09.2026`](halfords.co.uk/2026-09-03_09-26-39/) | 25 | 5 |
@@ -162,12 +163,11 @@ Previous runs:
 | [`30.08.2026`](halfords.co.uk/2026-08-30_10-32-31/) | 1 | 1 |
 | [`29.08.2026`](halfords.co.uk/2026-08-29_11-43-29/) | 25 | 5 |
 | [`28.08.2026`](halfords.co.uk/2026-08-28_17-25-58/) | 1 | 1 |
-| [`27.08.2026`](halfords.co.uk/2026-08-27_16-13-23/) | 25 | 5 |
 
 
 ### [halfords.com](halfords.com/)
 
-Latest run: [`05.09.2026`](halfords.com/2026-09-05_08-50-22/)
+Latest run: [`06.09.2026`](halfords.com/2026-09-06_09-11-33/)
 
 | Metric | Count |
 |-------:|------:|
@@ -182,6 +182,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](halfords.com/2026-09-06_09-11-33/) | 95 | 47 |
 | [`05.09.2026`](halfords.com/2026-09-05_08-50-22/) | 95 | 47 |
 | [`04.09.2026`](halfords.com/2026-09-04_09-21-49/) | 95 | 47 |
 | [`03.09.2026`](halfords.com/2026-09-03_09-28-59/) | 95 | 47 |
@@ -191,12 +192,11 @@ Previous runs:
 | [`30.08.2026`](halfords.com/2026-08-30_10-32-32/) | 1 | 1 |
 | [`29.08.2026`](halfords.com/2026-08-29_11-43-43/) | 1 | 1 |
 | [`28.08.2026`](halfords.com/2026-08-28_17-26-03/) | 1 | 1 |
-| [`27.08.2026`](halfords.com/2026-08-27_16-13-51/) | 1 | 1 |
 
 
 ### [halfordscareers.com](halfordscareers.com/)
 
-Latest run: [`05.09.2026`](halfordscareers.com/2026-09-05_08-50-31/)
+Latest run: [`06.09.2026`](halfordscareers.com/2026-09-06_09-12-19/)
 
 | Metric | Count |
 |-------:|------:|
@@ -207,6 +207,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](halfordscareers.com/2026-09-06_09-12-19/) | 4 | 4 |
 | [`05.09.2026`](halfordscareers.com/2026-09-05_08-50-31/) | 4 | 4 |
 | [`04.09.2026`](halfordscareers.com/2026-09-04_09-22-00/) | 4 | 4 |
 | [`03.09.2026`](halfordscareers.com/2026-09-03_09-29-18/) | 4 | 4 |
@@ -216,12 +217,11 @@ Previous runs:
 | [`30.08.2026`](halfordscareers.com/2026-08-30_10-41-08/) | 1 | 1 |
 | [`29.08.2026`](halfordscareers.com/2026-08-29_11-46-40/) | 4 | 4 |
 | [`28.08.2026`](halfordscareers.com/2026-08-28_17-34-40/) | 1 | 1 |
-| [`27.08.2026`](halfordscareers.com/2026-08-27_16-15-52/) | 4 | 4 |
 
 
 ### [mortgageadvicebureau.com](mortgageadvicebureau.com/)
 
-Latest run: [`05.09.2026`](mortgageadvicebureau.com/2026-09-05_08-50-51/)
+Latest run: [`06.09.2026`](mortgageadvicebureau.com/2026-09-06_09-15-13/)
 
 | Metric | Count |
 |-------:|------:|
@@ -238,6 +238,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](mortgageadvicebureau.com/2026-09-06_09-15-13/) | 71 | 22 |
 | [`05.09.2026`](mortgageadvicebureau.com/2026-09-05_08-50-51/) | 71 | 22 |
 | [`04.09.2026`](mortgageadvicebureau.com/2026-09-04_09-22-59/) | 71 | 22 |
 | [`03.09.2026`](mortgageadvicebureau.com/2026-09-03_09-29-36/) | 71 | 22 |
@@ -247,12 +248,11 @@ Previous runs:
 | [`30.08.2026`](mortgageadvicebureau.com/2026-08-30_10-41-18/) | 1 | 1 |
 | [`29.08.2026`](mortgageadvicebureau.com/2026-08-29_11-49-28/) | 71 | 22 |
 | [`28.08.2026`](mortgageadvicebureau.com/2026-08-28_17-34-43/) | 1 | 1 |
-| [`27.08.2026`](mortgageadvicebureau.com/2026-08-27_16-16-17/) | 1 | 1 |
 
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`05.09.2026`](onlythestoriesyouwant.link/2026-09-05_08-53-23/)
+Latest run: [`06.09.2026`](onlythestoriesyouwant.link/2026-09-06_09-15-57/)
 
 | Metric | Count |
 |-------:|------:|
@@ -263,6 +263,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](onlythestoriesyouwant.link/2026-09-06_09-15-57/) | 2 | 2 |
 | [`05.09.2026`](onlythestoriesyouwant.link/2026-09-05_08-53-23/) | 2 | 2 |
 | [`04.09.2026`](onlythestoriesyouwant.link/2026-09-04_09-24-40/) | 2 | 2 |
 | [`03.09.2026`](onlythestoriesyouwant.link/2026-09-03_09-31-51/) | 2 | 2 |
@@ -272,12 +273,11 @@ Previous runs:
 | [`30.08.2026`](onlythestoriesyouwant.link/2026-08-30_10-49-50/) | 1 | 1 |
 | [`29.08.2026`](onlythestoriesyouwant.link/2026-08-29_11-52-23/) | 2 | 2 |
 | [`28.08.2026`](onlythestoriesyouwant.link/2026-08-28_17-43-20/) | 1 | 1 |
-| [`27.08.2026`](onlythestoriesyouwant.link/2026-08-27_16-23-28/) | 2 | 2 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`05.09.2026`](rowanpage.co.uk/2026-09-05_08-53-27/)
+Latest run: [`06.09.2026`](rowanpage.co.uk/2026-09-06_09-16-31/)
 
 | Metric | Count |
 |-------:|------:|
@@ -289,6 +289,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](rowanpage.co.uk/2026-09-06_09-16-31/) | 2 | 0 |
 | [`05.09.2026`](rowanpage.co.uk/2026-09-05_08-53-27/) | 2 | 0 |
 | [`04.09.2026`](rowanpage.co.uk/2026-09-04_09-24-46/) | 2 | 0 |
 | [`03.09.2026`](rowanpage.co.uk/2026-09-03_09-31-56/) | 2 | 0 |
@@ -298,12 +299,11 @@ Previous runs:
 | [`30.08.2026`](rowanpage.co.uk/2026-08-30_10-50-00/) | 1 | 0 |
 | [`29.08.2026`](rowanpage.co.uk/2026-08-29_11-52-37/) | 1 | 0 |
 | [`28.08.2026`](rowanpage.co.uk/2026-08-28_17-43-21/) | 1 | 0 |
-| [`27.08.2026`](rowanpage.co.uk/2026-08-27_16-24-46/) | 2 | 0 |
 
 
 ### [salford.ac.uk](salford.ac.uk/)
 
-Latest run: [`05.09.2026`](salford.ac.uk/2026-09-05_08-53-28/)
+Latest run: [`06.09.2026`](salford.ac.uk/2026-09-06_09-16-35/)
 
 | Metric | Count |
 |-------:|------:|
@@ -321,6 +321,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`06.09.2026`](salford.ac.uk/2026-09-06_09-16-35/) | 1074 | 29 |
 | [`05.09.2026`](salford.ac.uk/2026-09-05_08-53-28/) | 1074 | 29 |
 | [`04.09.2026`](salford.ac.uk/2026-09-04_09-25-02/) | 1074 | 29 |
 | [`03.09.2026`](salford.ac.uk/2026-09-03_09-31-59/) | 1074 | 29 |
@@ -330,7 +331,6 @@ Previous runs:
 | [`30.08.2026`](salford.ac.uk/2026-08-30_10-58-27/) | 1 | 1 |
 | [`29.08.2026`](salford.ac.uk/2026-08-29_12-00-40/) | 1 | 1 |
 | [`28.08.2026`](salford.ac.uk/2026-08-28_17-51-57/) | 1 | 1 |
-| [`27.08.2026`](salford.ac.uk/2026-08-27_16-25-36/) | 1 | 1 |
 
 
 Looking for inactive domains? [Legacy sites](legacy/)

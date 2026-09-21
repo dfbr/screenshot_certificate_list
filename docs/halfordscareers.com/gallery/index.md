@@ -1,5 +1,5 @@
 ---
-title: "halfordscareers.com Gallery (20.09.2026)"
+title: "halfordscareers.com Gallery (21.09.2026)"
 layout: gallery
 ---
 
@@ -8,25 +8,25 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://careers.halfordscareers.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-09-20_09-39-10/screenshots/careers.halfordscareers.com.png" alt="careers.halfordscareers.com" loading="lazy" />
+          <img src="../2026-09-21_10-27-28/screenshots/careers.halfordscareers.com.png" alt="careers.halfordscareers.com" loading="lazy" />
           <figcaption>careers.halfordscareers.com</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://halfordscareers.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-09-20_09-39-10/screenshots/halfordscareers.com.png" alt="halfordscareers.com" loading="lazy" />
+          <img src="../2026-09-21_10-27-28/screenshots/halfordscareers.com.png" alt="halfordscareers.com" loading="lazy" />
           <figcaption>halfordscareers.com</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://jobs.halfordscareers.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-09-20_09-39-10/screenshots/jobs.halfordscareers.com.png" alt="jobs.halfordscareers.com" loading="lazy" />
+          <img src="../2026-09-21_10-27-28/screenshots/jobs.halfordscareers.com.png" alt="jobs.halfordscareers.com" loading="lazy" />
           <figcaption>jobs.halfordscareers.com</figcaption>
         </a>
       </figure>
       <figure class="gallery-item">
         <a href="https://www.halfordscareers.com" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-09-20_09-39-10/screenshots/www.halfordscareers.com.png" alt="www.halfordscareers.com" loading="lazy" />
+          <img src="../2026-09-21_10-27-28/screenshots/www.halfordscareers.com.png" alt="www.halfordscareers.com" loading="lazy" />
           <figcaption>www.halfordscareers.com</figcaption>
         </a>
       </figure>

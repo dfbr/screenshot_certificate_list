@@ -12,22 +12,22 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.campingandcaravanningclub.co.uk).
 
-## Latest Run: 22.09.2026
+## Latest Run: 23.09.2026
 
 | Metric | Count |
 |-------:|------:|
 | Total subdomains found | 87 |
 | Online | 8 |
-| ERR_CONNECTION_REFUSED | 1 |
 | ERR_NAME_NOT_RESOLVED | 65 |
 | HTTP 403 | 1 |
 | HTTP 404 | 4 |
-| timeout | 8 |
+| timeout | 9 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `23.09.2026` | 87 | 8 | [View](2026-09-23_09-43-29/) |
 | `22.09.2026` | 87 | 8 | [View](2026-09-22_09-37-29/) |
 | `21.09.2026` | 87 | 8 | [View](2026-09-21_10-23-27/) |
 | `20.09.2026` | 87 | 8 | [View](2026-09-20_09-35-24/) |
@@ -37,4 +37,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.campingandcaravanningclub.co.uk).
 | `16.09.2026` | 87 | 8 | [View](2026-09-16_09-39-53/) |
 | `15.09.2026` | 87 | 8 | [View](2026-09-15_09-46-53/) |
 | `14.09.2026` | 87 | 8 | [View](2026-09-14_10-18-53/) |
-| `13.09.2026` | 87 | 8 | [View](2026-09-13_09-57-49/) |

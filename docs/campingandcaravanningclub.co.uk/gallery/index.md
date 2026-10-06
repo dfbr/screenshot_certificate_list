@@ -1,5 +1,5 @@
 ---
-title: "campingandcaravanningclub.co.uk Gallery (05.10.2026)"
+title: "campingandcaravanningclub.co.uk Gallery (06.10.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://campingandcaravanningclub.co.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-10-05_12-01-35/screenshots/campingandcaravanningclub.co.uk.png" alt="campingandcaravanningclub.co.uk" loading="lazy" />
+          <img src="../2026-10-06_11-45-34/screenshots/campingandcaravanningclub.co.uk.png" alt="campingandcaravanningclub.co.uk" loading="lazy" />
           <figcaption>campingandcaravanningclub.co.uk</figcaption>
         </a>
       </figure>

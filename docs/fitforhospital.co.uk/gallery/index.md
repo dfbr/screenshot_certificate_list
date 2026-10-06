@@ -1,5 +1,5 @@
 ---
-title: "fitforhospital.co.uk Gallery (05.10.2026)"
+title: "fitforhospital.co.uk Gallery (06.10.2026)"
 layout: gallery
 ---
 

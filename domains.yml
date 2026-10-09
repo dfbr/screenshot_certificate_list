@@ -20,16 +20,18 @@ onlythestoriesyouwant.link:
 
 fitforhospital.co.uk:
 
-mortgageadvicebureau.com:
+salford.ac.uk:
 
-halfords.co.uk:
+# mortgageadvicebureau.com:
 
-halfords.com:
+# halfords.co.uk:
 
-halfordscareers.com:
+# halfords.com:
 
-campingandcaravanningclub.co.uk:
-  - campingandcaravanningclub.co.uk@dfbr.co.uk
+# halfordscareers.com:
+
+# campingandcaravanningclub.co.uk:
+#   - campingandcaravanningclub.co.uk@dfbr.co.uk
 
 # dfbr.github.io:
   # Github pages domain for my repos

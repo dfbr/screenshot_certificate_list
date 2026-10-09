@@ -1,7 +1,7 @@
 ---
 title: "halfords.com"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # halfords.com

@@ -19,8 +19,12 @@ Domains present in results but not listed as active in `domains.yml`.
 | [baerekraftsforskning.no](../baerekraftsforskning.no/) | `15.04.2026` | 2 | 2 |
 | [bioinfo.no](../bioinfo.no/) | `15.04.2026` | 11 | 3 |
 | [bioxsd.org](../bioxsd.org/) | `15.04.2026` | 2 | 2 |
+| [campingandcaravanningclub.co.uk](../campingandcaravanningclub.co.uk/) | `09.10.2026` | 1 | 1 |
 | [ddm.org](../ddm.org/) | `15.04.2026` | 2 | 2 |
 | [dfbr.github.io](../dfbr.github.io/) | `24.04.2026` | 1 | 0 |
+| [halfords.co.uk](../halfords.co.uk/) | `09.10.2026` | 1 | 1 |
+| [halfords.com](../halfords.com/) | `09.10.2026` | 1 | 1 |
+| [halfordscareers.com](../halfordscareers.com/) | `09.10.2026` | 1 | 1 |
 | [hmrc.gov.uk](../hmrc.gov.uk/) | `14.04.2026` | 451 | 57 |
 | [holberg-prisen.no](../holberg-prisen.no/) | `15.04.2026` | 2 | 2 |
 | [holbergprisen.no](../holbergprisen.no/) | `15.04.2026` | 7 | 4 |
@@ -32,6 +36,7 @@ Domains present in results but not listed as active in `domains.yml`.
 | [manutd.com](../manutd.com/) | `14.04.2026` | 164 | 32 |
 | [meltzerfondet.no](../meltzerfondet.no/) | `15.04.2026` | 1 | 0 |
 | [miljolare.no](../miljolare.no/) | `15.04.2026` | 6 | 4 |
+| [mortgageadvicebureau.com](../mortgageadvicebureau.com/) | `09.10.2026` | 1 | 1 |
 | [neonnet.no](../neonnet.no/) | `15.04.2026` | 2 | 2 |
 | [netlib.no](../netlib.no/) | `15.04.2026` | 1 | 1 |
 | [nsd.no](../nsd.no/) | `15.04.2026` | 84 | 26 |
@@ -148,6 +153,31 @@ Previous runs:
 | [`08.04.2026`](../bioxsd.org/2026-04-08_08-39-24/) | 2 | 2 |
 
 
+### [campingandcaravanningclub.co.uk](../campingandcaravanningclub.co.uk/)
+
+Latest run: [`09.10.2026`](../campingandcaravanningclub.co.uk/2026-10-09_11-38-50/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`09.10.2026`](../campingandcaravanningclub.co.uk/2026-10-09_11-38-50/) | 1 | 1 |
+| [`08.10.2026`](../campingandcaravanningclub.co.uk/2026-10-08_11-45-55/) | 1 | 1 |
+| [`07.10.2026`](../campingandcaravanningclub.co.uk/2026-10-07_11-30-57/) | 1 | 1 |
+| [`06.10.2026`](../campingandcaravanningclub.co.uk/2026-10-06_11-45-34/) | 1 | 1 |
+| [`05.10.2026`](../campingandcaravanningclub.co.uk/2026-10-05_12-01-35/) | 1 | 1 |
+| [`04.10.2026`](../campingandcaravanningclub.co.uk/2026-10-04_10-53-25/) | 1 | 1 |
+| [`03.10.2026`](../campingandcaravanningclub.co.uk/2026-10-03_10-12-16/) | 1 | 1 |
+| [`02.10.2026`](../campingandcaravanningclub.co.uk/2026-10-02_10-52-25/) | 1 | 1 |
+| [`01.10.2026`](../campingandcaravanningclub.co.uk/2026-10-01_11-20-27/) | 87 | 8 |
+| [`30.09.2026`](../campingandcaravanningclub.co.uk/2026-09-30_10-53-20/) | 87 | 8 |
+
+
 ### [ddm.org](../ddm.org/)
 
 Latest run: [`15.04.2026`](../ddm.org/2026-04-15_06-54-10/)
@@ -196,6 +226,81 @@ Previous runs:
 | [`19.04.2026`](../dfbr.github.io/2026-04-19_06-28-12/) | 1 | 1 |
 | [`18.04.2026`](../dfbr.github.io/2026-04-18_06-13-25/) | 1 | 1 |
 | [`17.04.2026`](../dfbr.github.io/2026-04-17_06-57-36/) | 1 | 1 |
+
+
+### [halfords.co.uk](../halfords.co.uk/)
+
+Latest run: [`09.10.2026`](../halfords.co.uk/2026-10-09_11-56-47/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`09.10.2026`](../halfords.co.uk/2026-10-09_11-56-47/) | 1 | 1 |
+| [`08.10.2026`](../halfords.co.uk/2026-10-08_12-02-30/) | 1 | 1 |
+| [`07.10.2026`](../halfords.co.uk/2026-10-07_11-41-43/) | 1 | 1 |
+| [`06.10.2026`](../halfords.co.uk/2026-10-06_11-55-24/) | 1 | 1 |
+| [`05.10.2026`](../halfords.co.uk/2026-10-05_12-11-15/) | 1 | 1 |
+| [`04.10.2026`](../halfords.co.uk/2026-10-04_11-11-06/) | 1 | 1 |
+| [`03.10.2026`](../halfords.co.uk/2026-10-03_10-28-26/) | 1 | 1 |
+| [`02.10.2026`](../halfords.co.uk/2026-10-02_11-09-44/) | 1 | 1 |
+| [`01.10.2026`](../halfords.co.uk/2026-10-01_11-22-20/) | 27 | 6 |
+| [`30.09.2026`](../halfords.co.uk/2026-09-30_10-55-51/) | 27 | 6 |
+
+
+### [halfords.com](../halfords.com/)
+
+Latest run: [`09.10.2026`](../halfords.com/2026-10-09_11-57-26/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`09.10.2026`](../halfords.com/2026-10-09_11-57-26/) | 1 | 1 |
+| [`08.10.2026`](../halfords.com/2026-10-08_12-04-25/) | 1 | 1 |
+| [`07.10.2026`](../halfords.com/2026-10-07_11-47-52/) | 1 | 1 |
+| [`06.10.2026`](../halfords.com/2026-10-06_12-04-22/) | 1 | 1 |
+| [`05.10.2026`](../halfords.com/2026-10-05_12-19-13/) | 1 | 1 |
+| [`04.10.2026`](../halfords.com/2026-10-04_11-11-24/) | 1 | 1 |
+| [`03.10.2026`](../halfords.com/2026-10-03_10-29-39/) | 1 | 1 |
+| [`02.10.2026`](../halfords.com/2026-10-02_11-10-31/) | 1 | 1 |
+| [`01.10.2026`](../halfords.com/2026-10-01_11-23-49/) | 95 | 47 |
+| [`30.09.2026`](../halfords.com/2026-09-30_10-58-21/) | 95 | 47 |
+
+
+### [halfordscareers.com](../halfordscareers.com/)
+
+Latest run: [`09.10.2026`](../halfordscareers.com/2026-10-09_12-05-56/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`09.10.2026`](../halfordscareers.com/2026-10-09_12-05-56/) | 1 | 1 |
+| [`08.10.2026`](../halfordscareers.com/2026-10-08_12-12-26/) | 1 | 1 |
+| [`07.10.2026`](../halfordscareers.com/2026-10-07_11-49-59/) | 1 | 1 |
+| [`06.10.2026`](../halfordscareers.com/2026-10-06_12-05-13/) | 1 | 1 |
+| [`05.10.2026`](../halfordscareers.com/2026-10-05_12-19-27/) | 1 | 1 |
+| [`04.10.2026`](../halfordscareers.com/2026-10-04_11-19-06/) | 1 | 1 |
+| [`03.10.2026`](../halfordscareers.com/2026-10-03_10-36-56/) | 1 | 1 |
+| [`02.10.2026`](../halfordscareers.com/2026-10-02_11-18-13/) | 1 | 1 |
+| [`01.10.2026`](../halfordscareers.com/2026-10-01_11-24-39/) | 4 | 4 |
+| [`30.09.2026`](../halfordscareers.com/2026-09-30_11-00-20/) | 4 | 4 |
 
 
 ### [hmrc.gov.uk](../hmrc.gov.uk/)
@@ -485,6 +590,31 @@ Previous runs:
 | [`09.04.2026`](../miljolare.no/2026-04-09_06-20-40/) | 6 | 4 |
 | [`08.04.2026`](../miljolare.no/2026-04-08_09-05-14/) | 6 | 4 |
 | [`08.04.2026`](../miljolare.no/2026-04-08_08-39-39/) | 6 | 4 |
+
+
+### [mortgageadvicebureau.com](../mortgageadvicebureau.com/)
+
+Latest run: [`09.10.2026`](../mortgageadvicebureau.com/2026-10-09_12-07-06/)
+
+| Metric | Count |
+|-------:|------:|
+| Total subdomains found | 1 |
+| Online | 1 |
+
+Previous runs:
+
+| Run | Subdomains | Online |
+|-----|-----------|--------|
+| [`09.10.2026`](../mortgageadvicebureau.com/2026-10-09_12-07-06/) | 1 | 1 |
+| [`08.10.2026`](../mortgageadvicebureau.com/2026-10-08_12-13-02/) | 1 | 1 |
+| [`07.10.2026`](../mortgageadvicebureau.com/2026-10-07_11-55-12/) | 1 | 1 |
+| [`06.10.2026`](../mortgageadvicebureau.com/2026-10-06_12-13-24/) | 71 | 22 |
+| [`05.10.2026`](../mortgageadvicebureau.com/2026-10-05_12-26-48/) | 1 | 1 |
+| [`04.10.2026`](../mortgageadvicebureau.com/2026-10-04_11-21-25/) | 1 | 1 |
+| [`03.10.2026`](../mortgageadvicebureau.com/2026-10-03_10-37-50/) | 1 | 1 |
+| [`02.10.2026`](../mortgageadvicebureau.com/2026-10-02_11-19-18/) | 1 | 1 |
+| [`01.10.2026`](../mortgageadvicebureau.com/2026-10-01_11-25-02/) | 71 | 22 |
+| [`30.09.2026`](../mortgageadvicebureau.com/2026-09-30_11-01-23/) | 71 | 22 |
 
 
 ### [neonnet.no](../neonnet.no/)

@@ -1,7 +1,7 @@
 ---
 title: "campingandcaravanningclub.co.uk"
 layout: default
-legacy: false
+legacy: true
 ---
 
 # campingandcaravanningclub.co.uk

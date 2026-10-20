@@ -1,4 +1,4 @@
-# dfbp.co.uk — 2026-10-10_10-56-28
+# dfbp.co.uk — 2026-10-20_09-47-41
 
 Certificates queried from [crt.sh](https://crt.sh/?q=%.dfbp.co.uk).
 

@@ -1,9 +1,9 @@
 ---
-title: "fitforhospital.co.uk — 10.10.2026"
+title: "fitforhospital.co.uk — 20.10.2026"
 layout: default
 ---
 
-# fitforhospital.co.uk — 10.10.2026
+# fitforhospital.co.uk — 20.10.2026
 
 [← fitforhospital.co.uk](../) &middot; [← All domains](../../)
 

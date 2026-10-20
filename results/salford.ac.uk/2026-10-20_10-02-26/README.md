@@ -1,4 +1,4 @@
-# salford.ac.uk — 2026-10-10_11-13-22
+# salford.ac.uk — 2026-10-20_10-02-26
 
 Certificates queried from [crt.sh](https://crt.sh/?q=%.salford.ac.uk).
 

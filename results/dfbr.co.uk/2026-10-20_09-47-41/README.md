@@ -1,4 +1,4 @@
-# dfbr.co.uk — 2026-10-10_10-56-28
+# dfbr.co.uk — 2026-10-20_09-47-41
 
 Certificates queried from [crt.sh](https://crt.sh/?q=%.dfbr.co.uk).
 

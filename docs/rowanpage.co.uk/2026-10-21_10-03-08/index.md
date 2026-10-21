@@ -1,9 +1,9 @@
 ---
-title: "rowanpage.co.uk — 11.10.2026"
+title: "rowanpage.co.uk — 21.10.2026"
 layout: default
 ---
 
-# rowanpage.co.uk — 11.10.2026
+# rowanpage.co.uk — 21.10.2026
 
 [← rowanpage.co.uk](../) &middot; [← All domains](../../)
 

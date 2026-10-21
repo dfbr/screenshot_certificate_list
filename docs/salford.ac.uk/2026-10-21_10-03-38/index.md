@@ -1,9 +1,9 @@
 ---
-title: "salford.ac.uk — 11.10.2026"
+title: "salford.ac.uk — 21.10.2026"
 layout: default
 ---
 
-# salford.ac.uk — 11.10.2026
+# salford.ac.uk — 21.10.2026
 
 [← salford.ac.uk](../) &middot; [← All domains](../../)
 

@@ -3,7 +3,7 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 21.10.2026
+> Last updated: 22.10.2026
 
 ## Results
 
@@ -153,9 +153,9 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](ddm.org/2026-04-08_08-39-28/README.md) |
 
 
-### [dfbp.co.uk](dfbp.co.uk/2026-10-21_09-48-48/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-10-22_09-49-29/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -167,6 +167,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](dfbp.co.uk/2026-10-22_09-49-29/README.md) |
 | `21.10.2026` | [21.10.2026](dfbp.co.uk/2026-10-21_09-48-48/README.md) |
 | `20.10.2026` | [20.10.2026](dfbp.co.uk/2026-10-20_09-47-41/README.md) |
 | `19.10.2026` | [19.10.2026](dfbp.co.uk/2026-10-19_10-29-27/README.md) |
@@ -176,22 +177,24 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](dfbp.co.uk/2026-10-15_09-35-50/README.md) |
 | `14.10.2026` | [14.10.2026](dfbp.co.uk/2026-10-14_09-54-40/README.md) |
 | `13.10.2026` | [13.10.2026](dfbp.co.uk/2026-10-13_12-27-02/README.md) |
-| `12.10.2026` | [12.10.2026](dfbp.co.uk/2026-10-12_12-43-26/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-10-21_09-48-48/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-10-22_09-49-29/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 1 |
-| Successes | 1 |
+| Total domains found | 16 |
+| Successes | 14 |
+| HTTP 401 | 1 |
+| HTTP 404 | 1 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](dfbr.co.uk/2026-10-22_09-49-29/README.md) |
 | `21.10.2026` | [21.10.2026](dfbr.co.uk/2026-10-21_09-48-48/README.md) |
 | `20.10.2026` | [20.10.2026](dfbr.co.uk/2026-10-20_09-47-41/README.md) |
 | `19.10.2026` | [19.10.2026](dfbr.co.uk/2026-10-19_10-29-27/README.md) |
@@ -201,7 +204,6 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](dfbr.co.uk/2026-10-15_09-35-50/README.md) |
 | `14.10.2026` | [14.10.2026](dfbr.co.uk/2026-10-14_09-54-40/README.md) |
 | `13.10.2026` | [13.10.2026](dfbr.co.uk/2026-10-13_12-27-02/README.md) |
-| `12.10.2026` | [12.10.2026](dfbr.co.uk/2026-10-12_12-43-26/README.md) |
 
 
 ### [dfbr.github.io](dfbr.github.io/2026-04-24_07-05-31/README.md)
@@ -230,9 +232,9 @@ Previous runs:
 | `17.04.2026` | [17.04.2026](dfbr.github.io/2026-04-17_06-57-36/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-10-21_09-55-54/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-10-22_09-49-35/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -244,6 +246,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](fitforhospital.co.uk/2026-10-22_09-49-35/README.md) |
 | `21.10.2026` | [21.10.2026](fitforhospital.co.uk/2026-10-21_09-55-54/README.md) |
 | `20.10.2026` | [20.10.2026](fitforhospital.co.uk/2026-10-20_09-54-45/README.md) |
 | `19.10.2026` | [19.10.2026](fitforhospital.co.uk/2026-10-19_10-29-35/README.md) |
@@ -253,7 +256,6 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](fitforhospital.co.uk/2026-10-15_09-36-03/README.md) |
 | `14.10.2026` | [14.10.2026](fitforhospital.co.uk/2026-10-14_09-54-47/README.md) |
 | `13.10.2026` | [13.10.2026](fitforhospital.co.uk/2026-10-13_12-34-04/README.md) |
-| `12.10.2026` | [12.10.2026](fitforhospital.co.uk/2026-10-12_12-43-31/README.md) |
 
 
 ### [halfords.co.uk](halfords.co.uk/2026-10-09_11-56-47/README.md)
@@ -745,19 +747,20 @@ Previous runs:
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.co.uk/2026-04-07_09-18-43/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-10-21_09-56-00/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-10-22_09-49-37/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 1 |
-| Successes | 1 |
+| Total domains found | 2 |
+| Successes | 2 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](onlythestoriesyouwant.link/2026-10-22_09-49-37/README.md) |
 | `21.10.2026` | [21.10.2026](onlythestoriesyouwant.link/2026-10-21_09-56-00/README.md) |
 | `20.10.2026` | [20.10.2026](onlythestoriesyouwant.link/2026-10-20_09-54-54/README.md) |
 | `19.10.2026` | [19.10.2026](onlythestoriesyouwant.link/2026-10-19_10-29-37/README.md) |
@@ -767,23 +770,23 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](onlythestoriesyouwant.link/2026-10-15_09-36-04/README.md) |
 | `14.10.2026` | [14.10.2026](onlythestoriesyouwant.link/2026-10-14_09-54-49/README.md) |
 | `13.10.2026` | [13.10.2026](onlythestoriesyouwant.link/2026-10-13_12-35-32/README.md) |
-| `12.10.2026` | [12.10.2026](onlythestoriesyouwant.link/2026-10-12_12-43-44/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-10-21_10-03-08/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-10-22_09-49-41/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 1 |
+| Total domains found | 2 |
 | Successes | 0 |
-| HTTP 404 | 1 |
+| HTTP 404 | 2 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](rowanpage.co.uk/2026-10-22_09-49-41/README.md) |
 | `21.10.2026` | [21.10.2026](rowanpage.co.uk/2026-10-21_10-03-08/README.md) |
 | `20.10.2026` | [20.10.2026](rowanpage.co.uk/2026-10-20_10-02-06/README.md) |
 | `19.10.2026` | [19.10.2026](rowanpage.co.uk/2026-10-19_10-29-52/README.md) |
@@ -793,22 +796,30 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](rowanpage.co.uk/2026-10-15_09-36-09/README.md) |
 | `14.10.2026` | [14.10.2026](rowanpage.co.uk/2026-10-14_09-54-51/README.md) |
 | `13.10.2026` | [13.10.2026](rowanpage.co.uk/2026-10-13_12-40-47/README.md) |
-| `12.10.2026` | [12.10.2026](rowanpage.co.uk/2026-10-12_12-43-48/README.md) |
 
 
-### [salford.ac.uk](salford.ac.uk/2026-10-21_10-03-38/README.md)
+### [salford.ac.uk](salford.ac.uk/2026-10-22_09-49-42/README.md)
 
-Latest run: `21.10.2026`
+Latest run: `22.10.2026`
 
 | Metric | Count |
 |-------:|------:|
-| Total domains found | 1 |
-| Successes | 1 |
+| Total domains found | 1074 |
+| Successes | 26 |
+| ERR_CONNECTION_CLOSED | 2 |
+| ERR_CONNECTION_REFUSED | 717 |
+| ERR_CONNECTION_RESET | 7 |
+| ERR_NAME_NOT_RESOLVED | 130 |
+| HTTP 403 | 1 |
+| HTTP 404 | 1 |
+| HTTP 502 | 1 |
+| timeout | 189 |
 
 Previous runs:
 
 | Run | Link |
 |-----|------|
+| `22.10.2026` | [22.10.2026](salford.ac.uk/2026-10-22_09-49-42/README.md) |
 | `21.10.2026` | [21.10.2026](salford.ac.uk/2026-10-21_10-03-38/README.md) |
 | `20.10.2026` | [20.10.2026](salford.ac.uk/2026-10-20_10-02-26/README.md) |
 | `19.10.2026` | [19.10.2026](salford.ac.uk/2026-10-19_10-30-14/README.md) |
@@ -818,7 +829,6 @@ Previous runs:
 | `15.10.2026` | [15.10.2026](salford.ac.uk/2026-10-15_09-36-10/README.md) |
 | `14.10.2026` | [14.10.2026](salford.ac.uk/2026-10-14_09-54-54/README.md) |
 | `13.10.2026` | [13.10.2026](salford.ac.uk/2026-10-13_12-42-26/README.md) |
-| `12.10.2026` | [12.10.2026](salford.ac.uk/2026-10-12_12-44-11/README.md) |
 
 
 ### [sars.no](sars.no/2026-04-15_06-54-07/README.md)

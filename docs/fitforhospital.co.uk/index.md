@@ -12,7 +12,7 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 
-## Latest Run: 21.10.2026
+## Latest Run: 22.10.2026
 
 | Metric | Count |
 |-------:|------:|
@@ -24,6 +24,7 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `22.10.2026` | 1 | 0 | [View](2026-10-22_09-49-35/) |
 | `21.10.2026` | 1 | 0 | [View](2026-10-21_09-55-54/) |
 | `20.10.2026` | 1 | 0 | [View](2026-10-20_09-54-45/) |
 | `19.10.2026` | 1 | 0 | [View](2026-10-19_10-29-35/) |
@@ -33,4 +34,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.fitforhospital.co.uk).
 | `15.10.2026` | 1 | 0 | [View](2026-10-15_09-36-03/) |
 | `14.10.2026` | 1 | 0 | [View](2026-10-14_09-54-47/) |
 | `13.10.2026` | 1 | 0 | [View](2026-10-13_12-34-04/) |
-| `12.10.2026` | 1 | 0 | [View](2026-10-12_12-43-31/) |

@@ -8,24 +8,24 @@ layout: default
 Automated screenshots of domains discovered via certificate transparency logs
 ([crt.sh](https://crt.sh/)).
 
-> Last updated: 01.11.2026
+> Last updated: 02.11.2026
 
 ## Monitored Domains
 
 | Domain | Latest Run | Subdomains | Online |
 |--------|------------|-----------|--------|
-| [dfbp.co.uk](dfbp.co.uk/) | `01.11.2026` | 1 | 0 |
-| [dfbr.co.uk](dfbr.co.uk/) | `01.11.2026` | 16 | 14 |
-| [fitforhospital.co.uk](fitforhospital.co.uk/) | `01.11.2026` | 1 | 0 |
-| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `01.11.2026` | 2 | 2 |
-| [rowanpage.co.uk](rowanpage.co.uk/) | `01.11.2026` | 2 | 0 |
-| [salford.ac.uk](salford.ac.uk/) | `01.11.2026` | 1074 | 27 |
+| [dfbp.co.uk](dfbp.co.uk/) | `02.11.2026` | 1 | 0 |
+| [dfbr.co.uk](dfbr.co.uk/) | `02.11.2026` | 16 | 14 |
+| [fitforhospital.co.uk](fitforhospital.co.uk/) | `02.11.2026` | 1 | 0 |
+| [onlythestoriesyouwant.link](onlythestoriesyouwant.link/) | `02.11.2026` | 2 | 2 |
+| [rowanpage.co.uk](rowanpage.co.uk/) | `02.11.2026` | 2 | 0 |
+| [salford.ac.uk](salford.ac.uk/) | `02.11.2026` | 1074 | 27 |
 
 ## Domain Details
 
 ### [dfbp.co.uk](dfbp.co.uk/)
 
-Latest run: [`01.11.2026`](dfbp.co.uk/2026-11-01_11-39-12/)
+Latest run: [`02.11.2026`](dfbp.co.uk/2026-11-02_13-02-46/)
 
 | Metric | Count |
 |-------:|------:|
@@ -37,6 +37,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](dfbp.co.uk/2026-11-02_13-02-46/) | 1 | 0 |
 | [`01.11.2026`](dfbp.co.uk/2026-11-01_11-39-12/) | 1 | 0 |
 | [`31.10.2026`](dfbp.co.uk/2026-10-31_10-43-01/) | 1 | 0 |
 | [`30.10.2026`](dfbp.co.uk/2026-10-30_11-10-02/) | 1 | 0 |
@@ -46,12 +47,11 @@ Previous runs:
 | [`26.10.2026`](dfbp.co.uk/2026-10-26_10-44-46/) | 1 | 0 |
 | [`25.10.2026`](dfbp.co.uk/2026-10-25_09-33-42/) | 1 | 0 |
 | [`24.10.2026`](dfbp.co.uk/2026-10-24_09-17-05/) | 1 | 0 |
-| [`23.10.2026`](dfbp.co.uk/2026-10-23_09-53-35/) | 1 | 0 |
 
 
 ### [dfbr.co.uk](dfbr.co.uk/)
 
-Latest run: [`01.11.2026`](dfbr.co.uk/2026-11-01_11-39-12/)
+Latest run: [`02.11.2026`](dfbr.co.uk/2026-11-02_13-02-46/)
 
 | Metric | Count |
 |-------:|------:|
@@ -64,6 +64,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](dfbr.co.uk/2026-11-02_13-02-46/) | 16 | 14 |
 | [`01.11.2026`](dfbr.co.uk/2026-11-01_11-39-12/) | 16 | 14 |
 | [`31.10.2026`](dfbr.co.uk/2026-10-31_10-43-01/) | 15 | 13 |
 | [`30.10.2026`](dfbr.co.uk/2026-10-30_11-10-02/) | 16 | 14 |
@@ -73,12 +74,11 @@ Previous runs:
 | [`26.10.2026`](dfbr.co.uk/2026-10-26_10-44-46/) | 15 | 13 |
 | [`25.10.2026`](dfbr.co.uk/2026-10-25_09-33-42/) | 16 | 14 |
 | [`24.10.2026`](dfbr.co.uk/2026-10-24_09-17-05/) | 15 | 13 |
-| [`23.10.2026`](dfbr.co.uk/2026-10-23_09-53-35/) | 16 | 14 |
 
 
 ### [fitforhospital.co.uk](fitforhospital.co.uk/)
 
-Latest run: [`01.11.2026`](fitforhospital.co.uk/2026-11-01_11-39-19/)
+Latest run: [`02.11.2026`](fitforhospital.co.uk/2026-11-02_13-02-53/)
 
 | Metric | Count |
 |-------:|------:|
@@ -90,6 +90,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](fitforhospital.co.uk/2026-11-02_13-02-53/) | 1 | 0 |
 | [`01.11.2026`](fitforhospital.co.uk/2026-11-01_11-39-19/) | 1 | 0 |
 | [`31.10.2026`](fitforhospital.co.uk/2026-10-31_10-43-26/) | 1 | 0 |
 | [`30.10.2026`](fitforhospital.co.uk/2026-10-30_11-10-05/) | 1 | 0 |
@@ -99,12 +100,11 @@ Previous runs:
 | [`26.10.2026`](fitforhospital.co.uk/2026-10-26_10-45-27/) | 1 | 0 |
 | [`25.10.2026`](fitforhospital.co.uk/2026-10-25_09-35-17/) | 1 | 0 |
 | [`24.10.2026`](fitforhospital.co.uk/2026-10-24_09-18-02/) | 1 | 0 |
-| [`23.10.2026`](fitforhospital.co.uk/2026-10-23_09-53-39/) | 1 | 0 |
 
 
 ### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/)
 
-Latest run: [`01.11.2026`](onlythestoriesyouwant.link/2026-11-01_11-39-22/)
+Latest run: [`02.11.2026`](onlythestoriesyouwant.link/2026-11-02_13-03-02/)
 
 | Metric | Count |
 |-------:|------:|
@@ -115,6 +115,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](onlythestoriesyouwant.link/2026-11-02_13-03-02/) | 2 | 2 |
 | [`01.11.2026`](onlythestoriesyouwant.link/2026-11-01_11-39-22/) | 2 | 2 |
 | [`31.10.2026`](onlythestoriesyouwant.link/2026-10-31_10-43-33/) | 2 | 2 |
 | [`30.10.2026`](onlythestoriesyouwant.link/2026-10-30_11-10-12/) | 2 | 2 |
@@ -124,12 +125,11 @@ Previous runs:
 | [`26.10.2026`](onlythestoriesyouwant.link/2026-10-26_10-45-49/) | 2 | 2 |
 | [`25.10.2026`](onlythestoriesyouwant.link/2026-10-25_09-36-30/) | 2 | 2 |
 | [`24.10.2026`](onlythestoriesyouwant.link/2026-10-24_09-18-52/) | 2 | 2 |
-| [`23.10.2026`](onlythestoriesyouwant.link/2026-10-23_09-53-50/) | 2 | 2 |
 
 
 ### [rowanpage.co.uk](rowanpage.co.uk/)
 
-Latest run: [`01.11.2026`](rowanpage.co.uk/2026-11-01_11-39-40/)
+Latest run: [`02.11.2026`](rowanpage.co.uk/2026-11-02_13-03-07/)
 
 | Metric | Count |
 |-------:|------:|
@@ -141,6 +141,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](rowanpage.co.uk/2026-11-02_13-03-07/) | 2 | 0 |
 | [`01.11.2026`](rowanpage.co.uk/2026-11-01_11-39-40/) | 2 | 0 |
 | [`31.10.2026`](rowanpage.co.uk/2026-10-31_10-43-41/) | 2 | 0 |
 | [`30.10.2026`](rowanpage.co.uk/2026-10-30_11-10-13/) | 2 | 0 |
@@ -150,12 +151,11 @@ Previous runs:
 | [`26.10.2026`](rowanpage.co.uk/2026-10-26_10-45-53/) | 2 | 0 |
 | [`25.10.2026`](rowanpage.co.uk/2026-10-25_09-37-45/) | 2 | 0 |
 | [`24.10.2026`](rowanpage.co.uk/2026-10-24_09-19-45/) | 2 | 0 |
-| [`23.10.2026`](rowanpage.co.uk/2026-10-23_09-54-04/) | 2 | 0 |
 
 
 ### [salford.ac.uk](salford.ac.uk/)
 
-Latest run: [`01.11.2026`](salford.ac.uk/2026-11-01_11-39-44/)
+Latest run: [`02.11.2026`](salford.ac.uk/2026-11-02_13-03-11/)
 
 | Metric | Count |
 |-------:|------:|
@@ -174,6 +174,7 @@ Previous runs:
 
 | Run | Subdomains | Online |
 |-----|-----------|--------|
+| [`02.11.2026`](salford.ac.uk/2026-11-02_13-03-11/) | 1074 | 27 |
 | [`01.11.2026`](salford.ac.uk/2026-11-01_11-39-44/) | 1074 | 27 |
 | [`31.10.2026`](salford.ac.uk/2026-10-31_10-43-51/) | 1074 | 27 |
 | [`30.10.2026`](salford.ac.uk/2026-10-30_11-10-17/) | 1074 | 27 |
@@ -183,7 +184,6 @@ Previous runs:
 | [`26.10.2026`](salford.ac.uk/2026-10-26_10-46-09/) | 1074 | 27 |
 | [`25.10.2026`](salford.ac.uk/2026-10-25_09-38-06/) | 1074 | 27 |
 | [`24.10.2026`](salford.ac.uk/2026-10-24_09-20-05/) | 1074 | 27 |
-| [`23.10.2026`](salford.ac.uk/2026-10-23_09-54-11/) | 1074 | 27 |
 
 
 Looking for inactive domains? [Legacy sites](legacy/)

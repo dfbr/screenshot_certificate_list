@@ -3,7 +3,7 @@
 Automated screenshots of domains found in certificate transparency logs via
 [crt.sh](https://crt.sh/).
 
-> Last updated: 02.11.2026
+> Last updated: 03.11.2026
 
 ## Results
 
@@ -153,9 +153,9 @@ Previous runs:
 | `08.04.2026` | [08.04.2026](ddm.org/2026-04-08_08-39-28/README.md) |
 
 
-### [dfbp.co.uk](dfbp.co.uk/2026-11-02_13-02-46/README.md)
+### [dfbp.co.uk](dfbp.co.uk/2026-11-03_12-36-01/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -167,6 +167,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](dfbp.co.uk/2026-11-03_12-36-01/README.md) |
 | `02.11.2026` | [02.11.2026](dfbp.co.uk/2026-11-02_13-02-46/README.md) |
 | `01.11.2026` | [01.11.2026](dfbp.co.uk/2026-11-01_11-39-12/README.md) |
 | `31.10.2026` | [31.10.2026](dfbp.co.uk/2026-10-31_10-43-01/README.md) |
@@ -176,12 +177,11 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](dfbp.co.uk/2026-10-27_10-20-58/README.md) |
 | `26.10.2026` | [26.10.2026](dfbp.co.uk/2026-10-26_10-44-46/README.md) |
 | `25.10.2026` | [25.10.2026](dfbp.co.uk/2026-10-25_09-33-42/README.md) |
-| `24.10.2026` | [24.10.2026](dfbp.co.uk/2026-10-24_09-17-05/README.md) |
 
 
-### [dfbr.co.uk](dfbr.co.uk/2026-11-02_13-02-46/README.md)
+### [dfbr.co.uk](dfbr.co.uk/2026-11-03_12-36-01/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -194,6 +194,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](dfbr.co.uk/2026-11-03_12-36-01/README.md) |
 | `02.11.2026` | [02.11.2026](dfbr.co.uk/2026-11-02_13-02-46/README.md) |
 | `01.11.2026` | [01.11.2026](dfbr.co.uk/2026-11-01_11-39-12/README.md) |
 | `31.10.2026` | [31.10.2026](dfbr.co.uk/2026-10-31_10-43-01/README.md) |
@@ -203,7 +204,6 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](dfbr.co.uk/2026-10-27_10-20-58/README.md) |
 | `26.10.2026` | [26.10.2026](dfbr.co.uk/2026-10-26_10-44-46/README.md) |
 | `25.10.2026` | [25.10.2026](dfbr.co.uk/2026-10-25_09-33-42/README.md) |
-| `24.10.2026` | [24.10.2026](dfbr.co.uk/2026-10-24_09-17-05/README.md) |
 
 
 ### [dfbr.github.io](dfbr.github.io/2026-04-24_07-05-31/README.md)
@@ -232,9 +232,9 @@ Previous runs:
 | `17.04.2026` | [17.04.2026](dfbr.github.io/2026-04-17_06-57-36/README.md) |
 
 
-### [fitforhospital.co.uk](fitforhospital.co.uk/2026-11-02_13-02-53/README.md)
+### [fitforhospital.co.uk](fitforhospital.co.uk/2026-11-03_12-36-20/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -246,6 +246,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](fitforhospital.co.uk/2026-11-03_12-36-20/README.md) |
 | `02.11.2026` | [02.11.2026](fitforhospital.co.uk/2026-11-02_13-02-53/README.md) |
 | `01.11.2026` | [01.11.2026](fitforhospital.co.uk/2026-11-01_11-39-19/README.md) |
 | `31.10.2026` | [31.10.2026](fitforhospital.co.uk/2026-10-31_10-43-26/README.md) |
@@ -255,7 +256,6 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](fitforhospital.co.uk/2026-10-27_10-21-10/README.md) |
 | `26.10.2026` | [26.10.2026](fitforhospital.co.uk/2026-10-26_10-45-27/README.md) |
 | `25.10.2026` | [25.10.2026](fitforhospital.co.uk/2026-10-25_09-35-17/README.md) |
-| `24.10.2026` | [24.10.2026](fitforhospital.co.uk/2026-10-24_09-18-02/README.md) |
 
 
 ### [halfords.co.uk](halfords.co.uk/2026-10-09_11-56-47/README.md)
@@ -747,9 +747,9 @@ Previous runs:
 | `07.04.2026` | [07.04.2026](onlythestoriesyouwant.co.uk/2026-04-07_09-18-43/README.md) |
 
 
-### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-11-02_13-03-02/README.md)
+### [onlythestoriesyouwant.link](onlythestoriesyouwant.link/2026-11-03_12-36-20/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -760,6 +760,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](onlythestoriesyouwant.link/2026-11-03_12-36-20/README.md) |
 | `02.11.2026` | [02.11.2026](onlythestoriesyouwant.link/2026-11-02_13-03-02/README.md) |
 | `01.11.2026` | [01.11.2026](onlythestoriesyouwant.link/2026-11-01_11-39-22/README.md) |
 | `31.10.2026` | [31.10.2026](onlythestoriesyouwant.link/2026-10-31_10-43-33/README.md) |
@@ -769,12 +770,11 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](onlythestoriesyouwant.link/2026-10-27_10-21-10/README.md) |
 | `26.10.2026` | [26.10.2026](onlythestoriesyouwant.link/2026-10-26_10-45-49/README.md) |
 | `25.10.2026` | [25.10.2026](onlythestoriesyouwant.link/2026-10-25_09-36-30/README.md) |
-| `24.10.2026` | [24.10.2026](onlythestoriesyouwant.link/2026-10-24_09-18-52/README.md) |
 
 
-### [rowanpage.co.uk](rowanpage.co.uk/2026-11-02_13-03-07/README.md)
+### [rowanpage.co.uk](rowanpage.co.uk/2026-11-03_12-36-42/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -786,6 +786,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](rowanpage.co.uk/2026-11-03_12-36-42/README.md) |
 | `02.11.2026` | [02.11.2026](rowanpage.co.uk/2026-11-02_13-03-07/README.md) |
 | `01.11.2026` | [01.11.2026](rowanpage.co.uk/2026-11-01_11-39-40/README.md) |
 | `31.10.2026` | [31.10.2026](rowanpage.co.uk/2026-10-31_10-43-41/README.md) |
@@ -795,12 +796,11 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](rowanpage.co.uk/2026-10-27_10-21-45/README.md) |
 | `26.10.2026` | [26.10.2026](rowanpage.co.uk/2026-10-26_10-45-53/README.md) |
 | `25.10.2026` | [25.10.2026](rowanpage.co.uk/2026-10-25_09-37-45/README.md) |
-| `24.10.2026` | [24.10.2026](rowanpage.co.uk/2026-10-24_09-19-45/README.md) |
 
 
-### [salford.ac.uk](salford.ac.uk/2026-11-02_13-03-11/README.md)
+### [salford.ac.uk](salford.ac.uk/2026-11-03_12-36-57/README.md)
 
-Latest run: `02.11.2026`
+Latest run: `03.11.2026`
 
 | Metric | Count |
 |-------:|------:|
@@ -819,6 +819,7 @@ Previous runs:
 
 | Run | Link |
 |-----|------|
+| `03.11.2026` | [03.11.2026](salford.ac.uk/2026-11-03_12-36-57/README.md) |
 | `02.11.2026` | [02.11.2026](salford.ac.uk/2026-11-02_13-03-11/README.md) |
 | `01.11.2026` | [01.11.2026](salford.ac.uk/2026-11-01_11-39-44/README.md) |
 | `31.10.2026` | [31.10.2026](salford.ac.uk/2026-10-31_10-43-51/README.md) |
@@ -828,7 +829,6 @@ Previous runs:
 | `27.10.2026` | [27.10.2026](salford.ac.uk/2026-10-27_10-21-52/README.md) |
 | `26.10.2026` | [26.10.2026](salford.ac.uk/2026-10-26_10-46-09/README.md) |
 | `25.10.2026` | [25.10.2026](salford.ac.uk/2026-10-25_09-38-06/README.md) |
-| `24.10.2026` | [24.10.2026](salford.ac.uk/2026-10-24_09-20-05/README.md) |
 
 
 ### [sars.no](sars.no/2026-04-15_06-54-07/README.md)

@@ -1,5 +1,5 @@
 ---
-title: "salford.ac.uk Gallery (22.11.2026)"
+title: "salford.ac.uk Gallery (23.11.2026)"
 layout: gallery
 ---
 
@@ -8,7 +8,7 @@ layout: gallery
     <div id="gallery-grid">
       <figure class="gallery-item">
         <a href="https://salford.ac.uk" target="_blank" rel="noopener noreferrer">
-          <img src="../2026-11-22_13-17-35/screenshots/salford.ac.uk.png" alt="salford.ac.uk" loading="lazy" />
+          <img src="../2026-11-23_15-54-58/screenshots/salford.ac.uk.png" alt="salford.ac.uk" loading="lazy" />
           <figcaption>salford.ac.uk</figcaption>
         </a>
       </figure>

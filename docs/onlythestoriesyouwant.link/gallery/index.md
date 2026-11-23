@@ -1,5 +1,5 @@
 ---
-title: "onlythestoriesyouwant.link Gallery (22.11.2026)"
+title: "onlythestoriesyouwant.link Gallery (23.11.2026)"
 layout: gallery
 ---
 

@@ -12,17 +12,26 @@ legacy: false
 
 Subdomains from [crt.sh](https://crt.sh/?q=%.salford.ac.uk).
 
-## Latest Run: 24.11.2026
+## Latest Run: 25.11.2026
 
 | Metric | Count |
 |-------:|------:|
-| Total subdomains found | 1 |
-| Online | 1 |
+| Total subdomains found | 1074 |
+| Online | 27 |
+| ERR_CONNECTION_CLOSED | 2 |
+| ERR_CONNECTION_REFUSED | 1 |
+| ERR_CONNECTION_RESET | 7 |
+| ERR_NAME_NOT_RESOLVED | 130 |
+| HTTP 403 | 716 |
+| HTTP 404 | 1 |
+| HTTP 502 | 1 |
+| timeout | 189 |
 
 ## Run History
 
 | Run | Subdomains | Online | Details |
 |-----|-----------|--------|---------|
+| `25.11.2026` | 1074 | 27 | [View](2026-11-25_15-17-19/) |
 | `24.11.2026` | 1 | 1 | [View](2026-11-24_15-47-11/) |
 | `23.11.2026` | 1 | 1 | [View](2026-11-23_15-54-58/) |
 | `22.11.2026` | 1 | 1 | [View](2026-11-22_13-17-35/) |
@@ -32,4 +41,3 @@ Subdomains from [crt.sh](https://crt.sh/?q=%.salford.ac.uk).
 | `18.11.2026` | 1074 | 25 | [View](2026-11-18_13-39-52/) |
 | `17.11.2026` | 1074 | 26 | [View](2026-11-17_14-07-05/) |
 | `16.11.2026` | 1074 | 26 | [View](2026-11-16_13-21-05/) |
-| `15.11.2026` | 1074 | 26 | [View](2026-11-15_12-28-27/) |
